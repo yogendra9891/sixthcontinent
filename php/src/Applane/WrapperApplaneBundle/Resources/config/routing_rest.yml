@@ -1,0 +1,35 @@
+appqueries:
+    type: rest
+    pattern: /appqueries
+    resource: "ApplaneWrapperApplaneBundle:Applane"
+    name_prefix: api_
+    requirements:
+        _methods: POST
+appudates:
+    type: rest
+    pattern: /appudates
+    resource: "ApplaneWrapperApplaneBundle:Applane"
+    name_prefix: api_
+    requirements:
+        _methods: POST
+batchqueries:
+    type: rest
+    pattern: /batchqueries
+    resource: "ApplaneWrapperApplaneBundle:Applane"
+    name_prefix: api_
+    requirements:
+        _methods: POST
+app_invokes:
+    type: rest
+    pattern: /invokes
+    resource: "ApplaneWrapperApplaneBundle:Applane"
+    name_prefix: api_
+    requirements:
+        _methods: POST
+applane_api_service:
+    type: rest
+    pattern:  /applane/service/{service_name}
+    defaults: { _controller: ApplaneWrapperApplaneBundle:Applane:service }
+    name_prefix: api_
+    requirements:
+        service_name: .+

@@ -1,0 +1,40 @@
+StoreManager\StoreBundle\Entity\StoreMedia:
+    type: entity
+    table: null
+    repositoryClass: StoreManager\StoreBundle\Entity\StoreMediaRepository
+    indexes:
+        index_storeid_StoreMedia:
+            columns: [store_id]
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        storeId:
+            type: integer
+            column: store_id
+        albumId:
+            type: integer
+            column: album_id
+        mediaStatus:
+            type: integer
+            column: media_status
+        imageName:
+            type: text
+            column: image_name
+        isFeatured:
+            type: boolean
+            column: is_featured
+        createdAt:
+            type: datetime
+            column: created_at
+        image_type:
+            type: integer
+        x:
+            type: text
+            column: x_cord
+        y:
+            type: text
+            column: y_cord
+    lifecycleCallbacks: {  }

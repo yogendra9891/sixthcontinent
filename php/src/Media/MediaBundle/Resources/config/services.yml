@@ -1,0 +1,28 @@
+parameters:
+    user.object.class: Media\MediaBundle\Services\UserObjectService
+    amazan.object.class: Media\MediaBundle\Services\ImageS3UploadService
+    privacy_setting.object.class: Media\MediaBundle\Services\PrivacySettingService
+    image.rotate.class: Media\MediaBundle\Services\ImageRotateService
+    clean_name.object.class: Media\MediaBundle\Services\CleanNameService
+    user.friend.class: Media\MediaBundle\Services\UserFriendService
+    
+services:
+    user_object.service:
+        class: %user.object.class%
+        arguments: [@doctrine.orm.entity_manager, @doctrine.odm.mongodb.document_manager, @service_container]
+    amazan_upload_object.service:
+        class: %amazan.object.class%
+        arguments: [@doctrine.orm.entity_manager, @doctrine.odm.mongodb.document_manager, @service_container]
+    privacy_setting_object.service:
+        class: %privacy_setting.object.class%
+        arguments: [@doctrine.orm.entity_manager, @doctrine.odm.mongodb.document_manager, @service_container]
+    password.userregister.md5password.encoder:
+        class: Media\MediaBundle\Services\CustomMd5PasswordEncoderService
+    image_rotate_object.service:
+        class: %image.rotate.class%
+    clean_name_object.service:
+        class: %clean_name.object.class%
+        arguments: [@doctrine.orm.entity_manager, @doctrine.odm.mongodb.document_manager, @service_container]
+    user_friend.service:
+        class: %user.friend.class%
+        arguments: [@doctrine.orm.entity_manager, @doctrine.odm.mongodb.document_manager, @service_container]

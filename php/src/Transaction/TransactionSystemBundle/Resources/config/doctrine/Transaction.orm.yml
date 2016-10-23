@@ -1,0 +1,127 @@
+Transaction\TransactionSystemBundle\Entity\Transaction:
+    type: entity
+    table: null
+    repositoryClass: Transaction\TransactionSystemBundle\Repository\TransactionRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        status:
+            type: string
+            length: '45'
+        sixcTransactionId:
+            type: string
+            length: '60'
+            column: sixc_transaction_id
+        sellerId:
+            type: integer
+            column: seller_id
+        buyerCurrency:
+            type: string
+            length: '45'
+            column: buyer_currency
+        sellerCurrency:
+            type: string
+            length: '45'
+            column: seller_currency
+        bOverSCurrencyRation:
+            type: string
+            length: '45'
+            column: b_over_s_currency_ration
+        initPrice:
+            type: integer
+            column: init_price
+        finalPrice:
+            type: integer
+            column: final_price
+        withCredit:
+            type: integer
+            column: with_credit
+        discountUsed:
+            type: integer
+            column: discount_used
+        citizenIncomeUsed:
+            type: integer
+            column: citizen_income_used
+        couponUsed:
+            type: integer
+            column: coupon_used
+        creditPayment:
+            type: integer
+            column: credit_payment
+        shoppingCardUsed:
+            type: integer
+            column: shopping_card_used
+        timeInitH:
+            type: datetime
+            column: time_init_h
+        timeUpdateStatusH:
+            type: datetime
+            column: time_update_status_h
+            nullable: TRUE
+        timeCloseH:
+            type: datetime
+            column: time_close_h
+            nullable: TRUE
+        timeInit:
+            type: integer
+            column: time_init
+        timeUpdateStatus:
+            type: integer
+            column: time_update_status
+            nullable: TRUE
+        timeClose:
+            type: integer
+            column: time_close
+            nullable: TRUE
+        buyerId:
+            type: integer
+            column: buyer_id
+        transactionFee:
+            type: integer
+            column: transaction_fee
+        sixcAmountPc:
+            type: integer
+            column: sixc_amount_pc
+        sixcAmountPcVat:
+            type: integer
+            column: sixc_amount_pc_vat
+        sellerPc:
+            type: float
+            column: seller_pc
+        transactionTypeId:
+            type: integer
+            column: transaction_type_id
+        redistributionStatus:
+            type: integer
+            column: redistribution_status
+        citizenAffCharge:
+            type: integer
+            column: citizen_aff_charge
+        shopAffCharge:
+            type: integer
+            column: shop_aff_charge
+        friendsFollowerCharge:
+            type: integer
+            column: friends_follower_charge
+        buyerCharge:
+            type: integer
+            column: buyer_charge
+        sixcCharge:
+            type: integer
+            column: sixc_charge
+        allCountryCharge:
+            type: integer
+            column: all_country_charge
+        transactionSerialize:
+            type: text
+            column: transaction_serialize
+            nullable: TRUE
+        transactionGateWayReference:
+            type: string
+            length: '255'
+            column: transaction_gateway_reference
+            nullable: TRUE
+    lifecycleCallbacks: {  }

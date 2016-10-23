@@ -1,0 +1,49 @@
+## YAML Template.
+StoreManager\PostBundle\Document\StorePostsMedia:
+    repositoryClass: StoreManager\PostBundle\Repository\StorePostsMediaMongoRepository
+    type: document
+    collection: storepostmedia
+    fields:
+        id:
+            id:  true
+        post_id:
+            type: string
+        media_name:
+            type: string
+        media_type:
+            type: string
+        media_created:
+            type: date
+        media_updated:
+            type: date
+        media_status:
+            type: int
+        file:
+            type: file
+        path:
+            type: string
+        is_featured:
+            type: int
+        youtube:
+            type: string
+        image_type:
+            type: int
+        vote_count:
+            type: int
+        vote_sum:
+            type: int
+        avg_rating:
+            type: float
+        rate:
+           embedded: true
+           type: many
+           targetDocument: Media\MediaBundle\Document\UserMediaRating
+        comment:
+           embedded: true
+           type: many
+           targetDocument: Media\MediaBundle\Document\AlbumMediaComment
+            
+# php app/console doctrine:mongodb:generate:documents TestFormBundle
+# Create Document
+# php app/console doctrine:mongodb:generate:repositories TestFormBundle
+# Create repository

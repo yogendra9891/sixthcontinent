@@ -1,0 +1,7 @@
+parameters:
+    user_name: "aman.jain@daffodilsw.com"
+    password : "123456"
+    client_id: "16_3ofdwe6u02kgg4ock4os4okc4ss4gckc80ccw000kkc8wo4gsc"
+    client_secret: "4mjnllttzpycgss4og8koc40gk8ocskko8kc4888c08wkc4s8g"
+    store_vat: "025121322523047"
+    shop_collection : "sixc_shops"

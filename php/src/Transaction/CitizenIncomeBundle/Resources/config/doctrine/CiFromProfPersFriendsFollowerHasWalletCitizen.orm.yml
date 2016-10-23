@@ -1,0 +1,23 @@
+Transaction\CitizenIncomeBundle\Entity\CiFromProfPersFriendsFollowerHasWalletCitizen:
+    type: entity
+    table: null
+    repositoryClass: Transaction\CitizenIncomeBundle\Repository\CiFromProfPersFriendsHasWalletCitizenRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        CiFromProfPersFriendsFollowerId:
+            type: integer
+            coloumn: ci_from_prof_pers_friends_follower_id
+        walletCitizenId:
+            type: integer
+            column: wallet_citizen_id
+        amountReceivedWalletCurrency:
+            type: integer
+            column: amount_received_wallet_currency
+        countConnectionProfPersFollowers:
+            type: integer
+            column: count_connection_prof_pers_followers
+    lifecycleCallbacks: {  }

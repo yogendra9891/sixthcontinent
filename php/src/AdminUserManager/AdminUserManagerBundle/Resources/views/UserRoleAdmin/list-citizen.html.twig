@@ -1,0 +1,18 @@
+{# The default template which provides batch and action cells, with the valid colspan computation #}
+{% extends 'SonataAdminBundle:CRUD:list.html.twig' %}
+
+{% block table_body %}
+       <tbody>
+        {% for object in admin.datagrid.results %}
+            <style>
+                table tr.green-color td {background-color: #2BFF5D !important; }
+            </style>
+            <tr>
+                {% include admin.getTemplate('inner_list_row') %}
+            </tr>
+        {% endfor %}
+        
+</ul>
+    </tbody>
+   
+{% endblock %}

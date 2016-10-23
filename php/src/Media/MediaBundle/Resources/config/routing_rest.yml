@@ -1,0 +1,294 @@
+#app/routing_rest.yml
+
+#message :
+# type: rest
+# resource:     "MessageMessageBundle:Message"
+# name_prefix:  api_
+# 
+mediauploads:
+    type: rest
+    pattern: /mediauploads
+    resource: "MediaMediaBundle:Demo"
+    name_prefix: api_
+    requirements:
+        _method:  POST
+listusermedias:
+    type: rest
+    pattern: /listusermedias
+    resource: "MediaMediaBundle:Demo"
+    name_prefix: api_
+    requirements:
+        _method:  POST
+
+searchmedia:
+    type: rest
+    pattern: /searchmedia
+    resource: "MediaMediaBundle:Demo"
+    name_prefix: api_
+    requirements:
+        _method:  POST
+deleteusermedias:
+    type: rest
+    pattern: /deleteusermedias
+    resource: "MediaMediaBundle:Demo"
+    name_prefix: api_
+    requirements:
+        _method:  POST
+editusermedias:
+    type: rest
+    pattern: /editusermedias
+    resource: "MediaMediaBundle:Demo"
+    name_prefix: api_
+    requirements:
+        _method:  POST
+ 
+createuseralbums:
+    type: rest
+    pattern: /createuseralbums
+    resource: "MediaMediaBundle:Demo"
+    name_prefix: api_
+    requirements:
+        _method:  POST
+deleteuseralbums:
+    type: rest
+    pattern: /deleteuseralbums
+    resource: "MediaMediaBundle:Demo"
+    name_prefix: api_
+    requirements:
+        _method:  POST
+listuseralbums:
+    type: rest
+    pattern: /listuseralbums
+    resource: "MediaMediaBundle:Demo"
+    name_prefix: api_
+    requirements:
+        _method:  POST
+viewuseralbums:
+    type: rest
+    pattern: /viewuseralbums
+    resource: "MediaMediaBundle:Demo"
+    name_prefix: api_
+    requirements:
+        _method:  POST
+countmediauseralbums:
+    type: rest
+    pattern: /countmediauseralbums
+    resource: "MediaMediaBundle:Demo"
+    name_prefix: api_
+    requirements:
+        _method:  POST
+deletealbummedias:
+    type: rest
+    pattern: /deletealbummedias
+    resource: "MediaMediaBundle:Demo"
+    name_prefix: api_
+    requirements:
+        _method:  POST
+uploaduserprofileimages:
+    type: rest
+    pattern: /uploaduserprofileimages
+    resource: "MediaMediaBundle:Demo"
+    name_prefix: api_
+    requirements:
+        _method:  POST
+setuserprofileimages:
+    type: rest
+    pattern: /setuserprofileimages
+    resource: "MediaMediaBundle:Demo"
+    name_prefix: api_
+    requirements:
+        _method:  POST    
+uploadcitizenuserprofileimages:
+    type: rest
+    pattern: /uploadcitizenuserprofileimages
+    resource: "MediaMediaBundle:Demo"
+    name_prefix: api_
+    requirements:
+        _method:  POST        
+setcitizenuserprofileimages:
+    type: rest
+    pattern: /setcitizenuserprofileimages
+    resource: "MediaMediaBundle:Demo"
+    name_prefix: api_
+    requirements:
+        _method:  POST 
+uploadbrokeruserprofileimages:
+    type: rest
+    pattern: /uploadbrokeruserprofileimages
+    resource: "MediaMediaBundle:Demo"
+    name_prefix: api_
+    requirements:
+        _method:  POST 
+setbrokeruserprofileimages:
+    type: rest
+    pattern: /setbrokeruserprofileimages
+    resource: "MediaMediaBundle:Demo"
+    name_prefix: api_
+    requirements:
+        _method:  POST         
+setclubprofileimages:
+    type: rest
+    pattern: /setclubprofileimages
+    resource: "MediaMediaBundle:Demo"
+    name_prefix: api_
+    requirements:
+        _method:  POST            
+setusercoverimages:
+    type: rest
+    pattern: /setusercoverimages
+    resource: "MediaMediaBundle:Demo"
+    name_prefix: api_
+    requirements:
+        _method:  POST    
+amazanuploads:
+    type: rest
+    pattern: /amazanuploads
+    resource: "MediaMediaBundle:Demo"
+    name_prefix: api_
+    requirements:
+        _method:  POST  
+        
+removealbumphototaggedusers:
+    type: rest
+    pattern: /removealbumphototaggedusers
+    resource: "MediaMediaBundle:Demo"
+    name_prefix: api_
+    requirements:
+        _method:  POST  
+        
+gettaggedphotos:
+    type: rest
+    pattern: /gettaggedphotos
+    resource: "MediaMediaBundle:Demo"
+    name_prefix: api_
+    requirements:
+        _method:  POST  
+editalbums:
+    type: rest
+    pattern: /editalbums
+    resource: "MediaMediaBundle:Album"
+    name_prefix: api_
+    requirements:
+        _method:  POST 
+getmediacoordinates:
+    type: rest
+    pattern: /getmediacoordinates
+    resource: "MediaMediaBundle:Demo"
+    name_prefix: api_
+    requirements:
+        _method:  POST
+
+#comment on Albums
+
+createalbumcomments:
+    type: rest
+    pattern: /createalbumcomments
+    resource: "MediaMediaBundle:AlbumComment"
+    name_prefix: api_
+    requirements:
+        _method:  POST
+editalbumcomments:
+    type: rest
+    pattern: /editalbumcomments
+    resource: "MediaMediaBundle:AlbumComment"
+    name_prefix: api_
+    requirements:
+        _method:  POST
+albumcommentlists:
+    type: rest
+    pattern: /albumcommentlists
+    resource: "MediaMediaBundle:AlbumComment"
+    name_prefix: api_
+    requirements:
+        _method:  POST
+deletemediacomments:
+    type: rest
+    pattern: /deletemediacomments
+    resource: "MediaMediaBundle:AlbumComment"
+    name_prefix: api_
+    requirements:
+        _method:  POST
+deletecommentmedias:
+    type: rest
+    pattern: /deletecommentmedias
+    resource: "MediaMediaBundle:AlbumComment"
+    name_prefix: api_
+    requirements:
+        _method:  POST
+editmediacomments:
+    type: rest
+    pattern: /editmediacomments
+    resource: "MediaMediaBundle:AlbumComment"
+    name_prefix: api_
+    requirements:
+        _method:  POST
+#add media comment rating
+addmediacommentrates:
+  type: rest
+  pattern: /addmediacommentrates
+  resource: "UtilityRatingBundle:MediaCommentRating"
+  name_prefix: api_
+  
+#edit media comment rating
+editmediacommentrates:
+  type: rest
+  pattern: /editmediacommentrates
+  resource: "UtilityRatingBundle:MediaCommentRating"
+  name_prefix: api_
+
+#remove media comment rating
+deletemediacommentrates:
+  type: rest
+  pattern: /deletemediacommentrates
+  resource: "UtilityRatingBundle:MediaCommentRating"
+  name_prefix: api_
+        
+createalbummediacomments:
+    type: rest
+    pattern: /createalbummediacomments
+    resource: "MediaMediaBundle:AlbumMediaComment"
+    name_prefix: api_
+    requirements:
+        _method:  POST 
+#add media comment rating
+addmediacommentrates:
+  type: rest
+  pattern: /addmediacommentrates
+  resource: "UtilityRatingBundle:MediaCommentRating"
+  name_prefix: api_
+  
+#edit media comment rating
+editmediacommentrates:
+  type: rest
+  pattern: /editmediacommentrates
+  resource: "UtilityRatingBundle:MediaCommentRating"
+  name_prefix: api_
+#media details
+mediadetails:
+    type: rest
+    pattern: /mediadetails
+    resource: "MediaMediaBundle:AlbumMediaComment"
+    name_prefix: api_
+    requirements:
+        _method:  POST
+albummediacommentlists:
+    type: rest
+    pattern: /albummediacommentlists
+    resource: "MediaMediaBundle:AlbumMediaComment"
+    name_prefix: api_
+    requirements:
+        _method:  POST
+deletealbumcommentmedias:
+    type: rest
+    pattern: /deletealbumcommentmedias
+    resource: "MediaMediaBundle:AlbumComment"
+    name_prefix: api_
+    requirements:
+        _method:  POST
+singlephotomediadetails:
+    type: rest
+    pattern: /singlephotomediadetails
+    resource: "MediaMediaBundle:AlbumMediaComment"
+    name_prefix: api_
+    requirements:
+        _method:  POST

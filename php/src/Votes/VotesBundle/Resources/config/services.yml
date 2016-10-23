@@ -1,0 +1,7 @@
+parameters:
+#    votes_votes.example.class: Votes\VotesBundle\Example
+
+services:
+#    votes_votes.example:
+#        class: %votes_votes.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

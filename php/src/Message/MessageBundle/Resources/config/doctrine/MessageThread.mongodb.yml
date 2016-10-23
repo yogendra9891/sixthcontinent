@@ -1,0 +1,23 @@
+Message\MessageBundle\Document\MessageThread:
+    repositoryClass: Message\MessageBundle\Repository\MessageThreadMongoRepository
+    type: document
+    collection: MessageThread
+    fields:
+        id:
+            id: true
+        name:
+            type: string
+        created_by:
+            type: int
+        thread_type:
+            type: string
+        group_members:
+            type: collection
+        delete_by:
+            type: collection
+        created_at:
+            type: date
+            order: desc
+        updated_at:
+            type: date
+

@@ -1,0 +1,28 @@
+#app/routing_rest.yml
+citizenexport:
+    type: rest
+    pattern: /index
+    resource: "ExportManagementBundle:CitizenExport"
+    name_prefix: api_
+    requirements:
+        _methods: POST
+      
+        
+#with version  
+versionmethods:
+    type: rest
+    pattern: /versionmethods
+    prefix: /v1
+    resource: "ExportManagementBundle:CitizenExport"
+    name_prefix: api_1_
+    requirements:
+        _methods: POST
+        
+#without version  
+versionmethods:
+    type: rest
+    pattern: /versionmethods
+    resource: "ExportManagementBundle:CitizenExport"
+    name_prefix: api_
+    requirements:
+        _methods: POST        

@@ -1,0 +1,36 @@
+ {% extends 'SonataAdminBundle::standard_layout.html.twig' %}
+ {% block javascripts %}
+    {{ parent() }}
+    <script>
+        $(document).ready(function(){
+              $('#form_selectall').click(function(){
+            if(this.checked){  
+
+             var total_div = jQuery("input[id^='form']");
+
+             $.each(total_div, function(key, value) {
+
+                this.checked=true;    
+
+             }); 
+           }else{
+
+            var total_div = jQuery("input[id^='form']");
+
+             $.each(total_div, function(key, value) {
+
+                this.checked=false;    
+
+             }); 
+           }
+
+    });
+            
+        })
+      
+    </script>    
+{% endblock %}
+{% block content %}    
+       {{ form(form) }}
+{% endblock %} 
+ 

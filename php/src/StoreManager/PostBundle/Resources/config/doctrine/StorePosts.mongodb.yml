@@ -1,0 +1,59 @@
+StoreManager\PostBundle\Document\StorePosts:
+    repositoryClass: StoreManager\PostBundle\Repository\StorePostsMongoRepository
+    type: document
+    collection: storeposts
+    fields:
+        id:
+            id:  true
+        store_id:
+            type: string
+        store_post_title:
+            type: string
+        store_post_desc:
+            type: string
+        link_type:
+            type: int
+        store_post_author:
+            type: string
+        store_post_created:
+            type: date
+        store_post_updated:
+            type: date
+        store_post_status:
+            type: int
+        vote_count:
+            type: int
+        vote_sum:
+            type: int
+        avg_rating:
+            type: float
+        share_type:
+            type: string
+        store_voting_avg:
+            type: float
+        store_voting_count:
+            type: int
+        customer_voting:
+            type: float
+        transaction_id:
+            type: string
+        invoice_id:
+            type: string
+        rate:
+           embedded: true
+           type: many
+           targetDocument: StoreManager\PostBundle\Document\StorePostsRating
+           cascade: all	
+        tagged_friends:
+            type: collection
+        content_share:
+            type: hash
+        share_object_id:
+            type: string
+        share_object_type:
+            type: string
+
+# php app/console doctrine:mongodb:generate:documents StoreManagerPostBundle
+# Create Document
+# php app/console doctrine:mongodb:generate:repositories StoreManagerPostBundle
+# Create repository

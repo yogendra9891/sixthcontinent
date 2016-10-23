@@ -1,0 +1,40 @@
+parameters:
+    user_name: "aman.jain@daffodilsw.com"
+    password : "123456"
+    client_id: "16_3ofdwe6u02kgg4ock4os4okc4ss4gckc80ccw000kkc8wo4gsc"
+    client_secret: "4mjnllttzpycgss4og8koc40gk8ocskko8kc4888c08wkc4s8g"
+    store_vat: "025121322523047"
+    shop_collection : "sixc_shops"
+    project_search_title : "live user"
+    project_search_description : "can do anything"
+    project_search_not_description : "Not FOund"
+    share_invalid_object_type: clubdddddd
+    share_invalid_object_id: 1495111111
+    #SHOP,CLUB,OFFER,SOCIAL_PROJECT
+    share_valid_object_type: SHOP 
+    share_shop_id: 1495
+    share_club_id: "54aa2a5a1087428810000031"
+    share_offer_id: "558ab373e44b036c4d179c63"
+    share_social_project_id: "558cfd091087420c1000002e"
+    #INTERNAL_SHARE,EXTERNAL_SHARE
+    valid_share_type: "INTERNAL_SHARE"
+    invalid_share_type: "invalid_share_type"
+    #application search in main search bar
+    application_name: carrera 
+    application_bussiness_name: carrera jeans 
+    application_not_found : "Not FOund"
+    #Buy Ecommerce Product
+    buy_ecommerce_product_valid_shop_id: 1495
+    buy_ecommerce_product_invalid_shop_id: 12
+    buy_ecommerce_product_valid_offer_id: "55af6871b96bccee374558f9"
+    buy_ecommerce_product_invalid_offer_id: "23344343"
+    buy_ecommerce_product_blocked_shop_id: "2146"
+    buy_ecommerce_product_shop_id_paypal_not_exist: "2186"
+    buy_ecommerce_product_transaction_id: "55b2173e93553e7e6ca784c0"
+    buy_ecommerce_product_invalid_transaction_type: "test"
+    buy_ecommerce_product_invalid_transaction_id: "2374757"
+    buy_ecommerce_product_valid_transaction_type_success: SUCCESS
+    buy_ecommerce_product_valid_transaction_type_reject: CANCELED
+    buy_ecommerce_product_invalid_transaction_id_for_login_user: "55b1e111fbec7e0c6ec28663"
+    buy_ecommerce_product_confirmed_transaction_id: "55b0dfd993ecfa3104e3598d"
+    buy_ecommerce_product_canceled_transaction_id: "55b0ac154ef0a010054eda42"

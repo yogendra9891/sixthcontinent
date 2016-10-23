@@ -1,0 +1,17 @@
+parameters:
+    paypal_integration.payment_transaction.class: Paypal\PaypalIntegrationBundle\Services\PaymentTransactionService
+    paypal_integration.paypal_transaction_check.class: Paypal\PaypalIntegrationBundle\Services\PaypalTransactionVerifyService
+    buy_ecommerce_product.ecommerce.class: Paypal\PaypalIntegrationBundle\Services\EcommerceProductService
+
+services:
+    paypal_integration.payment_transaction:
+        class: %paypal_integration.payment_transaction.class%
+        arguments: [@doctrine.orm.entity_manager, @doctrine.odm.mongodb.document_manager, @service_container]
+#paypal transaction status check        
+    paypal_integration.paypal_transaction_check:
+        class: %paypal_integration.paypal_transaction_check.class%
+        arguments: [@doctrine.orm.entity_manager, @doctrine.odm.mongodb.document_manager, @service_container]
+#Buy Ecommerce Product Service
+    buy_ecommerce_product.ecommerce:
+        class: %buy_ecommerce_product.ecommerce.class%
+        arguments: [@doctrine.orm.entity_manager, @doctrine.odm.mongodb.document_manager, @service_container]

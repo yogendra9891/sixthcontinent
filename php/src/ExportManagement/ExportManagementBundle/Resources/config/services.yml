@@ -1,0 +1,41 @@
+parameters:
+    export_management.payment_logs.class: ExportManagement\ExportManagementBundle\Services\PaymentLogsService
+    export_management.validate_data.class: ExportManagement\ExportManagementBundle\Services\ValidationService
+    export_management.convert_exported_files.class: ExportManagement\ExportManagementBundle\Services\ConvertExportedFilesService
+    export_management.sales_import_export.class: ExportManagement\ExportManagementBundle\Services\SalesService
+    export_management.purchase_import_export.class: ExportManagement\ExportManagementBundle\Services\PurchaseService
+    export_management.shop_export.class: ExportManagement\ExportManagementBundle\Services\ShopService
+    export_management.all_shop_export.class: ExportManagement\ExportManagementBundle\Services\AllShopService
+    export_management.incassi.class: ExportManagement\ExportManagementBundle\Services\SalesInCassiService
+    
+services:
+    export_management.payment_logs:
+        class: %export_management.payment_logs.class%
+        arguments: [@doctrine.orm.entity_manager]
+    export_management.validate_data:
+        class: %export_management.validate_data.class%
+        arguments: [@doctrine.orm.entity_manager]
+    export_management.convert_exported_files:
+        class: %export_management.convert_exported_files.class%
+        arguments: [@doctrine.orm.entity_manager, @doctrine.odm.mongodb.document_manager, @service_container]  
+    #sales import export service for command
+    export_management.sales_import_export_command_service:
+        class: %export_management.sales_import_export.class%
+        arguments: [@doctrine.orm.entity_manager, @doctrine.odm.mongodb.document_manager, @service_container]
+    #purchase import export service for command
+    export_management.purchase_import_export_command_service:
+        class: %export_management.purchase_import_export.class%
+        arguments: [@doctrine.orm.entity_manager, @doctrine.odm.mongodb.document_manager, @service_container]   
+    #shop export service for command
+    export_management.shop_export_command_service:
+        class: %export_management.shop_export.class%
+        arguments: [@doctrine.orm.entity_manager, @doctrine.odm.mongodb.document_manager, @service_container]
+    #shop export service for command
+    export_management.all_shop_export_command_service:
+        class: %export_management.all_shop_export.class%
+        arguments: [@doctrine.orm.entity_manager, @doctrine.odm.mongodb.document_manager, @service_container]      
+        
+    #sales incassi export service for command
+    export_management.incassi_sale_export_command_service:
+        class: %export_management.incassi.class%
+        arguments: [@doctrine.orm.entity_manager, @doctrine.odm.mongodb.document_manager, @service_container]        

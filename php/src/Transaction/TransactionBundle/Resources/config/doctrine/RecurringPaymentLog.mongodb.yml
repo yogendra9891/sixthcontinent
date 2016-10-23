@@ -1,0 +1,25 @@
+Transaction\TransactionBundle\Document\RecurringPaymentLog:
+    repositoryClass: Transaction\TransactionBundle\Repository\RecurringPaymentLogMongoRepository
+    type: document
+    collection: recurringpaymentlog
+    fields:
+        id:
+            id: true
+        type:
+            type: string
+        shop_obj:
+            type: string
+        shop_id:
+            type: int
+        transaction_obj:
+            type: string
+        description:
+            type: string
+        status:
+            type: int
+        sent:
+            type: int
+        create_at:
+            type: date
+        updated_at:
+            type: date

@@ -1,0 +1,12 @@
+Utility\RequestHandlerBundle\Document\MonologRecordsExtra:
+    repositoryClass: Utility\RequestHandlerBundle\Repository\MonologRecordsExtraMongoRepository
+    type: embeddedDocument
+    collection: monologrecordsextra
+    fields:
+        created_at:
+            type: date
+        
+# php app/console doctrine:mongodb:generate:documents DashboardManagerBundle
+# Create Document
+# php app/console doctrine:mongodb:generate:repositories DashboardManagerBundle
+# Create repository

@@ -1,0 +1,80 @@
+#app/routing_rest.yml
+#v1 for search friends
+searchfriends:
+   type: rest
+   pattern: /searchfriends
+   prefix: /v1
+   resource: "UserManagerSonataUserBundle:RestFriendsV1"
+   name_prefix: api_1_
+   
+#follow a user   
+followusers:
+   type: rest
+   pattern: /followusers
+   prefix: /v1
+   resource: "UserManagerSonataUserBundle:UserFollowV1"
+   name_prefix: api_1_ 
+   
+#check folllows
+checkfollows:
+   type: rest
+   pattern: /checkfollows
+   prefix: /v1
+   resource: "UserManagerSonataUserBundle:UserFollowV1"
+   name_prefix: api_1_
+   
+#unfollow a user
+unfollowusers:
+   type: rest
+   pattern: /unfollowusers
+   prefix: /v1
+   resource: "UserManagerSonataUserBundle:UserFollowV1"
+   name_prefix: api_
+   
+#get follwers user list
+getfollowers:
+   type: rest
+   pattern: /getfollowers
+   prefix: /v1
+   resource: "UserManagerSonataUserBundle:UserFollowV1"
+   name_prefix: api_1_
+#get following users
+getfollowings:
+   type: rest
+   pattern: /getfollowings
+   prefix: /v1
+   resource: "UserManagerSonataUserBundle:UserFollowV1"
+   name_prefix: api_1_
+   
+#login a user
+logins:
+    type: rest
+    pattern: /logins
+    prefix: /v1
+    resource: "UserManagerSonataUserBundle:RestSecurityV1"
+    name_prefix: api_1_
+#View multiprofiles
+viewmultiprofiles:
+    type: rest
+    pattern: /viewmultiprofiles
+    prefix: /v1
+    resource: "UserManagerSonataUserBundle:UserMultiProfileV1"
+    name_prefix: api_1_
+groupalbumlists:
+    type: rest
+    pattern: /groupalbumlists
+    prefix: /v1
+    resource: "UserManagerSonataUserBundle:RestGroupAlbumV1"
+    name_prefix: api_1_
+viewgroupalbums:
+    type: rest
+    pattern: /viewgroupalbums
+    prefix: /v1
+    resource: "UserManagerSonataUserBundle:RestGroupAlbumV1"
+    name_prefix: api_1_
+getusergroups:
+   type: rest
+   pattern: /getusergroups
+   prefix: /v1
+   resource: "UserManagerSonataUserBundle:RestGroupV1"
+   name_prefix: api_1_

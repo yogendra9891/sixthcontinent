@@ -1,0 +1,7 @@
+acme_gift_homepage:
+    path:     /gift
+    defaults: { _controller: AcmeGiftBundle:Gift:index }
+    
+acme_gift_homepage1:
+    path:     /giftclient
+    defaults: { _controller: AcmeGiftBundle:Client:sendgift }

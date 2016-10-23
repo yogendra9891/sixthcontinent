@@ -1,0 +1,19 @@
+PostFeeds\PostFeedsBundle\Document\ShopTagFeeds:
+    repositoryClass: PostFeeds\PostFeedsBundle\Repository\ShopTagFeedsMongoRepository
+    type: embeddedDocument
+    collection: shoptagfeeds
+    fields:
+        id:
+            id:  true
+        shop_info:
+            type: collection	
+        created_at:
+            type: date
+        updated_at:
+            type: date
+        
+           
+# php app/console doctrine:mongodb:generate:documents TestFormBundle
+# Create Document
+# php app/console doctrine:mongodb:generate:repositories TestFormBundle
+# Create repositoryd 

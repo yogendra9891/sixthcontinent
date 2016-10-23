@@ -1,0 +1,45 @@
+Utility\ApplaneIntegrationBundle\Entity\ShopTransactions:
+    type: entity
+    table: null
+    repositoryClass: Utility\ApplaneIntegrationBundle\Repository\ShopTransactionsRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        date:
+            type: datetime
+        shopId:
+            type: bigint
+            column: shop_id
+        userId:
+            type: bigint
+            column: user_id
+        totalTransactionAmount:
+            type: float
+            column: total_transaction_amount
+        payableAmount:
+            type: float
+            column: payable_amount
+        status:
+            type: integer
+        type:
+            type: string
+            length: 255
+        vat:
+            type: float
+        createdAt:
+            type: date
+            column: created_at
+        invoiceId:
+            type: string
+            length: 255
+            column: invoice_id
+        totalPayableAmount:
+            type: float
+            column: total_payable_amount
+        transactionId:
+            type: text
+            column: transaction_id
+    lifecycleCallbacks: {  }

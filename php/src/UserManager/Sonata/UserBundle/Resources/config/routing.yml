@@ -1,0 +1,67 @@
+#import routing version v1 yml file
+V1_User_Route : 
+  resource: "@UserManagerSonataUserBundle/Resources/config/routing_v1.yml"
+  
+user_manager_user_homepage:
+    pattern:  /hello/{name}
+    defaults: { _controller: UserManagerSonataUserBundle:Default:index }
+    
+create_client:
+        pattern:  /webapi/createclient
+        defaults: { _controller: UserManagerSonataUserBundle:CreateClient:createclient }
+        requirements:
+            _method:  POST
+newsletter_track:
+    pattern:  /trackemail/apiweb/{trackid}
+    defaults: { _controller: UserManagerSonataUserBundle:RestFriends:trackemail }
+    
+country_list:
+    pattern:  /webapi/countrylist
+    defaults: { _controller: UserManagerSonataUserBundle:UserMultiProfile:countrylist }
+    
+user_multiprofile:
+    pattern:  /webapi/registermultiprofile
+    defaults: { _controller: UserManagerSonataUserBundle:RestRegistration:registermultiprofile }
+    
+facebook_login:
+    pattern:  /webapi/facebooklogin
+    defaults: { _controller: UserManagerSonataUserBundle:Facebook:facebooklogin }
+    
+map_facebook_user:
+    pattern:  /webapi/mapfacebookuser
+    defaults: { _controller: UserManagerSonataUserBundle:Facebook:mapfacebookuser }
+    
+facebook_register:
+    pattern:  /webapi/facebookregister
+    defaults: { _controller: UserManagerSonataUserBundle:Facebook:facebookregister }
+    
+user_accesstoken:
+    pattern:  /webapi/getaccesstoken
+    defaults: { _controller: UserManagerSonataUserBundle:UserAccesstoken:getaccesstoken }
+
+resend_verification_email:
+    pattern:  /webapi/resendverificationmail
+    defaults: { _controller: UserManagerSonataUserBundle:Verification:resendverificationmail }
+business_category:
+    pattern:  /webapi/getbusinesscategorylist
+    defaults: { _controller: UserManagerSonataUserBundle:UserBusiness:getBusinessCategoryList }
+    
+verify_account:
+    pattern:    /webapi/accountverification
+    defaults:   { _controller: UserManagerSonataUserBundle:Verification:accountverification }
+    
+verify_expiry:
+    pattern:    /webapi/verifyexpiry
+    defaults:   { _controller: UserManagerSonataUserBundle:RestProfile:checkUserVerificationExpiry }
+#check the service calling    
+seller_service:
+    pattern:    /webapi/sellerservice
+    defaults:   { _controller: UserManagerSonataUserBundle:Seller:checkSeller }    
+#seller forget password
+forget_seller_password:
+    pattern:    /webapi/forgetsellerpassword
+    defaults:   { _controller: UserManagerSonataUserBundle:SellerProfile:forgetSellerPassword } 
+#seller reset password
+reset_seller_password:
+    pattern:    /webapi/resetsellerpassword
+    defaults:   { _controller: UserManagerSonataUserBundle:SellerProfile:resetSellerPassword }     

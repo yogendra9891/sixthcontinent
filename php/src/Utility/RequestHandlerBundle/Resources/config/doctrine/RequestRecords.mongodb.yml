@@ -1,0 +1,30 @@
+Utility\RequestHandlerBundle\Document\RequestRecords:
+    repositoryClass: Utility\RequestHandlerBundle\Repository\RequestRecordsMongoRepository
+    type: document
+    collection: requestrecords
+    fields:
+        id:
+            id: true
+        response_code:
+            type: string    
+        page_name:
+            type: string    
+        action_name:
+            type: string
+        request_object:
+            type: string
+        response_object:
+            type: string
+        request_content_type:
+            type: string
+        response_content_type:
+            type: string 
+        header_str:
+            type: string            
+        created_at:
+            type: date
+# php app/console doctrine:mongodb:generate:documents UtilityRequestHandlerBundle
+# Create Document
+# php app/console doctrine:mongodb:generate:repositories UtilityRequestHandlerBundle
+# Create repository
+            

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity repository-class="UserManager\Sonata\UserBundle\Entity\EducationDetailsRepository" name="UserManager\Sonata\UserBundle\Entity\EducationDetails">
+    <id name="id" type="integer" column="id">
+      <generator strategy="AUTO"/>
+    </id>
+    <field name="userId" type="bigint" column="user_id"/>
+    <field name="school" type="string" column="school" length="255"/>
+    <field name="startDate" type="string" column="start_date" length="50" />
+    <field name="endDate" type="string" column="end_date" length="50" />
+    <field name="currentlyAttending" type="boolean" column="currently_attending"/>
+    <field name="degree" type="string" column="degree" length="255"/>
+    <field name="fieldOfStudy" type="string" column="field_of_study" length="255"/>
+    <field name="grade" type="string" column="grade" length="100"/>
+    <field name="activities" type="text" column="activities"/>
+    <field name="description" type="text" column="description"/>
+    <field name="visibility" type="smallint" column="visibility"/>
+    <field name="createdAt" type="datetime" column="created_at"/>
+    <field name="updatedAt" type="datetime" column="updated_at"/>
+  </entity>
+</doctrine-mapping>

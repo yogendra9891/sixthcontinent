@@ -1,0 +1,23 @@
+Utility\MasterDataBundle\Entity\VisibilityCodeByLang:
+    type: entity
+    table: null
+    repositoryClass: Utility\MasterDataBundle\Repository\VisibilityCodeByLangRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        visiblityCode:
+            type: string
+            length: 255
+            column: visiblity_code
+        langCode:
+            type: string
+            length: 255
+            column: lang_code
+        visibilityName:
+            type: string
+            length: 255
+            column: visibility_name
+    lifecycleCallbacks: {  }

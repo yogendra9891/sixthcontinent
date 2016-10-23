@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity repository-class="UserManager\Sonata\UserBundle\Entity\RelativesRepository" name="UserManager\Sonata\UserBundle\Entity\Relatives">
+    <id name="id" type="integer" column="id">
+      <generator strategy="AUTO"/>
+    </id>
+    <field name="userId" type="bigint" column="user_id"/>
+    <field name="relativeId" type="bigint" column="relative_id"/>
+    <field name="relationId" type="integer" column="relation_id" />
+  </entity>
+</doctrine-mapping>

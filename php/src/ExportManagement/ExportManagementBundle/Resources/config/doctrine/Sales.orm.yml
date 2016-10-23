@@ -1,0 +1,39 @@
+ExportManagement\ExportManagementBundle\Entity\Sales:
+    type: entity
+    table: null
+    repositoryClass: ExportManagement\ExportManagementBundle\Repository\SalesRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        progress:
+            type: string
+            length: 255
+        date:
+            type: date
+        causale:
+            type: string
+            length: 255
+        shopId:
+            type: string
+            length: 255
+            column: shop_id
+        code:
+            type: string
+            length: 255
+        description:
+            type: string
+            length: 255
+        description2:
+            type: string
+            length: 255
+        amount:
+            type: float
+        amountvat:
+            type: float
+        createdAt:
+            type: date
+            column: created_at
+    lifecycleCallbacks: {  }

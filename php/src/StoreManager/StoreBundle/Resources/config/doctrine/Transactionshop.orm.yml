@@ -1,0 +1,32 @@
+StoreManager\StoreBundle\Entity\Transactionshop:
+    type: entity
+    table: null
+    repositoryClass: StoreManager\StoreBundle\Entity\TransactionshopRepository
+    indexes:
+        index_userid_Transactionshop:
+            columns: [user_id]
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        userId:
+            type: bigint
+            column: user_id
+        dataMovimento:
+            type: integer
+            column: data_movimento
+        dataJob:
+            type: integer
+            column: data_job
+        totDare:
+            type: bigint
+            column: tot_dare
+        totQuota:
+            type: integer
+            column: tot_quota
+        paymentStatus:
+            type: integer
+            column: payment_status
+    lifecycleCallbacks: {  }

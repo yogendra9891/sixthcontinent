@@ -1,0 +1,14 @@
+SixthContinent\SixthContinentConnectBundle\Entity\Service:
+    type: entity
+    table: null
+    repositoryClass: SixthContinent\SixthContinentConnectBundle\Repository\ServiceRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        name:
+            type: string
+            length: 255
+    lifecycleCallbacks: {  }

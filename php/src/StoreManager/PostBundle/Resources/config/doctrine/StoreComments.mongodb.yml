@@ -1,0 +1,32 @@
+StoreManager\PostBundle\Document\StoreComments:
+    repositoryClass: StoreManager\PostBundle\Repository\StoreCommentsMongoRepository
+    type: document
+    collection: storecomments
+    fields:
+        id:
+            id: true
+        post_id:
+            type: string
+        comment_text:
+            type: string
+        comment_author:
+            type: int
+        comment_created_at:
+            type: date
+        comment_updated_at:
+            type: date
+        status:
+            type: int
+        vote_count:
+            type: int
+        vote_sum:
+            type: int
+        avg_rating:
+            type: float
+        rate:
+           embedded: true
+           type: many
+           targetDocument: StoreManager\PostBundle\Document\StoreCommentRating
+           cascade: all	
+        tagging:
+            type: hash

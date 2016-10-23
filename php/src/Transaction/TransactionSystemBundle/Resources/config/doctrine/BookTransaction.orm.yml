@@ -1,0 +1,40 @@
+Transaction\TransactionSystemBundle\Entity\BookTransaction:
+    type: entity
+    table: BookTransaction
+    repositoryClass: Transaction\TransactionSystemBundle\Repository\BookTransactionRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        status:
+            type: integer
+        timeInitH:
+            type: datetime
+            column: time_init_h
+        timeUpdateStatusH:
+            type: datetime
+            column: time_update_status_h
+            nullable: TRUE
+        timeInit:
+            type: integer
+            column: time_init
+        timeUpdateStatus:
+            type: integer
+            column: time_update_status
+            nullable: TRUE
+        buyerId:
+            type: integer
+            column: buyer_id
+        sellerId:
+            type: integer
+            column: seller_id
+        transactionId:
+            type: integer
+            column: transaction_id
+            nullable: TRUE
+        withCredit:
+            type: integer
+            column: with_credit
+    lifecycleCallbacks: {  }

@@ -1,0 +1,7 @@
+parameters:
+#    payment_payment_distribution.example.class: Payment\PaymentDistributionBundle\Example
+
+services:
+#    payment_payment_distribution.example:
+#        class: %payment_payment_distribution.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

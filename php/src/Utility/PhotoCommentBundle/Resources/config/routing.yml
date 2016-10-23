@@ -1,0 +1,3 @@
+photo_comment_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: PhotoCommentBundle:Default:index }

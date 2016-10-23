@@ -1,0 +1,57 @@
+Acme\GiftBundle\Entity\Movimen:
+    type: entity
+    table: null
+    repositoryClass: Acme\GiftBundle\Repository\MovimenRepository
+    indexes:
+        index_IDCARD_Movimen:
+            columns: [IDCARD]
+        index_IDPDV_Movimen:
+            columns: [IDPDV]
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        iDMOVIMENTO:
+            type: bigint
+            column: IDMOVIMENTO
+            unique: true
+        iDCARD:
+            type: bigint
+            column: IDCARD
+        iDPDV:
+            type: string
+            length: 255
+            column: IDPDV
+        iMPORTODIGITATO:
+            type: bigint
+            column: IMPORTODIGITATO
+        cREDITOSTORNATO:
+            type: bigint
+            column: CREDITOSTORNATO
+        dATA:
+            type: datetime
+            column: DATA
+        rCUTI:
+            type: bigint
+            column: RCUTI
+        sHUTI:
+            type: bigint
+            column: SHUTI
+        pSUTI:
+            type: bigint
+            column: PSUTI
+        gCUTI:
+            type: bigint
+            column: GCUTI
+        gCRIM:
+            type: bigint
+            column: GCRIM
+        mOUTI:
+            type: bigint
+            column: MOUTI    
+    uniqueConstraints:
+      search_idx:
+         columns: [ IDMOVIMENTO ]      
+    lifecycleCallbacks: {  }

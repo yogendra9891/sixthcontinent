@@ -1,0 +1,14 @@
+#list customer reviews
+listcustomersreviews:
+    type: rest
+    pattern: /listcustomersreviews
+    prefix: /v1
+    resource: "StoreManagerPostBundle:PostV1"
+    name_prefix: api_1_
+#list store comments
+liststorecomments:
+   type: rest
+   pattern: /liststorecomments
+   prefix: /v1
+   resource: "StoreManagerPostBundle:StoreCommentsV1"
+   name_prefix: api_1_

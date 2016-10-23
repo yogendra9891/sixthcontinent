@@ -1,0 +1,5 @@
+#acme.gift.block.news_letter:
+#    class: Acme\GiftBundle\Block\NewsLetterBlockService
+#    arguments: [ "acme.gift.block.news_letter", @templating ]
+#    tags:
+#        - { name: sonata.block }

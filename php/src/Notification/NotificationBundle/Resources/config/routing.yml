@@ -1,0 +1,11 @@
+n_manager_notification_homepage:
+    pattern:  /hello/{name}
+    defaults: { _controller: NManagerNotificationBundle:Default:index }
+
+n_manager_notification_sendmessage:
+    pattern:  /send/{notification_type}
+    defaults: { _controller: NManagerNotificationBundle:Manager:callManager }
+
+pushfeedbacks:
+    pattern:  /webapi/pushfeedbacks
+    defaults: { _controller: NManagerNotificationBundle:Mobiledevice:pushfeedbacks }

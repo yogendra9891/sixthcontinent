@@ -1,0 +1,28 @@
+Utility\MasterDataBundle\Entity\LanguageCode:
+    type: entity
+    table: null
+    repositoryClass: Utility\MasterDataBundle\Repository\LanguageCodeRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        languageName:
+            type: string
+            length: 255
+            column: language_name
+        languageCode:
+            type: string
+            length: 255
+            column: language_code
+        status:
+            type: boolean
+        image:
+            type: string
+            length: 255
+        imageThumb:
+            type: string
+            length: 255
+            column: image_thumb
+    lifecycleCallbacks: {  }

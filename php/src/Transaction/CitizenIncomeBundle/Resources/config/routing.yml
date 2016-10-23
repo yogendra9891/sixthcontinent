@@ -1,0 +1,32 @@
+citizen_income_homepage:
+    path:     /hello_4/{name}
+    defaults: { _controller: CitizenIncomeBundle:Default:index }
+citizen_income_redistribution_multiple_users:
+    path:     /redistribution/{type}
+    defaults: { _controller: CitizenIncomeBundle:Redistribution:index}
+citizen_income_redistribution_single_users:
+    path:     /redistribution/{type}/{sixc_transaction_id}
+    defaults: { _controller: CitizenIncomeBundle:Redistribution:index}
+pay_recurring_charge_sixth_continent:
+    path:     /payrecurring/{id_transaction}
+    defaults: { _controller: CitizenIncomeBundle:Redistribution:payRecurring}
+send_notification_test:
+    path:     /sendnotificationtesttrs
+    defaults: { _controller: CitizenIncomeBundle:Redistribution:testNotification}
+start_redistribution_all_nation_manuale:
+    path:     /redistribuzione/manuale
+    defaults: { _controller: CitizenIncomeBundle:Redistribution:redistribuateToAllCitizen}
+    
+start_make_some_payment:
+    path:     /take/money
+    defaults: { _controller: CitizenIncomeBundle:Redistribution:makePayments}
+    
+test_add_amilon_to_wallet:
+    path:     /add/amilon
+    defaults: { _controller: CitizenIncomeBundle:Redistribution:addAmilon}
+test_get_amilonurl:
+    path:     /get/amilonurl
+    defaults: { _controller: CitizenIncomeBundle:Redistribution:getAmilonUrl}
+test_upd_trs:
+    path:     /get/updtrs
+    defaults: { _controller: CitizenIncomeBundle:Redistribution:updateTrs}

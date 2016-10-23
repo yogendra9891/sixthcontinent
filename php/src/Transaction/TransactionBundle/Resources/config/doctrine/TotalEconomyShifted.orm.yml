@@ -1,0 +1,17 @@
+Transaction\TransactionBundle\Entity\TotalEconomyShifted:
+    type: entity
+    table: null
+    repositoryClass: Transaction\TransactionBundle\Entity\TotalEconomyShiftedRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        economyShifted:
+            type: bigint
+            column: economy_shifted
+        updatedAt:
+            type: datetime
+            column: updated_at
+    lifecycleCallbacks: {  }

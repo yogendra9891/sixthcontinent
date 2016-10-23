@@ -1,0 +1,15 @@
+parameters:
+    utility_security.getuserid.class: Utility\SecurityBundle\Services\GetLoginUserIdService
+
+services:
+    utility_security.getuserid:
+        class: %utility_security.getuserid.class%
+        arguments: [@doctrine.orm.entity_manager, @doctrine.odm.mongodb.document_manager, @service_container]
+        services:
+    utilitysecurity.tokens.action_listener:
+        class: Utility\SecurityBundle\EventListener\TokenListener
+        arguments: [ @doctrine.orm.entity_manager  ] 
+        tags:
+            - { name: kernel.event_listener, event: kernel.controller, method: onKernelController }
+        
+    

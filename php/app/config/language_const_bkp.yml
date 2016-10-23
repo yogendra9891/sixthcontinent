@@ -1,0 +1,352 @@
+﻿# This file is auto-generated during the composer install
+parameters:
+    en:
+      #Friend Request
+      SENT_FRIEND_REQUEST_SUBJECT: New friend request
+      FRIEND_REQUEST_SENT_BODY: %s has sent you a friend request.
+      FRIEND_REQUEST_ACCEPTED_SUBJECT: Friend request for approval
+      FRIEND_REQUEST_ACCEPTED_BODY: %s has accepted your friend request.
+      #Club
+      CLUB_PUBLIC_JOIN_REQUEST_SUBJECT: Club Join Request
+      CLUB_PUBLIC_JOIN_REQUEST_BODY: %s has invited you to join the club "%s".
+      #public club
+      CLUB_PUBLIC_JOIN_ACCEPT_SUBJECT: Join Club Approval
+      CLUB_PUBLIC_JOIN_ACCEPT_BODY: %s has accepted the requested club %s
+      
+      CLUB_PUBLIC_JOIN_REJECT_SUBJECT: Join Club Rejection
+      CLUB_PUBLIC_JOIN_REJECT_BODY: %s has rejected the requested club %s
+      #private club  
+      CLUB_PRIVATE_JOIN_REQUEST_SUBJECT: Club Join Request
+      CLUB_PRIVATE_JOIN_REQUEST_BODY: %s has invited you to join the club %s
+      
+      CLUB_PRIVATE_JOIN_ACCEPT_SUBJECT: Join Club Approval
+      CLUB_PRIVATE_JOIN_ACCEPT_BODY: %s has accepted the requested club %s
+      
+      CLUB_PRIVATE_JOIN_REJECT_SUBJECT: Join Club Rejection
+      CLUB_PRIVATE_JOIN_REJECT_BODY: %s has rejected the requested club %s
+      
+      #store
+      STORE_JOIN_REQUEST_SUBJECT: Shop Invitation
+      STORE_JOIN_REQUEST_BODY: %s has invited you to join the shop %s
+      STORE_REJECT_REQUEST_SUBJECT: Shop Join Approval
+      STORE_REJECT_REQUEST_BODY: %s rejected the request of the shop %s
+      STORE_ACCEPT_REQUEST_SUBJECT: Shop Join Approval
+      STORE_ACCEPT_REQUEST_BODY: %s has accepted the request of shop %s
+      
+      #Registration Welcome Mail  
+      REGISTRATION_WELCOME_MAIL_SUBJECT: SixthContinent Registration
+      REGISTRATION_WELCOME_MAIL_BODY: Hello % s <br /> <br /> Welcome to SixthContinent . You are registered successfully with username % s
+      
+      #Forget Password
+      FORGET_PASSWORD_MAIL_SUBJECT: SixthContinent ForgetPassword
+      FORGET_PASSWORD_MAIL_BODY: Hello % s <br /> Here's the code to be able to change your password % s Click the link Click here Or copy the following link % s will be redirected on the page to change your password <br /> <br /> Hello from Sixthcontinent
+      
+      #Billing circle Email subject
+      BILLING_CIRCLE_REGISTRATION_SUBJECT: Shop Notification
+   
+      #Send notification if shop is registerd before 8 Feb and not added the credit card.
+      BILLING_CIRCLE_REGISTRATION_BEFORE_8_FEB_MAIL_BODY: You need to add the credit card for your shop. Please add the credit card, else your shop will be deactivated.
+      
+      #Send notification if shop is registerd between 8 Feb and 12 Nov and not added the credit card.
+      BILLING_CIRCLE_REGISTRATION_BETWEEN_8FEB_12NOV_NO_CC_MAIL_BODY: You need to add the credit card for your shop. Please add the credit card to get uninterrupted service, else your shop will be deactivated.
+      
+      #Send notification if shop is registerd between 8 Feb and 12 Nov and revenue is less than 200 euro and not paid the registration fee.
+      BILLING_CIRCLE_REGISTRATION_BETWEEN_8FEB_12NOV_BELOW200_NO_REG_MAIL_BODY: You need to pay registration fee for your shop. Please pay the registration fee, else your shop will be deactivated.
+      
+      #Send notification if shop is registerd between 8 Feb and 12 Nov and revenue is more than 200 euro and not paid the registration fee.
+      BILLING_CIRCLE_REGISTRATION_BETWEEN_8FEB_12NOV_ABOVE200_NO_REG_MAIL_BODY: Congratulation, Your shop has crossed 200 Euro. Please pay registration fee for your shop, else your shop will be deactivated.
+      
+      #Send notification if shop is registerd between 8 Feb and 12 Nov and revenue is more than 300 euro and not paid the registration fee.
+      BILLING_CIRCLE_REGISTRATION_BETWEEN_8FEB_12NOV_ABOVE300_NO_REG_MAIL_BODY: Congratulation, Your shop has crossed 300 Euro. It is mandatory to pay registration fee for your shop, else your shop will be deactivated.
+      
+      #Send notification if shop is registerd after 12 Nov and revenue is less than 100 euro and not paid the registration fee.
+      BILLING_CIRCLE_REGISTRATION_AFTER_12NOV_BELOW_100_NO_REG_MAIL_BODY: You need to pay registration fee for your shop. Please pay the registration fee, else your shop will be deactivated.
+      
+      #Send notification if shop is registerd after 12 Nov and revenue is more than 100 euro and not paid the registration fee.
+      BILLING_CIRCLE_REGISTRATION_AFTER_12NOV_ABOVE_100_NO_REG_MAIL_BODY: Congratulation, Your shop has crossed 100 Euro. Please pay registration fee for your shop, else your shop will be deactivated.
+      
+      #Send notification if shop is registerd after 12 Nov and revenue is more than 200 euro and not paid the registration fee.
+      BILLING_CIRCLE_REGISTRATION_AFTER_12NOV_ABOVE_200_NO_REG_MAIL_BODY: Congratulation, Your shop has crossed 200 Euro. It is mandatory to pay registration fee for your shop, else your shop will be deactivated.
+      
+      #Send notification if shop has not added the credit card.
+      BILLING_CIRCLE_NO_CC_MAIL_BODY: Please enter his credit card in order to maintain active profile of his shop on SixthContinent.
+      
+      #Send notification if shop has pending payment.
+      BILLING_CIRCLE_PENDING_PAYMENT_MAIL_BODY: Please enter his credit card in order to maintain active profile of his shop on SixthContinent .
+      
+      CLICK_HERE: Click here
+      
+      MESSAGE_DETAIL: to see the details
+      
+      VIEW_SHOP: view details
+      
+      #mail text to go to the login page
+      LOGIN_TEXT: for the login
+      
+      #mail text for forget password
+      FORGET_PASSWORD: To Forget password
+      
+      #ankit 
+      PUSH_LINK_LABEL: view details
+      SHOP_DP_SUBJECT: Discount Position
+      SHOP_DP_BODY: Congratulation, A Discount position of %s€ has been open on your shop
+      SHOP_MAIL_TEXT :
+      SHOP_DP_PUSH_SUBJECT: Discount Position
+      SHOP_DP_PUSH_BODY: Congratulation, A Discount position of %s€ has been open on your shop
+      
+      USER_DP_SUBJECT: Discount Position
+      USER_DP_BODY: Congratulations!<br> The shop %s has accepted your invitation to join in SixthContinent.
+      USER_SHOP_PERCENT : 1%
+      USER_MAIL_TEXT : The shop %s has accepted your invitation to join in SixthContinent.<br><br><b> Congratulations! </b><br><br> - You have received a prize of €%s to spend at the stores with "Press" active, look for those around you via your mobile app.<br><br>- From today, you will receive %s of all sales of the store %s users SixthContinent.
+      USER_DP_PUSH_SUBJECT: Discount Position
+      USER_DP_PUSH_BODY: Congratulation, %s has given you a discount position of %s€
+      
+      USER_SHOT_SUBJECT: Shot assignment
+      USER_SHOT_BODY: Congratulations! <br> You have received a gift from the store %s
+      SHOT_MAIL_TEXT : You have received a voucher for € %s to spend at the shop %s. 
+      USER_SHOT_PUSH_SUBJECT: Shot assignment
+      USER_SHOT_PUSH_BODY: Congratulation, A shot of %s€ has been given to you by %s
+      
+      #sunil
+      PAYMENT_SUCCESS_SUBJECT: Payment success
+      PAYMENT_SUCCESS_BODY: Payment has been sucessfully done for shop '%s'
+      PUSH_PAYMENT_SUCCESS_TITLE: Payment success
+      PUSH_PAYMENT_SUCCESS_BODY: Payment has been sucessfully done for '%s'
+      
+      SHOP_ACTIVE_SUBJECT: Activation Profile Shop
+      SHOP_ACTIVE_BODY: The shop '%s' has been successfully activated.
+      PUSH_SHOP_ACTIVE_TITLE: Activation Profile Shop
+      PUSH_SHOP_ACTIVE_BODY: The shop '%s' has been successfully activated.
+      
+      SHOP_INACTIVE_SUBJECT: "Warning: disabled services"
+      SHOP_INACTIVE_BODY: We regret to inform you that the services to the store %s were suspended for an administrative problem.
+      SHOP_INACTIVE_LINK:  Services to the store %s were suspended for an administrative problem,
+      SHOP_INACTIVE_CLICK_HERE: %s to see the details and reactivate the services.
+      
+      PUSH_SHOP_INACTIVE_TITLE: "Warning: disabled services"
+      PUSH_SHOP_INACTIVE_BODY: We regret to inform you that the services to the store %s were suspended for an administrative problem.
+      
+      PAYMENT_FAILURE_SUBJECT: There is a problem with your payment
+      PAYMENT_FAILURE_BODY: There is a problem with your payment
+      PAYMENT_FAILURE_LINK:  There is a problem with your payment<br><br><b>Because the payment was declined ?</b><br>Payments can be canceled for a number of reasons. Here are the most common:<br>1. Do not have enough credit on the card or account. Check the availability of sufficient credit and try again.<br>2. The data entered is incorrect. Verify that the data is correct and try again.<br>3. This payment method is currently not available.
+      PAYMENT_FAILURE_CLICK_HERE: %s to see the details and make the payment.
+      
+      PUSH_PAYMENT_FAILURE_TITLE: There is a problem with your payment
+      PUSH_PAYMENT_FAILURE_BODY: There is a problem with your payment
+      
+      PAYMENT_NOTIFICATION_SUBJECT: Pending payment
+      PAYMENT_NOTIFICATION_BODY: Congratulations! You <br> sales of over € 200 to Citizens SixthContinent.
+      PAYMENT_NOTIFICATION_LINK: Your store% s <br> made sales of over € 200 to Citizens SixthContinent. <br> To continue selling through SixthContinent <br> make payment of € 99 (+ VAT), once and for always, Buy, so you can continue to use the services SixthContinent to increase your profits.
+      PUSH_PAYMENT_NOTIFICATION_TITLE: Pending payment
+      PUSH_PAYMENT_NOTIFICATION_BODY: We regret to inform you that you need to pay your pending payment for '%s' shop
+      
+      MESSAGE_SUBJECT: You have received a new private message 
+      MESSAGE_BODY:  %s, has sent you a private message
+      MESSAGE_LINK:  %s has sent you a private message,
+      MESSAGE_CLICK_HERE: %s to read it.
+      
+      AFFILIATION_INVITATION_SUBJECT: %s invited you on SixthContinent
+      AFFILIATION_INVITATION_BODY:  %s invited you on SixthContinent
+      AFFILIATION_INVITATION_LINK:  Try Now SixthContinent.<br><br>While You're Connected With || World.<br><br>Get Money All Day for your purchases.
+      
+      AFFILIATION_INVITATION_SUBJECT_SHOP: Invitation to SixthContinent
+      AFFILIATION_INVITATION_BODY_SHOP:  %s Invited Your Shop on SixthContinent
+      AFFILIATION_INVITATION_LINK_SHOP:  Try Now SixthContinent.<br><br> Affiliate For Free Your Shop.<br>You Get the 100%, Your Customers Pay the 50%. 
+
+      
+      STORE_CONTRACT_BODY: shop contract description in english goes here.
+      STORE_CONTRACT_SUBJECT: shop contract subject in english goes here.
+      
+      SHOP_AFFILIATION_ACTIVE_SUBJECT: Activation Profile Shop
+      SHOP_AFFILIATION_ACTIVE_BODY: Congratulations! The shop '%s' has been successfully activated!<br>Attached to this email you have the Affiliation Contract.
+      SHOP_AFFILIATION_ACTIVE_TEXT: In your Shop is now available a €%s Prize to the SixthContinent Citizens.<br><br>20 Citizens around you have received a €%s nominal Coupon spendable only in your Shop!<br><br>You are going to receive an email with a short user guide that explains how to make the transactions, by computer with the Web app SixthContinent, or through the mobile app that you can download and install on your smartphone Android or IOS.<br><br>
+      SHOP_AFFILIATION_ACTIVE_LINK_TEXT: to confirm your email and complete the registration.
+
+      #lokesh tagging
+      YOU_GOT_TAGGED_IN_POST: %s tagged you in a post
+      FRIEND_TAGGING_IN_POST_MAIL_TEXT: %s tagged you in a post
+      FRIEND_TAGGING_IN_POST_BODY: %s tagged you in a post
+      
+      YOU_GOT_TAGGED_IN_PHOTO: %s tagged you in a photo
+      FRIEND_TAGGING_IN_PHOTO_MAIL_TEXT: %s tagged you in a photo
+      FRIEND_TAGGING_IN_PHOTO_BODY: %s tagged you in a photo
+      
+    it:
+      CLICK_HERE: Clicca qui
+      MESSAGE_DETAIL: per vedere i dettagli
+      #Friend Request
+      SENT_FRIEND_REQUEST_SUBJECT: Nuova Richiesta di Amicizia
+      FRIEND_REQUEST_SENT_BODY: %s ti ha inviato una richiesta di amicizia
+      FRIEND_REQUEST_MAIL_TEXT: %s ti ha inviato una richiesta di amicizia,
+      FRIEND_REQUEST_ACCEPTED_SUBJECT: Richiesta di amicizia accettata
+      FRIEND_REQUEST_ACCEPTED_BODY: %s ha accettato la tua richiesta di amicizia
+      FRIEND_REQUEST_ACCEPTED_MAIL_TEXT: %s ha accettato la tua richiesta di amicizia,
+      #Club
+      #public club
+      CLUB_PUBLIC_JOIN_REQUEST_SUBJECT: Invito di adesione al Club
+      CLUB_PUBLIC_JOIN_REQUEST_BODY: %s ti ha invitato a diventare membro del Club %s.
+      CLUB_PUBLIC_JOIN_REQUEST_TEXT: %s ti ha invitato a diventare membro del Club %s,
+      
+      CLUB_PUBLIC_JOIN_ACCEPT_SUBJECT:  Approvazione Invito a Club
+      CLUB_PUBLIC_JOIN_ACCEPT_BODY: %s ha accettato l’invito al Club %s
+      CLUB_PUBLIC_JOIN_ACCEPT_TEXT: %s ha accettato l’invito al Club %s,
+      
+      CLUB_PUBLIC_JOIN_REJECT_SUBJECT: Invito al Club rifiutato
+      CLUB_PUBLIC_JOIN_REJECT_BODY: %s ha rifiutato l’invito al Club %s
+      CLUB_PUBLIC_JOIN_REJECT_TEXT: %s ha rifiutato l’invito al Club %s,
+      #private club
+      CLUB_PRIVATE_JOIN_REQUEST_SUBJECT: Invito di adesione al Club Privato
+      CLUB_PRIVATE_JOIN_REQUEST_BODY: %s ti ha invitato a diventare membro del Club Privato %s
+      CLUB_PRIVATE_JOIN_REQUEST_TEXT: %s ti ha invitato a diventare membro del Club Privato %s,
+      
+      CLUB_PRIVATE_JOIN_ACCEPT_SUBJECT: Approvazione Invito a Club
+      CLUB_PRIVATE_JOIN_ACCEPT_BODY: %s ha accettato l’invito al Club %s
+      CLUB_PRIVATE_JOIN_ACCEPT_TEXT: %s ha accettato l’invito al Club %s,
+      
+      CLUB_PRIVATE_JOIN_REJECT_SUBJECT: Invito al Club rifiutato
+      CLUB_PRIVATE_JOIN_REJECT_BODY: %s ha rifiutato l’invito al Club %s
+      CLUB_PRIVATE_JOIN_REJECT_TEXT: %s ha rifiutato l’invito al Club %s,
+      
+      #store
+      STORE_JOIN_REQUEST_SUBJECT: Invito a seguire un Negozio
+      STORE_JOIN_REQUEST_BODY: %s ti ha inviato a seguire il negozio %s
+      STORE_JOIN_REQUEST_TEXT: %s ti ha inviato a seguire il negozio %s
+      STORE_REJECT_REQUEST_SUBJECT: Invito a seguire un negozio rifiutato
+      STORE_REJECT_REQUEST_BODY: %s ha rifiutato l’invito a seguire il negozio %s
+      STORE_REJECT_REQUEST_TEXT: %s ha rifiutato l’invito a seguire il negozio %s,
+      STORE_ACCEPT_REQUEST_SUBJECT: Approvazione a seguire un Negozio
+      STORE_ACCEPT_REQUEST_BODY: %s ha accettato di seguire il negozio %s
+      STORE_ACCEPT_REQUEST_TEXT: %s ha accettato la tua richiesta di seguire il negozio %s,
+    
+      #ankit 
+      PUSH_LINK_LABEL: vedere i dettagli
+      SHOP_DP_SUBJECT: Posizione Sconto
+      SHOP_DP_BODY: Complimenti! <br> Nel suo negozio è adesso attiva una Posizione Sconto di €%s!
+      SHOP_MAIL_TEXT : 
+      SHOP_DP_PUSH_SUBJECT: Posizione Sconto
+      SHOP_DP_PUSH_BODY: Complimenti! Nel suo negozio è adesso attiva una Posizione Sconto di €%s!
+      
+      USER_DP_SUBJECT: Posizione Sconto
+      USER_DP_BODY: Congratulazioni !<br>Il negozio %s ha accettato il tuo invito ad affiliarsi a SixthContinent.
+      USER_MAIL_TEXT : Il negozio %s ha accettato il tuo invito ad affiliarsi a SixthContinent.<br><br><b> Complimenti!</b><br><br> - Hai ricevuto un Premio di € %s da spendere presso i negozi con “Premi�? attivi, cerca quelli intorno a te tramite la tua app mobile.<br><br>- Da oggi, riceverai l’ %s di tutte le vendite del negozio %s agli utenti SixthContinent.
+      USER_SHOP_PERCENT : 1%
+      USER_DP_PUSH_SUBJECT: Posizione Sconto
+      USER_DP_PUSH_BODY: Congratulazioni! Il negozio %s si è attivato e hai ottenuto l’apertura di una Posizione Sconto di €%s!
+      
+      USER_SHOT_SUBJECT: Shot!
+      USER_SHOT_BODY: Congratulazioni !<br>Hai ricevuto un regalo dal negozio %s
+      SHOT_MAIL_TEXT : Hai ricevuto un Coupon di €%s da spendere presso il negozio %s. 
+      USER_SHOT_PUSH_SUBJECT: Shot!
+      USER_SHOT_PUSH_BODY: Congratulazioni! Hai ricevuto uno Shot di €%s dal negozio %s!
+
+      #Registration Welcome Mail  
+      REGISTRATION_WELCOME_MAIL_SUBJECT: Benvenuto su SixthContinent
+      REGISTRATION_WELCOME_MAIL_BODY: %s, Benvenuto su SixthContinent.<br />La tua registrazione è avvenuta con successo.
+      REGISTRATION_WELCOME_MAIL_BODY_CENTER: La tua registrazione a SixthContinent è avvenuta con successo,<br /><br />%s per iniziare.
+      
+      #Forget Password
+      FORGET_PASSWORD_MAIL_SUBJECT: Recupero Password SixthContinent
+      FORGET_PASSWORD_MAIL_FOOTER_BODY: <b>SixthContinent, Servizio Cambia Password.</b><br /><br />%s per cambiare la password, <br /><br />Oppure copia il seguente url nel tuo browser e segui la procedura %s
+      FORGET_PASSWORD_SUPPORT_MSG: Assistenza SixthContinent - Italia
+      FORGET_PASSWORD_MAIL_HEADER_BODY: Abbiamo ricevuto la richiesta di cambio password per il tuo profilo SixthContinent.
+      #Billing circle Email subject
+      BILLING_CIRCLE_REGISTRATION_SUBJECT: Notifica al Negozio
+   
+      #Send notification if shop is registerd before 8 Feb and not added the credit card.
+      BILLING_CIRCLE_REGISTRATION_BEFORE_8_FEB_MAIL_BODY: E’ necessario inserire la carta di credito per il suo negozio al fine di poter mantenere attivo il profilo della sua attività.
+      
+      #Send notification if shop is registerd between 8 Feb and 12 Nov and not added the credit card.
+      BILLING_CIRCLE_REGISTRATION_BETWEEN_8FEB_12NOV_NO_CC_MAIL_BODY: La invitiamo a inserire la sua carta di credito per poter mantenere attivo il profilo del suo negozio su SixthContinent.
+      
+      #Send notification if shop is registerd between 8 Feb and 12 Nov and revenue is less than 200 euro and not paid the registration fee.
+      BILLING_CIRCLE_REGISTRATION_BETWEEN_8FEB_12NOV_BELOW200_NO_REG_MAIL_BODY: E’ necessario inserire la carta di credito per il suo negozio al fine di poter mantenere attivo il profilo della sua attività.
+      
+      #Send notification if shop is registerd between 8 Feb and 12 Nov and revenue is more than 200 euro and not paid the registration fee.
+      BILLING_CIRCLE_REGISTRATION_BETWEEN_8FEB_12NOV_ABOVE200_NO_REG_MAIL_BODY: Congratulazioni!<br />La sua attività ha superato i €200 di fatturato tramite SixthContinent. Le ricordiamo di inserire la sua carta di credito e di pagare la quota di registrazione per mantenere attivo il profilo della sua attività.
+      
+      #Send notification if shop is registerd between 8 Feb and 12 Nov and revenue is more than 300 euro and not paid the registration fee.
+      BILLING_CIRCLE_REGISTRATION_BETWEEN_8FEB_12NOV_ABOVE300_NO_REG_MAIL_BODY: Congratulazioni!<br />La sua attività ha raggiunto i €300 di fatturato tramite SixthContinent. Per mantenere attivo il profilo della sua attività è necessario inserire la carta di credito al fine di poter pagare la quota di registrazione e poter continuare la sua attività su SixthContinent.
+      
+      #Send notification if shop is registerd after 12 Nov and revenue is less than 100 euro and not paid the registration fee.
+      BILLING_CIRCLE_REGISTRATION_AFTER_12NOV_BELOW_100_NO_REG_MAIL_BODY: E’ necessario inserire la carta di credito per il suo negozio al fine di poter mantenere attivo il profilo della sua attività.
+      
+      #Send notification if shop is registerd after 12 Nov and revenue is more than 100 euro and not paid the registration fee.
+      BILLING_CIRCLE_REGISTRATION_AFTER_12NOV_ABOVE_100_NO_REG_MAIL_BODY: Congratulazioni!<br />La sua attività ha superato i €100 di fatturato tramite SixthContinent. La invitiamo a inserire la sua carta di credito e a pagare la quota di registrazione al fine di mantenere attivo il profilo della sua attività.
+      
+      #Send notification if shop is registerd after 12 Nov and revenue is more than 200 euro and not paid the registration fee.
+      BILLING_CIRCLE_REGISTRATION_AFTER_12NOV_ABOVE_200_NO_REG_MAIL_BODY: Congratulazioni!<br />La sua attività ha superato i €200 di fatturato tramite SixthContinent. Le ricordiamo di inserire la sua carta di credito e di pagare la quota di registrazione per mantenere attivo il profilo della sua attività.
+      
+      #Send notification if shop has not added the credit card.
+      BILLING_CIRCLE_NO_CC_MAIL_BODY: La invitiamo a inserire la sua carta di credito per poter mantenere attivo il profilo del suo negozio su SixthContinent.
+      
+      VIEW_SHOP: vedere i dettagli
+      
+      #mail text to go to the login page
+    
+      LOGIN_TEXT: per iniziare
+      
+      #mail text for forget password
+      FORGET_PASSWORD: Per cambiare la password
+      #sunil
+      PAYMENT_SUCCESS_SUBJECT: Pagamento avvenuto con successo
+      PAYMENT_SUCCESS_BODY: Il pagamento per il negozio '%s' è avvenuto con successo
+      PUSH_PAYMENT_SUCCESS_TITLE: Il pagamento è avvenuto con successo
+      PUSH_PAYMENT_SUCCESS_BODY: Il Pagamento per il negozio '%s' è avvenuto con successo
+      
+      SHOP_ACTIVE_SUBJECT: Attivazione Profilo Negozio
+      SHOP_ACTIVE_BODY: Il negozio '%s' è stato attivato correttamente.
+      PUSH_SHOP_ACTIVE_TITLE: Attivazione Profilo Negozio
+      PUSH_SHOP_ACTIVE_BODY: Il negozio '%s' è stato attivato correttamente.
+      
+      SHOP_INACTIVE_SUBJECT: "Attenzione: servizi disattivati."
+      SHOP_INACTIVE_BODY: Siamo spiacenti di informarla che i servizi al negozio %s sono stati sospesi per un problema amministrativo.
+      SHOP_INACTIVE_LINK:  I servizi al negozio %s sono stati sospesi per un problema amministrativo,
+      SHOP_INACTIVE_CLICK_HERE: %s per vedere i dettagli e riattivare i servizi.
+      
+      PUSH_SHOP_INACTIVE_TITLE: "Attenzione: servizi disattivati."
+      PUSH_SHOP_INACTIVE_BODY: Siamo spiacenti di informarla che i servizi al negozio %s sono stati sospesi per un problema amministrativo.
+      
+      PAYMENT_FAILURE_SUBJECT: Si è verificato un problema con il tuo pagamento
+      PAYMENT_FAILURE_BODY: Si è verificato un problema con il tuo pagamento
+      PAYMENT_FAILURE_LINK:  Si è verificato un problema con il tuo pagamento<br><br><b>Perché il pagamento è stato rifiutato?</b><br>I pagamenti possono essere annullati per una serie di motivi. Ecco i più comuni:<br>1. Non disponi di credito sufficiente sulla carta o sull'account. Verifica la disponibilità di credito sufficiente e riprova.<br>2. I dati immessi non sono corretti. Verifica che i dati siano corretti e riprova.<br>3. Questo metodo di pagamento non è al momento disponibile.
+      PAYMENT_FAILURE_CLICK_HERE: %s per vedere i dettagli ed effettuare il pagamento.
+      
+      PUSH_PAYMENT_FAILURE_TITLE: Si è verificato un problema con il tuo pagamento
+      PUSH_PAYMENT_FAILURE_BODY: Si è verificato un problema con il tuo pagamento
+      
+      PAYMENT_NOTIFICATION_SUBJECT: Pagamento in sospeso
+      PAYMENT_NOTIFICATION_LINK: Il tuo negozio %s<br>ha effettuato vendite per oltre 200€ a Cittadini SixthContinent.<br><br>Per continuare a vendere tramite SixthContinent<br>effettua il pagamento di € 99 (+IVA) , una sola volta e per sempre,<br>così potrai continuare utilizzare i servizi SixthContinent per incrementare i tuoi profitti.
+      PAYMENT_NOTIFICATION_BODY: Complimenti!<br>Hai effettuato vendite per oltre 200€ a Cittadini SixthContinent.
+      PUSH_PAYMENT_NOTIFICATION_TITLE: Pagamento in sospeso
+      PUSH_PAYMENT_NOTIFICATION_BODY: La informiamo che è necessario procedere con il pagamento in sospeso per il negozio '%s'
+      
+      MESSAGE_SUBJECT: Hai ricevuto un nuovo messaggio privato 
+      MESSAGE_BODY:  %s, ti ha inviato un messaggio privato
+      MESSAGE_LINK:  %s ti ha inviato un messaggio privato,
+      MESSAGE_CLICK_HERE: %s per leggerlo.
+      
+      AFFILIATION_INVITATION_SUBJECT: %s ti ha invitato su SixthContinent
+      AFFILIATION_INVITATION_BODY:  %s ti ha invitato su SixthContinent
+      AFFILIATION_INVITATION_LINK:  Prova Ora SixthContinent.<br>Mentre Sei Connesso Con il Mondo<br>Ricevi Denaro Tutti i Giorni Per i Tuoi Acquisti.
+      
+      AFFILIATION_INVITATION_SUBJECT_SHOP: Invito Affiliazione a SixthContinent
+      AFFILIATION_INVITATION_BODY_SHOP:  %s ha invitato il tuo Negozio su SixthContinent
+      AFFILIATION_INVITATION_LINK_SHOP:  Prova Ora SixthContinent, Affilia Gratuitamente il Tuo Negozio.<br>Tu Incassi Il 100%, I Tuoi Clienti Pagano Il 50%.
+      
+      STORE_CONTRACT_BODY: shop contract description in italy goes here.
+      STORE_CONTRACT_SUBJECT: shop contract subject in italy goes here.
+
+      SHOP_AFFILIATION_ACTIVE_SUBJECT: Attivazione Profilo Negozio
+      SHOP_AFFILIATION_ACTIVE_BODY: Complimenti! Il negozio ‘%s’ è stato attivato correttamente!<br>In allegato alla presente mail trovi il Contratto di Affiliazione.
+      SHOP_AFFILIATION_ACTIVE_TEXT: Nella tua attività è ora disponibile ai Cittadini SixthContinent un Premio di €%s.<br><br>20 Cittadini intorno a te hanno ricevuto un Coupon nominale di €%s spendibile solo presso il tuo Negozio!<br><br>Stai per ricevere una mail con un breve manuale che illustra come eseguire le transazioni, sia tramite computer con la Web app SixthContinent, che tramite la mobile app che potrai scaricare ed installare sul tuo smarthphone Android o IOS.<br><br>
+      SHOP_AFFILIATION_ACTIVE_LINK_TEXT: per confermare la tua e-mail e completare la registrazione.
+
+      #lokesh tagging
+      YOU_GOT_TAGGED_IN_POST: %s ti ha taggato in un post
+      FRIEND_TAGGING_IN_POST_MAIL_TEXT: %s ti ha taggato in un post
+      FRIEND_TAGGING_IN_POST_BODY: %s ti ha taggato in un post
+      
+      YOU_GOT_TAGGED_IN_PHOTO: %s ti ha taggato in una foto
+      FRIEND_TAGGING_IN_PHOTO_MAIL_TEXT: %s ti ha taggato in una foto
+      FRIEND_TAGGING_IN_PHOTO_BODY: %s ti ha taggato in una foto
+	  

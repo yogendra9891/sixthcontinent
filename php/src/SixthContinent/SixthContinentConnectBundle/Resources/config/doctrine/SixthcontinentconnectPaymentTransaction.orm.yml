@@ -1,0 +1,69 @@
+SixthContinent\SixthContinentConnectBundle\Entity\SixthcontinentconnectPaymentTransaction:
+    type: entity
+    table: paypaltransactionrecords
+    repositoryClass: SixthContinent\SixthContinentConnectBundle\Repository\SixthcontinentconnectPaymentTransactionRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        sixthcontinentConnectId:
+            type: bigint
+            column: sixthcontinent_connect_id
+        userId:
+            type: bigint
+            column: user_id
+        reason:
+            type: string
+            length: 255
+        appId:
+            type: string
+            column: app_id
+        paymentVia:
+            type: string
+            length: 255
+            column: payment_via
+        paymentStatus:
+            type: string
+            length: 255
+            column: payment_status
+        errorCode:
+            type: string
+            length: 255
+            column: error_code
+        errorDescription:
+            type: string
+            length: 255
+            column: error_description
+        transactionReference:
+            type: string
+            length: 255
+            column: transaction_reference
+        date:
+            type: datetime
+        transactionValue:
+            type: bigint
+            column: transaction_value
+        vatAmount:
+            type: bigint
+            column: vat_amount
+        contractId:
+            type: string
+            length: 255
+            column: contract_id
+        paypalId:
+            type: text
+            column: paypal_id
+        ciTransactionId:
+            type: string
+            length: 255
+            column: ci_transaction_id
+        ciUsed:
+            type: bigint
+            column: ci_used
+        timeStamp:
+            type: string
+            length: 255
+            column: time_stamp    
+    lifecycleCallbacks: {  }

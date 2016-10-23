@@ -1,0 +1,20 @@
+Paypal\PaypalIntegrationBundle\Entity\SpecialShopOfferes:
+    type: entity
+    table: null
+    repositoryClass: Paypal\PaypalIntegrationBundle\Repository\SpecialShopOfferesRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        shopId:
+            type: integer
+            column: shop_id
+        status:
+            type: integer
+        paypalPayment:
+            type: string
+            length: 255
+            column: paypal_payment
+    lifecycleCallbacks: {  }

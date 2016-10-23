@@ -1,0 +1,39 @@
+#app/routing_rest.yml
+shoptransactionhistory:
+    type: rest
+    pattern: /shoptransactionhistorys
+    resource: "WalletManagementWalletBundle:ShopTransactionHistory"
+    name_prefix: api_
+    requirements:
+        _methods: POST
+
+shopwallets:
+    type: rest
+    pattern: /shopwallets
+    resource: "WalletManagementWalletBundle:ShopWallet"
+    name_prefix: api_
+    requirements:
+        _methods: POST
+
+citizenwallets:
+    type: rest
+    pattern: /citizenwallets
+    resource: "WalletManagementWalletBundle:CitizenWallet"
+    name_prefix: api_
+    requirements:
+        _methods: POST
+shoppaymenthistorys:
+    type: rest
+    pattern: /shoppaymenthistorys
+    resource: "WalletManagementWalletBundle:CitizenWallet"
+    name_prefix: api_
+    requirements:
+        _methods: POST
+#citizen income(in)        
+citizenincomes:
+    type: rest
+    pattern: /citizenincomes
+    resource: "WalletManagementWalletBundle:CitizenWallet"
+    name_prefix: api_
+    requirements:
+        _methods: POST

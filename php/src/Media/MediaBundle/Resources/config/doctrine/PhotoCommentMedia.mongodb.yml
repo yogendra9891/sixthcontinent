@@ -1,0 +1,35 @@
+## YAML Template.
+---
+Media\MediaBundle\Document\PhotoCommentMedia:
+    repositoryClass: Media\MediaBundle\Repository\PhotoCommentMediaMongoRepository
+    type: document
+    collection: photocommentmedia
+    fields:
+        id:
+            id: true
+        parent_id:
+            type: string
+        item_id:
+            type: string
+        item_type:
+            type: string
+        media_name:
+            type: string
+        type:
+            type: string
+        media_status:    
+            type: int
+        path:
+            type: string
+        is_featured:
+            type: int
+        created_date:
+            type: date       
+        image_type:
+            type: int
+        comment_id:
+            type: string 
+# php app/console doctrine:mongodb:generate:documents MediaMediaBundle
+# Create Document
+# php app/console doctrine:mongodb:generate:repositories MediaMediaBundle
+# Create repository

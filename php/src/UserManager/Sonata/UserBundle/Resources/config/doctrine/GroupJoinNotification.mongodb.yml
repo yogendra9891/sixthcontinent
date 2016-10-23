@@ -1,0 +1,22 @@
+UserManager\Sonata\UserBundle\Document\GroupJoinNotification:
+    repositoryClass: UserManager\Sonata\UserBundle\Repository\GroupJoinNotificationMongoRepository
+    type: document
+    collection: GroupJoinNotification
+    fields:
+        id:
+            id: true   
+        sender_id:
+            type: int
+        receiver_id:
+            type: int
+            index: true
+        group_id:
+            type: string
+        user_role:
+            type: string
+        created_at:
+            type: date
+        is_view:
+            type: int
+            index: true
+            

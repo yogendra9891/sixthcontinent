@@ -1,0 +1,11 @@
+parameters:
+#    affiliation_affiliation_manager.example.class: Affiliation\AffiliationManagerBundle\Example
+    affiliation_affiliation_manager.user.class: Affiliation\AffiliationManagerBundle\Services\AffiliationService
+
+services:
+#    affiliation_affiliation_manager.example:
+#        class: %affiliation_affiliation_manager.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
+    affiliation_affiliation_manager.user:
+        class: %affiliation_affiliation_manager.user.class%
+        arguments: [@doctrine.orm.entity_manager, @doctrine.odm.mongodb.document_manager, @service_container] 

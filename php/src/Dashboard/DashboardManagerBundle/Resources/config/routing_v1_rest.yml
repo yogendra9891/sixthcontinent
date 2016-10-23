@@ -1,0 +1,7 @@
+#list dashboard post comments
+getdashboardcomments:
+    type: rest
+    pattern: /getdashboardcomments
+    prefix: /v1
+    resource: "DashboardManagerBundle:PostV1"
+    name_prefix: api_1_

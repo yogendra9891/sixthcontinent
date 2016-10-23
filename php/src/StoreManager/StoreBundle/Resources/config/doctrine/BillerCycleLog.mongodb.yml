@@ -1,0 +1,41 @@
+StoreManager\StoreBundle\Document\BillerCycleLog:
+    repositoryClass: StoreManager\StoreBundle\Repository\BillerCycleLogMongoRepository
+    type: document
+    collection: billercyclelog
+    fields:
+        id:
+            id: true
+        from_id:
+            type: string
+        to_id:
+            type: string
+        shop_id:
+            type: string
+        shop_obj:
+            type: string
+        message:
+            type: string
+        message_type:
+            type: string
+        message_status:
+            type: string
+        is_active:
+            type: boolean
+        date_group:
+            type: string
+        created_at:
+            type: date
+        updated_at:
+            type: date
+        send_type:
+            type: string
+        msg_code:
+            type: string
+        msg_subject:
+            type: string
+
+
+# php app/console doctrine:mongodb:generate:documents TestFormBundle
+# Create Document
+# php app/console doctrine:mongodb:generate:repositories TestFormBundle
+# Create repository

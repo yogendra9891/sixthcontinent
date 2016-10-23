@@ -1,0 +1,21 @@
+## YAML Template.
+---
+PostFeeds\PostFeedsBundle\Document\SocialProjectAddress:
+    repositoryClass: PostFeeds\PostFeedsBundle\Document\SocialProjectAddressMongoRepository
+    type: embeddedDocument
+    collection: socail_project_address
+    fields:
+        id:
+            id: true
+        project_id:
+            type: string
+        location:
+            type: string
+        city:
+            type: string
+        country:
+            type: string
+        latitude:
+            type: string
+        longitude:
+            type: string

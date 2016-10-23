@@ -1,0 +1,30 @@
+{#
+
+This file is part of the Sonata package.
+
+(c) Thomas Rabaix <thomas.rabaix@sonata-project.org>
+
+For the full copyright and license information, please view the LICENSE
+file that was distributed with this source code.
+
+#}
+
+{% extends 'SonataAdminBundle::standard_layout.html.twig' %}
+
+{% block content %}    
+   SSN Document 
+   {% if ssn | length > 0%}
+   <a href="{{ ssnlink }}" target='_blank' > {{ssn}} </a>
+   {% else %}
+       No Document available
+   {% endif %}
+   <br><br>
+   IdCard Document
+   {% if idcard | length  > 0%}
+   <a href="{{ idcardlink }}" target='_blank' > {{idcard}} </a>
+   {% else %}
+       No Document available
+   {% endif %}
+   <br><br>
+<a href="{{ broker_list }}" > {{'Broker User List'}} </a>
+{% endblock %} 

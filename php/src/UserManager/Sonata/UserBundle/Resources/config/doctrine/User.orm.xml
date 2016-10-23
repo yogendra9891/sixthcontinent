@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping
+                  http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+
+    <entity name="UserManager\Sonata\UserBundle\Entity\User" table="fos_user_user" repository-class="UserManager\Sonata\UserBundle\Repository\User">
+
+        <id name="id" column="id" type="integer">
+            <generator strategy="AUTO" />
+        </id>
+        <username name="username" column="username" type="string" length="255" unique="true">
+            <generator strategy="AUTO" />
+        </username>
+        <field name="country" type="string" column="country" length="255"/>
+        <field name="profileImg" type="string" column="profile_img" length="255"/>
+        <field name="coverImg" type="string" column="cover_img" length="255"/>
+        <field name="profileType" type="integer" column="profile_type"/>
+        <field name="citizenProfile" type="integer" column="citizen_profile"/>
+        <field name="brokerProfile" type="integer" column="broker_profile"/>
+        <field name="storeProfile" type="integer" column="store_profile"/>
+        <field name="brokerProfileActive" type="integer" column="broker_profile_active"/>
+        <field name="albumId" type="string" column="album_id" nullable="true"/>
+        <field name="profileImageName" type="string" column="profile_image_name" nullable="true"/>
+        <field name="relationship" type="string" column="relationship" length="100" nullable="true"/>
+        <field name="hobbies" type="string" column="hobbies" length="500" nullable="true"/>
+        <field name="aboutMe" type="string" column="about_me" length="500" nullable="true"/>
+        <field name="cityBorn" type="string" column="city_born" length="255" nullable="true"/>
+        <field name="state" type="string" column="state" length="255" nullable="true"/>
+        <field name="currentLanguage" type="string" column="current_language" length="50" nullable="true">
+            <options>
+                <option name="comment">current default language.</option>
+                <option name="default">it</option>
+            </options>
+        </field>
+        <field name="verificationToken" type="text" column="verification_token" length="255 "/>
+        <field name="verificationStatus" type="string" column="verification_status" length="255">
+            <options>
+                <option name="default">VERIFIED</option>
+            </options>
+        </field>
+        <field name="verifylinkCreatedAt" type="datetime" column="verifylink_created_at"/>
+        <field name="sellerProfile" type="integer" column="seller_profile"/>
+        <field name="affiliationStatus" type="integer" column="affiliation_status"/>
+    </entity>
+
+</doctrine-mapping>

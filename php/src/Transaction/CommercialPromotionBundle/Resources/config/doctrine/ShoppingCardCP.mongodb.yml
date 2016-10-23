@@ -1,0 +1,30 @@
+Transaction\CommercialPromotionBundle\Document\ShoppingCardCP:
+    repositoryClass: Transaction\CommercialPromotionBundle\Repository\ShoppingCardCPRepository
+    type: document
+    collection: shoppingcardcp
+    fields:
+        id:
+            id: true
+            strategy: NONE
+        tags_cp:
+           embedded: true
+           type: many
+           targetDocument: Transaction\CommercialPromotionBundle\Document\TagsCP
+           cascade: all	
+        images_cp:
+           embedded: true
+           type: many
+           targetDocument: Transaction\CommercialPromotionBundle\Document\ImagesCP
+           cascade: all
+        description:
+            type: string
+#        key_words_cp:
+#           embedded: true
+#           type: many
+#           targetDocument: Transaction\CommercialPromotionBundle\Document\KeyWordsCP
+#           cascade: all	
+           
+# php app/console doctrine:mongodb:generate:documents PostPostBundle
+# Create Document
+# php app/console doctrine:mongodb:generate:repositories TestFormBundle
+# Create repositoryd 

@@ -1,0 +1,93 @@
+export_management_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: ExportManagementBundle:Default:index }
+#for citizen profile export
+export_citizen_profile:
+    pattern:  /webapi/exportcitizenprofile
+    defaults: { _controller: ExportManagementBundle:CitizenExport:exportcitizenprofile }
+export_citizen_profile_backlogs:
+    pattern:  /webapi/exportcitizenprofilebacklogs
+    defaults: { _controller: ExportManagementBundle:CitizenExport:exportcitizenprofilebacklogs }
+#for shop profile export
+export_shop_profile:
+    pattern:  /webapi/exportshopprofile
+    defaults: { _controller: ExportManagementBundle:ShopExport:exportshopprofile }
+export_shop_profile_backlogs:
+    pattern:  /webapi/exportshopprofilebacklogs
+    defaults: { _controller: ExportManagementBundle:ShopExport:exportshopprofilebacklogs }
+#for citizen update profile
+export_citizen_update_profile:
+    pattern:  /webapi/exportcitizenupdateprofile
+    defaults: { _controller: ExportManagementBundle:CitizenUpdateExport:exportcitizenupdateprofile }
+export_citizen_update_profile_backlogs:
+    pattern:  /webapi/exportcitizenupdateprofilebacklogs
+    defaults: { _controller: ExportManagementBundle:CitizenUpdateExport:exportcitizenupdateprofilebacklogs }
+#for shop update profile.
+export_shop_update_profile:
+    pattern:  /webapi/exportshopupdateprofile
+    defaults: { _controller: ExportManagementBundle:ShopUpdateExport:exportshopupdateprofile }
+export_shop_update_profile_backlogs:
+    pattern:  /webapi/exportshopupdateprofilebacklogs
+    defaults: { _controller: ExportManagementBundle:ShopUpdateExport:exportshopupdateprofilebacklogs }
+#for shop weekly transaction export(7 days)
+export_shop_weekly_transaction:
+    pattern:  /webapi/exportshopweeklytransaction
+    defaults: { _controller: ExportManagementBundle:ShopWeeklyTransactionExport:exportshopweeklytransaction }
+export_shop_weekly_transaction_backlogs:
+    pattern:  /webapi/exportshopweeklytransactionbacklogs
+    defaults: { _controller: ExportManagementBundle:ShopWeeklyTransactionExport:exportshopweeklytransactionbacklogs }
+#for shop registration daily basis
+export_shop_daily_registration:
+    pattern:  /webapi/exportshopdailyregistration
+    defaults: { _controller: ExportManagementBundle:ShopWeeklyTransactionExport:exportshopdailyregistration }
+#for sixthcontinent x% of all transaction of shops
+export_shop_pay_to_sixcontinent:
+    pattern:  /webapi/exportshoppaytosixcontinent
+    defaults: { _controller: ExportManagementBundle:ShopPayToSixthContinentExport:exportshoppaytosixcontinent }
+
+#for citizen income utilized for each shop in a minth
+export_citizen_income_utilized:
+    pattern:  /webapi/exportcitizenincomeutilized
+    defaults: { _controller: ExportManagementBundle:CitizenIncomeUtilizedExport:exportcitizenincomeutilized }
+    
+#for shop registration received by sixthcontinent on daily basis
+export_shop_registration_to_sixthcontinent:
+    pattern:  /webapi/exportsixthcontinentincomefromshopregistration
+    defaults: { _controller: ExportManagementBundle:ShopWeeklyTransactionExport:exportsixthcontinentincomefromshopregistration }
+    
+export_All_registration_to_sixthcontinent:
+    pattern:  /webapi/exportallprofile
+    defaults: { _controller: ExportManagementBundle:AllExport:exportallprofile }
+
+#for one time script
+export_broker_user:
+    pattern:  /webapi/brokeruserexport
+    defaults: { _controller: ExportManagementBundle:OneTimeExport:brokeruserexport }
+        
+export_citizen_user:
+    pattern:  /webapi/citizenuserexport
+    defaults: { _controller: ExportManagementBundle:OneTimeExport:citizenuserexport }
+    
+export_giftcard_export:
+    pattern:  /webapi/giftcardexporttransaction
+    defaults: { _controller: ExportManagementBundle:GiftcardExport:giftcardexport }
+
+giftcard_export:
+    pattern:  /webapi/exportgiftcards
+    defaults: { _controller: ExportManagementBundle:GiftcardExport:exportgiftcards }
+#export purchase
+purchase_export:
+    pattern:  /webapi/purchaseexport
+    defaults: { _controller: ExportManagementBundle:PurchaseExport:purchaseexport }
+#export sales
+sales_export:
+    pattern:  /webapi/salesexport
+    defaults: { _controller: ExportManagementBundle:SalesExport:salesexport }
+#import purchase
+purchase_import:
+    pattern:  /webapi/purchaseimport
+    defaults: { _controller: ExportManagementBundle:PurchaseImport:purchaseimport }
+#import sales
+sales_import:
+    pattern:  /webapi/salesimport
+    defaults: { _controller: ExportManagementBundle:SalesImport:salesimport }

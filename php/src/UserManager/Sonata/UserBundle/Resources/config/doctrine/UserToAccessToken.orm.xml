@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping
+                  http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+
+    <entity name="UserManager\Sonata\UserBundle\Entity\UserToAccessToken" repository-class="UserManager\Sonata\UserBundle\Entity\UserToAccessTokenRepository" table="UserToAccessToken">
+
+        <id name="id" column="id" type="integer">
+            <generator strategy="AUTO" />
+        </id>
+        <field name="accessToken" type="string" column="access_token"/>
+        <field name="createdAt" type="datetime" column="created_at"/>
+        <field name="userId" type="bigint" column="user_id"/>
+        <field name="ipAddress" type="string" column="ip_address"/>
+    </entity>
+
+</doctrine-mapping>

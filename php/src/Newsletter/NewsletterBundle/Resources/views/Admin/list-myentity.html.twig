@@ -1,0 +1,24 @@
+{# The default template which provides batch and action cells, with the valid colspan computation #}
+
+{% extends 'SonataAdminBundle:CRUD:list.html.twig' %}
+
+{% block table_body %}
+    <tbody>
+        {% for object in admin.datagrid.results %}
+            <style>
+                table tr.green-color td {background-color: #2BFF5D !important; }
+            </style>
+            <tr>
+                {% include admin.getTemplate('inner_list_row') %}
+            </tr>
+        {% endfor %}
+        Select Newsletter template&nbsp;&nbsp;&nbsp;<select name="newsid" id="newsid" >
+        <ul>
+{% for category in categories() %}
+    <option value="{{ category.id }}">{{ category.title }}</option>
+{% endfor %}
+</select><br/><br/>
+</ul>
+    </tbody>
+   
+{% endblock %}

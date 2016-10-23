@@ -1,0 +1,22 @@
+SixthContinent\SixthContinentConnectBundle\Entity\BarCode:
+    type: entity
+    table: null
+    repositoryClass: SixthContinent\SixthContinentConnectBundle\Repository\BarCodeRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        hashCode:
+            type: string
+            length: 255
+            column: hash_code
+        imagePath:
+            type: string
+            length: 255
+            column: image_path
+        codeId:
+            type: bigint
+            column: code_id
+    lifecycleCallbacks: {  }

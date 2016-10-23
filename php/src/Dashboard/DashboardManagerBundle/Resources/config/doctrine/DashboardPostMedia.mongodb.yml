@@ -1,0 +1,35 @@
+Dashboard\DashboardManagerBundle\Document\DashboardPostMedia:
+    repositoryClass: Dashboard\DashboardManagerBundle\Repository\DashboardPostMediaMongoRepository
+    type: document
+    collection: dashboardpostsmedia
+    fields:
+        id:
+            id: true
+        post_id:
+            type: string
+        media_name:
+            type: string
+        type:
+            type: string
+        media_status:    
+            type: int
+        path:
+            type: string
+        is_featured:
+            type: int
+        created_date:
+            type: date       
+        image_type:
+            type: int
+        rate:
+           embedded: true
+           type: many
+           targetDocument: Media\MediaBundle\Document\UserMediaRating
+        comment:
+           embedded: true
+           type: many
+           targetDocument: Media\MediaBundle\Document\AlbumMediaComment		
+# php app/console doctrine:mongodb:generate:documents DashboardManagerBundle
+# Create Document
+# php app/console doctrine:mongodb:generate:repositories DashboardManagerBundle
+# Create repository

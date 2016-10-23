@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<definitions name="MOVIMENTOADD"
+             targetNamespace="urn:MOVIMENTOADDservicewsdl"
+             xmlns:tns="urn:arnleadservicewsdl"
+             xmlns:xsd1="http://www.w3.org/2001/XMLSchema"
+             xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+             xmlns="http://schemas.xmlsoap.org/wsdl/">
+
+  <types>
+    <xsd1:schema targetNamespace="urn:MOVIMENTOADDwsdl"
+            xmlns="http://www.w3.org/2000/10/XMLSchema">
+      <xsd1:element name="MOVIMENTOADD">
+        <xsd1:complexType>
+            <xsd1:sequence>
+                <xsd1:element name="IDMOVIMENTO" type="xsd1:string" />
+                <xsd1:element name="IDCARD" type="xsd1:string" />
+                <xsd1:element name="IDPDV" type="xsd1:string" />
+		<xsd1:element name="IMPORTODIGITATO" type="xsd1:string" />
+		<xsd1:element name="CREDITOSTORNATO" type="xsd1:string" />
+                <xsd1:element name="DATA" type="xsd1:string" />        
+                <xsd1:element name="RCUTI" type="xsd1:string" />
+                <xsd1:element name="SHUTI" type="xsd1:string" />
+                <xsd1:element name="PSUTI" type="xsd1:string" />
+                <xsd1:element name="GCUTI" type="xsd1:string" />
+                <xsd1:element name="GCRIM" type="xsd1:string" />
+                <xsd1:element name="MOUTI" type="xsd1:string" />
+            </xsd1:sequence>
+        </xsd1:complexType>
+      </xsd1:element>
+    </xsd1:schema>
+  </types>
+
+  <message name="MOVIMENTOADDInput">
+    <part name="MOVIMENTOADD" element="xsd1:MOVIMENTOADD"/>
+  </message>
+
+  <message name="MOVIMENTOADDOutput">
+    <part name="return"  type="xsd:stringArray" />
+  </message>
+
+  <portType name="MOVIMENTOADDPortType">
+    <operation name="MOVIMENTOADD">
+      <input message="tns:MOVIMENTOADDInput"/>
+      <output message="tns:MOVIMENTOADDOutput"/>
+    </operation>
+  </portType>
+
+  <binding name="MOVIMENTOADDBinding" type="tns:MOVIMENTOADDPortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <operation name="MOVIMENTOADD">
+        <soap:operation soapAction="urn:arnleadservicewsdl#MOVIMENTOADD"/>
+            <input>
+              <soap:body use="literal"  namespace="urn:MOVIMENTOADDwsdl"/>
+            </input>
+            <output>
+              <soap:body use="literal"  namespace="urn:MOVIMENTOADDwsdl"/>
+            </output>
+    </operation>
+  </binding>
+
+  <service name="MOVIMENTOADDService">
+    <documentation>My first service</documentation>
+    <port name="MOVIMENTOADDPort" binding="tns:MOVIMENTOADDBinding">
+      <soap:address location="http://dev-sixthcontinent.rhcloud.com/web/gift"/>
+    </port>
+  </service>
+</definitions>

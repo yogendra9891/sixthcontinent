@@ -1,0 +1,71 @@
+Payment\PaymentDistributionBundle\Entity\CitizenIncomeGainLog:
+    type: entity
+    table: CitizenIncomeGainLog
+    repositoryClass: Payment\PaymentDistributionBundle\Repository\CitizenIncomeGainLogRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        transactionId:
+            type: string
+            length: 255
+            column: transaction_id
+        status:
+            type: integer
+        citizenAffiliateAmount:
+            type: bigint
+            column: citizen_affiliate_amount
+        shopAffiliateAmount:
+            type: bigint
+            column: shop_affiliate_amount
+        friendsFollowerAmount:
+            type: bigint
+            column: friends_follower_amount
+        purchaserUserAmount:
+            type: bigint
+            column: purchaser_user_amount
+        countryCitizenAmount:
+            type: bigint
+            column: country_citizen_amount
+        sixthcontinentAmount:
+            type: bigint
+            column: sixthcontinent_amount
+        totalAmount:
+            type: bigint
+            column: total_amount
+        distributedAmount:
+            type: bigint
+            column: distributed_amount
+        userId:
+            type: integer
+            column: user_id
+        shopId:
+           type: integer
+           column: shop_id 
+        citizenCount:
+            type: bigint
+            column: citizen_count
+        cronStatus:
+            type: integer
+            column: cron_status
+        couponAmount:
+            type: bigint
+            column: coupon_amount
+        discountPositionAmount:
+            type: bigint
+            column: discount_position_amount
+        createdAt:
+            type: datetime
+            column: created_at
+        approvedAt:
+            type: date
+            column: approved_at
+        updatedAt:
+            type: datetime
+            column: updated_at
+        jobStatus:
+            type: integer
+            column: job_status
+    lifecycleCallbacks: {  }

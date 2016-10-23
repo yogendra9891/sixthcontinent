@@ -1,0 +1,46 @@
+Message\MessageBundle\Document\Message:
+    repositoryClass: Message\MessageBundle\Repository\MessageMongoRepository
+    type: document
+    collection: message
+    fields:
+        id:
+            id: true   
+        sender_id:
+            type: int
+        receiver_id:
+            type: collection
+            index: true
+        sender_userid:
+            type: int
+        body:
+            type: string
+        subject:
+            type: string                     
+        thread_id:
+            type: string
+            index: true
+        message_type:
+            type: string
+            index: true
+        read_by:
+            type: collection
+        is_read:
+            type: int
+        is_spam:
+            type: int
+        created_at:
+            type: date
+            order: desc
+        updated_at:
+            type: date
+        profile_type:
+            type: string
+        type:
+            type: string
+        deleteby:
+            type: collection
+        is_view:
+            type: int
+            index: true
+        is_view_by:
+            type: collection

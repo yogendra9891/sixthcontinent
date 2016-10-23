@@ -1,0 +1,38 @@
+Notification\NotificationBundle\Entity\UserDevice:
+    type: entity
+    table: null
+    repositoryClass: Notification\NotificationBundle\Repository\UserDeviceRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        userId:
+            type: bigint
+            column: user_id
+        deviceId:
+            type: string
+            length: 255
+            column: device_id
+        deviceType:
+            type: string
+            length: 255
+            column: device_type
+        appType:
+            type: string
+            length: 255
+            column: app_type
+        deviceLang:
+            type: string
+            length: 255
+            column: device_lang
+        createdAt:
+            type: datetime
+            column: created_at
+        uniqueDeviceID:
+            type: string
+            length: 255
+            column: unique_device_id
+    lifecycleCallbacks: {  }
+

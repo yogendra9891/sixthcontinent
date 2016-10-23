@@ -1,0 +1,60 @@
+#app/routing_rest.yml
+#v1 routing
+verifie_paypals:
+   type: rest
+   pattern: /verifiepaypals
+   resource: "PaypalIntegrationBundle:PaypalAccountVerification"
+   name_prefix: api_
+   
+delete_paypals:
+   type: rest
+   pattern: /deletepaypals
+   resource: "PaypalIntegrationBundle:PaypalAccountVerification"
+   name_prefix: api_
+   
+list_paypal_accounts:
+   type: rest
+   pattern: /listpaypalaccounts
+   resource: "PaypalIntegrationBundle:PaypalAccountVerification"
+   name_prefix: api_
+#paypal 100% cards purchasing
+buy_shopping_cards:
+   type: rest
+   pattern: /buyshoppingcards
+   resource: "PaypalIntegrationBundle:CardPurchase"
+   name_prefix: api_
+
+set_default_paypals:
+   type: rest
+   pattern: /setdefaultpaypals
+   resource: "PaypalIntegrationBundle:PaypalAccountVerification"
+   name_prefix: api_
+#paypal 100% cards purchasing transaction response
+response)_buy_cards:
+   type: rest
+   pattern: /responsebuycards
+   resource: "PaypalIntegrationBundle:CardPurchase"
+   name_prefix: api_
+#buy ecommerce product
+buyecommerceproduct:
+   type: rest
+   pattern: /buyecommerceproduct
+   defaults:  { _controller: PaypalIntegrationBundle:EcommerceProduct:postBuyEcommerceProduct}
+   name_prefix: api_
+   requirements:
+        _method:  POST
+        
+#buy ecommerce product
+buyresponseecommerceproduct:
+   type: rest
+   pattern: /buyresponseecommerceproduct
+   defaults:  { _controller: PaypalIntegrationBundle:EcommerceProduct:postResponseBuyEcommerceProduct}
+   name_prefix: api_
+   requirements:
+        _method:  POST
+   
+checkfeepayers:
+   type: rest
+   pattern: /checkfeepayers
+   resource: "PaypalIntegrationBundle:Default"
+   name_prefix: api_

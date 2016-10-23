@@ -1,0 +1,619 @@
+#app/routing_rest.yml
+#v1 routing
+V1_User_Route : 
+  type : rest
+  resource: "@UserManagerSonataUserBundle/Resources/config/routing_v1_rest.yml"
+
+logins:
+    type: rest
+    pattern: /logins
+    resource: "UserManagerSonataUserBundle:RestSecurity"
+    name_prefix: api_
+    requirements:
+       _method:  POST
+    
+user:
+   type: rest
+   pattern: /user
+   resource: "UserManagerSonataUserBundle:RestSecurity"
+   name_prefix: api_
+   
+register:
+   type: rest
+   pattern: /register
+   resource: "UserManagerSonataUserBundle:RestRegistration"
+   name_prefix: api_
+
+shows:
+   type: rest
+   pattern: /shows
+   resource: "UserManagerSonataUserBundle:RestProfile"
+   name_prefix: api_
+   
+edits:
+   type: rest
+   pattern: /edits
+   resource: "UserManagerSonataUserBundle:RestProfile"
+   name_prefix: api_
+   
+searchusers:
+   type: rest
+   pattern: /searchusers
+   resource: "UserManagerSonataUserBundle:RestFriends"
+   name_prefix: api_
+
+getrelationtype:
+    type: rest
+    pattern: /getrelationtype
+    defaults: { _controller: UserManagerSonataUserBundle:RestFriends:getrelationtype }
+    methods:  [POST]
+
+searchallprofiles:
+   type: rest
+   pattern: /searchallprofiles
+   resource: "UserManagerSonataUserBundle:RestFriends"
+   name_prefix: api_
+   
+   getallsearchrecords:
+   type: rest
+   pattern: /getallsearchrecords
+   resource: "UserManagerSonataUserBundle:RestFriends"
+   name_prefix: api_
+   
+
+   
+searchfriends:
+   type: rest
+   pattern: /searchfriends
+   resource: "UserManagerSonataUserBundle:RestFriends"
+   name_prefix: api_
+   
+deleteprofiles:
+   type: rest
+   pattern: /deleteprofiles
+   resource: "UserManagerSonataUserBundle:RestProfile"
+   name_prefix: api_
+   
+sendfriendrequests:
+   type: rest
+   pattern: /sendfriendrequests
+   resource: "UserManagerSonataUserBundle:RestFriends"
+   name_prefix: api_
+
+responsefriendrequests:
+   type: rest
+   pattern: /responsefriendrequests
+   resource: "UserManagerSonataUserBundle:RestFriends"
+   name_prefix: api_
+   
+viewprofiles:
+   type: rest
+   pattern: /viewprofiles
+   resource: "UserManagerSonataUserBundle:RestFriends"
+   name_prefix: api_
+   
+pendingfriendrequests:
+   type: rest
+   pattern: /pendingfriendrequests
+   resource: "UserManagerSonataUserBundle:RestFriends"
+   name_prefix: api_
+   
+logouts:
+   type: rest
+   pattern: /logouts
+   resource: "UserManagerSonataUserBundle:RestSecurity"
+   name_prefix: api_
+   
+creategroups:
+   type: rest
+   pattern: /creategroups
+   resource: "UserManagerSonataUserBundle:RestGroup"
+   name_prefix: api_
+   
+updategroups:
+   type: rest
+   pattern: /updategroups
+   resource: "UserManagerSonataUserBundle:RestGroup"
+   name_prefix: api_
+   
+getusergroups:
+   type: rest
+   pattern: /getusergroups
+   resource: "UserManagerSonataUserBundle:RestGroup"
+   name_prefix: api_
+  
+searchgroups:
+   type: rest
+   pattern: /searchgroups
+   resource: "UserManagerSonataUserBundle:RestGroup"
+   name_prefix: api_
+   
+deleteusergroups:
+   type: rest
+   pattern: /getusergroups
+   resource: "UserManagerSonataUserBundle:RestGroup"
+   name_prefix: api_
+   
+joinpublicgroups:
+   type: rest
+   pattern: /joinpublicgroups
+   resource: "UserManagerSonataUserBundle:RestGroup"
+   name_prefix: api_
+   
+getgroupjoinnotifications:
+   type: rest
+   pattern: /getgroupjoinnotifications
+   resource: "UserManagerSonataUserBundle:RestGroup"
+   name_prefix: api_
+   
+responsegroupjoins:
+   type: rest
+   pattern: /responsegroupjoins
+   resource: "UserManagerSonataUserBundle:RestGroup"
+   name_prefix: api_
+   
+joinprivategroups:
+   type: rest
+   pattern: /joinprivategroups
+   resource: "UserManagerSonataUserBundle:RestGroup"
+   name_prefix: api_
+   
+getGroupDetails:
+   type: rest
+   pattern: /getGroupDetails
+   resource: "UserManagerSonataUserBundle:RestGroup"
+   name_prefix: api_
+   
+assignroletogroups:
+   type: rest
+   pattern: /assignroletogroups
+   resource: "UserManagerSonataUserBundle:RestGroup"
+   name_prefix: api_
+   
+getgroupnotifications:
+   type: rest
+   pattern: /getgroupnotifications
+   resource: "UserManagerSonataUserBundle:RestGroup"
+   name_prefix: api_
+   
+registermultiprofiles:
+   type: rest
+   pattern: /registermultiprofiles
+   resource: "UserManagerSonataUserBundle:UserMultiProfile"
+   name_prefix: api_
+   
+uploadprofilephotos:
+   type: rest
+   pattern: /uploadprofilephotos
+   resource: "UserManagerSonataUserBundle:UserMultiProfile"
+   name_prefix: api_
+   
+setuserprofilephotos:
+   type: rest
+   pattern: /setuserprofilephotos
+   resource: "UserManagerSonataUserBundle:UserMultiProfile"
+   name_prefix: api_
+   
+setuseractiveprofiles:
+   type: rest
+   pattern: /setuseractiveprofiles
+   resource: "UserManagerSonataUserBundle:UserMultiProfile"
+   name_prefix: api_
+   
+suggestionmultiprofiles:
+   type: rest
+   pattern: /suggestionmultiprofiles
+   resource: "UserManagerSonataUserBundle:UserMultiProfile"
+   name_prefix: api_
+
+getnonrelationaluser:
+    type: rest
+    pattern: /getnonrelationaluser
+    defaults: { _controller: UserManagerSonataUserBundle:UserMultiProfile:getNonRelationalUser }
+    methods:  [POST]
+   
+businessmultiprofiles:
+   type: rest
+   pattern: /businessmultiprofiles
+   resource: "UserManagerSonataUserBundle:UserBusiness"
+   name_prefix: api_
+   
+getbusinesscategorylist:
+   type: rest
+   pattern: /getbusinesscategorylist
+   defaults: { _controller: UserManagerSonataUserBundle:UserBusiness:getBusinessCategoryList }
+   methods:  [POST]
+   
+categorylist:
+   type: rest
+   pattern: /categorylist
+   defaults: { _controller: UserManagerSonataUserBundle:UserBusiness:getBusinessCategoryListAll }
+   methods:  [POST]
+   
+userskills:
+    type: rest
+    pattern: /userskills
+    defaults: { _controller: UserManagerSonataUserBundle:UserBusiness:createAndUpdateUserSkills }
+    methods:  [POST]
+    
+listuserskills:
+    type: rest
+    pattern: /listuserskills
+    defaults: { _controller: UserManagerSonataUserBundle:UserBusiness:getUserSkillsList }
+    methods:  [POST]
+   
+getkeywordlist:
+    type: rest
+    pattern: /getkeywordlist
+    defaults: { _controller: UserManagerSonataUserBundle:UserBusiness:getKeyWordList }
+    methods:  [POST]
+    
+addbusinesskeyword:
+    type: rest
+    pattern: /addbusinesskeyword
+    defaults: { _controller: UserManagerSonataUserBundle:UserBusiness:addBusinessCategoryKeyword }
+    methods:  [POST] 
+    
+addstudylist:
+    type: rest
+    pattern: /addstudylist
+    defaults: { _controller: UserManagerSonataUserBundle:UserBusiness:addStudyList }
+    methods:  [POST] 
+
+viewmultiprofiles:
+   type: rest
+   pattern: /viewmultiprofiles
+   resource: "UserManagerSonataUserBundle:UserMultiProfile"
+   name_prefix: api_
+   
+editmultiprofiles:
+   type: rest
+   pattern: /editmultiprofiles
+   resource: "UserManagerSonataUserBundle:UserMultiProfile"
+   name_prefix: api_
+   
+updatemultiprofiles:
+   type: rest
+   pattern: /updatemultiprofiles
+   resource: "UserManagerSonataUserBundle:UserMultiProfile"
+   name_prefix: api_
+
+updateuserjobs:
+   type: rest
+   pattern: /updateuserjobs
+   resource: "UserManagerSonataUserBundle:UserMultiProfile"
+   name_prefix: api_
+  
+updateusereducations:
+   type: rest
+   pattern: /updateusereducations
+   resource: "UserManagerSonataUserBundle:UserMultiProfile"
+   name_prefix: api_
+ 
+updateusercategorykeywords:
+   type: rest
+   pattern: /updateusercategorykeywords
+   resource: "UserManagerSonataUserBundle:UserMultiProfile"
+   name_prefix: api_
+
+updateuserrelatives:
+   type: rest
+   pattern: /updateuserrelatives
+   resource: "UserManagerSonataUserBundle:UserMultiProfile"
+   name_prefix: api_
+
+updateusereducationvisibilities:
+   type: rest
+   pattern: /updateusereducationvisibilities
+   resource: "UserManagerSonataUserBundle:UserMultiProfile"
+   name_prefix: api_
+
+updateuserjobvisibilities:
+   type: rest
+   pattern: /updateuserjobvisibilities
+   resource: "UserManagerSonataUserBundle:UserMultiProfile"
+   name_prefix: api_
+
+
+deleteuserjobs:
+   type: rest
+   pattern: /deleteuserjobs
+   resource: "UserManagerSonataUserBundle:UserMultiProfile"
+   name_prefix: api_
+  
+deleteusereducations:
+   type: rest
+   pattern: /deleteusereducations
+   resource: "UserManagerSonataUserBundle:UserMultiProfile"
+   name_prefix: api_
+ 
+deleteusercategorykeywords:
+   type: rest
+   pattern: /deleteusercategorykeywords
+   resource: "UserManagerSonataUserBundle:UserMultiProfile"
+   name_prefix: api_
+
+deleteuserrelatives:
+   type: rest
+   pattern: /deleteuserrelatives
+   resource: "UserManagerSonataUserBundle:UserMultiProfile"
+   name_prefix: api_
+
+changepasswords:
+   type: rest
+   pattern: /changepasswords
+   resource: "UserManagerSonataUserBundle:RestProfile"
+   name_prefix: api_
+#Group Album
+creategroupalbums:
+   type: rest
+   pattern: /creategroupalbums
+   resource: "UserManagerSonataUserBundle:RestGroupAlbum"
+   name_prefix: api_
+deletegroupalbums:
+   type: rest
+   pattern: /deletegroupalbums
+   resource: "UserManagerSonataUserBundle:RestGroupAlbum"
+   name_prefix: api_ 
+deletegroupalbummedias:
+   type: rest
+   pattern: /deletegroupalbummedias
+   resource: "UserManagerSonataUserBundle:RestGroupAlbum"
+   name_prefix: api_
+uploadgroupmediaalbums:
+   type: rest
+   pattern: /uploadgroupmediaalbums
+   resource: "UserManagerSonataUserBundle:RestGroupAlbum"
+   name_prefix: api_
+viewgroupalbums:
+   type: rest
+   pattern: /viewgroupalbums
+   resource: "UserManagerSonataUserBundle:RestGroupAlbum"
+   name_prefix: api_
+groupalbumlists:
+   type: rest
+   pattern: /groupalbumlists
+   resource: "UserManagerSonataUserBundle:RestGroupAlbum"
+   name_prefix: api_
+followusers:
+   type: rest
+   pattern: /followusers
+   resource: "UserManagerSonataUserBundle:UserFollow"
+   name_prefix: api_
+unfollowusers:
+   type: rest
+   pattern: /unfollowusers
+   resource: "UserManagerSonataUserBundle:UserFollow"
+   name_prefix: api_
+getfollowers:
+   type: rest
+   pattern: /getfollowers
+   resource: "UserManagerSonataUserBundle:UserFollow"
+   name_prefix: api_
+getfollowings:
+   type: rest
+   pattern: /getfollowings
+   resource: "UserManagerSonataUserBundle:UserFollow"
+   name_prefix: api_
+checkfollows:
+   type: rest
+   pattern: /checkfollows
+   resource: "UserManagerSonataUserBundle:UserFollow"
+   name_prefix: api_
+getconnectedprofiles:
+   type: rest
+   pattern: /getconnectedprofiles
+   resource: "UserManagerSonataUserBundle:RestFriends"
+   name_prefix: api_
+uploadclubprofileimages:
+    type: rest
+    pattern: /uploadclubprofileimages
+    resource: "UserManagerSonataUserBundle:RestGroup"
+    name_prefix: api_
+    requirements:
+        _method:  POST       
+unjoinclubs:
+    type: rest
+    pattern: /unjoinclubs
+    resource: "UserManagerSonataUserBundle:RestGroup"
+    name_prefix: api_
+    requirements:
+        _method:  POST
+        
+getinviteclubs:
+    type: rest
+    pattern: /getinviteclubs
+    resource: "UserManagerSonataUserBundle:RestGroup"
+    name_prefix: api_
+    requirements:
+        _method:  POST 
+        
+removeclubmembers:
+    type: rest
+    pattern: /removeclubmembers
+    resource: "UserManagerSonataUserBundle:RestGroup"
+    name_prefix: api_
+    requirements:
+        _method:  POST
+
+insertbussinesscategories:
+    type: rest
+    pattern: /insertbussinesscategories
+    resource: "UserManagerSonataUserBundle:UserBusiness"
+    name_prefix: api_
+    requirements:
+        _method:  POST
+
+updatebussinesscategories:
+    type: rest
+    pattern: /updatebussinesscategories
+    resource: "UserManagerSonataUserBundle:UserBusiness"
+    name_prefix: api_
+    requirements:
+        _method:  POST
+
+insertrelationtypes:
+    type: rest
+    pattern: /insertrelationtypes
+    resource: "UserManagerSonataUserBundle:UserBusiness"
+    name_prefix: api_
+    requirements:
+        _method:  POST
+        
+addbusinesskeyword:
+    type: rest
+    pattern: /addbusinesskeyword
+    defaults: { _controller: UserManagerSonataUserBundle:UserBusiness:addBusinessCategoryKeyword }
+    methods:  [POST]
+    
+addstudylist:
+    type: rest
+    pattern: /addstudylist
+    defaults: { _controller: UserManagerSonataUserBundle:UserBusiness:addStudyList }
+    methods:  [POST]
+    
+getfriendgroups:
+   type: rest
+   pattern: /getfriendgroups
+   resource: "UserManagerSonataUserBundle:RestGroup"
+   name_prefix: api_
+
+insertbussinesscategorycodes:
+    type: rest
+    pattern: /insertbussinesscategorycodes
+    resource: "UserManagerSonataUserBundle:UserBusiness"
+    name_prefix: api_
+    requirements:
+        _method:  POST
+
+updatebussinesscategorycodes:
+    type: rest
+    pattern: /updatebussinesscategorycodes
+    resource: "UserManagerSonataUserBundle:UserBusiness"
+    name_prefix: api_
+    requirements:
+        _method:  POST
+
+updatepersonal:
+    type: rest
+    pattern: /updatepersonal
+    defaults: { _controller: UserManagerSonataUserBundle:RestFriends:updatepersonal }
+    methods:  [POST]
+    
+#Cancel the club inviatations
+cancelclubinvitations:
+    type: rest
+    pattern: /cancelclubinvitations
+    resource: "UserManagerSonataUserBundle:RestGroup"
+    name_prefix: api_
+    requirements:
+        _method:  POST
+# See All Pending Friend Request
+allpendingfriendrequests:
+   type: rest
+   pattern: /allpendingfriendrequests
+   resource: "UserManagerSonataUserBundle:RestFriends"
+   name_prefix: api_
+
+#Get all friends list
+getallfriends:
+   type: rest
+   pattern: /getallfriends
+   resource: "UserManagerSonataUserBundle:RestFriends"
+   name_prefix: api_
+# update current default langugae
+changecurrentlanguages:
+    type: rest
+    pattern: /changecurrentlanguages
+    resource: "UserManagerSonataUserBundle:RestProfile"
+    name_prefix: api_
+    requirements:
+       _method:  POST
+friendrequestdetails:
+   type: rest
+   pattern: /friendrequestdetails
+   resource: "UserManagerSonataUserBundle:RestFriends"
+   name_prefix: api_
+   requirements:
+       _method:  POST
+getclubcovermediacoordinates:
+   type: rest
+   pattern: /getclubcovermediacoordinates
+   resource: "UserManagerSonataUserBundle:RestGroup"
+   name_prefix: api_
+addbusinesskeywords:
+   type: rest
+   pattern: /addbusinesskeywords
+   resource: "UserManagerSonataUserBundle:UserBusiness"
+   name_prefix: api_
+   requirements:
+       _method:  POST
+
+updatefacebookaccesstokens:
+   type: rest
+   pattern: /updatefacebookaccesstokens
+   resource: "UserManagerSonataUserBundle:Facebook"
+   name_prefix: api_
+   requirements:
+       _method:  POST
+getclubmembers:
+   type: rest
+   pattern: /getclubmembers
+   resource: "UserManagerSonataUserBundle:RestFriends"
+   name_prefix: api_
+   requirements:
+       _method:  POST
+#seller register
+registersellers:
+   type: rest
+   pattern: /registersellers
+   resource: "UserManagerSonataUserBundle:Seller"
+   name_prefix: api_
+   requirements:
+       _method:  POST
+       
+#search seller
+searchsellerusers:
+   type: rest
+   pattern: /searchsellerusers
+   resource: "UserManagerSonataUserBundle:Seller"
+   name_prefix: api_
+   requirements:
+       _method:  POST
+#list sellers store
+listsellersstores:
+   type: rest
+   pattern: /listsellersstores
+   resource: "UserManagerSonataUserBundle:Seller"
+   name_prefix: api_
+   requirements:
+       _method:  POST
+#delete seller
+deletesellers:
+   type: rest
+   pattern: /deletesellers
+   resource: "UserManagerSonataUserBundle:Seller"
+   name_prefix: api_
+   requirements:
+       _method:  POST
+sellerlogins:
+    type: rest
+    pattern: /sellerlogins
+    resource: "UserManagerSonataUserBundle:Seller"
+    name_prefix: api_
+    requirements:
+       _method:  POST
+changesellerpasswords:
+    type: rest
+    pattern: /changesellerpasswords
+    resource: "UserManagerSonataUserBundle:SellerProfile"
+    name_prefix: api_
+    requirements:
+       _method:  POST
+getsellerprofiles:
+    type: rest
+    pattern: /getsellerprofiles
+    resource: "UserManagerSonataUserBundle:SellerProfile"
+    name_prefix: api_
+    requirements:
+       _method:  POST

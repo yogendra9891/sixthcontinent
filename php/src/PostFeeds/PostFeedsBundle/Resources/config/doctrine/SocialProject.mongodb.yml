@@ -1,0 +1,45 @@
+## YAML Template.
+---
+PostFeeds\PostFeedsBundle\Document\SocialProject:
+    repositoryClass: PostFeeds\PostFeedsBundle\Repository\SocialProjectMongoRepository
+    type: document
+    collection: social_project
+    fields:
+        id:
+            id:  true
+        title:
+            type: string
+        owner_id:
+            type: int
+            index: true
+        website:
+            type: string
+        email:
+            type: string
+        description:
+            type: string
+        we_want:
+            type: int
+        is_delete:
+            type: int
+        status:
+            type: int
+        created_at:
+            type: date
+        updated_at:
+            type: date
+            order: desc
+        cover_img:
+           embedded: true
+           type: many
+           targetDocument: PostFeeds\PostFeedsBundle\Document\SocialProjectCoverImg
+           cascade: all
+        address:
+           embedded: true
+           type: many
+           targetDocument: PostFeeds\PostFeedsBundle\Document\SocialProjectAddress
+           cascade: all
+    referenceMany:
+        medias:
+            targetDocument: PostFeeds\PostFeedsBundle\Document\MediaFeeds
+            cascade: persist

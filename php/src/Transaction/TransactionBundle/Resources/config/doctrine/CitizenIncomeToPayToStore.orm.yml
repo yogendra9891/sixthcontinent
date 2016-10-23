@@ -1,0 +1,26 @@
+Transaction\TransactionBundle\Entity\CitizenIncomeToPayToStore:
+    type: entity
+    table: null
+    repositoryClass: Transaction\TransactionBundle\Entity\CitizenIncomeToPayToStoreRepository
+    indexes:
+        index_userid_CitizenIncomeToPayToStore:
+            columns: [user_id]
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        userId:
+            type: integer
+            column: user_id
+        dataMovimento:
+            type: integer
+            column: data_movimento
+        dataJob:
+            type: integer
+            column: data_job
+        totAvere:
+            type: bigint
+            column: tot_avere
+    lifecycleCallbacks: {  }

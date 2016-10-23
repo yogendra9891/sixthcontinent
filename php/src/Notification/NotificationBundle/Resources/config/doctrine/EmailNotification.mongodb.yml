@@ -1,0 +1,31 @@
+Notification\NotificationBundle\Document\EmailNotification:
+    repositoryClass: Notification\NotificationBundle\Repository\EmailNotificationMongoRepository
+    type: document
+    collection: emailnotifications
+    fields:
+        id:
+            id: true
+        email_from:
+            type: string
+        email_to:
+            type: string
+        sender_userid:
+            type: int
+        receiver_userid:
+            type: int
+        readvalue:
+            type: int
+        deletevalue:
+            type: int
+        message_type:
+            type: string
+        message:
+            type: string
+        subject:
+            type: string
+        date:
+            type: date       
+# php app/console doctrine:mongodb:generate:documents NManagerNotificationBundle
+# Create Document
+# php app/console doctrine:mongodb:generate:repositories NManagerNotificationBundle
+# Create repository

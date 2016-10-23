@@ -1,0 +1,19 @@
+{% extends 'SonataAdminBundle:CRUD:base_list_field.html.twig' %}
+
+{% block field %}
+    <div>
+        {% if object.type == 1 %} 
+            <strong><a href="{{admin.s3_url}}/{{admin.shop_weekly_transaction}}/{{object.filename}}" target="_blank">{{object.filename}}</a></strong>
+        {% elseif object.type == 2 %}
+            <strong><a href="{{admin.s3_url}}/{{admin.citizenincomeutilized}}/{{object.filename}}" target="_blank">{{object.filename}}</a></strong>
+        {% elseif object.type == 3 %}
+            <strong><a href="{{admin.s3_url}}/{{admin.shopdailyregistration}}/{{object.filename}}" target="_blank">{{object.filename}}</a></strong>
+        {% elseif object.type == 4 %}
+            <strong><a href="{{admin.s3_url}}/{{admin.shopdailypay}}/{{object.filename}}" target="_blank">{{object.filename}}</a></strong>
+        {% elseif object.type == 5 %}
+            <strong><a href="{{admin.s3_url}}/{{admin.shop_pending_registration}}/{{object.filename}}" target="_blank">{{object.filename}}</a></strong>
+        {% elseif object.type == 6 %}
+            <strong><a href="{{admin.s3_url}}/{{admin.gift_card_daily_transaction}}/{{object.filename}}" target="_blank">{{object.filename}}</a></strong>
+        {% endif %}
+    </div>
+{% endblock %}

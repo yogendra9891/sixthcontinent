@@ -1,0 +1,23 @@
+Post\PostBundle\Document\PostRating:
+    repositoryClass: Post\PostBundle\Repository\PostRatingMongoRepository
+    type: embeddedDocument
+    collection: postrating
+    fields:
+        id:
+            id: true
+        user_id:
+            type: int
+        rate:
+            type: int
+        item_id:
+            type: string
+        type:
+            type: string
+        created_at:
+            type: date
+        updated_at:
+            type: date
+# php app/console doctrine:mongodb:generate:documents MediaMediaBundle
+# Create Document
+# php app/console doctrine:mongodb:generate:repositories MediaMediaBundle
+# Create repository

@@ -1,0 +1,6 @@
+parameters:
+    utility_curl_request.class: Utility\CurlBundle\Services\CurlRequestService
+services:
+    utility_curl_request.service:
+        class: %utility_curl_request.class%
+        arguments: [@doctrine.orm.entity_manager, @doctrine.odm.mongodb.document_manager, @service_container]

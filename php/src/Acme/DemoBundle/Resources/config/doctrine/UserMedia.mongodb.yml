@@ -1,0 +1,50 @@
+Acme\DemoBundle\Document\UserMedia:
+    repositoryClass: Acme\DemoBundle\Repository\UserMediaMongoRepository
+    type: document
+    collection: usermedia
+    fields:
+        id:
+            id:  true
+        name:
+            type: string
+        userid:
+            type: int
+        description:
+            type: string
+        enabled:
+            type: int
+        contenttype:
+            type: string
+        enabled:
+            type: int
+        width:
+            type: int
+        height:
+            type: int
+        content_size:
+            type: int
+        copyright:
+            type: int
+        author_name:
+            type: string
+        cdn_is_flushable:
+            type: int
+        cdn_status:
+            type: int
+        updated_at:
+            type: date
+        created_at:
+            type: date
+        access_label:
+            type: int
+        file:
+            type: file
+        path:
+            type: string
+
+
+
+# php app/console doctrine:mongodb:generate:documents TestFormBundle
+# Create Document
+# php app/console doctrine:mongodb:generate:repositories TestFormBundle
+# Create repository

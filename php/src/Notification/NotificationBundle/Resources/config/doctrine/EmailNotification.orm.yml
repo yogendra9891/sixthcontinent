@@ -1,0 +1,37 @@
+Notification\NotificationBundle\Entity\EmailNotification:
+    repositoryClass: Notification\NotificationBundle\Repository\EmailNotificationRepository
+    type: entity
+    table: emailnotifications
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        email_from:
+            type: string
+            length: '255'
+            column: email_from
+        email_to:
+            type: string
+            length: 255
+            column: email_to
+        sender_userid:
+            type: integer
+            column: sender_userid
+        receiver_userid:
+            type: integer
+            column: receiver_userid
+        message_type:
+            type: string
+            length: '255'
+            column: message_type
+        message:
+            type: string
+            length: 255
+        subject:
+            type: string
+            length: 255
+        date:
+            type: date
+    lifecycleCallbacks: {  }

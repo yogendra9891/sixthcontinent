@@ -1,0 +1,51 @@
+Transaction\CitizenIncomeBundle\Entity\CiFromCashBack:
+    type: entity
+    table: null
+    repositoryClass: Transaction\CitizenIncomeBundle\Repository\CiFromCashBackRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        walletCitizenId:
+            type: integer
+            column: wallet_citizen_id
+        timeCreated:
+            type: integer
+            column: time_created
+        timeCreatedH:
+            type: datetime
+            column: time_created_h
+        sixcTransactionId:
+            type: string
+            length: '60'
+            column: sixc_transaction_id
+        singleShareBaseCurrency:
+            type: integer
+            column: single_share_base_currency
+        singleShareUsd:
+            type: integer
+            column: single_share_usd
+        singleShareEur:
+            type: integer
+            column: single_share_eur
+        singleShareInr:
+            type: integer
+            column: single_share_inr
+        singleShareChf:
+            type: integer
+            column: single_share_chf
+        singleShareSek:
+            type: integer
+            column: single_share_sek
+        singleShareDkk:
+            type: integer
+            column: single_share_dkk
+        singleShareGbp:
+            type: integer
+            column: single_share_gbp
+        singleShareYen:
+            type: integer
+            column: single_share_yen
+    lifecycleCallbacks: {  }

@@ -1,0 +1,26 @@
+sixth_continent_connect_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: SixthContinentConnectBundle:Default:index }
+#check the app data
+checkconnectappdata:
+    pattern:  /webapi/checkconnectappdata
+    defaults: { _controller: SixthContinentConnectBundle:CredentialVerification:checkConnectAppData }
+posturldata:
+    pattern:  /webapi/posturldata
+    defaults: { _controller: SixthContinentConnectBundle:CredentialVerification:posturldata }
+citransaction:
+    pattern:  /webapi/citransaction
+    defaults: { _controller: SixthContinentConnectBundle:AppBusinessAccount:ciTransaction }    
+#post back of cartisi gateway
+offerpurchaseback:
+    pattern:  /webapi/offerpurchaseback
+    defaults: { _controller: SixthContinentConnectBundle:OfferPurchase:offerpurchaseback }
+purchasetamoilofferdetail:
+    pattern:  /webapi/purchasetamoilofferdetail
+    defaults: { _controller: SixthContinentConnectBundle:OfferDetail:purchasetamoilofferdetail }
+purchasetamoilofferpointofsale:
+    pattern:  /webapi/purchasetamoilofferpointofsale
+    defaults: { _controller: SixthContinentConnectBundle:OfferDetail:purchasetamoilofferpointofsale }
+test_purchase:
+    pattern:  /start/trasanction
+    defaults: { _controller: SixthContinentConnectBundle:CredentialVerification:updateInTransaction }

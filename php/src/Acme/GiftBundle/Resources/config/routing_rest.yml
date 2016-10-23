@@ -1,0 +1,9 @@
+#src/Acme/GiftBundle/Resources/config/routing_rest.yml
+
+searchcards : 
+  type: rest
+  pattern:  /searchcards
+  resource: "AcmeGiftBundle:Gift"
+  name_prefix: api_
+  requirements:
+        _method:  POST

@@ -1,0 +1,6 @@
+services:
+    utilitysecurity.tokens.action_listener:
+        class: Utility\SecurityBundle\EventListener\TokenListener
+        arguments: [ @doctrine.orm.entity_manager  ] 
+        tags:
+            - { name: kernel.event_listener, event: kernel.controller, method: onKernelController }

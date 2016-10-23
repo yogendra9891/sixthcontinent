@@ -1,0 +1,21 @@
+#app/routing_rest.yml
+
+#message :
+# type: rest
+# resource:     "MessageMessageBundle:Message"
+# name_prefix:  api_
+#
+commentlists:
+    type: rest
+    pattern: /commentlists
+    prefix: /v1
+    resource: "PostPostBundle:CommentsV1"
+    name_prefix: api_1_
+userposts:
+    type: rest
+    pattern: /userposts
+    prefix: /v1
+    resource: "PostPostBundle:PostV1"
+    name_prefix: api_1_
+    requirements:
+        _method:  POST

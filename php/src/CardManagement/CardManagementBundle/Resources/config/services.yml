@@ -1,0 +1,19 @@
+parameters:
+#    card_management.example.class: CardManagement\CardManagementBundle\Example
+    card_management.pdf_export.class: CardManagement\CardManagementBundle\Services\PdfExportService
+    card_management.subscription.class: CardManagement\CardManagementBundle\Services\SubscriptionService
+    card_management.waiver.class: CardManagement\CardManagementBundle\Services\WaiverService
+
+services:
+#    card_management.example:
+#        class: %card_management.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
+    card_management.pdf_export:
+        class: %card_management.pdf_export.class%
+        arguments: [@doctrine.orm.entity_manager]
+    card_management.subscription:
+        class: %card_management.subscription.class%
+        arguments: [@doctrine.orm.entity_manager, @service_container]
+    card_management.waiver:
+        class: %card_management.waiver.class%
+        arguments: [@doctrine.orm.entity_manager, @service_container]

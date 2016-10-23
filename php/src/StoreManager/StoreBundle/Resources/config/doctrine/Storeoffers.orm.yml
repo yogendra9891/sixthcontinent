@@ -1,0 +1,33 @@
+StoreManager\StoreBundle\Entity\Storeoffers:
+    type: entity
+    table: null
+    repositoryClass: StoreManager\StoreBundle\Entity\StoreoffersRepository
+    indexes:
+        index_shopid_Storeoffers:
+            columns: [shop_id]
+        index_userid_Storeoffers:
+            columns: [user_id]
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        shopId:
+            type: integer
+            column: shop_id
+        userId:
+            type: integer
+            column: user_id
+        affilationAmount:
+            type: integer
+            column: affilation_amount
+            nullable: TRUE
+        discountPosition:
+            type: integer
+            column: discount_position
+            nullable: TRUE
+        shots:
+            type: integer
+            nullable: TRUE
+    lifecycleCallbacks: {  }

@@ -1,0 +1,35 @@
+UserManager\Sonata\UserBundle\Document\GroupAlbum:
+    repositoryClass: UserManager\Sonata\UserBundle\Repository\GroupAlbumMongoRepository
+    type: document
+    collection: groupalbum
+    fields:
+        id:
+            id:  true
+        album_name:
+            type: string
+        group_id:
+            type: string
+        album_desc:
+            type: string
+        privacy_setting:
+            type: int
+        updated_at:
+            type: date
+        created_at:
+            type: date
+        vote_count:
+            type: int
+        vote_sum:
+            type: int
+        avg_rating:
+            type: float
+        rate:
+           embedded: true
+           type: many
+           targetDocument: UserManager\Sonata\UserBundle\Document\GroupAlbumRating
+           cascade: all	
+           
+# php app/console doctrine:mongodb:generate:documents TestFormBundle
+# Create Document
+# php app/console doctrine:mongodb:generate:repositories TestFormBundle
+# Create repository

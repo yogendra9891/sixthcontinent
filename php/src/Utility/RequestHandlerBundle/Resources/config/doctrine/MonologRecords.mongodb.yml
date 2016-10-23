@@ -1,0 +1,33 @@
+Utility\RequestHandlerBundle\Document\MonologRecords:
+    repositoryClass: Utility\RequestHandlerBundle\Repository\MonologRecordsMongoRepository
+    type: document
+    collection: monologrecords
+    fields:
+        id:
+            id: true
+        message:
+            type: string    
+        context:
+           embedded: true
+           type: many
+           targetDocument: Utility\RequestHandlerBundle\Document\MonologRecordsContext
+           cascade: all
+           type: string
+        level:
+            type: int
+        level_name:
+            type: string
+        channel:
+            type: string         
+        datetime:
+            type: date 
+        extra:
+           embedded: true
+           type: many
+           targetDocument: Utility\RequestHandlerBundle\Document\MonologRecordsExtra
+           cascade: all 
+# php app/console doctrine:mongodb:generate:documents UtilityRequestHandlerBundle
+# Create Document
+# php app/console doctrine:mongodb:generate:repositories UtilityRequestHandlerBundle
+# Create repository
+            

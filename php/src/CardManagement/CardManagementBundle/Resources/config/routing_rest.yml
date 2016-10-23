@@ -1,0 +1,77 @@
+#app/routing_rest.yml
+createoneclickpaymenturls:
+    type: rest
+    pattern: /createoneclickpaymenturls
+    resource: "CardManagementBundle:OneClickPayment"
+    name_prefix: api_
+    requirements:
+        _methods: POST
+createcontracts:
+    type: rest
+    pattern: /createcontracts
+    resource: "CardManagementBundle:OneClickPayment"
+    name_prefix: api_
+    requirements:
+        _methods: POST
+creditcardlists:
+    type: rest
+    pattern: /creditcardlists
+    resource: "CardManagementBundle:OneClickPayment"
+    name_prefix: api_
+    requirements:
+        _methods: POST
+makedefaultcards:
+    type: rest
+    pattern: /makedefaultcards
+    resource: "CardManagementBundle:OneClickPayment"
+    name_prefix: api_
+    requirements:
+        _methods: POST
+deletecreditcards:
+    type: rest
+    pattern: /deletecreditcards
+    resource: "CardManagementBundle:OneClickPayment"
+    name_prefix: api_
+    requirements:
+        _methods: POST
+getsubscriptionpaymenturls:
+    type: rest
+    pattern: /getsubscriptionpaymenturls
+    resource: "CardManagementBundle:Subscription"
+    name_prefix: api_
+    requirements:
+        _methods: POST
+unsubscribeshops:
+    type: rest
+    pattern: /unsubscribeshops
+    resource: "CardManagementBundle:Subscription"
+    name_prefix: api_
+    requirements:
+        _methods: POST
+cancelsusbcriptiontransactions:
+    type: rest
+    pattern: /cancelsusbcriptiontransactions
+    resource: "CardManagementBundle:Subscription"
+    name_prefix: api_
+    requirements:
+        _methods: POST
+getrecurringpaymenturls:
+    type: rest
+    pattern: /getrecurringpaymenturls
+    resource: "CardManagementBundle:PayRecurring"
+# send contracts     
+sendcontracts:
+    type: rest
+    pattern: /sendcontracts
+    resource: "CardManagementBundle:OneClickPayment"
+    name_prefix: api_
+    requirements:
+        _methods: POST
+# update contracts     
+updatependingpayments:
+    type: rest
+    pattern: /updatependingpayments
+    resource: "CardManagementBundle:PayRecurring"
+    name_prefix: api_
+    requirements:
+        _methods: POST

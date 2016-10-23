@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity repository-class="UserManager\Sonata\UserBundle\Entity\BrokerUserRepository" name="UserManager\Sonata\UserBundle\Entity\BrokerUser">
+     <indexes>
+            <index name="userid_BrokerUser" columns="user_id"/>
+     </indexes>
+    <id name="id" type="integer" column="id">
+      <generator strategy="AUTO"/>
+    </id>
+    <field name="userId" type="bigint" column="user_id"/>
+    <field name="roleId" type="integer" column="role_id"/>
+    <field name="phone" type="string" column="phone" length="255"/>
+    <field name="vatNumber" type="string" column="vat_number" length="255"/>
+    <field name="fiscalCode" type="string" column="fiscal_code" length="255"/>
+    <field name="iban" type="string" column="iban" length="255"/>
+    <field name="createdAt" type="datetime" column="created_at"/>
+    <field name="profileImg" type="string" column="profile_img" length='255'/>
+    <field name="mapPlace" type="string" column="map_place" length="255"/>
+    <field name="latitude" type="string" column="latitude" length="255"/>
+    <field name="longitude" type="string" column="longitude" length="255"/>
+    <field name="ssn" type="string" column="ssn" length="255"/>
+    <field name="idCard" type="string" column="id_card" length="255"/>
+    <field name="isActive" type="integer" column="is_active"/>
+  </entity>
+</doctrine-mapping>

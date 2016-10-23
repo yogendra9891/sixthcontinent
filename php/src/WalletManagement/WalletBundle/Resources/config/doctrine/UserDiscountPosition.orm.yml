@@ -1,0 +1,55 @@
+WalletManagement\WalletBundle\Entity\UserDiscountPosition:
+    type: entity
+    table: null
+    repositoryClass: WalletManagement\WalletBundle\Entity\UserDiscountPositionRepository
+    uniqueConstraints:
+        index_userid_userdiscountposition:
+            columns: [user_id]
+            type: unique    
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        userId:
+            type: bigint
+            column: user_id
+
+        totalDp:
+            type: bigint
+            length: 255
+            column: total_dp
+            options:
+                default: 0
+        balanceDp:
+            type: bigint
+            length: 255
+            column: balance_dp
+            options:
+                default: 0
+        citizenIncome:
+            type: bigint
+            column: citizen_income
+        totalCitizenIncome:
+            type: bigint
+            column: total_citizen_income
+            options:
+                default: 0
+        saldorm:
+            type: bigint
+            column: saldorm
+            options:
+                default: 0
+        createdAt:
+            type: date
+            column: created_at
+        updatedAt:
+            type: date
+            column: updated_at
+        blockCitizenIncome:
+            type: bigint
+            column: block_citizen_income
+            options:
+                default: 0    
+    lifecycleCallbacks: {  }

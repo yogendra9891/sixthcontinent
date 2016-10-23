@@ -1,0 +1,23 @@
+StoreManager\StoreBundle\Entity\Favourite:
+    type: entity
+    table: null
+    repositoryClass: StoreManager\StoreBundle\Repository\FavouriteRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        userId:
+            type: integer
+            column: user_id
+        storeId:
+            type: integer
+            column: store_id
+        createdAt:
+            type: datetime
+            column: created_at
+    lifecycleCallbacks: {  }
+    uniqueConstraints:
+        fav_shop_idx:
+            columns: user_id,store_id

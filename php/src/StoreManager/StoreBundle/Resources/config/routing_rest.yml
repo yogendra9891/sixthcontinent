@@ -1,0 +1,271 @@
+#app/routing_rest.yml
+#v1 routing
+V1_Store_Route : 
+  type : rest
+  resource: "@StoreManagerStoreBundle/Resources/config/routing_v1_rest.yml"
+createstores:
+   type: rest
+   pattern: /createstores
+   resource: "StoreManagerStoreBundle:RestStore"
+   name_prefix: api_
+   
+getuserstores:
+   type: rest
+   pattern: /getuserstores
+   resource: "StoreManagerStoreBundle:RestStore"
+   name_prefix: api_
+   
+editstores:
+   type: rest
+   pattern: /editstores
+   resource: "StoreManagerStoreBundle:RestStore"
+   name_prefix: api_
+   
+uploadstoremedias:
+   type: rest
+   pattern: /uploadstoremedias
+   resource: "StoreManagerStoreBundle:RestStore"
+   name_prefix: api_
+   
+storedetails:
+   type: rest
+   pattern: /storedetails
+   resource: "StoreManagerStoreBundle:RestStore"
+   name_prefix: api_
+   
+setstorefeaturedimages:
+   type: rest
+   pattern: /setstorefeaturedimages
+   resource: "StoreManagerStoreBundle:RestStore"
+   name_prefix: api_
+   
+invitestoreusers:
+   type: rest
+   pattern: /invitestoreusers
+   resource: "StoreManagerStoreBundle:RestStore"
+   name_prefix: api_
+   
+storenotifications:
+   type: rest
+   pattern: /storenotifications
+   resource: "StoreManagerStoreBundle:RestStore"
+   name_prefix: api_
+   
+responsestorejoins:
+   type: rest
+   pattern: /responsestorejoins
+   resource: "StoreManagerStoreBundle:RestStore"
+   name_prefix: api_
+   
+createchildstores:
+   type: rest
+   pattern: /createchildstores
+   resource: "StoreManagerStoreBundle:RestChildStore"
+   name_prefix: api_
+   
+deletestores:
+   type: rest
+   pattern: /deletestores
+   resource: "StoreManagerStoreBundle:RestStore"
+   name_prefix: api_
+
+affiliates:
+   type: rest
+   pattern: /affiliates
+   resource: "StoreManagerStoreBundle:RestStore"
+   name_prefix: api_
+citizenwrittertocitizens:
+   type: rest
+   pattern: /citizenwrittertocitizens
+   resource: "StoreManagerStoreBundle:RestStore"
+   name_prefix: api_
+   
+#store album  
+
+createstorealbums:
+   type: rest
+   pattern: /createstorealbums
+   resource: "StoreManagerStoreBundle:RestStore"
+   name_prefix: api_
+uploadstoremediaalbums:
+   type: rest
+   pattern: /uploadstoremediaalbums
+   resource: "StoreManagerStoreBundle:RestStore"
+   name_prefix: api_
+deletestorealbums:
+   type: rest
+   pattern: /deletestorealbums
+   resource: "StoreManagerStoreBundle:RestStore"
+   name_prefix: api_
+deletestorealbummedias:
+   type: rest
+   pattern: /deletestorealbummedias
+   resource: "StoreManagerStoreBundle:RestStore"
+   name_prefix: api_
+viewstorealbums:
+   type: rest
+   pattern: /viewstorealbums
+   resource: "StoreManagerStoreBundle:RestStore"
+   name_prefix: api_
+storealbumlists:
+   type: rest
+   pattern: /storealbumlists
+   resource: "StoreManagerStoreBundle:RestStore"
+   name_prefix: api_
+totalmediastorealbums:
+   type: rest
+   pattern: /totalmediastorealbums
+   resource: "StoreManagerStoreBundle:RestStore"
+   name_prefix: api_
+uploadstoreprofileimages:
+   type: rest
+   pattern: /uploadstoreprofileimages
+   resource: "StoreManagerStoreBundle:RestStore"
+   name_prefix: api_
+setstoreprofileimages:
+   type: rest
+   pattern: /setstoreprofileimages
+   resource: "StoreManagerStoreBundle:RestStore"
+   name_prefix: api_
+appurllogins:
+   type: rest
+   pattern: /appurllogins
+   resource: "StoreManagerStoreBundle:RestStore"
+   name_prefix: api_
+#shoppingplus
+shoppingplusclientes:
+   type: rest
+   pattern: /shoppingplusclientes
+   resource: "StoreManagerStoreBundle:Shoppingplus"
+   name_prefix: api_
+topshopsperrevenues:
+   type: rest
+   pattern: /topshopsperrevenues
+   resource: "StoreManagerStoreBundle:RestChildStore"
+   name_prefix: api_
+getmapstores:
+   type: rest
+   pattern: /getmapstores
+   resource: "StoreManagerStoreBundle:RestStore"
+   name_prefix: api_
+sendremindernotificationsss:
+   type: rest
+   pattern: /sendremindernotifications
+   resource: "StoreManagerStoreBundle:BillingCircle"
+   name_prefix: api_
+shopacls:
+   type: rest
+   pattern: /shopacls
+   resource: "StoreManagerStoreBundle:RestStore"
+   name_prefix: api_
+   
+getmapstoreslists:
+   type: rest
+   pattern: /getmapstoreslists
+   resource: "StoreManagerStoreBundle:RestStore"
+   name_prefix: api_
+   
+searchshoponmaps:
+   type: rest
+   pattern: /searchshoponmaps
+   resource: "StoreManagerStoreBundle:RestStore"
+   name_prefix: api_
+
+getshopcontractinfos:
+   type: rest
+   pattern: /getshopcontractinfos
+   resource: "StoreManagerStoreBundle:RestStore"
+   name_prefix: api_
+       
+storelatestalbumlists:
+   type: rest
+   pattern: /storelatestalbumlists
+   resource: "StoreManagerStoreBundle:RestStore"
+   name_prefix: api_
+   requirements:
+        _method:  POST
+        
+        
+searchstoreonfilters:
+   type: rest
+   pattern: /searchstoreonfilters
+   resource: "StoreManagerStoreBundle:RestStore"
+   name_prefix: api_
+        
+getstoredetails:
+   type: rest
+   pattern: /getstoredetails
+   resource: "StoreManagerStoreBundle:RestStore"
+   name_prefix: api_
+   
+favouritestores:
+   type: rest
+   pattern: /favouritestores
+   resource: "StoreManagerStoreBundle:Favourite"
+   name_prefix: api_
+
+unfavouritestores:
+   type: rest
+   pattern: /unfavouritestores
+   resource: "StoreManagerStoreBundle:Favourite"
+   name_prefix: api_
+
+myfavouritestores:
+   type: rest
+   pattern: /myfavouritestores
+   resource: "StoreManagerStoreBundle:Favourite"
+   name_prefix: api_
+
+storelikedusers:
+   type: rest
+   pattern: /storelikedusers
+   resource: "StoreManagerStoreBundle:Favourite"
+   name_prefix: api_
+getstorecovermediacoordinates:
+   type: rest
+   pattern: /getstorecovermediacoordinates
+   resource: "StoreManagerStoreBundle:RestStore"
+   name_prefix: api_
+followshops:
+   type: rest
+   pattern: /followshops
+   resource: "StoreManagerStoreBundle:FollowShop"
+   name_prefix: api_
+unfollowshops:
+   type: rest
+   pattern: /unfollowshops
+   resource: "StoreManagerStoreBundle:FollowShop"
+   name_prefix: api_
+userfollowedshops:
+   type: rest
+   pattern: /userfollowedshops
+   resource: "StoreManagerStoreBundle:FollowShop"
+   name_prefix: api_
+userfollowingshops:
+   type: rest
+   pattern: /userfollowingshops
+   resource: "StoreManagerStoreBundle:FollowShop"
+   name_prefix: api_
+uploadstoreofferimages:
+   type: rest
+   pattern: /uploadstoreofferimages
+   resource: "StoreManagerStoreBundle:StoreOwnerNotification"
+   name_prefix: api_     
+searchstoreondimensions:
+    type: rest
+    pattern: /searchstoreondimensions
+    resource: "StoreManagerStoreBundle:RestStore"
+    name_prefix: api_
+deleteshopoffermedias:
+   type: rest
+   pattern: /deleteshopoffermedias
+   resource: "StoreManagerStoreBundle:StoreOwnerNotification"
+   name_prefix: api_
+# manage affiliation
+updateaffiliation:
+   type: rest
+   pattern: /updateaffiliation
+   defaults:  { _controller: StoreManagerStoreBundle:StoreProfile:postUpdateAffiliations}
+   name_prefix: api_
+   requirements:
+        _method:  POST

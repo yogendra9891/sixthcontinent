@@ -1,0 +1,7 @@
+parameters:
+#    commercial_promotion.example.class: Transaction\CommercialPromotionBundle\Example
+
+services:
+#    commercial_promotion.example:
+#        class: %commercial_promotion.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

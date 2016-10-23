@@ -1,0 +1,25 @@
+StoreManager\StoreBundle\Document\ShoppingplusStatus:
+    repositoryClass: StoreManager\StoreBundle\Repository\ShoppingplusStatusMongoRepository
+    type: document
+    collection: shoppingplusstatus
+    fields:
+        id:
+            id:  true
+        register_id:
+            type: int
+        status:
+            type: string
+        entity_type:
+            type: int
+        created:
+            type: date
+        error_code:
+            type: string
+        error_desc:
+            type: string 
+        step:
+            type: string
+# php app/console doctrine:mongodb:generate:documents TestFormBundle
+# Create Document
+# php app/console doctrine:mongodb:generate:repositories TestFormBundle
+# Create repository

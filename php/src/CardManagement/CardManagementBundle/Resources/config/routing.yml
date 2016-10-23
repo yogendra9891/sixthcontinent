@@ -1,0 +1,15 @@
+card_management_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: CardManagementBundle:Default:index }
+create_contact:
+    pattern:  /webapi/createcontract
+    defaults: { _controller: CardManagementBundle:OneClickPayment:createcontract }
+create_subscription_contact:
+    pattern:  /webapi/createsubscriptioncontract
+    defaults: { _controller: CardManagementBundle:Subscription:createsubscriptioncontract }
+create_recurring_contact:
+    pattern:  /webapi/createrecurringcontract
+    defaults: { _controller: CardManagementBundle:PayRecurring:createrecurringcontract }
+pay_recurring_subscription:
+    pattern:  /webapi/payrecurringsubscription
+    defaults: { _controller: CardManagementBundle:SubscriptionRecurring:payrecurringsubscription }

@@ -1,0 +1,25 @@
+PostFeeds\PostFeedsBundle\Document\RatingFeeds:
+    repositoryClass: PostFeeds\PostFeedsBundle\Repository\RatingFeedsMongoRepository
+    type: embeddedDocument
+    collection: ratingfeeds
+    fields:
+        id:
+            id:  true
+        user_id:
+            type: int
+        user_info:
+            type: hash
+        item_id:
+            type: string
+        rate:
+            type: int        
+        created_at:
+            type: date
+        updated_at:
+            type: date
+        
+           
+# php app/console doctrine:mongodb:generate:documents TestFormBundle
+# Create Document
+# php app/console doctrine:mongodb:generate:repositories TestFormBundle
+# Create repositoryd 

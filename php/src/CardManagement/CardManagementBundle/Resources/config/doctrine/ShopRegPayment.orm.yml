@@ -1,0 +1,63 @@
+CardManagement\CardManagementBundle\Entity\ShopRegPayment:
+    type: entity
+    table: shop_transaction_history
+    repositoryClass: CardManagement\CardManagementBundle\Entity\ShopRegPaymentRepository
+    indexes:
+        index_shopid_ShopRegPayment:
+            columns: [shop_id]
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        shopId:
+            type: integer
+            column: shop_id
+        amount:
+            type: bigint
+            column: amount
+        regFee:
+            type: bigint
+            column: reg_fee
+        vat:
+            type: bigint
+            column: reg_vat
+        pendingAmount:
+            type: bigint
+            column: pending_amount
+        transactionType:
+            type: string
+            length: 255
+            column: transaction_type
+        created_at:
+            type: datetime
+        description:
+            type: string
+            length: 255
+        transactionShopId:
+            type: string
+            length: 255
+            column: transaction_shop_id
+        method:
+            type: string
+            length: 255
+        transactionCode:
+            type: string
+            length: 255
+            column: transaction_code
+        contractId:
+            type: integer
+            column: contract_id
+        paymentId:
+            type: integer
+            column: payment_id
+        recurringPaymentId:
+            type: integer
+            column: recurring_payment_id
+        status:
+            type: integer
+        pendingAmountVat:
+            type: bigint
+            column: pending_amount_vat
+    lifecycleCallbacks: {  }

@@ -1,0 +1,15 @@
+Transaction\CommercialPromotionBundle\Document\TagsCP:
+    repositoryClass: Transaction\CommercialPromotionBundle\Repository\TagsCPRepository
+    type: embeddedDocument
+    collection: tagscp
+    fields:
+        id:
+            id: true
+        user_id:
+            type: int
+        name:
+            type: string
+# php app/console doctrine:mongodb:generate:documents MediaMediaBundle
+# Create Document
+# php app/console doctrine:mongodb:generate:repositories MediaMediaBundle
+# Create repository

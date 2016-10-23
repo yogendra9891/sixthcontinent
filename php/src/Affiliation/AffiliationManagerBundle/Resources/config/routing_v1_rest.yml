@@ -1,0 +1,11 @@
+#app/routing_rest.yml
+#v1 for affiliaions
+#get citizen affiliations users list   
+citizenaffiliations:
+    type: rest
+    pattern: /citizenaffiliations
+    prefix: /v1
+    resource: "AffiliationAffiliationManagerBundle:AffiliationV1"
+    name_prefix: api_1_
+    requirements:
+        _methods: POST   

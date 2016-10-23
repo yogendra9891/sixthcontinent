@@ -1,0 +1,24 @@
+## YAML Template.
+---
+SixthContinent\SixthContinentConnectBundle\Document\ApplicationCoverImg:
+    repositoryClass: SixthContinent\SixthContinentConnectBundle\Repository\ApplicationCoverImgMongoRepository
+    type: document
+    collection: application_cover_img
+    fields:
+        id:
+            id: true
+        app_id:
+            type: string
+        x:
+            type: string
+        y:
+            type: string
+    referenceMany:
+        image_name:
+            targetDocument: PostFeeds\PostFeedsBundle\Document\MediaFeeds
+            cascade: persist        
+ 
+# Create Document            
+# php app/console doctrine:mongodb:generate:documents SixthContinentConnectBundle
+# Create repository
+# php app/console doctrine:mongodb:generate:repositories SixthContinentConnectBundle

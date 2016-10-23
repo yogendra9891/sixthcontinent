@@ -1,0 +1,38 @@
+## YAML Template.
+---
+Media\MediaBundle\Document\AlbumMediaComment:
+    repositoryClass: Media\MediaBundle\Repository\AlbumMediaCommentMongoRepository
+    type: embeddedDocument
+    collection: albummediacomment
+    fields:
+        id:
+            id: true
+        album_id:
+            type: string
+        media_id:
+            type: string
+        comment_text:
+            type: string
+        comment_author:
+            type: int
+        comment_created_at:
+            type: date
+        comment_updated_at:
+            type: date
+        status:
+            type: int
+        vote_count:
+            type: int
+        vote_sum:
+            type: int
+        avg_rating:
+            type: float
+        medias:
+            type: collection
+        rate:
+           embedded: true
+           type: many
+           targetDocument: Media\MediaBundle\Document\AlbumMediaCommentRating
+           cascade: all
+        tagging:
+            type: hash

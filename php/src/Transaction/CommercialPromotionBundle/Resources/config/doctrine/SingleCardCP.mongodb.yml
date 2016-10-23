@@ -1,0 +1,21 @@
+Transaction\CommercialPromotionBundle\Document\SingleCardCP:
+    repositoryClass: Transaction\CommercialPromotionBundle\Repository\SingleCardCPRepository
+    type: embeddedDocument
+    collection: singlecardcp
+    fields:
+        id:
+            id: true
+        card_id:
+            type: string
+        amount:
+            type: string
+        product_code:
+            type: string
+        landscape_image :
+            type: string
+        portrait_image :
+            type: string
+# php app/console doctrine:mongodb:generate:documents MediaMediaBundle
+# Create Document
+# php app/console doctrine:mongodb:generate:repositories MediaMediaBundle
+# Create repository port

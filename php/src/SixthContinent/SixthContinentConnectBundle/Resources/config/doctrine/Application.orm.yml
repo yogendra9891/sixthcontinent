@@ -1,0 +1,41 @@
+SixthContinent\SixthContinentConnectBundle\Entity\Application:
+    type: entity
+    table: null
+    repositoryClass: SixthContinent\SixthContinentConnectBundle\Repository\ApplicationRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        applicationId:
+            type: string
+            length: 255
+            column: application_id
+        userId:
+            type: bigint
+            column: user_id    
+        applicationName:
+            type: string
+            length: 255
+            column: application_name
+        applicationVersion:
+            type: string
+            length: 255
+            column: application_version
+        applicationSecret:
+            type: string
+            length: 255
+            column: application_secret
+        applicationServices:
+            type: text
+            column: application_services
+        applicationUrl:
+            type: string
+            length: 255
+            column: application_url
+        description:
+            type: string
+            length: 255
+            column: description    
+    lifecycleCallbacks: {  }

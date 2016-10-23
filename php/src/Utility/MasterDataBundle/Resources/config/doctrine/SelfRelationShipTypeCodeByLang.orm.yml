@@ -1,0 +1,23 @@
+Utility\MasterDataBundle\Entity\SelfRelationShipTypeCodeByLang:
+    type: entity
+    table: null
+    repositoryClass: Utility\MasterDataBundle\Repository\SelfRelationShipTypeCodeByLangRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        relationShipCode:
+            type: string
+            length: 255
+            column: relationship_code
+        langCode:
+            type: string
+            length: 255
+            column: lang_code
+        relationShipName:
+            type: string
+            length: 255
+            column: relationship_name
+    lifecycleCallbacks: {  }

@@ -1,0 +1,19 @@
+PostFeeds\PostFeedsBundle\Document\ClubTagFeeds:
+    repositoryClass: PostFeeds\PostFeedsBundle\Repository\ClubTagFeedsMongoRepository
+    type: embeddedDocument
+    collection: clubtagfeeds
+    fields:
+        id:
+            id:  true
+        club_info:
+            type: collection	
+        created_at:
+            type: date
+        updated_at:
+            type: date
+        
+           
+# php app/console doctrine:mongodb:generate:documents TestFormBundle
+# Create Document
+# php app/console doctrine:mongodb:generate:repositories TestFormBundle
+# Create repositoryd 

@@ -1,0 +1,117 @@
+Utility\ApplaneIntegrationBundle\Entity\ShopTransactionDetail:
+    type: entity
+    table: shop_transaction_detail
+    repositoryClass: Utility\ApplaneIntegrationBundle\Repository\ShopTransactionDetailRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        date:
+            type: datetime
+        invoiceId:
+            type: string
+            length: 255
+            column: invoice_id            
+        shopId:
+            type: integer
+            column: shop_id
+        userId:
+            type: integer
+            column: user_id
+        amount:
+            type: float
+            column: total_transaction_amount
+        payable_amount:
+            type: float
+            column: payable_amount
+        status:
+            type: integer
+        contractTxnId:
+            type: string
+            length: 255
+            column: contract_txn_id
+        comment:
+            type: string
+            length: 255
+        payType:
+            type: string
+            length: 255
+            column: pay_type
+            nullable: TRUE
+        paymentDate:
+            type: datetime
+            column: payment_date
+            nullable: TRUE
+        pendingIds:
+            type: string
+            length: 255
+            column: pending_ids
+        pendingAmount:
+            type: float
+            column: pending_amount
+        regFee:
+            type: float
+            column: reg_fee
+        regVat:
+            type: float
+            column: reg_vat
+        recurringVat:
+            type: float
+            column: recurring_vat
+        totalAmount:
+            type: float
+            column: total_amount
+        tipoCarta:
+            type: string
+            length: 255
+            column: tipo_carta
+            nullable: TRUE
+        paese:
+            type: string
+            length: 255
+            nullable: TRUE
+        codTrans:
+            type: string
+            length: 255
+            nullable: TRUE
+        tipoProdotto:
+            type: string
+            length: 255
+            column: tipo_prodotto
+            nullable: TRUE
+        tipoTransazione:
+            type: string
+            length: 255
+            column: tipo_transazione
+            nullable: TRUE
+        codiceAutorizzazione:
+            type: string
+            length: 255
+            column: codice_autorizzazione
+            nullable: TRUE
+        dataOra:
+            type: string
+            length: 255
+            column: data_ora
+            nullable: TRUE
+        codiceEsito:
+            type: integer
+            column: codice_esito
+            nullable: TRUE
+        descrizioneEsito:
+            type: string
+            length: 255
+            column: descrizione_esito
+            nullable: TRUE
+        mac:
+            type: string
+            length: 255
+            nullable: TRUE
+        created_at:
+            type: date
+        contractId:
+            type: integer
+            column: contract_id
+    lifecycleCallbacks: {  }

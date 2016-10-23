@@ -1,0 +1,27 @@
+Transaction\WalletBundle\Entity\Currency:
+    type: entity
+    table: null
+    repositoryClass: Transaction\WalletBundle\Repository\CurrencyRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        isBaseCurrency:
+            type: integer
+            column: is_base_currency
+        currencyLabel:
+            type: string
+            length: '10'
+            column: currency_label
+        baseToCurrencyRatio:
+            type: float
+            column: base_to_currency_ratio
+        timeUpdatedH:
+            type: datetime
+            column: time_updated_h
+        timeUpdated:
+            type: integer
+            column: time_updated
+    lifecycleCallbacks: {  }

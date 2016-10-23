@@ -1,0 +1,142 @@
+parameters:
+    appalne_integration.callapplaneservice.class: Utility\ApplaneIntegrationBundle\Services\ApplaneCallService
+    recurring_shop.payment.class: Utility\ApplaneIntegrationBundle\Services\RecurringShopPaymentService
+    recurring_shop.payment_notification.class: Utility\ApplaneIntegrationBundle\Services\RecurringShopPaymentNotificationService
+    appalne_integration.applaneusers.class: Utility\ApplaneIntegrationBundle\Services\ApplaneUserService
+    appalne_integration.applaneshops.class: Utility\ApplaneIntegrationBundle\Services\ApplaneShopService
+    appalne_integration.applaneusersprofile.class: Utility\ApplaneIntegrationBundle\Services\ApplaneUserProfileService
+    appalne_integration.applaneusersfriend.class: Utility\ApplaneIntegrationBundle\Services\ApplaneUserFriendService
+    appalne_integration.applaneusersfollower.class: Utility\ApplaneIntegrationBundle\Services\ApplaneUserFollowerService
+    appalne_integration.applaneusersimage.class: Utility\ApplaneIntegrationBundle\Services\ApplaneUserImageService
+    appalne_integration.applaneshopprofile.class: Utility\ApplaneIntegrationBundle\Services\ApplaneShopProfileService
+    appalne_integration.applaneshopimage.class: Utility\ApplaneIntegrationBundle\Services\ApplaneShopImageService
+    appalne_integration.applaneshopfollowers.class: Utility\ApplaneIntegrationBundle\Services\ApplaneShopFollowersService
+    appalne_integration.applaneshopfavs.class: Utility\ApplaneIntegrationBundle\Services\ApplaneShopFavsService
+    appalne_integration.applaneshopreferrals.class: Utility\ApplaneIntegrationBundle\Services\ApplaneShopReferralsService
+    appalne_integration.applanecustomerchoice.class: Utility\ApplaneIntegrationBundle\Services\ApplaneCustomerChoiceService
+    appalne_integration.applaneusershopfollowers.class: Utility\ApplaneIntegrationBundle\Services\ApplaneUserShopFollowersService
+    appalne_integration.applaneshopuserfavs.class: Utility\ApplaneIntegrationBundle\Services\ApplaneShopUserFavsService
+    appalne_integration.applaneuserreferrals.class: Utility\ApplaneIntegrationBundle\Services\ApplaneUserReferralsService
+    
+services:
+   listener.requestresponse:
+     class: Utility\ApplaneIntegrationBundle\Event\CitizenEventListner
+     arguments: [ @service_container ]
+     tags:
+       - { name: kernel.event_listener, event: citizen.register, method: onCitizenRegisterAction }
+       - { name: kernel.event_listener, event: citizen.update, method: onCitizenUpdateAction }
+       - { name: kernel.event_listener, event: citizen.follow, method: onCitizenFollowCreateAction }
+       - { name: kernel.event_listener, event: citizen.unfollow, method: onCitizenFollowDeleteAction }
+       - { name: kernel.event_listener, event: citizen.addfriend, method: onCitizenFriendAddAction }
+       - { name: kernel.event_listener, event: citizen.deletefriend, method: onCitizenFriendDeleteAction }
+       - { name: kernel.event_listener, event: citizen.update, method: onCitizenUpdateAction }
+       - { name: kernel.event_listener, event: citizen.updateprofileimg, method: onCitizenUpdateProfileImageAction }
+       - { name: kernel.event_listener, event: citizen.updatekeyword, method: onCitizenKeywordUpdateAction }
+       - { name: kernel.event_listener, event: citizen.updateaffiliation, method: onCitizenAffiliationUpdateAction }
+       
+   shoplistener.requestresponse:   
+     class: Utility\ApplaneIntegrationBundle\Event\ShopEventListner
+     arguments: [ @service_container ]
+     tags:
+       - { name: kernel.event_listener, event: shop.favourite, method: onShopFavouriteAction }
+       - { name: kernel.event_listener, event: shop.follow, method: onShopFollowAction }
+       - { name: kernel.event_listener, event: shop.create, method: onShopCreateAction }
+       - { name: kernel.event_listener, event: shop.update, method: onShopUpdateAction }
+       - { name: kernel.event_listener, event: shop.unfavourite, method: onShopUnFavouriteAction }
+       - { name: kernel.event_listener, event: shop.unfollow, method: onShopUnFollowAction }
+       - { name: kernel.event_listener, event: shop.updateprofileimg, method: onShopUpdateProfileImgAction }
+       - { name: kernel.event_listener, event: shop.updatecardstatus, method: onShopUpdateCardStatusAction }
+       - { name: kernel.event_listener, event: shop.updateshopstatus, method: onShopUpdateShopStatusAction }
+       - { name: kernel.event_listener, event: shop.delete, method: onShopDeleteAction }
+       - { name: kernel.event_listener, event: shop.recurringupdate, method: onShopRecurringUpdateAction }
+       - { name: kernel.event_listener, event: shop.registrationfeeupdate, method: onShopRegistrationFeeUpdateAction }
+       - { name: kernel.event_listener, event: shop.subscriptionAdd, method: onShopSubscriptionAddAction }
+       - { name: kernel.event_listener, event: shop.recurringinsert, method: onShopRecurringInsertAction }
+       - { name: kernel.event_listener, event: shop.affiliation, method: onShopAffiliationAction }
+       - { name: kernel.event_listener, event: shop.deleteupdate, method: onShopDeleteUpdateAction }
+       
+   # service for calling the applane services    
+   appalne_integration.callapplaneservice:
+        class: %appalne_integration.callapplaneservice.class%
+        arguments: [@doctrine.orm.entity_manager, @doctrine.odm.mongodb.document_manager, @service_container]
+       
+   # services for transaction listener 
+   transactionlistener.requestresponse:   
+     class: Utility\ApplaneIntegrationBundle\Event\TransactionEventListner
+     arguments: [@doctrine.orm.entity_manager, @doctrine.odm.mongodb.document_manager, @service_container]
+     tags:
+       - { name: kernel.event_listener, event: transaction.addrating, method: onTransactionRating }
+       - { name: kernel.event_listener, event: transaction.addrating, method: onTransactionRatingSharing }
+       - { name: kernel.event_listener, event: transaction.sharerating, method: onTransactionRatingSharing }
+       - { name: kernel.event_listener, event: transaction.sharerating, method: onTransactionSharing }
+       - { name: kernel.event_listener, event: transaction.shareratingonuserwall, method: onTransactionSharingCustomerWallPost }
+    #recurring shop payment
+   recurring_shop.payment:
+        class: %recurring_shop.payment.class%
+        arguments: [@doctrine.orm.entity_manager, @doctrine.odm.mongodb.document_manager, @service_container]
+    #recurring shop payment transaction notification
+   recurring_shop.payment_notification:
+        class: %recurring_shop.payment_notification.class%
+        arguments: [@doctrine.orm.entity_manager, @doctrine.odm.mongodb.document_manager, @service_container]   
+   #shop seller service(UserManager\Sonata\UserBundle)     
+   user.shop.seller:
+        class: UserManager\Sonata\UserBundle\Services\SellerUserService
+        arguments: [ @doctrine.orm.entity_manager, @doctrine.odm.mongodb.document_manager, @service_container ]
+   #shop seller service(UserManager\Sonata\UserBundle)     
+   user.admin:
+        class: UserManager\Sonata\UserBundle\Services\AdminUserService
+        arguments: [ @doctrine.orm.entity_manager, @doctrine.odm.mongodb.document_manager, @service_container ]
+   appalne_integration.applaneusers:
+        class: %appalne_integration.applaneusers.class%
+        arguments: [ @doctrine.orm.entity_manager, @doctrine.odm.mongodb.document_manager, @service_container ]
+   appalne_integration.applaneshops:
+        class: %appalne_integration.applaneshops.class%
+        arguments: [ @doctrine.orm.entity_manager, @doctrine.odm.mongodb.document_manager, @service_container ]
+   appalne_integration.applaneusersprofile:
+        class: %appalne_integration.applaneusersprofile.class%
+        arguments: [ @doctrine.orm.entity_manager, @doctrine.odm.mongodb.document_manager, @service_container ]
+   appalne_integration.applaneusersfriend:
+        class: %appalne_integration.applaneusersfriend.class%
+        arguments: [ @doctrine.orm.entity_manager, @doctrine.odm.mongodb.document_manager, @service_container ]
+   appalne_integration.applaneusersfollower:
+        class: %appalne_integration.applaneusersfollower.class%
+        arguments: [ @doctrine.orm.entity_manager, @doctrine.odm.mongodb.document_manager, @service_container ]
+   appalne_integration.applaneusersimage:
+        class: %appalne_integration.applaneusersimage.class%
+        arguments: [ @doctrine.orm.entity_manager, @doctrine.odm.mongodb.document_manager, @service_container ]
+   appalne_integration.applaneshopprofile:
+        class: %appalne_integration.applaneshopprofile.class%
+        arguments: [ @doctrine.orm.entity_manager, @doctrine.odm.mongodb.document_manager, @service_container ]
+   appalne_integration.applaneshopimage:
+        class: %appalne_integration.applaneshopimage.class%
+        arguments: [ @doctrine.orm.entity_manager, @doctrine.odm.mongodb.document_manager, @service_container ]
+   appalne_integration.applaneshopfollowers:
+        class: %appalne_integration.applaneshopfollowers.class%
+        arguments: [ @doctrine.orm.entity_manager, @doctrine.odm.mongodb.document_manager, @service_container ]
+   appalne_integration.applaneshopfavs:
+        class: %appalne_integration.applaneshopfavs.class%
+        arguments: [ @doctrine.orm.entity_manager, @doctrine.odm.mongodb.document_manager, @service_container ]
+   appalne_integration.applaneshopreferrals:
+        class: %appalne_integration.applaneshopreferrals.class%
+        arguments: [ @doctrine.orm.entity_manager, @doctrine.odm.mongodb.document_manager, @service_container ]
+   appalne_integration.applanecustomerchoice:
+        class: %appalne_integration.applanecustomerchoice.class%
+        arguments: [ @doctrine.orm.entity_manager, @doctrine.odm.mongodb.document_manager, @service_container ]
+   appalne_integration.applaneusershopfollowers:
+        class: %appalne_integration.applaneusershopfollowers.class%
+        arguments: [ @doctrine.orm.entity_manager, @doctrine.odm.mongodb.document_manager, @service_container ]
+   appalne_integration.applaneshopuserfavs:
+        class: %appalne_integration.applaneshopuserfavs.class%
+        arguments: [ @doctrine.orm.entity_manager, @doctrine.odm.mongodb.document_manager, @service_container ]
+   appalne_integration.applaneuserreferral:
+        class: %appalne_integration.applaneuserreferrals.class%
+        arguments: [ @doctrine.orm.entity_manager, @doctrine.odm.mongodb.document_manager, @service_container ]
+        
+   bussinesscategorylistener.requestresponse:   
+     class: Utility\ApplaneIntegrationBundle\Event\BussinessCategoryListener
+     arguments: [@doctrine.orm.entity_manager, @doctrine.odm.mongodb.document_manager, @service_container]
+     tags:
+       - { name: kernel.event_listener, event: bussinesscategory.create, method: onBussinessCategoryCreate }
+       - { name: kernel.event_listener, event: bussinesscategory.update, method: onBussinessCategoryUpdate }
+       - { name: kernel.event_listener, event: bussinesscategorycode.create, method: onBussinessCategoryCodeCreate }
+       - { name: kernel.event_listener, event: bussinesscategorycode.update, method: onBussinessCategoryCodeUpdate }

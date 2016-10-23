@@ -1,0 +1,86 @@
+Transaction\WalletBundle\Entity\WalletBusiness:
+    type: entity
+    table: null
+    repositoryClass: Transaction\WalletBundle\Repository\WalletBusinessRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        currency:
+            type: string
+            length: '45'
+            options: 
+                default: 'EUR'
+        pendingPaymentAmount:
+            type: integer
+            column: pending_payment_amount
+            options: 
+                default: 0
+        shoppingCardAvailable:
+            type: integer
+            column: shopping_card_available
+            options: 
+                default: 0
+        cardAvailable:
+            type: integer
+            column: card_available
+            options: 
+                default: 0
+        couponAvailable:
+            type: integer
+            column: coupon_available
+            options: 
+                default: 0
+        citizenIncomeAvailble:
+            type: integer
+            column: citizen_income_availble
+            options: 
+                default: 0
+        citizenIncomeGained:
+            type: integer
+            column: citizen_income_gained
+            options: 
+                default: 0
+        timeLastUpdateH:
+            type: datetime
+            column: time_last_update_h
+        timeLastUpdate:
+            type: integer
+            column: time_last_update
+        timeCreateH:
+            type: datetime
+            column: time_create_h
+        timeCreate:
+            type: integer
+            column: time_create
+        writingStatus:
+            type: integer
+            column: writing_status
+            options: 
+                default: 0
+        totalRevenue:
+            type: bigint
+            column: total_revenue
+            options: 
+                default: 0
+        premiumPosition:
+            type: integer
+            column: premium_position
+            options: 
+                default: 0
+        sellerId:
+            type: integer
+            column: seller_id
+        creditPosition:
+            type: integer
+            column: credit_position
+            options: 
+                default: 0
+        pendingPaymentCounter:
+            type: integer
+            column: pending_payment_counter
+            options: 
+                default: 0
+    lifecycleCallbacks: {  }

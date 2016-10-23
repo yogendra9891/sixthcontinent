@@ -1,0 +1,10 @@
+parameters:
+#    utility_utility.example.class: Utility\UtilityBundle\Example
+
+services:
+    business_category.service:
+        class: UserManager\Sonata\UserBundle\Services\BusinessCategoryService
+        arguments: [ @doctrine.orm.entity_manager, @doctrine.odm.mongodb.document_manager, @service_container ]
+    ip_address.service:
+        class: UserManager\Sonata\UserBundle\Services\IPAddressService
+        arguments: [ @doctrine.orm.entity_manager, @doctrine.odm.mongodb.document_manager, @service_container ]

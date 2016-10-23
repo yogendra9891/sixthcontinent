@@ -1,0 +1,25 @@
+StoreManager\StoreBundle\Document\StoreAlbum:
+    repositoryClass: StoreManager\StoreBundle\Repository\StoreAlbumMongoRepository
+    type: document
+    collection: storealbum
+    fields:
+        id:
+            id:  true
+        store_id:
+            type: string
+        store_album_name:
+            type: string
+        user_id:
+            type: int
+        store_album_desc:
+            type: string
+        updated_at:
+            type: date
+        created_at:
+            type: date
+
+
+# php app/console doctrine:mongodb:generate:documents TestFormBundle
+# Create Document
+# php app/console doctrine:mongodb:generate:repositories TestFormBundle
+# Create repository

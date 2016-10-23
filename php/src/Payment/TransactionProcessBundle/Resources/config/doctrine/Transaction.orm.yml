@@ -1,0 +1,62 @@
+Payment\TransactionProcessBundle\Entity\Transaction:
+    type: entity
+    table: transaction_process
+    repositoryClass: Payment\TransactionProcessBundle\Repository\TransactionRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        transactionType:
+            type: string
+            length: 255
+            column: transaction_type
+        buyerId:
+            type: bigint
+            column: buyer_id
+        citizenCreditLevel:
+            type: integer
+            column: citizen_credit_level
+        citizenUserCredit:
+            type: integer
+            column: citizen_user_credit
+        sellerId:
+            type: bigint
+            column: seller_id
+        description:
+            type: text
+        transactionDate:
+            type: datetime
+            column: transaction_date
+        transactionAmount:
+            type: bigint
+            column: transaction_amount
+        totalCreditUsed:
+            type: bigint
+            column: total_credit_used
+        discountUsed:
+            type: bigint
+            column: discount_used
+        cashPaid:
+            type: bigint
+            column: cash_paid
+        status:
+            type: string
+            length: 255
+        statusDate:
+            type: datetime
+            column: status_date
+        CreditDisbursalStatus:
+            type: string
+            length: 255
+            column: credit_disbursal_status 
+        DisbursalDate:
+            type: datetime
+            column: disbursal_date
+        ParentTransactionId:
+            type: bigint
+            column: parent_transaction_id
+        remarks:
+            type: text
+    lifecycleCallbacks: {  }

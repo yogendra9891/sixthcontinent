@@ -1,0 +1,22 @@
+#InitiateTransactions
+initiatetransactions:
+   type: rest
+   pattern: /initiatetransactions
+   resource: "PaymentTransactionProcessBundle:TransactionProcess"
+   prefix: /v1
+   name_prefix: api_1_
+#calclulate the block citizen credit
+calculateblockcredits:
+   type: rest
+   pattern: /calculateblockcredits
+   resource: "PaymentTransactionProcessBundle:TransactionProcess"
+   prefix: /v1
+   name_prefix: api_1_
+
+#PaymentCredits
+paymentcredits:
+   type: rest
+   pattern: /paymentcredits
+   resource: "PaymentTransactionProcessBundle:TransactionProcess"
+   prefix: /v1
+   name_prefix: api_1_

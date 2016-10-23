@@ -1,0 +1,62 @@
+Transaction\TransactionBundle\Entity\RecurringPayment:
+    type: entity
+    table: null
+    repositoryClass: Transaction\TransactionBundle\Entity\RecurringPaymentRepository
+    indexes:
+        index_shopid_RecurringPayment:
+            columns: [shop_id]
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        shopId:
+            type: integer
+            column: shop_id
+        amount:
+            type: bigint
+            column: amount
+        transactionId:
+            type: string
+            length: 255
+            column: transaction_id
+        tipoCarta:
+            type: string
+            length: 255
+            column: tipo_carta
+        paese:
+            type: string
+            length: 255
+        codTrans:
+            type: string
+            length: 255
+        tipoProdotto:
+            type: string
+            length: 255
+            column: tipo_prodotto
+        tipoTransazione:
+            type: string
+            length: 255
+            column: tipo_transazione
+        codiceAutorizzazione:
+            type: string
+            length: 255
+            column: codice_autorizzazione
+        dataOra:
+            type: string
+            length: 255
+            column: data_ora
+        codiceEsito:
+            type: integer
+            column: codice_esito
+        descrizioneEsito:
+            type: string
+            length: 255
+            column: descrizione_esito
+        mac:
+            type: string
+            length: 255
+        created_at:
+            type: datetime
+    lifecycleCallbacks: {  }

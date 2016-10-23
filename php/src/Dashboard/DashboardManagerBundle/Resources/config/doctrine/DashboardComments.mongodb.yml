@@ -1,0 +1,36 @@
+Dashboard\DashboardManagerBundle\Document\DashboardComments:
+    repositoryClass: Dashboard\DashboardManagerBundle\Repository\DashboardCommentsMongoRepository
+    type: document
+    collection: dashboardcomments
+    fields:
+        id:
+            id: true
+        post_id:
+            type: string
+        comment_text:
+            type: string
+        user_id:
+            type: int
+        profile_type:
+            type: string
+        type:
+            type: string            
+        is_active:
+            type: int
+        created_at:
+            type: date
+        updated_at:
+            type: date
+        vote_count:
+            type: int
+        vote_sum:
+            type: int
+        avg_rating:
+            type: float
+        rate:
+           embedded: true
+           type: many
+           targetDocument: Dashboard\DashboardManagerBundle\Document\DashboardCommentRating
+           cascade: all	
+        tagging:
+            type: hash

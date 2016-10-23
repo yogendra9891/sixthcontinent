@@ -1,0 +1,52 @@
+Transaction\WalletBundle\Entity\ShoppingCard:
+    type: entity
+    table: null
+    repositoryClass: Transaction\WalletBundle\Repository\ShoppingCardRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        shoppingCardId:
+            type: string
+            length: '45'
+            column: shopping_card_id
+        initAmount:
+            type: integer
+            column: init_amount
+        availableAmount:
+            type: integer
+            column: available_amount
+        timeCreatedH:
+            type: datetime
+            column: time_created_h
+        timeUpdatedH:
+            type: datetime
+            column: time_updated_h
+        timeCreated:
+            type: integer
+            column: time_created
+        timeUpdated:
+            type: integer
+            column: time_updated
+        currency:
+            type: string
+            length: '45'
+        maxUsageInitPrice:
+            type: integer
+            column: max_usage_init_price
+        sellerId:
+            type: integer
+            column: seller_id
+        walletCitizenId:
+            type: integer
+            column: wallet_citizen_id
+        commercialPromotionId:
+            type: integer
+            column: commercial_promotion_id
+        sixcTransactionId:
+            type: string
+            length: '60'
+            column: sixc_transaction_id
+    lifecycleCallbacks: {  }

@@ -1,0 +1,17 @@
+Message\MessageBundle\Document\Email:
+    repositoryClass: Message\MessageBundle\Repository\EmailMongoRepository
+    type: document
+    collection: email
+    fields:
+        id:
+            id: true   
+        sender_id:
+            type: int
+        receiver_id:
+            type: int
+        body:
+            type: string
+        subject:
+            type: string 
+        created_at:
+            type: date

@@ -1,0 +1,23 @@
+Utility\MasterDataBundle\Entity\PrivacySettingCodeByLang:
+    type: entity
+    table: null
+    repositoryClass: Utility\MasterDataBundle\Repository\PrivacySettingCodeByLangRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        privacySettingCode:
+            type: string
+            length: 255
+            column: privacy_setting_code
+        langCode:
+            type: string
+            length: 255
+            column: lang_code
+        privacySettingName:
+            type: string
+            length: 255
+            column: privacy_setting_name
+    lifecycleCallbacks: {  }

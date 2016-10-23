@@ -1,0 +1,228 @@
+# This file is auto-generated during the composer install
+parameters:
+    database_driver: pdo_mysql
+    database_host: sixthcontinentdb.cxpwipjz0okc.eu-west-1.rds.amazonaws.com
+    database_port: null
+    database_name: sixthcondb
+    database_user: scadmin247
+    database_password: V0fstD007g9vqFx
+    mailer_transport: smtp
+    mailer_host: authsmtp.sixthcontinent.org
+    mailer_user: smtp@sixthcontinent.org
+    mailer_password: Milano2014_
+    locale: it
+    secret: ThisTokenIsNotSoSecretChangeIt
+    mongodb_database_name: sixthcondb
+    mongodbhost_host: mongodb://172.31.54.143:27017
+    social_bees_test_url: https://servizi.shoppingplus.it/secure/USR/00093/hostweb.asp
+    social_bees_live_url: https://servizi.shoppingplus.it:8443/secure/USR/00932/hostweb.asp
+    social_bees_username: S932A001
+    social_bees_password: 49150
+    facebook_appId: 175245922613290
+    facebook_secret: 5d7490ba59062bf8668e4032f3347f19
+    prod_payment_mac_key : 4PVH375L6W3j47gIWS65u15q33P3e51V7K8h88t3
+    prod_alias : payment_31297124
+    vat   : 22
+    angularpaymenturl :  https://www.sixthcontinent.com/#/shope/payment/return
+    angularpaymentcancelurl :  https://www.sixthcontinent.com/#/shope/payment/cancel
+    reg_fee   : 9900
+    sixthcontinent_admin_email: noreply@sixthcontinent.com
+    angular_app_hostname:  https://www.sixthcontinent.com/#/
+    aws_key: AKIAJ6CFAD7Q4B3ZNTGQ
+    aws_secret_key: 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
+    aws_base_path: https://s3.amazonaws.com
+    aws_bucket: sixthcontinent	
+    #dev
+    shopping_plus_get_client_url_test : https://servizi.shoppingplus.it:8443/secure/USR/00932/hostweb.asp
+    social_bees_username_test : S932A001
+    social_bees_password_test : 49150
+    #prod
+    shopping_plus_get_client_url_prod : https://servizi.shoppingplus.it:8443/secure/USR/00932/hostweb.asp
+    social_bees_username_prod : S932A001
+    social_bees_password_prod : 49150
+    shop_registration_shots: 20
+    shop_affilation_amount: 50pdo_mysql
+    database_host: sixthcontinentdb.cxpwipjz0okc.eu-west-1.rds.amazonaws.com
+    database_port: null
+    database_name: sixthcondb
+    database_user: scadmin247
+    database_password: V0fstD007g9vqFx
+    mailer_transport: smtp
+    mailer_host: authsmtp.sixthcontinent.org
+    mailer_user: smtp@sixthcontinent.org
+    mailer_password: Milano2014_
+    locale: it
+    secret: ThisTokenIsNotSoSecretChangeIt
+    mongodb_database_name: sixthcondb
+    mongodbhost_host: mongodb://172.31.54.143:27017
+    social_bees_test_url: https://servizi.shoppingplus.it/secure/USR/00093/hostweb.asp
+    social_bees_live_url: https://servizi.shoppingplus.it:8443/secure/USR/00932/hostweb.asp
+    social_bees_username: S932A001
+    social_bees_password: 49150
+    shop_discount_position_amount: 50
+    shot_amount: 5
+    shoppingplus_hostname: servizi.shoppingplus.it
+    shoppingplus_ftp_username: s00932f001
+    shoppingplus_ftp_password: PWe2*!R14j
+    shoppingplus_port: 13021
+    recurring_pay_url: https://ecommerce.keyclient.it/ecomm/ecomm/ServletS2S
+    ci_percentage: 6
+    test_alias : payment_3444168
+    test_payment_mac_key : CsT830052L63QHNd1E351uh73272Q23h175650k9wU28T7EU1Hd6l156N5I2oBY6U7OW7kP34282C5965r8V0hpG72ojq5B58896G4Q6oXGc36a6z3Tn6J271B4N33p45C28369j7E025O2245GK7T5p1MNN5T25S05UJxCKH0TMc98fBQ66M2NxRDzrR66c7RG2K367D4xiV54X9kY592K5E3V1X1U01AO85P3n4z28eJIL13t8Ww3P28eg24y2
+    urlpost_payment: https://prod.sixthcontinent.com/webapi/createcontract
+    template_email_invitation: https://www.sixthcontinent.com/#/mail/invitation/mail.html
+    template_email_thumb: https://www.sixthcontinent.com/app/assets/images/prof-pic.jpg
+    friend_profile_url: viewfriend
+    shop_profile_url: shop/view
+    club_profile_url: club/view
+    shop_wallet_url: shop/wallet
+    message_profile_url: message
+    sixthcontinent_admin_email_from: SixthContinent
+    message_profile_url: message
+    login_app_url: http://209.227.255.174?s_param=
+    personal: 1
+    professional: 2
+    both: 3
+    gift_card_export_interval: 1
+    sixthcontinent_shop_admin_email: shopitalia@sixthcontinent.com
+    gift_card_export_days :  7
+    sendgrid_api_url : https://api.sendgrid.com/api/mail.send.json
+    sendgrid_username: SixthContinent INC.
+    sendgrid_password: SC31072014
+    sendgrid_notification_tpl_id: 14f72c42-8db7-482a-97d3-024848d0faeb
+    sendgrid_newsletter_tpl_id: 9e2ae6d2-0ef6-48be-8af4-2a14d6602b31
+    sendgrid_notification_tpl_id_shop: dd4bc831-693b-4bea-9cb0-9f05770a00f0
+    dashboard_post_url: post
+    user_album_url: album/images
+    reg_fee_oldshop: 15000
+    club_album_url: album/club/view
+    #Payment distribution related params
+    country_distribute_per: 1
+    citizen_affiliate_distribute_per: 1
+    friends_follower_distribute_per: 1
+    sixthcontinent_distribute_per: 1
+    store_affiliate_distribute_per: 1
+    purchaser_distribute_per: 1 
+    gift_cards_amount: 20/30/50/100template_email
+    store_search_radius: 30
+    store_post_url: shop/:storeId/post/:postId
+    club_post_url: club/:clubId/post/:postId
+    store_post_shop_part_url :   shop
+    store_post_post_part_url:    post	
+    store_album_url :   album/shop
+    store_media_url:    album/shop/image
+    email_sending_serivce: sendgrid
+    friend_album_url: :friendId/friend/images/:albumId/:albumName
+    #dev or prod
+    iphone_certificate: prod
+    CI_calls : DB
+    facebook_app:
+        appId: 175245922613290
+        appSecret: 5d7490ba59062bf8668e4032f3347f19
+    facebook_post:
+        default_message:
+        default_title: SixthContinent
+    facebook_post_allow: 1
+    public_user_post_url: unouth/post/user/:postId
+    public_club_post_url: unouth/post/club/:clubId/:postId/:clubStatus
+    public_shop_post_url: unouth/post/shop/:shopId/:postId
+    verify_time_limit:  48
+    verify_link:    verify
+    #bunch no
+    bunch_no : 100
+    shop_edit_url: shop/edit
+    symfony_base_url: https://prod.sixthcontinent.com/
+    single_image_page: media/page/:mediaId/:albumType/:parentId/:supportId
+    club_invite_url: club/request/:action/:senderId/:clubId/:clubType/:notiId    
+    base_applane_url: http://172.31.39.40/rest/
+    applane_user_token : 5534ab36fa78adc424fea9e1
+    tx_system_call: APPLANE
+    push_notification_url: https://prod.sixthcontinent.com:8000
+    exported_file_type: xls
+    template_email: https://www.sixthcontinent.com/#/mail/16_11_2014/mail.html
+    #ftp server detail for erp expoted files
+    ftp_host: sixthcontinent.zucchetti.com
+    ftp_username: FTP_SIX
+    ftp_password: Ft0512!*
+    monolog_collection:   monologrecords
+    urlpost_subscription: https://prod.sixthcontinent.com/webapi/createsubscriptioncontract
+    subscription_fee: 3700
+    oneclick_pay_url: https://ecommerce.keyclient.it/ecomm/ecomm/DispatcherServlet
+    #sandbox paypal credentials
+    paypal_acct_username_sandbox : 'shalu.garg_api1.daffodilsw.com'
+    paypal_acct_password_sandbox : 'FBATAT8VDJ7N3UKJ'
+    paypal_acct_signature_sandbox : 'AEQPlaBXsuAUNaatfuOLqB3PeHvsApPAXnbWqFuXFclh4rEryXngoW18'
+    paypal_acct_appid_sandbox : "APP-80W284485P519543T"
+    paypal_acct_email_address_sandbox : "ankit.jain@daffodilsw.com"
+    paypal_end_point_sandbox:  'https://svcs.sandbox.paypal.com/AdaptivePayments/Pay'
+    paypal_authorize_url_sandbox: 'https://www.sandbox.paypal.com/cgi-bin/webscr?cmd=_ap-payment&paykey='
+    paypal_detail_end_point_sandbox: 'https://svcs.sandbox.paypal.com/AdaptivePayments/PaymentDetails'
+    paypal_notify_verify_end_point_sandbox: 'https://www.sandbox.paypal.com/cgi-bin/webscr'
+    paypal_cancel_url_sandbox: 'http://prod.sixthcontinent.com/'
+    paypal_return_url_sandbox: 'http://prod.sixthcontinent.com/'
+    paypal_sixthcontinent_email_sandbox: 'shalu.garg@daffodilsw.com'
+    #live paypal credentials
+    paypal_acct_username_live : 'sabrina.torti_api1.sixthcontinent.org'
+    paypal_acct_password_live: 'G88MY7L8R4Z2E57C'
+    paypal_acct_signature_live : 'Ag8FwDQeQvCMvFZSnhyj7aprwQG9Ao1YwXVngiJN85CuZhH7m6r4gEYD'
+    paypal_acct_appid_live : "APP-7LV24104PR148000R"
+    paypal_acct_email_address_live : "sabrina.torti@sixthcontinent.org"
+    paypal_end_point_live: 'https://svcs.paypal.com/AdaptivePayments/Pay'
+    paypal_authorize_url_live: 'https://www.paypal.com/cgi-bin/webscr?cmd=_ap-payment&paykey='
+    paypal_cancel_url_live: 'http://prod.sixthcontinent.com/'
+    paypal_return_url_live: 'http://prod.sixthcontinent.com/'
+    paypal_detail_end_point_live: 'https://svcs.paypal.com/AdaptivePayments/PaymentDetails'
+    paypal_notify_verify_end_point_live: 'https://www.paypal.com/cgi-bin/webscr'
+    paypal_sixthcontinent_email_live: 'sabrina.torti@sixthcontinent.org'
+    paypal_mode : 'live'
+    paypal_currency: 'EUR'
+    citizen_wallet : wallets
+    vat_mode: live
+    sixthcontinent_logo_path : "https://www.sixthcontinent.com/app/assets/images/cimail-img.jpg"
+    urlpost_recurring: http://prod.sixthcontinent.com/webapi/createrecurringcontract
+    sendgrid_notification_tpl_batch_id: 6f7636a1-12bc-4e09-8829-0e302c42a6a1
+    appalne_record_fatch_limit : 500
+    appalne_record_fatch_offset : 0
+    txn_percentage: 6
+    card_percentage: 10
+    angular_social_app_hostname: https://www.sixthcontinent.com/seller/#/
+    offer_receivers_limit: 10000
+    sendgrid_offers_template_id: 18e935c4-acd7-4b39-a488-8b69a60779b0
+    store_default_image_thumb: https://www.sixthcontinent.com/app/assets/images/sidebarlist.jpg
+    store_default_image_main: https://www.sixthcontinent.com/app/assets/images/coverstore.jpg
+    SHOP_REG_FEE_WAIVER: 1
+    SHOP_SUBSCRIPTION_FEE_WAIVER: 1
+    SHOP_RECURRING_SUBSCRIPTION_FEE_WAIVER: 1
+    sendgrid_shop_invite_template_id: 31d0834e-c500-4f9b-bdec-8542df7b3794
+    INSTANT_CI_PAYBACK : 1
+    log_owner_email: [yiresse.abia@sixtcontinent.com]
+    SHOP_RECURRING_REGISTRATION_FEE_WAIVER: 1
+    social_project_url: project/:projectId
+    card_sold_in_a_day_template_id : 26b499dd-d0f3-482c-9c2a-499a573b84b0
+    approve_card_url: myshops/pending/cards
+    shop_list_url: shop
+    sendgrid_share_offer_template: 5a257866-7959-4699-87d4-0b1f32ee14a3
+    connect_amount_currency : 100
+    connect_card_value: 5
+    connect_ci_percentage: 50
+    connect_discount: 0
+    connect_checkout_percentage: 6
+    connect_paypal_email: praveen@btholdings.net
+    shopping_card_upto_100_template_id: 2c899786-9a76-4fc9-bf4b-c024d3e114c9
+    sendgrid_share_coupon_template: 10d0c8e3-040f-46cd-a940-8652604acebc
+    connect_amount_round: 2
+    sendgrid_share_post_template: 17a497d3-1c1c-4c46-8748-ee37b6033c57
+    sendgrid_share_project_template : 6d38620c-c435-4a18-ad27-5aaefa13196c
+    sendgrid_share_shop_template: 60ec50eb-4e75-4d30-9c71-5ffe6f533f4b
+    default_language_code: it
+    offer_card_value: 2.5
+    offer_ci_percentage: 50
+    offer_checkout_percentage: 6
+    sendgrid_tamoil_coupon_template: 42beb61a-ae85-42ed-885f-beb660187756
+    sendgrid_share_tamloil_offer_tpl: e0a9ae8b-741d-4495-af72-4e7653898772
+    #Amilon Web Services
+    amilon_username: SixthcontinentWS
+    amilon_passwd: Y1c38H1d1
+    amilon_wsdl: https://b2bsales.amilon.eu/ws/orderservice.asmx?WSDL
+    amilon_contract_code: b78cf3c4-31a3-4b3e-9f28-6f1c27566a85
+    msc_mail: lecrocierenet@libero.it

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Vouchers</title>
+<style>
+html, body, div p{ margin:0; padding:0;}
+ol,ul{ list-style:none;}
+.wrapper{ max-width:1200px; margin:0 auto; width:100%; background-color:#fff;}
+.inner_wrapper{ text-align:center; max-width:600px; margin:0 auto; padding-top:12%;}
+.inner_wrapper h2{ color:#0065A0;}
+.inner_wrapper ul{ padding-left:130px; position:relative}
+.inner_wrapper ul::before{ content:""; display:block; width:64px; height:64px; background-image:url('images/clock_icon.png');
+position:absolute; top:14px; left:50px;}
+.inner_wrapper ul li{ text-align:left; padding:10px 0;}
+.inner_wrapper ul li span,
+.inner_wrapper ul li strong{ display: inline-block; vertical-align:middle;width:45%;}
+.inner_wrapper ul li span{ padding-right:20px;}
+.inner_wrapper ul li strong{ padding-left:20px; color:#0065A0; }
+.goback{ padding-top:5%; text-align:center}
+.goback a{ text-decoration:none; color:#0065A0;}
+@media (max-width:767px){
+	.inner_wrapper ul{ display:inline-block;}
+	.inner_wrapper ul li span,
+	.inner_wrapper ul li strong{ width:100%; padding:0;}
+	}
+</style>
+</head>
+<body>
+        {% block body %}{% endblock %}
+</body>
+</html>

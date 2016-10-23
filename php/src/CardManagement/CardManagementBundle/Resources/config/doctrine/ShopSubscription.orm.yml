@@ -1,0 +1,47 @@
+CardManagement\CardManagementBundle\Entity\ShopSubscription:
+    type: entity
+    table: null
+    repositoryClass: CardManagement\CardManagementBundle\Repository\ShopSubscriptionRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        subscriberId:
+            type: bigint
+            column: subscriber_id
+        shopId:
+            type: bigint
+            column: shop_id
+        description:
+            type: text
+        startDate:
+            type: datetime
+            column: start_date
+        expiryDate:
+            type: datetime
+            column: expiry_date
+        purchasedDate:
+            type: datetime
+            column: purchased_date
+        shopOwnerId:
+            type: bigint
+            column: shop_owner_id
+        status:
+            type: string
+            length: 255
+        transactionId:
+            type: string
+            length: 255
+            column: transaction_id
+        subscriptionAmount:
+            type: integer
+            column: subscription_amount
+        intervalDate:
+            type: date
+            column: interval_date
+        contractId:
+            type: bigint
+            column: contract_id
+    lifecycleCallbacks: {  }

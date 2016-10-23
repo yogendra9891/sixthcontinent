@@ -1,0 +1,32 @@
+Transaction\TransactionBundle\Entity\RecurringPendingPayment:
+    type: entity
+    table: null
+    repositoryClass: Transaction\TransactionBundle\Entity\RecurringPendingPaymentRepository
+    indexes:
+        index_shopid_RecurringPendingPayment:
+            columns: [shop_id]
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        shopId:
+            type: integer
+            column: shop_id
+        pendingamount:
+            type: bigint
+            column: pendingamount
+        transactionId:
+            type: integer
+            column: transaction_id
+        type:
+            type: string
+            length: 255
+            column: type
+        paid:
+            type: integer
+            column: paid
+        created_at:
+            type: datetime
+    lifecycleCallbacks: {  }

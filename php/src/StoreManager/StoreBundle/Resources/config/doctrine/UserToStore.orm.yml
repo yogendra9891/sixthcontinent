@@ -1,0 +1,29 @@
+StoreManager\StoreBundle\Entity\UserToStore:
+    type: entity
+    table: null
+    repositoryClass: StoreManager\StoreBundle\Entity\UserToStoreRepository
+    indexes:
+        index_shopid_UserToStore:
+            columns: [store_id,user_id]
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        storeId:
+            type: integer
+            column: store_id
+        childStoreId:
+            type: integer
+            column: child_store_id
+        role:
+            type: string
+            length: 255
+        createdAt:
+            type: datetime
+            column: created_at
+        userId:
+            type: integer
+            column: user_id
+    lifecycleCallbacks: {  }

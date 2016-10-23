@@ -1,0 +1,24 @@
+parameters:
+#    utility_rating.example.class: Utility\RatingBundle\Example
+    request.object.class: Utility\RatingBundle\Services\RequestObjectService
+
+services:
+    request_object.service:
+        class: %request.object.class%
+        arguments: [@doctrine.orm.entity_manager, @doctrine.odm.mongodb.document_manager, @service_container]
+#    utility_rating.example:
+#        class: %utility_rating.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
+
+#service to calculate rate count 
+    calculate_rate_service:
+        class:   Utility\RatingBundle\Services\CalculateRateService
+        arguments: [@doctrine.orm.entity_manager, @doctrine.odm.mongodb.document_manager, @service_container]
+        
+    #service to handle notification on rating 
+    rating_notification_service:
+        class:   Utility\RatingBundle\Services\RatingNotificationService
+        arguments: [@doctrine.orm.entity_manager, @doctrine.odm.mongodb.document_manager, @service_container]
+        
+        
+      

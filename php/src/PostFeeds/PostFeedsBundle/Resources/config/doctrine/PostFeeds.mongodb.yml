@@ -1,0 +1,86 @@
+PostFeeds\PostFeedsBundle\Document\PostFeeds:
+    repositoryClass: PostFeeds\PostFeedsBundle\Repository\PostFeedsMongoRepository
+    type: document
+    collection: postfeeds
+    fields:
+        id:
+            id:  true
+        user_id:
+            type: int
+            index: true
+        to_id:
+            type: int
+            index: true
+        title:
+            type: string
+        description:
+            type: string
+        link_type:
+            type: int
+        is_active:
+            type: int
+        privacy_setting: 
+            type: int
+        created_at:
+            type: date
+        updated_at:
+            type: date
+            order: desc
+        post_type:
+            type: string
+        type_info:
+            type: hash
+        vote_count:
+            type: int
+        vote_sum:
+            type: int
+        avg_rating:
+            type: float
+        is_comment: 
+            type: int
+        is_rate: 
+            type: int
+        is_tag: 
+            type: int
+        is_media: 
+            type: int
+        comments:
+           embedded: true
+           type: many
+           targetDocument: PostFeeds\PostFeedsBundle\Document\CommentFeeds
+           cascade: all
+        rate:
+           embedded: true
+           type: many
+           targetDocument: PostFeeds\PostFeedsBundle\Document\RatingFeeds
+           cascade: all
+        tag_user:
+           type: collection
+        tag_shop:
+           type: collection
+        tag_club:
+           type: collection
+        vote_count:
+            type: int
+        vote_sum:
+            type: int
+        avg_rating:
+            type: float
+        share_type:
+            type: string
+        content_share:
+            type: hash
+        share_object_id:
+            type: string
+        share_object_type:
+            type: string
+    referenceMany:
+        media:
+            targetDocument: PostFeeds\PostFeedsBundle\Document\MediaFeeds
+            cascade: persist
+        
+           
+# php app/console doctrine:mongodb:generate:documents PostFeedsBundle
+# Create Document
+# php app/console doctrine:mongodb:generate:repositories PostFeedsBundle
+# Create repositoryd 

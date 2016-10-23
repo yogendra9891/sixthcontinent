@@ -1,0 +1,28 @@
+Transaction\CommercialPromotionBundle\Entity\CommercialPromotionType:
+    type: entity
+    table: null
+    repositoryClass: Transaction\CommercialPromotionBundle\Repository\CommercialPromotionTypeRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: NONE
+        description:
+            type: string
+            length: '255'
+        promotionLabel:
+            type: string
+            length: '45'
+            column: promotion_label
+        toBuy:
+            type: integer
+            column: to_buy
+        defaultImg:
+            type: string
+            length: 255
+            column: default_img
+        promotionType:
+            type: string
+            length: '45'
+    lifecycleCallbacks: {  }

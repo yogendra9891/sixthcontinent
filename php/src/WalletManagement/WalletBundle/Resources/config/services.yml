@@ -1,0 +1,7 @@
+parameters:
+#    wallet_management_wallet.example.class: WalletManagement\WalletBundle\Example
+
+services:
+#    wallet_management_wallet.example:
+#        class: %wallet_management_wallet.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

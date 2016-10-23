@@ -1,0 +1,27 @@
+## YAML Template.
+---
+Media\MediaBundle\Document\StoreAlbumCommentMedia:
+    repositoryClass: Media\MediaBundle\Repository\StoreAlbumCommentMediaMongoRepository
+    type: document
+    collection: storealbumcommentmedia
+    fields:
+        id:
+            id: true
+        comment_id:
+            type: string
+        media_name:
+            type: string
+        media_type:
+            type: string
+        is_active:
+            type: string
+        is_featured:
+            type: int
+        created_at:
+            type: date       
+        updated_at:
+            type: date    
+        path:
+            type: string       
+        image_type:
+            type: int

@@ -1,0 +1,42 @@
+transaction_system_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: TransactionSystemBundle:Default:index }
+initbooking:
+    path:     /api/initbooking
+    defaults: { _controller: TransactionSystemBundle:BookTransaction:initbooking }
+getinitilizedtransactions:
+    path:     /api/getinitilizedtransactions
+    defaults: { _controller: TransactionSystemBundle:Transaction:getinitilizedtransactions }
+getinitbookingdetail:
+    path:     /api/getinitbookingdetail
+    defaults: { _controller: TransactionSystemBundle:Transaction:getinitbookingdetail }
+canceltransaction:
+    path:     /api/canceltransaction
+    defaults: { _controller: TransactionSystemBundle:Transaction:canceltransaction }
+getcitizenpendingbooking:
+    path:     /api/getcitizenpendingbooking
+    defaults: { _controller: TransactionSystemBundle:BookTransaction:getcitizenpendingbooking }
+processTransaction:
+    path:     /api/processTransaction
+    defaults: { _controller: TransactionSystemBundle:Transaction:processTransaction }
+updateprocesstransaction:
+    path:     /api/updateprocesstransaction
+    defaults: { _controller: TransactionSystemBundle:Transaction:updateProcessTransaction }
+getcitizenstatsontransaction:
+    path:     /api/getcitizenstatsontransaction
+    defaults: { _controller: TransactionSystemBundle:BookTransaction:getcitizenstatsontransaction }
+totaleconomyshifted:
+    path:     /webapi/totaleconomyshifted
+    defaults: { _controller: TransactionSystemBundle:Transaction:totaleconomyshifted }
+ipncallbackresponse:
+    path:     /webapi/ipncallbackresponse
+    defaults: { _controller: TransactionSystemBundle:Transaction:ipncallbackresponse }
+checkbuycardresponse:
+    path:     /api/checkbuycardresponse
+    defaults: { _controller: TransactionSystemBundle:Transaction:checkbuycardresponse }
+getbusinesstransactionhistory:
+    path:     /api/getbusinesstransactionhistory
+    defaults: { _controller: TransactionSystemBundle:Transaction:getbusinesstransactionhistory }
+checkshoptransaction:
+    path:     /api/checkshoptransaction
+    defaults: { _controller: TransactionSystemBundle:Transaction:checkshoptransaction }

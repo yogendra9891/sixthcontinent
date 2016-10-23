@@ -1,0 +1,29 @@
+Utility\ApplaneIntegrationBundle\Document\TransactionNotificationLog:
+    repositoryClass: Utility\ApplaneIntegrationBundle\Repository\TransactionNotificationLogRepository
+    type: document
+    collection: transactionnotificationlog
+    fields:
+        id:
+            id: true
+        to_user_id:
+            type: int
+        to_shop_id:
+            type: int
+        is_active:
+            type: boolean
+        start_date:
+            type: date
+        end_date:
+            type: date
+        updated_date:
+            type: date
+        send_count:
+            type: int
+        notification_type:
+            type: string
+
+
+# php app/console doctrine:mongodb:generate:documents ApplaneIntegrationBundle
+# Create Document
+# php app/console doctrine:mongodb:generate:repositories ApplaneIntegrationBundle
+# Create repository

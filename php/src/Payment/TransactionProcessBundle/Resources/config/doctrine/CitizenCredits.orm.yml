@@ -1,0 +1,49 @@
+Payment\TransactionProcessBundle\Entity\CitizenCredits:
+    type: entity
+    table: null
+    repositoryClass: Payment\TransactionProcessBundle\Repository\CitizenCreditsRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        creditCode:
+            type: string
+            length: 255
+            column: credit_code
+        buyerId:
+            type: bigint
+            column: buyer_id
+        sellerId:
+            type: bigint
+            column: seller_id
+        status:
+            type: string
+            length: 255
+        creditType:
+            type: string
+            length: 255
+            column: credit_type
+        totalAmount:
+            type: bigint
+            column: total_amount
+        usedAmount:
+            type: bigint
+            column: used_amount
+        balanceAmount:
+            type: bigint
+            column: balance_amount
+        expiryDate:
+            type: datetime
+            column: expiry_date
+        creationDate:
+            type: datetime
+            column: creation_date
+        campaignId:
+            type: bigint
+            column: campaign_id
+        isUsedAnyWhere:
+            type: integer
+            column: is_used_any_where
+    lifecycleCallbacks: {  }

@@ -1,0 +1,33 @@
+UserManager\Sonata\UserBundle\Document\Group:
+    repositoryClass: UserManager\Sonata\UserBundle\Repository\GroupMongoRepository
+    type: document
+    collection: Group
+    fields:
+        id:
+            id: true   
+        title:
+            type: string
+        description:
+            type: string
+        group_status:
+            type: int
+        owner_id:
+            type: int
+        created_at:
+            type: date
+            order: desc
+        updated_at:
+            type: date
+        is_delete:
+            type: int
+        vote_count:
+            type: int
+        vote_sum:
+            type: int
+        avg_rating:
+            type: float
+        rate:
+           embedded: true
+           type: many
+           targetDocument: UserManager\Sonata\UserBundle\Document\ClubRating
+           cascade: all	

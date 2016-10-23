@@ -1,0 +1,13 @@
+parameters:
+#    utility_universal_notifications.example.class: Utility\UniversalNotificationsBundle\Example
+   notification_manager.service.class: Utility\UniversalNotificationsBundle\Services\NotificationManagerService
+   
+   
+services:
+    universal_nottifications.tokens.action_listener:
+        class: Utility\UniversalNotificationsBundle\EventListener\TokenListener
+        tags:
+            - { name: kernel.event_listener, event: kernel.controller, method: onKernelController }
+    notification_manager.notificationManagement:
+        class: %notification_manager.service.class%
+        arguments: [@doctrine.orm.entity_manager, @doctrine.odm.mongodb.document_manager, @service_container]

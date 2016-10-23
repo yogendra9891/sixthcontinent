@@ -1,0 +1,25 @@
+Payment\PaymentProcessBundle\Document\TransactionComment:
+    repositoryClass: Payment\PaymentProcessBundle\Repository\TransactionCommentMongoRepository
+    type: document
+    collection: transactioncomment
+    fields:
+        id:
+            id: true
+        user_id:
+            type: int
+        shop_id:
+            type: int
+        transaction_id:
+            type: string
+        invoice_id:
+            type: string
+        comment:
+            type: string
+        rating:
+            type: int
+        created_at:
+            type: date
+# php app/console doctrine:mongodb:generate:documents PaymentPaymentProcessBundle
+# Create Document
+# php app/console doctrine:mongodb:generate:repositories PaymentPaymentProcessBundle
+# Create repository

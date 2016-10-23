@@ -1,0 +1,53 @@
+parameters:
+    sixth_continent_connect.app.class: SixthContinent\SixthContinentConnectBundle\Services\SixthcontinentConnectService
+    sixth_continent_connect_paypal.app.class: SixthContinent\SixthContinentConnectBundle\Services\SixthcontinentPaypalConnectService
+    sixth_continent_connectc_cron_paypal.app.class: SixthContinent\SixthContinentConnectBundle\Services\SixthcontinentCronConnectService
+    sixth_continent_connect_business.app.class: SixthContinent\SixthContinentConnectBundle\Services\SixthcontinentConnectBusinessAccountService
+    sixth_continent_connect_transaction.app.class: SixthContinent\SixthContinentConnectBundle\Services\SixthcontinentConnectAppTransactionService
+    sixth_continent_connect_export_transaction.app.class: SixthContinent\SixthContinentConnectBundle\Services\SixthcontinentConnectExportTransactionService
+    sixth_continent_offer_transaction.app.class: SixthContinent\SixthContinentConnectBundle\Services\SixthcontinentOfferTransactionService
+    sixth_continent_tamoil_coupon_export.app.class: SixthContinent\SixthContinentConnectBundle\Services\SixthcontinentTamoilCouponExportService
+    sixth_continent_connect_tamoil_offer_transaction.app.class : SixthContinent\SixthContinentConnectBundle\Services\SixthcontinentTamoilOfferTransactionService
+services:
+    sixth_continent_connect.connect_app:
+        class: %sixth_continent_connect.app.class%
+        arguments: [@doctrine.orm.entity_manager, @doctrine.odm.mongodb.document_manager, @service_container]
+#service for paypal transaction of sixthcontinent connect        
+    sixth_continent_connect.paypal_connect_app:
+        class: %sixth_continent_connect_paypal.app.class%
+        arguments: [@doctrine.orm.entity_manager, @doctrine.odm.mongodb.document_manager, @service_container]
+#service for check the status paypal transaction of sixthcontinent connect        
+    sixth_continent_connect.paypal_cron_connect_app:
+        class: %sixth_continent_connectc_cron_paypal.app.class%
+        arguments: [@doctrine.orm.entity_manager, @doctrine.odm.mongodb.document_manager, @service_container]        
+#service for business account for application        
+    sixth_continent_connect.connect_business_app:
+        class: %sixth_continent_connect_business.app.class%
+        arguments: [@doctrine.orm.entity_manager, @doctrine.odm.mongodb.document_manager, @service_container]                
+#service for transaction of app
+    sixth_continent_connect.connect_transaction_app:
+        class: %sixth_continent_connect_transaction.app.class%
+        arguments: [@doctrine.orm.entity_manager, @doctrine.odm.mongodb.document_manager, @service_container]          
+#service for export ci transaction
+    sixth_continent_connect.connect_export_transaction_app:
+        class: %sixth_continent_connect_export_transaction.app.class%
+        arguments: [@doctrine.orm.entity_manager, @doctrine.odm.mongodb.document_manager, @service_container]        
+#service for offer purchasing
+    sixth_continent_connect.purchasing_offer_transaction:
+        class: %sixth_continent_offer_transaction.app.class%
+        arguments: [@doctrine.orm.entity_manager, @doctrine.odm.mongodb.document_manager, @service_container]       
+    tamoil_offer.coupon:
+        class: SixthContinent\SixthContinentConnectBundle\Services\TamoilOfferService
+        arguments: [@doctrine.orm.entity_manager, @doctrine.odm.mongodb.document_manager, @service_container]  
+    amilon_offer.card:
+        class: SixthContinent\SixthContinentConnectBundle\Services\AmilonOfferService
+        arguments: [@doctrine.orm.entity_manager, @doctrine.odm.mongodb.document_manager, @service_container]
+    #service for tamoil coupon export
+    sixth_continent_connect.tamoil_coupon_export:
+        class: %sixth_continent_tamoil_coupon_export.app.class%
+        arguments: [@doctrine.orm.entity_manager, @doctrine.odm.mongodb.document_manager, @service_container]
+#service for update the status of the transaction of special offers
+    sixth_continent_connect.tamoil_offer_transaction:
+        class: %sixth_continent_connect_tamoil_offer_transaction.app.class%
+        arguments: [@doctrine.orm.entity_manager, @doctrine.odm.mongodb.document_manager, @service_container]
+        

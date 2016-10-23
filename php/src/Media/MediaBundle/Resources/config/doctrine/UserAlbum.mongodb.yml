@@ -1,0 +1,34 @@
+Media\MediaBundle\Document\UserAlbum:
+    repositoryClass: Media\MediaBundle\Repository\UserAlbumMongoRepository
+    type: document
+    collection: useralbum
+    fields:
+        id:
+            id:  true
+        album_name:
+            type: string
+        user_id:
+            type: int
+        album_desc:
+            type: string
+        privacy_setting:
+            type: int
+        updated_at:
+            type: date
+        created_at:
+            type: date
+        vote_count:
+            type: int
+        vote_sum:
+            type: int
+        avg_rating:
+            type: float
+        rate:
+           embedded: true
+           type: many
+           targetDocument: Media\MediaBundle\Document\UserAlbumRating
+           cascade: all	
+# php app/console doctrine:mongodb:generate:documents TestFormBundle
+# Create Document
+# php app/console doctrine:mongodb:generate:repositories TestFormBundle
+# Create repository

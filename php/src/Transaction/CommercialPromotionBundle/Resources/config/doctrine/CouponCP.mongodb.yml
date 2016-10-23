@@ -1,0 +1,19 @@
+Transaction\CommercialPromotionBundle\Document\CouponCP:
+    repositoryClass: Transaction\CommercialPromotionBundle\Repository\CouponCPRepository
+    type: document
+    collection: couponcp
+    fields:
+        id:
+            id: true
+            strategy: NONE
+        tags_cp:
+           embedded: true
+           type: many
+           targetDocument: Transaction\CommercialPromotionBundle\Document\TagsCP
+           cascade: all
+#        keywords:
+#            type: string
+# php app/console doctrine:mongodb:generate:documents CommercialPromotionBundle
+# Create Document
+# php app/console doctrine:mongodb:generate:repositories CommercialPromotionBundle
+# Create repositoryd 

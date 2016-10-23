@@ -1,0 +1,34 @@
+share_universal_notifications:
+    type: rest
+    pattern: /share/post
+    defaults: { _controller: UtilityUniversalNotificationsBundle:Share:postSharePost }
+    name_prefix: api_
+    methods: [POST]
+get_transaction_notifications:
+    type: rest
+    pattern: /get_transaction_notifications
+    defaults: { _controller: UtilityUniversalNotificationsBundle:Notifications:getTransactionNotifications }
+    name_prefix: api_
+    methods: [POST]
+
+#user notification management 
+save_user_notification_settings:
+    type: rest
+    pattern: /savenotificationsettings
+    defaults: { _controller: UtilityUniversalNotificationsBundle:NotificationManager:saveUserNotifications }
+    name_prefix: api_
+    methods: [POST]
+    
+get_user_notification_settings:
+    type: rest
+    pattern: /getnotificationsettings
+    defaults: { _controller: UtilityUniversalNotificationsBundle:NotificationManager:getUserNotificationSettings }
+    name_prefix: api_
+    methods: [POST]
+    
+get_user_notification_individual_settings:
+    type: rest
+    pattern: /getnotificationindividualsettings
+    defaults: { _controller: UtilityUniversalNotificationsBundle:NotificationManager:getUserNotificationIndividualSettings }
+    name_prefix: api_
+    methods: [POST]

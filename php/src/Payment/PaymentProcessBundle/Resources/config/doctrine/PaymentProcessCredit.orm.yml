@@ -1,0 +1,97 @@
+Payment\PaymentProcessBundle\Entity\PaymentProcessCredit:
+    type: entity
+    table: null
+    repositoryClass: Payment\PaymentProcessBundle\Repository\PaymentProcessCreditRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        amountData:
+            type: blob
+            column: amount_data
+        userId:
+            type: bigint
+            column: user_id
+        shopId:
+            type: bigint
+            column: shop_id
+        totalAmount:
+            type: bigint
+            column: amount
+        coupons:
+            type: bigint
+            column: coupons
+        usedCoupons:
+            type: bigint
+            column: used_coupons
+        premiumPosition:
+            type: bigint
+            column: premium_position
+        usedPremiumPosition:
+            type: bigint
+            column: used_premium_position
+        giftCard:
+            type: bigint
+            column: gift_card
+        usedGiftCard:
+            type: bigint
+            column: used_gift_card
+        momosyCard:
+            type: bigint
+            column: momosy_card
+        usedMomosyCard:
+            type: bigint
+            column: used_momosy_card
+        totalCitizenIncome:
+            type: bigint
+            column: total_citizen_income
+        cpgAmount:
+            type: bigint
+            column: cpg_amount
+        totalUsed:
+            type: bigint
+            column: total_used
+        balanceAmount:
+            type: bigint
+            column: balance_amount
+        giftCardPacketData:
+            type: text
+            column: gift_card_packet
+        remainingGiftCards:
+            type: bigint
+            column: remaining_gift_cards
+        usedRemainingGiftCards:
+            type: bigint
+            column: used_remaining_gift_cards
+        citizenStatus:
+            type: string
+            length: 255
+            column: citizen_status
+        shopStatus:
+            type: string
+            length: 255
+            column: shop_status
+        creditUse:
+            type: integer
+            column: credit_use
+        credit_level:
+            type: integer
+            column: credit_level
+        createdAt:
+            type: datetime
+            column: created_at
+        updatedAt:
+            type: datetime
+            column: updated_at
+        transactionApprovedAt:
+            type: date
+            column: transaction_approved_at
+        isDistributed:
+            type: integer
+            column: is_distributed
+        isCalculated:
+            type: integer
+            column: is_calculated
+    lifecycleCallbacks: {  }

@@ -1,0 +1,6 @@
+wallet_management_wallet_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: WalletManagementWalletBundle:Default:index }
+croncitizenincomes:
+    pattern:  /webapi/croncitizenincomes
+    defaults: { _controller: WalletManagementWalletBundle:CitizenWallet:croncitizenincomes }

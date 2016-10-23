@@ -1,0 +1,32 @@
+PostFeeds\PostFeedsBundle\Document\TaggingFeeds:
+    repositoryClass: PostFeeds\PostFeedsBundle\Repository\TaggingFeedsMongoRepository
+    type: embeddedDocument
+    collection: taggingfeeds
+    fields:
+        id:
+            id:  true
+        shop:
+           embedded: true
+           type: many
+           targetDocument: PostFeeds\PostFeedsBundle\Document\ShopTagFeeds
+           cascade: all	
+        club:
+           embedded: true
+           type: many
+           targetDocument: PostFeeds\PostFeedsBundle\Document\ClubTagFeeds
+           cascade: all	
+        user:
+           embedded: true
+           type: many
+           targetDocument: PostFeeds\PostFeedsBundle\Document\UserTagFeeds
+           cascade: all	
+        created_at:
+            type: date
+        updated_at:
+            type: date
+        
+           
+# php app/console doctrine:mongodb:generate:documents TestFormBundle
+# Create Document
+# php app/console doctrine:mongodb:generate:repositories TestFormBundle
+# Create repositoryd 

@@ -1,0 +1,88 @@
+#app/routing_rest.yml
+
+#message :
+# type: rest
+# resource:     "MessageMessageBundle:Message"
+# name_prefix:  api_
+#
+#v1 routing
+V1_Club_Route : 
+  type : rest
+  resource: "@PostPostBundle/Resources/config/routing_v1_rest.yml"
+userposts:
+    type: rest
+    pattern: /userposts
+    resource: "PostPostBundle:Post"
+    name_prefix: api_
+    requirements:
+        _method:  POST
+deleteposts:
+    type: rest
+    pattern: /deleteposts
+    resource: "PostPostBundle:Post"
+    name_prefix: api_
+    requirements:
+        _method:  POST
+deletegrouppostmedias:
+    type: rest
+    pattern: /deletegrouppostmedias
+    resource: "PostPostBundle:Post"
+    name_prefix: api_
+    requirements:
+        _method:  POST
+listposts:
+    type: rest
+    pattern: /listposts
+    resource: "PostPostBundle:Post"
+    name_prefix: api_
+    requirements:
+        _method:  POST
+updateposts:
+    type: rest
+    pattern: /updateposts
+    resource: "PostPostBundle:Post"
+    name_prefix: api_
+    requirements:
+        _method:  POST
+searchposts:
+    type: rest
+    pattern: /searchposts
+    resource: "PostPostBundle:Post"
+    name_prefix: api_
+    requirements:
+        _method:  POST
+commentcreates:
+    type: rest
+    pattern: /createcomments
+    resource: "PostPostBundle:Comments"
+    name_prefix: api_
+    requirements:
+        _methods: POST
+commentupdates:
+    type: rest
+    pattern: /commentupdates
+    resource: "PostPostBundle:Comments"
+    name_prefix: api_
+    requirements:
+        _methods: POST
+commentdeletes:
+    type: rest
+    pattern: /commentdeletes
+    resource: "PostPostBundle:Comments"
+    name_prefix: api_
+    requirements:
+        _methods: POST
+commentlists:
+    type: rest
+    pattern: /commentlists
+    resource: "PostPostBundle:Comments"
+    name_prefix: api_
+    requirements:
+        _methods: POST
+getclubpostdetails:
+    type: rest
+    pattern: /getclubpostdetails
+    resource: "PostPostBundle:Post"
+    name_prefix: api_
+    requirements:
+        _method:  POST

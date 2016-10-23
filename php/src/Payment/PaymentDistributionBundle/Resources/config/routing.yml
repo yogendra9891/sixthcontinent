@@ -1,0 +1,12 @@
+payment_payment_distribution_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: PaymentPaymentDistributionBundle:Default:index }
+payment_distribution:
+    pattern:  /webapi/paymentdistribution
+    defaults: { _controller: PaymentPaymentDistributionBundle:PaymentDistribution:paymentdistribution }
+payment_distribution_cron:
+    pattern:  /webapi/paymentcrondistribution
+    defaults: { _controller: PaymentPaymentDistributionBundle:PaymentDistribution:paymentcrondistribution }
+payment_distribution_cron_sixpercent:
+    pattern:  /webapi/sixpercentcrondistribution
+    defaults: { _controller: PaymentPaymentDistributionBundle:PaymentDistribution:sixpercentcrondistribution }

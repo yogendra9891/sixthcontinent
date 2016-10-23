@@ -1,0 +1,17 @@
+Transaction\CommercialPromotionBundle\Document\ImagesCP:
+    repositoryClass: Transaction\CommercialPromotionBundle\Repository\ImagesCPRepository
+    type: embeddedDocument
+    collection: imagescp
+    fields:
+        id:
+            id: true
+        image_type:
+            type: string
+        real:
+            type: string
+        thumb:
+            type: string
+# php app/console doctrine:mongodb:generate:documents MediaMediaBundle
+# Create Document
+# php app/console doctrine:mongodb:generate:repositories MediaMediaBundle
+# Create repository

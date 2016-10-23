@@ -1,0 +1,84 @@
+Utility\ApplaneIntegrationBundle\Entity\ShopTransactionsPayment:
+    type: entity
+    table: null
+    repositoryClass: Utility\ApplaneIntegrationBundle\Repository\ShopTransactionsPaymentRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        shopId:
+            type: bigint
+            column: shop_id
+        pendingIds:
+            type: string
+            length: 255
+            column: pending_ids
+        pendingAmount:
+            type: float
+            column: pending_amount
+        totalAmount:
+            type: float
+            column: total_amount
+        contractTxnId:
+            type: string
+            length: 255
+            column: contract_txn_id
+        payType:
+            type: string
+            length: 255
+            column: pay_type
+        status:
+            type: integer
+        comment:
+            type: text
+        mode:
+            type: string
+            length: 255
+        createdAt:
+            type: date
+            column: created_at
+        contractId:
+            type: bigint
+            column: contract_id
+        paymentDate:
+            type: datetime
+            column: payment_date
+        tipoCarta:
+            type: string
+            length: 255
+            column: tipo_carta
+        paese:
+            type: string
+            length: 255
+        codTrans:
+            type: string
+            length: 255
+        tipoProdotto:
+            type: string
+            length: 255
+            column: tipo_prodotto
+        tipoTransazione:
+            type: string
+            length: 255
+            column: tipo_transazione
+        codiceAutorizzazione:
+            type: string
+            length: 255
+            column: codice_autorizzazione
+        dataOra:
+            type: string
+            length: 255
+            column: data_ora
+        codiceEsito:
+            type: integer
+            column: codice_esito
+        descrizioneEsito:
+            type: string
+            length: 255
+            column: descrizione_esito
+        mac:
+            type: string
+            length: 255
+    lifecycleCallbacks: {  }

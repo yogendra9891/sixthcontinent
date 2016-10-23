@@ -1,0 +1,3 @@
+utility_rating_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: UtilityRatingBundle:Default:index }

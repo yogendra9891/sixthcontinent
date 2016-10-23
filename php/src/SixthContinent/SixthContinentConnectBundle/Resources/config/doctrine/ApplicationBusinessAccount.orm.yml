@@ -1,0 +1,150 @@
+SixthContinent\SixthContinentConnectBundle\Entity\ApplicationBusinessAccount:
+    type: entity
+    table: applicationbusinessaccount
+    repositoryClass: SixthContinent\SixthContinentConnectBundle\Repository\ApplicationBusinessAccountRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        applicationId:
+            type: string
+            length: 255
+            column: application_id
+        email:
+            type: string
+            length: 255
+        description:
+            type: string
+            length: 255
+        name:
+            type: string
+            length: 255
+        businessName:
+            type: string
+            length: 255
+            column: business_name
+        businessType:
+            type: string
+            length: 255
+            column: business_type
+        businessCountry:
+            type: string
+            length: 255
+            column: business_country
+        businessRegion:
+            type: string
+            length: 255
+            column: business_region
+        businessCity:
+            type: string
+            length: 255
+            column: business_city
+        businessAddress:
+            type: string
+            length: 255
+            column: business_address
+        phone:
+            type: string
+            length: 255
+        zip:
+            type: string
+            length: 255
+        province:
+            type: string
+            length: 255
+        vatNumber:
+            type: string
+            length: 255
+            column: vat_number
+        iban:
+            type: string
+            length: 255
+        fiscalCode:
+            type: string
+            length: 255
+            column: fiscal_code
+        represFiscalCode:
+            type: string
+            length: 255
+            column: repres_fiscal_code
+        represFirstName:
+            type: string
+            length: 255
+            column: repres_first_name
+        represLastName:
+            type: string
+            length: 255
+            column: repres_last_name
+        represPlaceOfBirth:
+            type: string
+            length: 255
+            column: repres_place_of_birth
+        represDob:
+            type: datetime
+            column: repres_dob
+        represEmail:
+            type: string
+            length: 255
+            column: repres_email
+        represPhoneNumber:
+            type: string
+            length: 255
+            column: repres_phone_number
+        represAddress:
+            type: string
+            length: 255
+            column: repres_address
+        represProvince:
+            type: string
+            length: 255
+            column: repres_province
+        represCity:
+            type: string
+            length: 255
+            column: repres_city
+        represZip:
+            type: string
+            length: 255
+            column: repres_zip
+        createdAt:
+            type: datetime
+            column: created_at
+        updatedAt:
+            type: datetime
+            column: updated_at
+        isActive:
+            type: integer
+            column: is_active
+        isDeleted:
+            type: integer
+            column: is_deleted
+        latitude:
+            type: string
+            length: 255
+            column: latitude
+        longitude:
+            type: string
+            length: 255
+            column: longitude
+        mapPlace:
+            type: string
+            length: 255
+            column: map_place
+        connectFeesPayer:
+            type: string
+            length: 255
+            column: connect_fees_payer
+        connectCiFeesPayer:
+            type: string
+            length: 255
+            column: connect_ci_fees_payer
+        profileImage:
+            type: string
+            length: 255
+            column: profile_image
+        catId:
+            type: bigint
+            column: cat_id    
+    lifecycleCallbacks: {  }

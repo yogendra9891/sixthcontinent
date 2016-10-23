@@ -1,0 +1,11 @@
+parameters:
+#    link_preview_link_preview.example.class: LinkPreview\LinkPreviewBundle\Example
+    linkpreview.share.class: LinkPreview\LinkPreviewBundle\Services\LinkPreviewService
+
+services:
+#    link_preview_link_preview.example:
+#        class: %link_preview_link_preview.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
+    linkpreview.share:
+        class: %linkpreview.share.class%
+        arguments: [@doctrine.orm.entity_manager, @doctrine.odm.mongodb.document_manager, @service_container]

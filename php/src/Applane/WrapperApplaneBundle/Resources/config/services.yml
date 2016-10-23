@@ -1,0 +1,7 @@
+parameters:
+#    applane_demo_applane.example.class: Applane\DemoApplaneBundle\Example
+
+services:
+#    applane_demo_applane.example:
+#        class: %applane_demo_applane.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

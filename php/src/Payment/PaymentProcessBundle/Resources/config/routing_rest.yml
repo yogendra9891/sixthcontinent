@@ -1,0 +1,73 @@
+#app/routing_rest.yml
+approvecredits:
+   type: rest
+   pattern: /approvecredits
+   resource: "PaymentPaymentProcessBundle:PaymentProcess"
+   name_prefix: api_
+paymentcredits:
+   type: rest
+   pattern: /paymentcredits
+   resource: "PaymentPaymentProcessBundle:PaymentProcess"
+   name_prefix: api_   
+#gift card purchase.
+purchasegiftcards:
+   type: rest
+   pattern: /purchasegiftcards
+   resource: "PaymentPaymentProcessBundle:GiftCard"
+   name_prefix: api_ 
+getavailablegiftcards:
+   type: rest
+   pattern: /getavailablegiftcards
+   resource: "PaymentPaymentProcessBundle:GiftCard"
+   name_prefix: api_ 
+#InitiateTransactions
+initiatetransactions:
+   type: rest
+   pattern: /initiatetransactions
+   resource: "PaymentPaymentProcessBundle:PaymentProcess"
+   name_prefix: api_  
+gettransactionobjects:
+    type: rest
+    pattern: /gettransactionobjects
+    resource: "WalletManagementWalletBundle:ShopTransactionHistory"
+    name_prefix: api_
+    requirements:
+        _methods: POST
+
+searchtransactionobjects:
+    type: rest
+    pattern: /searchtransactionobjects
+    resource: "WalletManagementWalletBundle:ShopTransactionHistory"
+    name_prefix: api_
+    requirements:
+        _methods: POST
+
+        
+addtransactioncomments:
+    type: rest
+    pattern: /addtransactioncomments
+    resource: "PaymentPaymentProcessBundle:TransactionActivity"
+    name_prefix: api_
+    requirements:
+        _methods: POST
+        
+liststoretransactioncomments:
+   type: rest
+   pattern: /liststoretransactioncomments
+   resource: "PaymentPaymentProcessBundle:TransactionActivity"
+   name_prefix: api_  
+
+listusertransactionhistories:
+   type: rest
+   pattern: /listusertransactionhistories
+   resource: "PaymentPaymentProcessBundle:TransactionActivity"
+   name_prefix: api_  
+
+
+gettransactionbyids:
+    type: rest
+    pattern: /gettransactionbyids
+    resource: "WalletManagementWalletBundle:ShopTransactionHistory"
+    name_prefix: api_
+    requirements:
+        _methods: POST

@@ -1,0 +1,68 @@
+Transaction\CitizenIncomeBundle\Entity\CiFromProfPersFriendsFollower:
+    type: entity
+    table: null
+    repositoryClass: Transaction\CitizenIncomeBundle\Repository\CiFromProfPersFriendsFollowerRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        timeInitTransaction:
+            type: integer
+            column: time_init_transaction
+        timeEndTransaction:
+            type: integer
+            column: time_end_transaction
+        timeInitTransactionH:
+            type: datetime
+            column: time_init_transaction_h
+        timeEndTransactionH:
+            type: datetime
+            column: time_end_transaction_h
+        timeRedistribution:
+            type: integer
+            column: time_redistribution
+        timeRedistributionH:
+            type: datetime
+            column: time_redistribution_h
+        totalUser:
+            type: integer
+            column: total_user
+        totalAmountBaseCurrency:
+            type: integer
+            column: total_amount_base_currency
+        singleShareBaseCurrency:
+            type: integer
+            column: single_share_base_currency
+        amountNotRedistributedBaseCurrency:
+            type: integer
+            column: amount_not_redistributed_base_currency
+        buyerId:
+            type: integer
+            column: buyer_id
+        singleShareUsd:
+            type: integer
+            column: single_share_usd
+        singleShareEur:
+            type: integer
+            column: single_share_eur
+        singleShareInr:
+            type: integer
+            column: single_share_inr
+        singleShareChf:
+            type: integer
+            column: single_share_chf
+        singleShareSek:
+            type: integer
+            column: single_share_sek
+        singleShareDkk:
+            type: integer
+            column: single_share_dkk
+        singleShareGbp:
+            type: integer
+            column: single_share_gbp
+        singleShareYen:
+            type: integer
+            column: single_share_yen
+    lifecycleCallbacks: {  }

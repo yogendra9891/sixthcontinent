@@ -1,0 +1,4 @@
+payment_payment_process_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: PaymentPaymentProcessBundle:Default:index }
+

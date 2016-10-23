@@ -1,0 +1,25 @@
+Transaction\TransactionBundle\Entity\UserCitizenIncome:
+    type: entity
+    table: null
+    repositoryClass: Transaction\TransactionBundle\Entity\UserCitizenIncomeRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        citizenIncomeId:
+            type: bigint
+            column: citizen_income_id
+        userId:
+            type: bigint
+            column: user_id
+        citizenIncomeAmount:
+            type: bigint
+            column: citizen_income_amount
+        date:
+            type: bigint
+        dataJob:
+            type: bigint
+            column: data_job
+    lifecycleCallbacks: {  }

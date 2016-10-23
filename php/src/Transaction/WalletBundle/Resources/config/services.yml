@@ -1,0 +1,7 @@
+parameters:
+   wallet_manager.class: Transaction\WalletBundle\Services\WalletManager
+
+services:
+   wallet_manager: 
+    class: "%wallet_manager.class%"
+    arguments: [@doctrine.orm.entity_manager, @doctrine.odm.mongodb.document_manager, @service_container]

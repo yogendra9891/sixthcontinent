@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity repository-class="UserManager\Sonata\UserBundle\Entity\FacebookUserRepository" name="UserManager\Sonata\UserBundle\Entity\FacebookUser">
+    <indexes>
+            <index name="userid_FacebookUser" columns="user_id"/>
+    </indexes>
+    <id name="id" type="integer" column="id">
+      <generator strategy="AUTO"/>
+    </id>
+    <field name="userId" type="integer" column="user_id"/>
+    <field name="facebookId" type="string" column="facebook_id" length="255"/>
+    <field name="facebookAccessToken" type="string" column="facebook_access_token" length="255"/>
+    <field name="expiryTime" type="string" nullable="true" column="expiry_time" />
+    <field name="syncStatus" type="boolean" column="sync_status" />
+    <field name="publishActions" type="boolean" column="publish_actions" />
+  </entity>
+</doctrine-mapping>

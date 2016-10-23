@@ -1,0 +1,19 @@
+## YAML Template.
+---
+PostFeeds\PostFeedsBundle\Document\SocialProjectCoverImg:
+    repositoryClass: PostFeeds\PostFeedsBundle\Document\SocialProjectCoverImgMongoRepository
+    type: embeddedDocument
+    collection: socail_project_cover_img
+    fields:
+        id:
+            id: true
+        project_id:
+            type: string
+        x:
+            type: string
+        y:
+            type: string
+    referenceMany:
+        image_name:
+            targetDocument: PostFeeds\PostFeedsBundle\Document\MediaFeeds
+            cascade: persist        

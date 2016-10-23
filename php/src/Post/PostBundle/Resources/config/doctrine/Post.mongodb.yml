@@ -1,0 +1,51 @@
+Post\PostBundle\Document\Post:
+    repositoryClass: Post\PostBundle\Repository\PostMongoRepository
+    type: document
+    collection: post
+    fields:
+        id:
+            id:  true
+        post_title:
+            type: string
+        post_desc:
+            type: string
+        link_type:
+            type: int
+        post_author:
+            type: string
+        post_created:
+            type: date
+        post_updated:
+            type: date
+        post_status:
+            type: int
+        post_gid:
+            type: string
+        post_group_owner_id:
+            type: int
+        vote_count:
+            type: int
+        vote_sum:
+            type: int
+        avg_rating:
+            type: float
+        tagged_friends:
+            type: collection
+        content_share:
+            type: hash
+        share_object_id:
+            type: string
+        share_object_type:
+            type: string
+        share_type:
+            type: string
+        rate:
+           embedded: true
+           type: many
+           targetDocument: Post\PostBundle\Document\PostRating
+           cascade: all	
+           
+# php app/console doctrine:mongodb:generate:documents PostPostBundle
+# Create Document
+# php app/console doctrine:mongodb:generate:repositories TestFormBundle
+# Create repositoryd 

@@ -1,0 +1,23 @@
+StoreManager\PostBundle\Document\StorePostsRating:
+    repositoryClass: StoreManager\PostBundle\Repository\StorePostsRatingMongoRepository
+    type: embeddedDocument
+    collection: storepostsrating
+    fields:
+        id:
+            id: true
+        user_id:
+            type: int
+        rate:
+            type: int
+        item_id:
+            type: string
+        type:
+            type: string
+        created_at:
+            type: date
+        updated_at:
+            type: date
+# php app/console doctrine:mongodb:generate:documents DashboardManagerBundle
+# Create Document
+# php app/console doctrine:mongodb:generate:repositories DashboardManagerBundle
+# Create repository

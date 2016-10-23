@@ -1,0 +1,16 @@
+store_manager_post_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: StoreManagerPostBundle:Default:index }
+store_manager_post_homepage1:
+    path:     /comments
+    defaults: { _controller: StoreManagerPostBundle:StoreComments:comments }
+store_manager_post_listpublicstoreposts:
+    pattern:  /webapi/listpublicstoreposts
+    defaults: { _controller: StoreManagerPostBundle:Post:listpublicstoreposts }
+externalliststorecommentsAction:
+    pattern:  /webapi/externalliststorecomments
+    defaults: { _controller: StoreManagerPostBundle:StoreComments:externalliststorecomments }
+    
+listpublicstorereviewsAction:
+    pattern:  /webapi/listpublicstorereviews
+    defaults: { _controller: StoreManagerPostBundle:Post:listpublicstorereviews }

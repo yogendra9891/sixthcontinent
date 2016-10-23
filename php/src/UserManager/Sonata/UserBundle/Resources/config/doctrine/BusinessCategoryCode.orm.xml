@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity repository-class="UserManager\Sonata\UserBundle\Entity\BusinessCategoryCodeRepository" name="UserManager\Sonata\UserBundle\Entity\BusinessCategoryCode">
+    <id name="id" type="integer" column="id">
+      <generator strategy="AUTO"/>
+    </id>
+    <field name="categoryCode" type="string" column="category_code" length="255"/>
+    <field name="langCode" type="string" column="lang_code" length="10"/>
+    <field name="categoryName" type="string" column="category_name" length="255"/>
+  </entity>
+</doctrine-mapping>

@@ -1,0 +1,5 @@
+applane_webapi_offerdetails:
+    pattern:  /webapi/offerdetails
+    defaults: { _controller: ApplaneWrapperApplaneBundle:Applane:offerDetails }
+    requirements:
+        _methods: POST

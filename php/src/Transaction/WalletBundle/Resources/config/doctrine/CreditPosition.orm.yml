@@ -1,0 +1,36 @@
+Transaction\WalletBundle\Entity\CreditPosition:
+    type: entity
+    table: null
+    repositoryClass: Transaction\WalletBundle\Repository\CreditPositionRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        premiumId:
+            type: string
+            length: '45'
+            column: premium_id
+        amount:
+            type: integer
+            column: amount
+        timeCreatedH:
+            type: datetime
+            column: time_created_h
+        timeCreated:
+            type: integer
+            column: time_created
+        currency:
+            type: string
+            length: '45'
+        maxUsageInitPrice:
+            type: integer
+            column: max_usage_init_price
+        sellerId:
+            type: integer
+            column: seller_id
+        walletCitizenId:
+            type: integer
+            column: wallet_citizen_id
+    lifecycleCallbacks: {  }

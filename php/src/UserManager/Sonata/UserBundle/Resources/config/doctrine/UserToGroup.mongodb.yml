@@ -1,0 +1,13 @@
+UserManager\Sonata\UserBundle\Document\UserToGroup:
+    repositoryClass: UserManager\Sonata\UserBundle\Repository\UserToGroupMongoRepository
+    type: document
+    collection: UserToGroup
+    fields:
+        id:
+            id: true   
+        user_id:
+            type: int
+        group_id:
+            type: string
+        is_blocked:
+            type: int

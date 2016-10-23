@@ -1,0 +1,25 @@
+SixthContinent\SixthContinentConnectBundle\Entity\Applicationservices:
+    type: entity
+    table: null
+    repositoryClass: SixthContinent\SixthContinentConnectBundle\Repository\ApplicationservicesRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        serviceId:
+            type: string
+            length: 255
+            column: service_id
+        serviceName:
+            type: string
+            length: 255
+            column: service_name
+        serviceSecret:
+            type: string
+            length: 255
+            column: service_secret
+        service:
+            type: bigint
+    lifecycleCallbacks: {  }

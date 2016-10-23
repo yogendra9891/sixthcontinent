@@ -1,0 +1,42 @@
+parameters:
+    payment_transaction_process.transaction_manager.class: Payment\TransactionProcessBundle\Services\TransactionManagerService
+    payment_transaction_process.interface.class: Payment\TransactionProcessBundle\Factory\ICredit
+    payment_transaction_process.factory.class: Payment\TransactionProcessBundle\Factory\CreditFactory
+    payment_transaction_process.entity_coupon.class: Payment\TransactionProcessBundle\Factory\Coupon
+    payment_transaction_process.entity_giftcard.class: Payment\TransactionProcessBundle\Factory\GiftCard
+    payment_transaction_process.entity_premimum_position.class: Payment\TransactionProcessBundle\Factory\PremiumPosition
+    payment_transaction_process.entity_momosy_card.class: Payment\TransactionProcessBundle\Factory\MomosyCard
+
+services:
+    #service for transaction manager
+    payment_transaction_process.transaction_manager:
+        class: %payment_transaction_process.transaction_manager.class%
+        arguments: [@doctrine.orm.entity_manager, @doctrine.odm.mongodb.document_manager, @service_container]
+
+    transaction.coupon.credit:
+        class: %payment_transaction_process.interface.class%
+        factory_class: %payment_transaction_process.factory.class%
+        factory_method: get
+        arguments: 
+            entity_type: coupon
+
+    transaction.premiumposition.credit:
+        class: %payment_transaction_process.interface.class%
+        factory_class: %payment_transaction_process.factory.class%
+        factory_method: get
+        arguments: 
+            entity_type: premium_position
+
+    transaction.giftcard.credit:
+        class: %payment_transaction_process.interface.class%
+        factory_class: %payment_transaction_process.factory.class%
+        factory_method: get
+        arguments: 
+            entity_type: gift_card
+
+    transaction.momosycard.credit:
+        class: %payment_transaction_process.interface.class%
+        factory_class: %payment_transaction_process.factory.class%
+        factory_method: get
+        arguments: 
+            entity_type: momosy_card

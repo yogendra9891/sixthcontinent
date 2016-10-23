@@ -1,0 +1,23 @@
+Utility\MasterDataBundle\Entity\MonthsListCodeByLang:
+    type: entity
+    table: null
+    repositoryClass: Utility\MasterDataBundle\Repository\MonthsListCodeByLangRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        monthCode:
+            type: string
+            length: 255
+            column: month_code
+        langCode:
+            type: string
+            length: 255
+            column: lang_code
+        monthName:
+            type: string
+            length: 255
+            column: month_name
+    lifecycleCallbacks: {  }

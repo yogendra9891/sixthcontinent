@@ -1,0 +1,28 @@
+Payment\PaymentDistributionBundle\Entity\SixthContinentIncomeGain:
+    type: entity
+    table: SixthContinentIncomeGain
+    repositoryClass: Payment\PaymentDistributionBundle\Repository\SixthContinentIncomeGainRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        purchaserId:
+            type: bigint
+            column: purchaser_id
+        shopId:
+            type: bigint
+            column: shop_id
+        transactionId:
+            type: string
+            length: 255
+            column: transaction_id
+        Income:
+            type: bigint
+        date:
+            type: datetime
+        isDistributed:
+            type: integer
+            column: is_distributed
+    lifecycleCallbacks: {  }

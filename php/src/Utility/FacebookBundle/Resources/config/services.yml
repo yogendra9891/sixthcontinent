@@ -1,0 +1,7 @@
+parameters:
+    facebookpost_service.class: Utility\FacebookBundle\Services\FacebookAutoPostService;
+
+services:
+    facebook_auto_post.service:
+        class: Utility\FacebookBundle\Services\FacebookAutoPostService
+        arguments: [@doctrine.orm.entity_manager, @doctrine.odm.mongodb.document_manager, @service_container]

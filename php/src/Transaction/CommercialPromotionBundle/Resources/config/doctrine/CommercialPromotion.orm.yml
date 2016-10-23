@@ -1,0 +1,58 @@
+Transaction\CommercialPromotionBundle\Entity\CommercialPromotion:
+    type: entity
+    table: null
+    repositoryClass: Transaction\CommercialPromotionBundle\Repository\CommercialPromotionRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        initQuantity:
+            type: integer
+            column: init_quantity
+        availableQuantity:
+            type: integer
+            column: available_quantity
+        timeStartH:
+            type: datetime
+            column: time_start_h
+        timeEndH:
+            type: datetime
+            column: time_end_h
+        timeStart:
+            type: integer
+            column: time_start
+        timeEnd:
+            type: integer
+            column: time_end
+        discountAmount:
+            type: integer
+            column: discount_amount
+        commercialPromotionTypeId:
+            type: integer
+            column: commercial_promotion_type_id
+        sellerId:
+            type: integer
+            column: seller_id
+        sexFemale:
+            type: integer
+            column: sex_female
+        extraInfo:
+            type: integer
+            column: extra_info
+        price:
+            type: integer
+        timeCreate:
+            type: integer
+        timeCreateH:
+            type: datetime
+        status:
+            type: integer
+            options: 
+                default: 1
+        maxUsageInitPrice:
+            type: integer
+            options: 
+                default: 50
+    lifecycleCallbacks: {  }

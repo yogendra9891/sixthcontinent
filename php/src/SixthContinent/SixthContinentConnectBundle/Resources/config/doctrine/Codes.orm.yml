@@ -1,0 +1,29 @@
+SixthContinent\SixthContinentConnectBundle\Entity\Codes:
+    type: entity
+    table: codes
+    repositoryClass: SixthContinent\SixthContinentConnectBundle\Repository\CodesRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        type:
+            type: string
+            length: 255
+        typeId:
+            type: string
+            length: 255
+            column: type_id
+        code:
+            type: text
+        couponToActiveId:
+            type: integer
+            column: coupon_to_active_id
+        status:
+            type: string
+            length: 255
+        isDeleted:
+            type: integer
+            column: is_deleted
+    lifecycleCallbacks: {  }

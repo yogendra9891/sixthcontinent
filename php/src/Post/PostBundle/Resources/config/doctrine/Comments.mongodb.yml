@@ -1,0 +1,36 @@
+Post\PostBundle\Document\Comments:
+    repositoryClass: Post\PostBundle\Repository\CommentsMongoRepository
+    type: document
+    collection: comments
+    fields:
+        id:
+            id: true
+        post_id:
+            type: string
+        comment_text:
+            type: string
+        comment_author:
+            type: int
+        comment_created_at:
+            type: date
+        comment_updated_at:
+            type: date
+        status:
+            type: int
+        profile_type:
+            type: string
+        type:
+            type: string
+        vote_count:
+            type: int
+        vote_sum:
+            type: int
+        avg_rating:
+            type: float
+        rate:
+           embedded: true
+           type: many
+           targetDocument: Post\PostBundle\Document\CommentRating
+           cascade: all
+        tagging:
+            type: hash

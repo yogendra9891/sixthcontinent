@@ -1,0 +1,15 @@
+parameters:
+#    newsletter_newsletter.example.class: Newsletter\NewsletterBundle\Example
+
+services:
+#    newsletter_newsletter.example:
+#        class: %newsletter_newsletter.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
+ sonata.block.service.template:
+      class: Newsletter\NewsletterBundle\Block\TemplateBlockService
+      tags:
+        - { name: sonata.block }
+      arguments:
+        - "sonata.block.service.template"
+        - @templating
+        - @doctrine.orm.entity_manager

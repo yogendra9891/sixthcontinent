@@ -1,0 +1,40 @@
+SixthContinent\SixthContinentConnectBundle\Entity\CodesConsumption:
+    type: entity
+    table: null
+    repositoryClass: SixthContinent\SixthContinentConnectBundle\Repository\CodesConsumptionRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        userId:
+            type: bigint
+            column: user_id
+        typeId:
+            type: string
+            length: 255
+            column: type_id
+        type:
+            type: string
+            length: 255
+        offerId:
+            type: string
+            length: 255
+            column: offer_id
+        codeId:
+            type: bigint
+            column: code_id
+        transactionId:
+            type: bigint
+            column: transaction_id
+        couponId:
+            type: bigint
+            column: coupon_id
+        coupon:
+            type: string
+            length: 255
+        date:
+            type: datetime
+            column: date    
+    lifecycleCallbacks: {  }

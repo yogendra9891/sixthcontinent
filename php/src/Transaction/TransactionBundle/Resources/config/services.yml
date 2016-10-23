@@ -1,0 +1,7 @@
+parameters:
+#    transaction_transaction.example.class: Transaction\TransactionBundle\Example
+
+services:
+#    transaction_transaction.example:
+#        class: %transaction_transaction.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

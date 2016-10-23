@@ -1,0 +1,24 @@
+CardManagement\CardManagementBundle\Entity\Waivers:
+    type: entity
+    table: null
+    repositoryClass: CardManagement\CardManagementBundle\Repository\WaiversRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        itemId:
+            type: integer
+            column: item_id
+        itemType:
+            type: string
+            length: 255
+            column: item_type
+        waverId:
+            type: integer
+            column: waver_id
+        createdAt:
+            type: datetime
+            column: created_at
+    lifecycleCallbacks: {  }

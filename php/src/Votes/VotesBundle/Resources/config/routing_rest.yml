@@ -1,0 +1,14 @@
+votes_voting:
+   type: rest
+   pattern: /voting
+   defaults:  { _controller: VotesVotesBundle:Votes:postVoting}
+   name_prefix: api_
+   requirements:
+        _method:  POST
+votes_get_voted_users:
+   type: rest
+   pattern: /getvotedusers
+   defaults:  { _controller: VotesVotesBundle:Votes:postGetVotedUsers}
+   name_prefix: api_
+   requirements:
+        _method:  POST

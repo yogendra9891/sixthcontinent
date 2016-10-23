@@ -1,0 +1,23 @@
+Transaction\TransactionBundle\Document\CitizenIncome:
+    repositoryClass: Transaction\TransactionBundle\Repository\CitizenIncomeMongoRepository
+    type: document
+    collection: citizenincome
+    fields:
+        id:
+            id: true
+        user_obj:
+            type: string
+        percentage:
+            type: int
+        type:
+            type: string
+        shop_obj:
+            type: string
+        amount:
+            type: float
+        transaction_obj:
+            type: string
+        payer_obj:
+            type: string
+        create_at:
+            type: date

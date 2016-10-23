@@ -1,0 +1,23 @@
+Utility\MasterDataBundle\Entity\CountryCodeByLang:
+    type: entity
+    table: null
+    repositoryClass: Utility\MasterDataBundle\Repository\CountryCodeByLangRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        countryCode:
+            type: string
+            length: 255
+            column: country_code
+        langCode:
+            type: string
+            length: 255
+            column: lang_code
+        countryString:
+            type: string
+            length: 255
+            column: country_string
+    lifecycleCallbacks: {  }

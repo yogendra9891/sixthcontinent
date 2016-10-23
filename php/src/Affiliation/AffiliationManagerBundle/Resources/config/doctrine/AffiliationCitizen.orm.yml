@@ -1,0 +1,23 @@
+Affiliation\AffiliationManagerBundle\Entity\AffiliationCitizen:
+    type: entity
+    table: null
+    repositoryClass: Affiliation\AffiliationManagerBundle\Entity\AffiliationCitizenRepository
+    indexes:
+        index_fromid_toid_AffiliationCitizen:
+            columns: [from_id,to_id]
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        fromId:
+            type: integer
+            column: from_id
+        toId:
+            type: integer
+            column: to_id
+        createdAt:
+            type: datetime
+            column: created_at
+    lifecycleCallbacks: {  }

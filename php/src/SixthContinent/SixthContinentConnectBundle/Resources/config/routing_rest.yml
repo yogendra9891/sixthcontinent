@@ -1,0 +1,110 @@
+#app/routing_rest.yml
+#authenticate the service
+authenticate1:
+   type: rest
+   pattern: /authenticate1
+   defaults:  { _controller: SixthContinentConnectBundle:CredentialVerification:postAuthentication1}
+   name_prefix: api_
+   requirements:
+        _method:  POST
+#initiate a transaction 
+appconnecttransactioninitiation:
+   type: rest
+   pattern: /appconnecttransactioninitiation
+   defaults:  { _controller: SixthContinentConnectBundle:CredentialVerification:postAppConnectTransactionInitiate}
+   name_prefix: api_
+   requirements:
+        _method:  POST
+#confirm a transaction 
+connectconfirmtransaction:
+   type: rest
+   pattern: /connectconfirmtransaction
+   defaults:  { _controller: SixthContinentConnectBundle:CredentialVerification:postConfirmConnectTransaction}
+   name_prefix: api_
+   requirements:
+        _method:  POST      
+#confirm (success/cancel)a transaction 
+responseconnecttransaction:
+   type: rest
+   pattern: /responseconnecttransaction
+   defaults:  { _controller: SixthContinentConnectBundle:CredentialVerification:postResponseConnectTransaction}
+   name_prefix: api_
+   requirements:
+        _method:  POST            
+#application business account
+connectbusinessaccount:
+   type: rest
+   pattern: /connectbusinessaccount
+   defaults:  { _controller: SixthContinentConnectBundle:AppBusinessAccount:postAppConnectBusinessAccount}
+   name_prefix: api_
+   requirements:
+        _method:  POST
+#application transaction history
+connecttransactionhistory:
+   type: rest
+   pattern: /connecttransactionhistory
+   defaults:  { _controller: SixthContinentConnectBundle:AppTransaction:postAppConnectTransactionHistory}
+   name_prefix: api_
+   requirements:
+        _method:  POST        
+#application search
+connectapplicationsearch:
+   type: rest
+   pattern: /connectapplicationsearch
+   defaults:  { _controller: SixthContinentConnectBundle:AppBusinessAccount:postAppConnectSearch}
+   name_prefix: api_
+   requirements:
+        _method:  POST           
+#purchase tamoil offer
+purchaseoffer:
+   type: rest
+   pattern: /purchaseoffer
+   defaults:  { _controller: SixthContinentConnectBundle:OfferPurchase:postPurchaseOffer}
+   name_prefix: api_
+   requirements:
+        _method:  POST 
+#purchase tamoil offer response
+responsepurchaseoffer:
+   type: rest
+   pattern: /responsepurchaseoffer
+   defaults:  { _controller: SixthContinentConnectBundle:OfferPurchase:postResponsePurchaseOffer}
+   name_prefix: api_
+   requirements:
+        _method:  POST   
+#purchase tamoil offer detail
+purchaseofferdetail:
+   type: rest
+   pattern: /purchaseofferdetail
+   defaults:  { _controller: SixthContinentConnectBundle:OfferDetail:postPurchaseOfferDetail}
+   name_prefix: api_
+   requirements:
+        _method:  POST      
+#tamoil offer point of sale.
+purchaseofferpointofsale:
+   type: rest
+   pattern: /purchaseofferpointofsale
+   defaults:  { _controller: SixthContinentConnectBundle:OfferDetail:postPurchaseOfferPointOfSale}
+   name_prefix: api_
+   requirements:
+        _method:  POST
+download_coupon_pdf:
+   type: rest
+   pattern: /downloadfile/{type}/{id}
+   defaults:  { _controller: SixthContinentConnectBundle:OfferPurchase:downloadFile}
+   name_prefix: api_
+   requirements:
+        _method:  POST|GET 
+genericvoucherview_view:
+   type: rest
+   pattern: /genericvoucherview/{id}
+   defaults:  { _controller: SixthContinentConnectBundle:OfferPurchase:genericvoucherView}
+   name_prefix: api_
+   requirements:
+        _method:  POST|GET 
+purchase_wallet_offer:
+   type: rest
+   pattern: /purchaseofferwallet
+   defaults:  { _controller: SixthContinentConnectBundle:OfferPurchase:purchaseOfferWallet}
+   name_prefix: api_
+   requirements:
+        _method:  POST 

@@ -1,0 +1,25 @@
+Utility\UniversalNotificationsBundle\Document\SharingNotifications:
+    repositoryClass: Utility\UniversalNotificationsBundle\Repository\SharingNotifications
+    type: document
+    collection: sharing_notifications
+    fields:
+        id:
+            id: true
+        user_id:
+            type: int
+        email:
+            type: string
+        item_type:
+            type: string
+        item_id:
+            type: string
+        created_date:
+            type: date
+        updated_date:
+            type: date
+
+
+# php app/console doctrine:mongodb:generate:documents UtilityUniversalNotificationsBundle
+# Create Document
+# php app/console doctrine:mongodb:generate:repositories UtilityUniversalNotificationsBundle
+# Create repository

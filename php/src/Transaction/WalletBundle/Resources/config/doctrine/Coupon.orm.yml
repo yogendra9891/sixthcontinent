@@ -1,0 +1,48 @@
+Transaction\WalletBundle\Entity\Coupon:
+    type: entity
+    table: null
+    repositoryClass: Transaction\WalletBundle\Repository\CouponRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        couponId:
+            type: string
+            length: '45'
+            column: coupon_id
+        initAmount:
+            type: integer
+            column: init_amount
+        availableAmount:
+            type: integer
+            column: available_amount
+        timeCreatedH:
+            type: datetime
+            column: time_created_h
+        timeUpdatedH:
+            type: datetime
+            column: time_updated_h
+        timeCreated:
+            type: integer
+            column: time_created
+        timeUpdated:
+            type: integer
+            column: time_updated
+        currency:
+            type: string
+            length: '45'
+        sellerId:
+            type: integer
+            column: seller_id
+        walletCitizenId:
+            type: integer
+            column: wallet_citizen_id
+        commercialPromotionId:
+            type: integer
+            column: commercial_promotion_id
+        maxUsageInitPrice:
+            type: integer
+            column: max_usage_init_price
+    lifecycleCallbacks: {  }

@@ -1,0 +1,7 @@
+link_preview_link_preview_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: LinkPreviewLinkPreviewBundle:Default:index }
+getlinkpreview:
+    pattern:  /webapi/getlinkpreview
+    defaults: { _controller: LinkPreviewLinkPreviewBundle:LinkPreview:getLinkPreview }
+

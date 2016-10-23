@@ -1,0 +1,32 @@
+commercial_promotion_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: CommercialPromotionBundle:Default:index }
+
+
+#api to mantain
+api_commercial_promotion_create:
+    path:     /api/commercial/create
+    defaults: { _controller: CommercialPromotionBundle:CommercialPromotion:createComercialPromotion }
+api_commercial_promotion_list:
+    path:     /api/getshopofferavailable
+    defaults: { _controller: CommercialPromotionBundle:CommercialPromotion:getStoreOfferActive }
+api_commercial_promotion_delete:
+    path:     /api/deletecommercialoffer
+    defaults: { _controller: CommercialPromotionBundle:CommercialPromotion:deleteCommercialPromotion }
+api_commercial_promotion_detail:
+    path:     /api/getcommercialpromotiondetail
+    defaults: { _controller: CommercialPromotionBundle:CommercialPromotion:getCommercialPromotionDetail }
+    
+#to remove just for testing porpouse
+commercial_promotion_create:
+    path:     /commercial/create
+    defaults: { _controller: CommercialPromotionBundle:CommercialPromotion:createComercialPromotion }
+commercial_promotion_list:
+    path:     /commercial/getshopofferavailable
+    defaults: { _controller: CommercialPromotionBundle:CommercialPromotion:getStoreOfferActive }
+commercial_promotion_delete:
+    path:     /commercial/deletecommercialoffer
+    defaults: { _controller: CommercialPromotionBundle:CommercialPromotion:deleteCommercialPromotion }
+commercial_promotion_detail:
+    path:     /commercial/getcommercialpromotiondetail
+    defaults: { _controller: CommercialPromotionBundle:CommercialPromotion:getCommercialPromotionDetail }

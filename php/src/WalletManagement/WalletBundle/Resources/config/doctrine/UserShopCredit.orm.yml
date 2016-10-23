@@ -1,0 +1,42 @@
+WalletManagement\WalletBundle\Entity\UserShopCredit:
+    type: entity
+    table: null
+    repositoryClass: WalletManagement\WalletBundle\Entity\UserShopCreditRepository
+    uniqueConstraints:
+        index_userid_shopid_UserShopCredit:
+            columns: [user_id,shop_id]
+            type: unique
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        userId:
+            type: bigint
+            column: user_id
+        shopId:
+            type: bigint
+            column: shop_id
+        totalShots:
+            type: bigint
+            column: total_shots
+        balanceShots:
+            type: bigint
+            column: balance_shots
+        totalGiftCard:
+            type: bigint
+            column: total_gift_card
+        balanceGiftCard:
+            type: bigint
+            column: balance_gift_card
+        totalMomosyCard:
+            type: bigint
+            column: total_momosy_card
+        balanceMomosyCard:
+            type: bigint
+            column: balance_momosy_card
+        createdAt:
+            type: datetime
+            column: created_at
+    lifecycleCallbacks: {  }

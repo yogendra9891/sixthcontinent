@@ -1,0 +1,36 @@
+#app/routing_rest.yml
+#add rating
+addrates:
+   type: rest
+   pattern: /addrates
+   resource: "UtilityRatingBundle:Rating"
+   name_prefix: api_
+#remove the rating
+deleterates:
+   type: rest
+   pattern: /deleterates
+   resource: "UtilityRatingBundle:Rating"
+   name_prefix: api_
+#edit rating
+editrates:
+   type: rest
+   pattern: /editrates
+   resource: "UtilityRatingBundle:Rating"
+   name_prefix: api_
+#list rated users
+getratedusers:
+   type: rest
+   pattern: /getratedusers
+   resource: "UtilityRatingBundle:Rating"
+   name_prefix: api_
+getratedusersofmediacomments:
+   type: rest
+   pattern: /getratedusersofmediacomments
+   resource: "UtilityRatingBundle:Rating"
+   name_prefix: api_  
+#change privacy setting
+changeprivacys:
+   type: rest
+   pattern: /changeprivacys
+   resource: "UtilityRatingBundle:Privacy"
+   name_prefix: api_

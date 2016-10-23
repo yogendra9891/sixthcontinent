@@ -1,0 +1,62 @@
+Dashboard\DashboardManagerBundle\Document\DashboardPost:
+    repositoryClass: Dashboard\DashboardManagerBundle\Repository\DashboardPostMongoRepository
+    type: document
+    collection: dashboardposts
+    fields:
+        id:
+            id: true
+        user_id:
+            type: string
+        to_id:
+            type: string
+        title:
+            type: string
+        description:
+            type: string
+        link_type:
+            type: int
+        is_active:
+            type: string
+        privacy_setting:
+            type: int    
+        created_date:
+            type: date
+        tagged_friends:
+            type: collection
+        vote_count:
+            type: int
+        vote_sum:
+            type: int
+        avg_rating:
+            type: float
+        share_type:
+            type: string
+        store_voting_avg:
+            type: float
+        store_voting_count:
+            type: int
+        customer_voting:
+            type: float
+        transaction_id:
+            type: string
+        invoice_id:
+            type: string
+        info:
+            type: hash
+        content_share:
+            type: hash
+        share_object_id:
+            type: string
+        share_object_type:
+            type: string
+        rate:
+           embedded: true
+           type: many
+           targetDocument: Dashboard\DashboardManagerBundle\Document\DashboardPostRating
+           cascade: all			
+
+            
+# php app/console doctrine:mongodb:generate:documents DashboardManagerBundle
+# Create Document
+# php app/console doctrine:mongodb:generate:repositories DashboardManagerBundle
+# Create repository

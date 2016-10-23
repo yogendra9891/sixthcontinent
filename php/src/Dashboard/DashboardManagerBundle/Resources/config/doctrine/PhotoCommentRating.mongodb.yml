@@ -1,0 +1,23 @@
+Dashboard\DashboardManagerBundle\Document\PhotoCommentRating:
+    repositoryClass: Dashboard\DashboardManagerBundle\Repository\PhotoCommentRatingMongoRepository
+    type: embeddedDocument
+    collection: photocommentrating
+    fields:
+        id:
+            id: true
+        user_id:
+            type: int
+        rate:
+            type: int
+        item_id:
+            type: string
+        type:
+            type: string
+        created_at:
+            type: date
+        updated_at:
+            type: date
+# php app/console doctrine:mongodb:generate:documents DashboardManagerBundle
+# Create Document
+# php app/console doctrine:mongodb:generate:repositories DashboardManagerBundle
+# Create repository

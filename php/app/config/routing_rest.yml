@@ -1,0 +1,76 @@
+#app/routing_rest.yml
+Rest_applane_demo_applane:
+    resource: "@ApplaneWrapperApplaneBundle/Resources/config/routing_rest.yml"
+    type : rest
+Rest_Notification : 
+  type : rest
+  resource: "@NManagerNotificationBundle/Resources/config/routing_rest.yml"
+Rest_UserManager : 
+  type : rest
+  resource: "@UserManagerSonataUserBundle/Resources/config/routing_rest.yml"
+Rest_MessageManager : 
+  type : rest
+  resource: "@MessageMessageBundle/Resources/config/routing_rest.yml"
+Resr_Post :
+  type : rest
+  resource: "@PostPostBundle/Resources/config/routing_rest.yml"
+Rest_Acme :
+  type : rest
+  resource: "@AcmeGiftBundle/Resources/config/routing_rest.yml"
+Rest_StoreManager : 
+  type : rest
+  resource: "@StoreManagerStoreBundle/Resources/config/routing_rest.yml"
+Rest_StoreManager1 : 
+  type : rest
+  resource: "@StoreManagerPostBundle/Resources/config/routing_rest.yml"
+Rest_DashboardManager : 
+  type : rest
+  resource: "@DashboardManagerBundle/Resources/config/routing_rest.yml"
+Rest_Media :
+  type : rest
+  resource: "@MediaMediaBundle/Resources/config/routing_rest.yml"
+Affiliation_Manager :
+  type : rest
+  resource: "@AffiliationAffiliationManagerBundle/Resources/config/routing_rest.yml"
+Card_Manager :
+  type : rest
+  resource: "@CardManagementBundle/Resources/config/routing_rest.yml"
+Export_Manager :
+  type : rest
+  resource: "@ExportManagementBundle/Resources/config/routing_rest.yml"
+Transaction_Manager :
+  type : rest
+  resource: "@TransactionTransactionBundle/Resources/config/routing_rest.yml"
+Rest_WalletManagementWallet :
+  type : rest
+  resource: "@WalletManagementWalletBundle/Resources/config/routing_rest.yml"
+Rest_UtilityRating :
+  type : rest
+  resource: "@UtilityRatingBundle/Resources/config/routing_rest.yml"  
+payment_payment_process:
+    type : rest
+    resource: "@PaymentPaymentProcessBundle/Resources/config/routing_rest.yml"
+photo_comment:
+    type : rest
+    resource: "@PhotoCommentBundle/Resources/config/routing_rest.yml"
+payment_transaction_process:
+    type : rest
+    resource: "@PaymentTransactionProcessBundle/Resources/config/routing_rest.yml"
+paypal_integration:
+    type : rest
+    resource: "@PaypalIntegrationBundle/Resources/config/routing_rest.yml"
+utility_applane_integration:
+    type : rest
+    resource: "@UtilityApplaneIntegrationBundle/Resources/config/routing_rest.yml"
+Rest_PostFeeds :
+  type : rest
+  resource: "@PostFeedsBundle/Resources/config/routing_rest.yml"
+Rest_Votes :
+  type : rest
+  resource: "@VotesVotesBundle/Resources/config/routing_rest.yml"
+utility_universal_notifications:
+    type : rest
+    resource: "@UtilityUniversalNotificationsBundle/Resources/config/routing_rest.yml"
+sixthcontinent_connect:
+    type : rest
+    resource: "@SixthContinentConnectBundle/Resources/config/routing_rest.yml"

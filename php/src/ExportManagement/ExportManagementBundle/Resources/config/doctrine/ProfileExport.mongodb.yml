@@ -1,0 +1,16 @@
+ExportManagement\ExportManagementBundle\Document\ProfileExport:
+    repositoryClass: ExportManagement\ExportManagementBundle\Repository\ProfileExportMongoRepository
+    type: document
+    collection: profileexport
+    fields:
+        id:
+            id: true
+        user_id:
+            type: string
+        type:
+            type: string
+    
+# php app/console doctrine:mongodb:generate:documents DashboardManagerBundle
+# Create Document
+# php app/console doctrine:mongodb:generate:repositories DashboardManagerBundle
+# Create repository

@@ -1,0 +1,17 @@
+Acme\GiftBundle\Document\MovimenLogs:
+    repositoryClass: Acme\GiftBundle\Repository\MovimenLogsMongoRepository
+    type: document
+    collection: movimenlogs
+    fields:
+        id:
+            id:  true
+        transaction_id:
+            type: string
+        reason:
+            type: string
+        created_at:
+            type: date
+# php app/console doctrine:mongodb:generate:documents TestFormBundle
+# Create Docment
+# php app/console doctrine:mongodb:generate:repositories TestFormBundle
+# Create repositoryd 

@@ -1,0 +1,16 @@
+utility_request_handler_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: UtilityRequestHandlerBundle:Default:index }
+    
+#save failed request
+utility_request_handler_saverequest:
+    path:     /webapi/saverequest
+    defaults: { _controller: UtilityRequestHandlerBundle:RequestHandler:saverequest }
+#get requests records
+utility_request_handler_getrequestrecords:
+    path:     /webapi/getrequestrecords
+    defaults: { _controller: UtilityRequestHandlerBundle:RequestHandler:getrequestrecords }
+    #get monolog records
+utility_request_handler_getmonologrecords:
+    path:     /webapi/getmonologrecords
+    defaults: { _controller: UtilityRequestHandlerBundle:MonologHandler:getmonologrecords  }

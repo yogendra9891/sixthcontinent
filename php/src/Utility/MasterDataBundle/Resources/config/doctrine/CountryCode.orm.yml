@@ -1,0 +1,41 @@
+Utility\MasterDataBundle\Entity\CountryCode:
+    type: entity
+    table: null
+    repositoryClass: Utility\MasterDataBundle\Repository\CountryCodeRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        countryName:
+            type: string
+            length: 255
+            column: country_name
+        countryCode:
+            type: string
+            length: 255
+            column: country_code
+        languageCode:
+            type: string
+            length: 255
+            column: language_code
+        image:
+            type: string
+            length: 255
+            column: image
+            nullable: TRUE
+        imageThumb:
+            type: string
+            length: 255
+            column: image_thumb
+            nullable: TRUE
+        status:
+            type: integer
+            options:
+                default: 1
+        timezone:
+            type: string
+            length: 255
+            column: timezone
+    lifecycleCallbacks: {  }

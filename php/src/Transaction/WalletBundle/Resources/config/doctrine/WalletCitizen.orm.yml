@@ -1,0 +1,81 @@
+Transaction\WalletBundle\Entity\WalletCitizen:
+    type: entity
+    table: null
+    repositoryClass: Transaction\WalletBundle\Repository\WalletCitizenRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        currency:
+            type: string
+            length: '45'
+            options: 
+                default: 'EUR'
+        pendingPayment:
+            type: integer
+            column: pending_payment
+            options: 
+                default: 0
+        shoppingCardAvailable:
+            type: integer
+            column: shopping_card_available
+            options: 
+                default: 0
+        cardAvailable:
+            type: integer
+            column: card_available
+            options: 
+                default: 0
+        couponAvailable:
+            type: integer
+            column: coupon_available
+            options: 
+                default: 0
+        citizenIncomeAvailable:
+            type: integer
+            column: citizen_income_available
+            options: 
+                default: 0
+        citizenIncomeGained:
+            type: integer
+            column: citizen_income_gained
+            options: 
+                default: 0
+        timeLastUpdateH:
+            type: datetime
+            column: time_last_update_h
+        timeLastUpdate:
+            type: integer
+            column: time_last_update
+        timeCreateH:
+            type: datetime
+            column: time_create_h
+        timeCreate:
+            type: integer
+            column: time_create
+        writingStatus:
+            type: integer
+            column: writing_status
+            options: 
+                default: 0
+        buyerId:
+            type: integer
+            column: buyer_id
+        creditPositionAvailable:
+            type: integer
+            column: credit_position_available
+            options: 
+                default: 0
+        creditPositionGained:
+            type: bigint
+            column: credit_position_gained
+            options: 
+                default: 0
+        transactionPreference:
+            type: integer
+            options:
+                default: 1
+            column: transaction_preference
+    lifecycleCallbacks: {  }

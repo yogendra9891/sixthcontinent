@@ -1,0 +1,32 @@
+StoreManager\PostBundle\Document\StoreCommentsMedia:
+    repositoryClass: StoreManager\PostBundle\Repository\StoreCommentsMediaMongoRepository
+    type: document
+    collection: storecommentsmedia
+    fields:
+        id:
+            id:  true
+        store_comment_id:
+            type: string
+        media_name:
+            type: string
+        media_type:
+            type: string
+        media_created:
+            type: date
+        media_updated:
+            type: date
+        media_status:
+            type: int
+        file:
+            type: file
+        path:
+            type: string
+        is_featured:
+            type: int
+        image_type:
+            type: int
+
+# php app/console doctrine:mongodb:generate:documents TestFormBundle
+# Create Document
+# php app/console doctrine:mongodb:generate:repositories TestFormBundle
+# Create repository

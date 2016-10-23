@@ -1,0 +1,82 @@
+getCreditAvailableInShop:
+    path:     /getcredit/available
+    defaults: { _controller: WalletBundle:Default:index }
+
+getcitizenwalletincome:
+    path:     /api/getcitizenwalletincome
+    defaults: { _controller: WalletBundle:WalletCitizen:getcitizenwalletincome }
+
+getavailablecitizenincome:
+    path:     /api/getavailablecitizenincome
+    defaults: { _controller: WalletBundle:WalletCitizen:getavailablecitizenincome }
+
+gettopcitizenperincome:
+    path:     /webapi/gettopcitizenperincome
+    defaults: { _controller: WalletBundle:WalletCitizen:gettopcitizenperincome }
+
+getcitizenshoppingcardsdetails:
+    path:     /api/getcitizenshoppingcardsdetails
+    defaults: { _controller: WalletBundle:WalletCitizen:getcitizenshoppingcardsdetails }
+
+getcitizencoupons:
+    path:     /api/getcitizencoupons
+    defaults: { _controller: WalletBundle:WalletCitizen:getcitizencoupons }
+    
+getbusinesswalletsale:
+    path:     /api/getbusinesswalletsale
+    defaults: { _controller: WalletBundle:WalletBusiness:getbusinesswalletsale }
+    
+getcitizenwallethistory:
+    path:     /api/getcitizenwallethistory
+    defaults: { _controller: WalletBundle:WalletCitizen:getcitizenwallethistory }
+
+getcitizenwallethistorydetail:
+    path:     /api/getcitizenwallethistorydetail
+    defaults: { _controller: WalletBundle:WalletCitizen:getcitizenwallethistorydetail }
+
+getbusinesswallethistory:
+    path:     /api/getbusinesswallethistory
+    defaults: { _controller: WalletBundle:WalletBusiness:getbusinesswallethistory }
+
+getbusinesswallethistorysale:
+    path:     /api/getbusinesswallethistorysale
+    defaults: { _controller: WalletBundle:WalletBusiness:getbusinesswallethistorysale }
+    
+coupon_add_to_citizen_wallet:
+    path:     /api/addcoupontocitizenwallet
+    defaults: { _controller: WalletBundle:Coupon:addToCitizenWallet }
+    
+coupon_add_to_citizen_wallet_pubblic:
+    path:     /webapi/coupon/addtocitizenwallet
+    defaults: { _controller: WalletBundle:Coupon:addToCitizenWallet }
+    
+shoppingcard_add_to_citizen_wallet_pubblic:
+    path:     /webapi/shoppingcard/addtocitizenwallet
+    defaults: { _controller: WalletBundle:ShoppingCard:addToCitizenWallet }
+    
+gettopshoprevenues_pubblic:
+    pattern:  /webapi/gettopshoprevenues
+    defaults: { _controller: WalletBundle:WalletBusiness:gettopshoprevenues}
+
+managecitizenprefrence:
+    pattern:  /api/managecitizenprefrence
+    defaults: { _controller: WalletBundle:WalletCitizen:managecitizenprefrence}
+    
+gethistorywalletcitizen:
+    pattern:  /api/getwalletcitizenhistory
+    defaults: { _controller: WalletBundle:HistoryWallet:showHistoryWalletCitizen}
+gethistorywalletcitizendetail:
+    pattern:  /api/getrecorddetail
+    defaults: { _controller: WalletBundle:HistoryWallet:historyWalletCitizenDetail}
+    
+gethistorywalletcitizendetailredistribution:
+    pattern:  /test/redistribution
+    defaults: { _controller: WalletBundle:HistoryWallet:testCiDetail}
+    
+tachimeterstatus:
+    pattern:  /api/tachimeterstatus
+    defaults: { _controller: WalletBundle:WalletCitizen:tachimeterstatus}
+
+noribredistribution:
+    pattern:  /api/noribredistribution
+    defaults: { _controller: WalletBundle:WalletCitizen:noribredistribution}

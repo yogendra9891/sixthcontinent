@@ -1,0 +1,24 @@
+Transaction\CitizenIncomeBundle\Entity\CiFromRedistributionHasWalletCitizen:
+    type: entity
+    table: null
+    repositoryClass: Transaction\CitizenIncomeBundle\Repository\CiFromRedistributionHasWalletCitizenRepository
+    fields:
+        CiFromRedistributionId:
+            type: integer
+            id: true
+            column: ci_from_redistribution_id
+            generator:
+                strategy: AUTO
+        walletCitizenId:
+            type: integer
+            column: wallet_citizen_id
+        ciRemoved:
+            type: integer
+            column: ci_removed
+        amountRemovedWalletCurrency:
+            type: integer
+            column: amount_removed_wallet_currency
+        amountReceivedWalletCurrency:
+            type: integer
+            column: amount_received_wallet_currency
+    lifecycleCallbacks: {  }

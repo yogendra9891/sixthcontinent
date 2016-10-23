@@ -1,0 +1,25 @@
+Payment\PaymentProcessBundle\Entity\ShopGiftCards:
+    type: entity
+    table: null
+    repositoryClass: Payment\PaymentProcessBundle\Repository\ShopGiftCardsRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        userId:
+            type: bigint
+            column: user_id
+        shopId:
+            type: bigint
+            column: shop_id
+        giftCardAmount:
+            type: bigint
+            column: gift_card_amount
+        date:
+            type: datetime
+        isUsed:
+            type: integer
+            column: is_used
+    lifecycleCallbacks: {  }

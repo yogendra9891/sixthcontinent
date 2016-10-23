@@ -1,0 +1,74 @@
+Paypal\PaypalIntegrationBundle\Entity\PaymentTransaction:
+    type: entity
+    table: null
+    repositoryClass: Paypal\PaypalIntegrationBundle\Repository\PaymentTransactionRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        itemId:
+            type: string
+            length: 255
+            column: item_id
+        reason:
+            type: string
+            length: 255
+        citizenId:
+            type: bigint
+            column: citizen_id
+        shopId:
+            type: bigint
+            column: shop_id
+        paymentVia:
+            type: string
+            length: 255
+            column: payment_via
+        paymentStatus:
+            type: string
+            length: 255
+            column: payment_status
+        errorCode:
+            type: string
+            length: 255
+            column: error_code
+        errorDescription:
+            type: text
+            column: error_description
+        transactionReference:
+            type: string
+            length: 255
+            column: transaction_reference
+        date:
+            type: datetime
+        transactionValue:
+            type: float
+            column: transaction_value
+        vatAmount:
+            type: float
+            column: vat_amount
+        contractId:
+            type: string
+            length: 255
+            column: contract_id
+        paypalId:
+            type: string
+            length: 255
+            column: paypal_id
+        transationId:
+            type: string
+            length: 255
+            column: transaction_id   
+        ciUsed:
+            type: float
+            column: ci_used
+            option:
+                dafault: 0
+        orderId:
+            type: string
+            column: order_id
+        ProductName:
+            type: string
+            column: product_name
+    lifecycleCallbacks: {  }

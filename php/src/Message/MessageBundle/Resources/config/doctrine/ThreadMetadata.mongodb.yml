@@ -1,0 +1,17 @@
+Message\MessageBundle\Document\ThreadMetadata:
+    repositoryClass: Message\MessageBundle\Repository\ThreadMetadataMongoRepository
+    type: document
+    collection: threadmetadata
+    fields:
+        id:
+            id: true
+        thread_id:
+            type: string
+        participant_id:
+            type: int
+        is_deleted:
+            type: int
+        last_participant_message_date:
+            type: date
+        last_message_date:
+            type: date

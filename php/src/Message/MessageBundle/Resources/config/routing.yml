@@ -1,0 +1,13 @@
+message_message_homepage:
+    pattern:  /hello/{name}
+    defaults: { _controller: MessageMessageBundle:Default:index }
+message_send:
+    pattern:  /message/send
+    defaults: { _controller: MessageMessageBundle:Message:sent }
+message_send_api:
+    pattern:  /send/message
+    defaults: { _controller: MessageMessageBundle:Message:sendMessageApi }
+message_send_new:
+    pattern:  /message/send/new
+    defaults: { _controller: MessageMessageBundle:Message:newThread }
+    

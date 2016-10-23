@@ -1,0 +1,60 @@
+Transaction\CommercialPromotionBundle\Entity\CodePaid:
+    type: entity
+    table: null
+    repositoryClass: Transaction\CommercialPromotionBundle\Repository\CodePaidRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        amount:
+            type: integer
+        timeCreateH:
+            type: datetime
+            column: time_create_h
+        timeActivationH:
+            type: datetime
+            column: time_activation_h
+            nullable: true
+        timeCreate:
+            type: integer
+            column: time_create
+        timeActivation:
+            type: integer
+            column: time_activation
+            nullable: true
+        offerId:
+            type: integer
+            column: offer_id
+        cardId:
+            type: string
+            column: card_id
+            length: '255'
+        providerId:
+            type: string
+            column: provider_id
+            length: '255'
+        sellerId:
+            type: string
+            column: seller_id
+            length: '255'
+        walletCitizenID:
+            type: integer
+            column: wallet_citizen_id
+            nullable: true
+        trsId:
+            type: string
+            length: '255'
+            column: trs_id
+            nullable: true
+        activationCode:
+            type: string
+            length: '255'
+            column: activation_code
+        activationHelper:
+            type: string
+            length: '255'
+            column: activation_helper
+            nullable: true
+    lifecycleCallbacks: {  }

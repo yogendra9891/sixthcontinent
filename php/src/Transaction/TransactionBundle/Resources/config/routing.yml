@@ -1,0 +1,17 @@
+transaction_transaction_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: TransactionTransactionBundle:Default:index }
+ftpconnect:
+    pattern:  /webapi/ftpconnect
+    defaults: { _controller: TransactionTransactionBundle:Transaction:ftpconnect }
+    
+tdfileupdate:
+    pattern:  /webapi/importcsvdata/{filetype}
+    defaults: { _controller: TransactionTransactionBundle:Transaction:importcsvdata }
+
+citizen_income:
+    pattern:  /webapi/citizenincome
+    defaults: { _controller: TransactionTransactionBundle:CitizenIncome:citizenincome }
+recurring_payment:
+    pattern:  /webapi/recurringpayment
+    defaults: { _controller: TransactionTransactionBundle:CitizenIncome:recurringpayment }

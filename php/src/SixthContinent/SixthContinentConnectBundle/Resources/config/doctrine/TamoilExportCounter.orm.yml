@@ -1,0 +1,13 @@
+SixthContinent\SixthContinentConnectBundle\Entity\TamoilExportCounter:
+    type: entity
+    table: null
+    repositoryClass: SixthContinent\SixthContinentConnectBundle\Repository\TamoilExportCounterRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        counter:
+            type: integer
+    lifecycleCallbacks: {  }

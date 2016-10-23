@@ -1,0 +1,190 @@
+
+#app/routing_rest.yml
+createpostfeed:
+   type: rest
+   pattern: /createpostfeed
+   defaults:  { _controller: PostFeedsBundle:PostFeeds:postCreatePostFeed}
+   name_prefix: api_
+   requirements:
+        _method:  POST
+        
+createsocialproject:
+   type: rest
+   pattern: /createsocialproject
+   defaults:  { _controller: PostFeedsBundle:SocialProject:postCreateSocialProject}
+   name_prefix: api_
+   requirements:
+        _method:  POST
+#upload media        
+uploadmedias:
+    type: rest
+    pattern: /uploadmedias
+    resource: "PostFeedsBundle:PostFeeds"
+    name_prefix: api_
+    requirements:
+        _methods: POST
+#create comment
+addcomment:
+   type: rest
+   pattern: /addcomment
+   defaults:  { _controller: PostFeedsBundle:PostFeeds:postAddComment}
+   name_prefix: api_
+   requirements:
+        _method:  POST
+#app/routing_rest.yml
+removeposttagging:
+   type: rest
+   pattern: /removeposttagging
+   defaults:  { _controller: PostFeedsBundle:PostFeeds:postRemoveposttagging}
+   name_prefix: api_
+   requirements:
+        _method:  POST
+deletepostfeed:
+   type: rest
+   pattern: /deletepostfeed
+   defaults:  { _controller: PostFeedsBundle:PostFeeds:postDeletePostFeed}
+   name_prefix: api_
+   requirements:
+        _method:  POST
+postuploadcovermedias:
+   type: rest
+   pattern: /postuploadcovermedias
+   defaults:  { _controller: PostFeedsBundle:SocialProject:postUploadCoverMedias}
+
+editpostfeed:
+   type: rest
+   pattern: /editpostfeed
+   defaults:  { _controller: PostFeedsBundle:PostFeeds:postEditPostFeed}
+   name_prefix: api_
+   requirements:
+        _method:  POST
+        
+addfeedtags:
+   type: rest
+   pattern: /addfeedtags
+   defaults:  { _controller: PostFeedsBundle:PostFeedsMedia:postAddFeedTag}
+   name_prefix: api_
+   requirements:
+        _method:  POST
+#get post feeds
+postfeedlists:
+   type: rest
+   pattern: /postfeedlists
+   defaults:  { _controller: PostFeedsBundle:PostFeedsList:postPostFeedLists}
+   name_prefix: api_
+   requirements:
+        _method:  POST
+listsocialproject:
+   type: rest
+   pattern: /listsocialproject
+   defaults:  { _controller: PostFeedsBundle:SocialProject:postListSocialProject}
+   name_prefix: api_
+   requirements:
+        _method:  POST
+editcomment:
+   type: rest
+   pattern: /editcomment
+   defaults:  { _controller: PostFeedsBundle:CommentFeeds:postEditComment}
+   name_prefix: api_
+   requirements:
+        _method:  POST
+viewsocialproject:
+   type: rest
+   pattern: /viewsocialproject
+   defaults:  { _controller: PostFeedsBundle:SocialProject:postViewSocialProject}
+   name_prefix: api_
+   requirements:
+        _method:  POST
+postsearchsocialproject:
+   type: rest
+   pattern: /postsearchsocialproject
+   defaults:  { _controller: PostFeedsBundle:SocialProject:postSearchSocialProject}
+commentfeedlist:
+   type: rest
+   pattern: /commentfeedlist
+   defaults:  { _controller: PostFeedsBundle:PostFeeds:postCommentFeedList}
+   name_prefix: api_
+   requirements:
+        _method:  POST
+#deletecomment
+deletecomment:
+   type: rest
+   pattern: /deletecomment
+   defaults:  { _controller: PostFeedsBundle:CommentFeeds:postDeleteComment}
+   name_prefix: api_
+   requirements:
+        _method:  POST
+addfeedrating:
+   type: rest
+   pattern: /addfeedrating
+   defaults:  { _controller: PostFeedsBundle:PostFeedsRating:postAddFeedRating}
+   name_prefix: api_
+   requirements:
+        _method:  POST
+
+deletesocialmedia:
+   type: rest
+   pattern: /deletesocialmedia
+   defaults:  { _controller: PostFeedsBundle:SocialProject:postDeleteSocialMedia}
+   name_prefix: api_
+   requirements:
+        _method:  POST
+#get media detail
+getmediadetail:
+   type: rest
+   pattern: /getmediadetail
+   defaults:  { _controller: PostFeedsBundle:PostFeedsMedia:postGetMediaDetail}
+   name_prefix: api_
+   requirements:
+        _method:  POST
+deletefeedrating:
+   type: rest
+   pattern: /deletefeedrating
+   defaults:  { _controller: PostFeedsBundle:PostFeedsRating:postDeleteFeedRating}
+   name_prefix: api_
+   requirements:
+        _method:  POST
+SetProjectCoverCoordinates:
+   type: rest
+   pattern: /setprojectcovercoordinates
+   defaults:  { _controller: PostFeedsBundle:SocialProject:postSetProjectCoverCoordinates}
+   name_prefix: api_
+   requirements:
+        _method:  POST
+#delete media        
+deletemedia:
+   type: rest
+   pattern: /deletemedia
+   defaults:  { _controller: PostFeedsBundle:PostFeedsMedia:postDeleteMedia}
+   name_prefix: api_
+   requirements:
+        _method:  POST
+getpostfeeddetail:
+   type: rest
+   pattern: /getpostfeeddetail
+   defaults:  { _controller: PostFeedsBundle:PostFeedsList:postGetPostFeedDetail}
+   name_prefix: api_
+   requirements:
+        _method:  POST
+getratinginfo:
+   type: rest
+   pattern: /getratinginfo
+   defaults:  { _controller: PostFeedsBundle:PostFeedsRating:postGetRatingInfo}
+   name_prefix: api_
+   requirements:
+        _method:  POST
+editsocialproject:
+   type: rest
+   pattern: /editsocialproject
+   defaults:  { _controller: PostFeedsBundle:SocialProject:postEditSocialProject}
+   name_prefix: api_
+   requirements:
+        _method:  POST
+#tagged info
+gettagginginfo:
+   type: rest
+   pattern: /gettagginginfo
+   defaults:  { _controller: PostFeedsBundle:PostFeedsTagging:postGetTaggingInfo}
+   name_prefix: api_
+   requirements:
+        _method:  POST

@@ -1,0 +1,43 @@
+StoreManager\StoreBundle\Entity\TotoCitizenIncome:
+    type: entity
+    table: null
+    repositoryClass: StoreManager\StoreBundle\Entity\TotoCitizenIncomeRepository
+    indexes:
+        index_identityid_TotoCitizenIncome:
+            columns: [identity_id]
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        identityId:
+            type: bigint
+            column: identity_id
+        firstName:
+            type: string
+            length: 255
+        lastName:
+            type: string
+            length: 255
+        avatar:
+            type: string
+            length: 255
+        numeroAffiliati:
+            type: integer
+            column: numero_affiliati
+        totaleEconomia:
+            type: string
+            length: 255
+            column: totale_economia
+        guadagnoAffiliazioni:
+            type: string
+            length: 255
+            column: guadagno_affiliazioni
+        dataUpdate:
+            type: string
+            length: '30'
+            column: data_update
+        totalone:
+            type: float
+    lifecycleCallbacks: {  }

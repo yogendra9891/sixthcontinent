@@ -1,0 +1,68 @@
+Transaction\TransactionSystemBundle\Entity\TransactionPaymentInformation:
+    type: entity
+    table: null
+    repositoryClass: Transaction\TransactionSystemBundle\Repository\TransactionPaymentInformationRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        transactionId:
+            type: integer
+            column: transaction_id
+        correlationId:
+            type: string
+            length: '50'
+            column: correlation_id
+        build:
+            type: integer
+        payKey:
+            type: string
+            length: 255
+            column: pay_key
+        paypalId:
+            type: string
+            length: 255
+            column: paypal_id
+        paymentExecStatus:
+            type: string
+            length: '50'
+            column: payment_exec_status
+        status:
+            type: string
+            length: '50'
+            column: status
+        primaryUserEmail:
+            type: string
+            length: 255
+            column: primary_user_email
+        primaryUserAmount:
+            type: integer
+            column: primary_user_amount
+        secondryUserEmail:
+            type: string
+            length: 255
+            column: secondry_user_email
+        secondryUserAmount:
+            type: integer
+            column: secondry_user_amount
+        timeInitH:
+            type: datetime
+            column: time_init_h
+        timeUpdatedH:
+            type: datetime
+            column: time_updated_h
+            nullable: TRUE
+        timeInit:
+            type: integer
+            column: time_init
+        timeUpdated:
+            type: integer
+            column: time_updated
+            nullable: TRUE
+        paymentSerialize:
+            type: text
+            column: payment_serialize
+            nullable: TRUE
+    lifecycleCallbacks: {  }

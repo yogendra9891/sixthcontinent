@@ -1,0 +1,23 @@
+Utility\MasterDataBundle\Entity\RegionCodeByLang:
+    type: entity
+    table: null
+    repositoryClass: Utility\MasterDataBundle\Repository\RegionCodeByLangRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        regionCode:
+            type: string
+            length: 255
+            column: region_code
+        langCode:
+            type: string
+            length: 255
+            column: lang_code
+        regionName:
+            type: string
+            length: 255
+            column: region_name
+    lifecycleCallbacks: {  }

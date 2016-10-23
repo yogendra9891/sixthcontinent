@@ -1,0 +1,6 @@
+parameters:
+    redistribution_ci.class: Transaction\CitizenIncomeBundle\Services\RedistributionCiService
+services:
+   redistribution_ci:
+        class: %redistribution_ci.class%
+        arguments: [@doctrine.orm.entity_manager, @doctrine.odm.mongodb.document_manager, @service_container]

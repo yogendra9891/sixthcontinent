@@ -1,0 +1,155 @@
+#app/routing_rest.yml
+#v1 routing
+V1_Dashboard_Route : 
+  type : rest
+  resource: "@DashboardManagerBundle/Resources/config/routing_v1_rest.yml"
+dashboardcomments:
+    type: rest
+    pattern: /dashboardcomments
+    resource: "DashboardManagerBundle:Comment"
+    name_prefix: api_
+    requirements:
+        _methods: POST
+dashboardeditcomments:
+    type: rest
+    pattern: /dashboardeditcomments
+    resource: "DashboardManagerBundle:Comment"
+    name_prefix: api_
+    requirements:
+        _methods: POST
+dashboarddeletecomments:
+    type: rest
+    pattern: /dashboarddeletecomments
+    resource: "DashboardManagerBundle:Comment"
+    name_prefix: api_
+    requirements:
+        _methods: POST
+dashboardmedaideletecomments:
+    type: rest
+    pattern: /dashboardmedaideletecomments
+    resource: "DashboardManagerBundle:Comment"
+    name_prefix: api_
+    requirements:
+        _methods: POST
+dashboardposts:
+    type: rest
+    pattern: /dashboardposts
+    resource: "DashboardManagerBundle:Post"
+    name_prefix: api_
+    requirements:
+        _method:  POST
+removedashboardposts:
+    type: rest
+    pattern: /removedashboardposts
+    resource: "DashboardManagerBundle:Post"
+    name_prefix: api_
+    requirements:
+        _method:  POST
+dashboardeditposts:
+    type: rest
+    pattern: /dashboardeditposts
+    resource: "DashboardManagerBundle:Post"
+    name_prefix: api_
+    requirements:
+        _method:  POST 
+removemediaposts:
+    type: rest
+    pattern: /removemediaposts
+    resource: "DashboardManagerBundle:Post"
+    name_prefix: api_
+    requirements:
+        _method:  POST 
+
+getdashboardfeeds:
+    type: rest
+    pattern: /getdashboardfeeds
+    resource: "DashboardManagerBundle:Comment"
+    name_prefix: api_
+    requirements:
+        _methods: POST
+getcommentlists:
+    type: rest
+    pattern: /getcommentlists
+    resource: "DashboardManagerBundle:Comment"
+    name_prefix: api_
+    requirements:
+        _methods: POST
+
+getfriendfeeds:
+    type: rest
+    pattern: /getfriendfeeds
+    resource: "DashboardManagerBundle:Post"
+    name_prefix: api_
+    requirements:
+        _method:  POST   
+getdashboardcomments:
+    type: rest
+    pattern: /getdashboardcomments
+    resource: "DashboardManagerBundle:Post"
+    name_prefix: api_
+    requirements:
+        _method:  POST  
+
+getdashboardwallfeeds:
+    type: rest
+    pattern: /getdashboardwallfeeds
+    resource: "DashboardManagerBundle:Comment"
+    name_prefix: api_
+    requirements:
+        _methods: POST
+        
+removetaggedusers:
+    type: rest
+    pattern: /removetaggedusers
+    resource: "DashboardManagerBundle:Post"
+    name_prefix: api_
+    requirements:
+        _methods: POST
+        
+insertpostratings:
+    type: rest
+    pattern: /insertpostratings
+    resource: "DashboardManagerBundle:Rating"
+    name_prefix: api_
+    requirements:
+        _methods: POST       
+        
+removepostratings:
+    type: rest
+    pattern: /removepostratings
+    resource: "DashboardManagerBundle:Rating"
+    name_prefix: api_
+    requirements:
+        _methods: POST
+
+getdashboardfeeddetails:
+    type: rest
+    pattern: /getdashboardfeeddetails
+    resource: "DashboardManagerBundle:Comment"
+    name_prefix: api_
+    requirements:
+        _methods: POST
+        
+updatedashboardpostacls:
+    type: rest
+    pattern: /updatedashboardpostacls
+    resource: "DashboardManagerBundle:Post"
+    name_prefix: api_
+    requirements:
+        _methods: POST
+#share items
+shareitems:
+    type: rest
+    pattern: /shareitems
+    resource: "DashboardManagerBundle:Post"
+    name_prefix: api_
+    requirements:
+        _methods: POST
+#Get shared object
+getsharedobject:
+   type: rest
+   pattern: /getsharedobject
+   defaults:  { _controller: DashboardManagerBundle:Share:postGetSharedObject}
+   name_prefix: api_
+   requirements:
+        _method:  POST

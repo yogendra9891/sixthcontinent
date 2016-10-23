@@ -1,0 +1,24 @@
+Newsletter\NewsletterBundle\Entity\Newslettertrack:
+    type: entity
+    table: null
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        senderId:
+            type: integer
+        recevierId:
+            type: integer
+        sentStatus:
+            type: integer
+        openStatus:
+            type: integer
+        createdAt:
+            type: datetime
+        templateId:
+            type: integer
+        token:
+            type: text
+    lifecycleCallbacks: {  }

@@ -1,0 +1,81 @@
+CardManagement\CardManagementBundle\Entity\Contract:
+    type: entity
+    table: null
+    repositoryClass: CardManagement\CardManagementBundle\Entity\ContractRepository
+    indexes:
+        index_profileid_Contract:
+            columns: [profile_id]
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        contractNumber:
+            type: string
+            length: 255
+            column: contract_number
+        profileId:
+            type: integer
+            column: profile_id
+        registrationTime:
+            type: datetime
+            column: registration_time
+        mail:
+            type: string
+            length: 255
+        pan:
+            type: string
+            length: 255
+        brand:
+            type: string
+            length: 255
+        expirationPan:
+            type: string
+            length: 255
+            column: expiration_pan
+        alias:
+            type: string
+            length: 255
+        name:
+            type: string
+            length: 255
+        lastName:
+            type: string
+            length: 255
+            column: last_name
+        nationality:
+            type: string
+            length: 255
+        sessionId:
+            type: integer
+            column: session_id
+        productType:
+            type: string
+            length: 255
+            column: product_type
+        languageCode:
+            type: string
+            length: 255
+            column: language_code
+        region:
+            type: string
+            length: 255
+        createTime:
+            type: datetime
+            column: create_time
+        deleted:
+            type: integer
+        defaultflag:
+            type: integer
+        status:
+            type: integer
+        transactionType:
+            type: string
+            length: 255
+            column: transaction_type
+        message:
+            type: string
+            length: 255
+            column: message
+    lifecycleCallbacks: {  }

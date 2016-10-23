@@ -1,0 +1,23 @@
+Utility\MasterDataBundle\Entity\LanguageCodeByLang:
+    type: entity
+    table: null
+    repositoryClass: Utility\MasterDataBundle\Repository\LanguageCodeByLangRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        languageNameCode:
+            type: string
+            length: 255
+            column: language_name_code
+        langCode:
+            type: string
+            length: 255
+            column: lang_code
+        languageString:
+            type: string
+            length: 255
+            column: language_string
+    lifecycleCallbacks: {  }

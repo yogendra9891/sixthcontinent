@@ -1,0 +1,23 @@
+StoreManager\StoreBundle\Document\StoreOwnerNotification:
+    repositoryClass: StoreManager\StoreBundle\Repository\StoreOwnerNotificationMongoRepository
+    type: document
+    collection: storeownernotification
+    fields:
+        id:
+            id:  true
+        store_id:
+            type: int
+        store_owner_id:
+            type: int
+        is_mail_send:
+            type: int
+        mail_for:
+            type: string
+        mail_send_on:
+            type: date
+
+
+# php app/console doctrine:mongodb:generate:documents TestFormBundle
+# Create Document
+# php app/console doctrine:mongodb:generate:repositories TestFormBundle
+# Create repository

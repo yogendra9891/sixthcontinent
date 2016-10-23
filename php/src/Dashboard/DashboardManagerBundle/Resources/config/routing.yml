@@ -1,0 +1,7 @@
+dashboard_manager_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: DashboardManagerBundle:Default:index }
+
+getpublicpostfeeddetails:
+    pattern:  /webapi/getpublicpostfeeddetails
+    defaults: { _controller: DashboardManagerBundle:Comment:getpublicpostfeeddetails }

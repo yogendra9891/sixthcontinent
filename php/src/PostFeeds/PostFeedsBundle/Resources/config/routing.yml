@@ -1,0 +1,7 @@
+#post_feeds_homepage:
+#    path:     /hello/{name}
+#    defaults: { _controller: PostFeedsBundle:Default:index }
+#for public post details
+getpublicpostfeeddetail:
+    pattern:  /webapi/getpublicpostfeeddetail
+    defaults: { _controller: PostFeedsBundle:PostFeedsList:getPublicPostFeedDetail }

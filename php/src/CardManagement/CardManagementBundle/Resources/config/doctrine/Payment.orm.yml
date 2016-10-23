@@ -1,0 +1,45 @@
+CardManagement\CardManagementBundle\Entity\Payment:
+    type: entity
+    table: null
+    repositoryClass: CardManagement\CardManagementBundle\Entity\PaymentRepository
+    indexes:
+        index_contractid_Payment:
+            columns: [contract_id]
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        contractId:
+            type: integer
+            column: contract_id
+        trasactionTime:
+            type: datetime
+            column: trasaction_time
+        registrationTime:
+            type: datetime
+            column: registration_time
+        description:
+            type: string
+            length: 255
+        amount:
+            type: bigint
+        currencyCode:
+            type: string
+            length: 255
+            column: currency_code
+        mac:
+            type: string
+            length: 255
+        trasactionCode:
+            type: string
+            length: 255
+            column: trasaction_code
+        paymentType:
+            type: string
+            length: 255
+            column: payment_type
+        status:
+            type: integer
+    lifecycleCallbacks: {  }

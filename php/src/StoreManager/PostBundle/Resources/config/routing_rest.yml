@@ -1,0 +1,125 @@
+#app/routing_rest.yml
+#v1 routing
+V1_Store_Route : 
+  type : rest
+  resource: "@StoreManagerPostBundle/Resources/config/routing_v1_rest.yml"
+storeposts:
+    type: rest
+    pattern: /storeposts
+    resource: "StoreManagerPostBundle:Post"
+    name_prefix: api_
+    requirements:
+        _method:  POST
+liststoreposts:
+    type: rest
+    pattern: /liststoreposts
+    resource: "StoreManagerPostBundle:Post"
+    name_prefix: api_
+    requirements:
+        _method:  POST
+deletestoreposts:
+    type: rest
+    pattern: /deletestoreposts
+    resource: "StoreManagerPostBundle:Post"
+    name_prefix: api_
+    requirements:
+        _method:  POST
+deletepostmedias:
+    type: rest
+    pattern: /deletepostmedias
+    resource: "StoreManagerPostBundle:Post"
+    name_prefix: api_
+    requirements:
+        _method:  POST
+updatestoreposts:
+    type: rest
+    pattern: /updatestoreposts
+    resource: "StoreManagerPostBundle:Post"
+getstorepostdetails:
+    type: rest
+    pattern: /getstorepostdetails
+    resource: "StoreManagerPostBundle:Post"
+    name_prefix: api_
+    requirements:
+        _method:  POST
+removeshopposttaggings:
+    type: rest
+    pattern: /removeshopposttaggings
+    resource: "StoreManagerPostBundle:Post"
+    name_prefix: api_
+    requirements:
+        _method:  POST
+
+#message :
+# type: rest
+# resource:     "StoreManagerPostBundle:StoreComments"
+# name_prefix:  api_
+#
+storecomments : 
+  type: rest
+  resource:     "StoreManagerPostBundle:StoreComments"
+  name_prefix:  api_
+
+storecomments:
+    type: rest
+    pattern: /storecomments
+    resource: "StoreManagerPostBundle:StoreComments"
+    name_prefix: api_
+    requirements:
+        _method:  POST
+
+storeeditcomments:
+    type: rest
+    pattern: /storeeditcomments
+    resource: "StoreManagerPostBundle:StoreComments"
+    name_prefix: api_
+    requirements:
+        _method:  POST
+        
+removestorecomments:
+    type: rest
+    pattern: /removestorecomments
+    resource: "StoreManagerPostBundle:StoreComments"
+    name_prefix: api_
+    requirements:
+        _method:  POST
+
+removemediacomments:
+    type: rest
+    pattern: /removemediacomments
+    resource: "StoreManagerPostBundle:StoreComments"
+    name_prefix: api_
+    requirements:
+        _method:  POST
+        
+liststorecomments:
+    type: rest
+    pattern: /liststorecomments
+    resource: "StoreManagerPostBundle:StoreComments"
+    name_prefix: api_
+    requirements:
+        _method:  POST
+        
+uploadgroups:
+    type: rest
+    pattern: /uploadgroups
+    resource: "StoreManagerPostBundle:StoreComments"
+    name_prefix: api_
+    requirements:
+        _method:  POST
+        
+listcustomersreviews:
+    type: rest
+    pattern: /listcustomersreviews
+    resource: "StoreManagerPostBundle:Post"
+    name_prefix: api_
+    requirements:
+        _method:  POST
+        
+getfriendboughtonstores:
+    type: rest
+    pattern: /getfriendboughtonstores
+    resource: "StoreManagerPostBundle:Post"
+    name_prefix: api_
+    requirements:
+        _method:  POST

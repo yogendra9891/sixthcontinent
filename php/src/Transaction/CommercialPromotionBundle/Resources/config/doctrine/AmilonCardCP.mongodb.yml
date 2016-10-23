@@ -1,0 +1,64 @@
+Transaction\CommercialPromotionBundle\Document\AmilonCardCP:
+    repositoryClass: Transaction\CommercialPromotionBundle\Repository\AmilonCardCPRepository 
+    type: document
+    collection: amiloncardcp
+    fields:
+        id:
+            id: true
+            strategy: NONE
+        single_card_cp:
+           embedded: true
+           type: many
+           targetDocument: Transaction\CommercialPromotionBundle\Document\SingleCardCP
+           cascade: all
+        retailer_name:
+            type: string
+        retailer_code:
+            type: string
+        retailer_image:
+            type: string
+        short_description:
+            type: string
+        merchant_short_description:
+            type: string
+        merchant_long_description:
+            type: string
+        citizen_aff_charge:
+            type: float
+        shop_aff_charge:
+            type: float
+        friends_follower_charge:
+            type: float
+        buyer_charge:
+            type: float
+        sixc_charge:
+            type: float
+        all_country_charge:
+            type: float
+        web_site:
+            type: string
+        validity_month:
+            type: int
+        combinable_card:
+            type: int
+        contact_card :
+            type: string
+        point_of_sale:
+            type: int
+        website_preview:
+            type: string
+            
+            
+            
+            
+            
+#        key_words_cp:
+#           embedded: true
+#           type: many
+#           targetDocument: Transaction\CommercialPromotionBundle\Document\KeyWordsCP
+#           cascade: all	
+           
+# php app/console doctrine:mongodb:generate:documents PostPostBundle
+# Create Document
+# php app/console doctrine:mongodb:generate:repositories TestFormBundle
+# Create repositoryd 

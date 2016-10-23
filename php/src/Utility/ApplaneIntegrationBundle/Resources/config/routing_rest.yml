@@ -1,0 +1,12 @@
+#list shop transaction
+listpendingpayments:
+   type: rest
+   pattern: /listpendingpayments
+   resource: "UtilityApplaneIntegrationBundle:ShopTransaction"
+   name_prefix: api_
+#get shop total transaction
+gettotalpendingpayments:
+   type: rest
+   pattern: /gettotalpendingpayments
+   resource: "UtilityApplaneIntegrationBundle:ShopTransaction"
+   name_prefix: api_

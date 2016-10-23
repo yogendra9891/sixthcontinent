@@ -1,0 +1,6 @@
+paypal_integration_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: PaypalIntegrationBundle:Default:index }
+ipn_call_back_response:
+    path:     /webapi/ipncallbackresponse
+    defaults: { _controller: PaypalIntegrationBundle:CardPurchase:ipncallbackresponse }

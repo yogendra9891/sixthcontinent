@@ -1,0 +1,27 @@
+StoreManager\StoreBundle\Entity\StoreJoinNotification:
+    type: entity
+    table: null
+    repositoryClass: StoreManager\StoreBundle\Entity\StoreJoinNotificationRepository
+    uniqueConstraints:
+        index_senderid_recieverid_storeid_StoreJoinNotification:
+            columns: [sender_id,receiver_id,store_id]
+            type: unique
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        senderId:
+            type: integer
+            column: sender_id
+        receiverId:
+            type: integer
+            column: receiver_id
+        storeId:
+            type: integer
+            column: store_id
+        createdAt:
+            type: datetime
+            column: created_at
+    lifecycleCallbacks: {  }

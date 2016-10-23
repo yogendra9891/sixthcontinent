@@ -1,0 +1,169 @@
+#app/routing_rest.yml
+
+#message :
+# type: rest
+# resource:     "MessageMessageBundle:Message"
+# name_prefix:  api_
+# 
+sends:
+    type: rest
+    pattern: /sends
+    resource: "MessageMessageBundle:Message"
+    name_prefix: api_
+    requirements:
+        _methods: POST
+    
+groupmessagesends:
+    type: rest
+    pattern: /groupmessagesends
+    resource: "MessageMessageBundle:Message"
+    name_prefix: api_
+    requirements:
+        _methods: POST
+    
+inboxlists:
+    type: rest
+    pattern: /inboxlists
+    resource: "MessageMessageBundle:Message"
+    name_prefix: api_
+    requirements:
+        _methods: POST
+sendemails:
+    type: rest
+    pattern: /sendemails
+    resource: "MessageMessageBundle:Email"
+    name_prefix: api_
+    requirements:
+        _methods: POST
+message_delete:
+    type: rest
+    pattern: /deletethread
+    resource: "MessageMessageBundle:Message"
+    name_prefix: api_
+deletemessages:
+    type: rest
+    pattern: /deletemessages
+    resource: "MessageMessageBundle:Message"
+    name_prefix: api_
+    requirements:
+        _methods: POST
+updatemessages:
+    type: rest
+    pattern: /updatemessages
+    resource: "MessageMessageBundle:Message"
+    name_prefix: api_
+    requirements:
+        _methods: POST
+    
+readmessages:
+    type: rest
+    pattern: /readmessages
+    resource: "MessageMessageBundle:Message"
+    name_prefix: api_
+    requirements:
+        _methods: POST
+listmessages:
+    type: rest
+    pattern: /listmessages
+    resource: "MessageMessageBundle:Message"
+    name_prefix: api_
+    requirements:
+        _methods: POST
+replymessages:
+    type: rest
+    pattern: /replymessages
+    resource: "MessageMessageBundle:Message"
+    name_prefix: api_
+    requirements:
+        _methods: POST
+listusermessages:
+    type: rest
+    pattern: /listusermessages
+    resource: "MessageMessageBundle:Message"
+    name_prefix: api_
+    requirements:
+        _methods: POST
+listuserthreadmessages:
+    type: rest
+    pattern: /listuserthreadmessages
+    resource: "MessageMessageBundle:Message"
+    name_prefix: api_
+    requirements:
+        _methods: POST
+searchuserthreads:
+    type: rest
+    pattern: /searchuserthreads
+    resource: "MessageMessageBundle:Message"
+    name_prefix: api_
+    requirements:
+        _methods: POST
+listunreadmessages:
+    type: rest
+    pattern: /listunreadmessages
+    resource: "MessageMessageBundle:Message"
+    name_prefix: api_
+    requirements:
+        _methods: POST
+markreadallmessages:
+    type: rest
+    pattern: /markreadallmessages
+    resource: "MessageMessageBundle:Message"
+    name_prefix: api_
+    requirements:
+        _methods: POST
+        
+removegroupusers:
+    type: rest
+    pattern: /removegroupusers
+    resource: "MessageMessageBundle:Message"
+    name_prefix: api_
+    requirements:
+        _methods: POST
+        
+listgroups:
+    type: rest
+    pattern: /listgroups
+    resource: "MessageMessageBundle:Message"
+    name_prefix: api_
+    requirements:
+        _methods: POST
+        
+deletegroupmessages:
+    type: rest
+    pattern: /deletegroupmessages
+    resource: "MessageMessageBundle:Message"
+    name_prefix: api_
+    requirements:
+        _methods: POST
+        
+searchmessages:
+    type: rest
+    pattern: /searchmessages
+    resource: "MessageMessageBundle:Message"
+    name_prefix: api_
+    requirements:
+        _methods: POST
+                
+readgroupmessages:
+    type: rest
+    pattern: /readgroupmessages
+    resource: "MessageMessageBundle:Message"
+    name_prefix: api_
+    requirements:
+        _methods: POST
+
+listgroupunreadmessages:
+    type: rest
+    pattern: /listgroupunreadmessages
+    resource: "MessageMessageBundle:Message"
+    name_prefix: api_
+    requirements:
+        _methods: POST
+
+alllistgroupunreadmessages:
+    type: rest
+    pattern: /alllistgroupunreadmessages
+    resource: "MessageMessageBundle:Message"
+    name_prefix: api_
+    requirements:
+        _methods: POST

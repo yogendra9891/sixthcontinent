@@ -1,0 +1,36 @@
+#register a user
+register:
+        pattern:  /webapi/v1/register
+        defaults: { _controller: UserManagerSonataUserBundle:RestRegistrationV1:register }
+        requirements:
+            _method:  POST
+#register multiple profile         
+registermultiprofile:
+        pattern:  /webapi/v1/registermultiprofile
+        defaults: { _controller: UserManagerSonataUserBundle:RestRegistrationV1:registermultiprofile }
+        requirements:
+            _method:  POST
+#forget password            
+forgetpassword:
+        pattern:  /webapi/v1/forgetpassword
+        defaults: { _controller: UserManagerSonataUserBundle:RestResettingV1:forgetpassword }
+        requirements:
+            _method:  POST            
+#reset password            
+reset:
+        pattern:  /webapi/v1/reset
+        defaults: { _controller: UserManagerSonataUserBundle:RestResettingV1:reset }
+        requirements:
+            _method:  POST
+#getaccess token
+getaccesstoken:
+    pattern:  /webapi/v1/getaccesstoken
+    defaults: { _controller: UserManagerSonataUserBundle:UserAccesstokenV1:getaccesstoken }
+    requirements:
+            _method:  POST
+#create client            
+createclient:
+        pattern:  /webapi/v1/createclient
+        defaults: { _controller: UserManagerSonataUserBundle:CreateClientV1:createclient }
+        requirements:
+            _method:  POST            

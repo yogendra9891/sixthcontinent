@@ -1,0 +1,14 @@
+UserManager\Sonata\UserBundle\Document\BusinessKeyword:
+    repositoryClass: UserManager\Sonata\UserBundle\Repository\BusinessKeywordMongoRepository
+    type: document
+    collection: BusinessKeyword
+    fields:
+        id:
+            id: true   
+        category_id:
+            type: string
+        keyword:
+            type: string
+
+# php app/console doctrine:mongodb:generate:documents TestFormBundle
+# Create Document

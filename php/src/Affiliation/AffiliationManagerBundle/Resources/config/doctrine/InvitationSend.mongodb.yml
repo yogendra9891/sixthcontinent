@@ -1,0 +1,27 @@
+Affiliation\AffiliationManagerBundle\Document\InvitationSend:
+    repositoryClass: Affiliation\AffiliationManagerBundle\Repository\InvitationSendMongoRepository
+    type: document
+    collection: invitationsend
+    fields:
+        id:
+            id: true
+        from_id:
+            type: int
+            index: true
+        email:
+            type: string
+            index: true
+        status:
+            type: int
+        count:
+            type: int
+        affiliation_type:
+            type: int
+        created_at:
+            type: date
+        updated_at:
+            type: date
+# php app/console doctrine:mongodb:generate:documents AffiliationAffiliationManagerBundle
+# Create Document
+# php app/console doctrine:mongodb:generate:repositories AffiliationAffiliationManagerBundle
+# Create repository

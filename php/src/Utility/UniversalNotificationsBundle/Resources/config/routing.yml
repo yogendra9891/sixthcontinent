@@ -1,0 +1,4 @@
+utility_send_universal_notifications:
+    path:     /notifications/send
+    defaults: { _controller: UtilityUniversalNotificationsBundle:Notifications:notificationSend }
+    methods: [POST]

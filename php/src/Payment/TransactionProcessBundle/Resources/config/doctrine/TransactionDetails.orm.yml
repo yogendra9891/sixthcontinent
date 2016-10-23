@@ -1,0 +1,36 @@
+Payment\TransactionProcessBundle\Entity\TransactionDetails:
+    type: entity
+    table: null
+    repositoryClass: Payment\TransactionProcessBundle\Repository\TransactionDetailsRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        transactionId:
+            type: bigint
+            column: transaction_id
+        creditCode:
+            type: string
+            length: 255
+            column: credit_code
+        reason:
+            type: text
+        dSellerId:
+            type: bigint
+            column: d_seller_id
+        dBuyerId:
+            type: bigint
+            column: d_buyer_id
+        initialAmount:
+            type: bigint
+            length: 255
+            column: initial_amount
+        amountUsed:
+            type: bigint
+            column: amount_used
+        amountBalanced:
+            type: bigint
+            column: amount_balanced
+    lifecycleCallbacks: {  }

@@ -1,0 +1,15 @@
+Message\MessageBundle\Document\Thread:
+    repositoryClass: Message\MessageBundle\Repository\ThreadMongoRepository
+    type: document
+    collection: thread
+    fields:
+        id:
+            id: true
+        subject:
+            type: string
+        createdAt:
+            type: date
+        isSpam:
+            type: int
+        createdBy_id:
+            type: int

@@ -1,0 +1,91 @@
+{
+    "name": "symfony/framework-standard-edition",
+    "description": "The \"Symfony Standard Edition\" distribution",
+    "autoload": {
+        "psr-0": {
+            "": "src/"
+        }
+    },
+    "require": {
+        "php": ">=5.3.3",
+        "symfony/symfony": "~2.4",
+        "doctrine/orm": ">=2.2.3,<2.4-dev",
+        "doctrine/doctrine-bundle": "1.2.*",
+        "twig/extensions": "1.0.*",
+        "symfony/assetic-bundle": "2.3.*",
+        "symfony/swiftmailer-bundle": "2.3.*",
+        "symfony/monolog-bundle": "~2.4",
+        "sensio/distribution-bundle": "2.3.*",
+        "sensio/framework-extra-bundle": "2.3.*",
+        "sensio/generator-bundle": "2.3.*",
+        "incenteev/composer-parameter-handler": "~2.0",
+        "jms/security-extra-bundle": "~1.5",
+        "kriswallsmith/assetic": "1.1.*",
+        "sonata-project/admin-bundle": "2.2",
+        "friendsofsymfony/user-bundle": "1.3.*",
+        "sonata-project/user-bundle": "2.2.*",
+        "sonata-project/doctrine-orm-admin-bundle": "2.2.*",
+        "friendsofsymfony/message-bundle": "dev-master",
+        "jms/aop-bundle": "~1.0",
+        "sonata-project/seo-bundle": "~1.1",
+        "sonata-project/formatter-bundle": "~2.2@dev",
+        "sonata-project/intl-bundle": "~2.2",
+        "nelmio/api-doc-bundle": "~2.4",
+        "jms/serializer-bundle": "~0.11",
+        "kriswallsmith/buzz": ">=0.1.4",
+        "imagine/imagine": "*@stable",
+        "sonata-project/media-bundle": "2.3.*@dev",
+        "friendsofsymfony/rest-bundle": "~1.3",
+        "jms/serializer-bundle": "~0.11",
+        "nelmio/api-doc-bundle": "@stable",
+        "friendsofsymfony/oauth-server-bundle": "dev-master",
+        
+        "ext-mongo": ">=1.3.1.4",
+        "doctrine/mongodb-odm": "1.0.*@alpha",
+        "doctrine/mongodb-odm-bundle": "3.0.*@alpha",
+        "iampersistent/mongodb-acl-bundle": "dev-master",
+        "noiselabs/nusoap-bundle": "dev-master",
+        "problematic/acl-manager-bundle": "dev-master",
+        "sonata-project/block-bundle": "dev-master",
+        "stfalcon/tinymce-bundle": "dev-master",
+        "symfony/icu": "~1.0",
+        "knplabs/knp-paginator-bundle": "~2.4",
+        "ijanki/ftp-bundle": "dev-master",
+        "liuggio/excelbundle": "~2.0"
+    },
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "nusphere/nusoap",
+                "version": "0.9.5",
+                "dist": {
+                    "url": "http://downloads.sourceforge.net/project/nusoap/nusoap/0.9.5/nusoap-0.9.5.zip",
+                    "type": "zip"
+                },
+                "autoload": {
+                    "classmap": ["lib/"]
+                }
+            }
+        }
+    ],
+    "scripts": {
+        "post-install-cmd": [
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile"
+        ],
+        "post-update-cmd": [
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile"
+        ]
+    },
+    "minimum-stability": "stable",
+    "extra": {
+        "symfony-app-dir": "app",
+        "symfony-web-dir": "web"
+    }
+}

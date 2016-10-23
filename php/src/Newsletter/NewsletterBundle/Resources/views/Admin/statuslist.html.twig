@@ -1,0 +1,137 @@
+{# total items count #}
+{% extends 'SonataAdminBundle::standard_layout.html.twig' %}
+
+{% block content %}
+    <style>
+        .navigation {
+            width: 600px !important;
+            margin: 0 auto !important;
+            padding: 20px !important;
+        }
+        
+        {#.pagination {
+            background: #f2f2f2;
+            padding: 20px;
+            margin-bottom: 20px;
+        }#}
+        
+        .pagination span  {
+            display: inline-block !important;
+            padding: 0px 9px !important;
+            margin-right: 4px !important;
+            border-radius: 3px !important;
+            border: solid 1px #c0c0c0 !important;
+            background: #e9e9e9 !important;
+            box-shadow: inset 0px 1px 0px rgba(255,255,255, .8), 0px 1px 3px rgba(0,0,0, .1) !important;
+            font-size: .875em !important;
+            font-weight: bold !important;
+            text-decoration: none !important;
+            color: #717171 !important;
+            text-shadow: 0px 1px 0px rgba(255,255,255, 1) !important;
+            background-color:#c0c0c0 !important;
+            border-style : none !important;
+           
+        }
+        .pagination span a  {
+              display: inline-block !important;
+            padding: 0px 9px !important;
+            margin-right: 4px !important;
+            border-radius: 3px !important;
+            border: solid 1px #c0c0c0 !important;
+            background: #e9e9e9 !important;
+            box-shadow: inset 0px 1px 0px rgba(255,255,255, .8), 0px 1px 3px rgba(0,0,0, .1) !important;
+            font-size: .875em !important;
+            font-weight: bold !important;
+            text-decoration: none !important;
+            color: #717171 !important;
+            text-shadow: 0px 1px 0px rgba(255,255,255, 1) !important;
+            background-color:#c0c0c0 !important;
+            border-style : none !important;
+        }
+        
+    </style>
+    <h2>Newsletter sent status report</h2>
+<div class="count">
+   
+</div>
+<table class="table table-bordered table-striped">
+<tr class="sonata-ba-list-field-header">
+{# sorting of properties based on query components #}
+    <th class="sonata-ba-list-field-header-text  sonata-ba-list-field-header-order-asc ">S.No.</th>
+    <th class="sonata-ba-list-field-header-text  sonata-ba-list-field-header-order-asc ">Sender Username</th>
+    <th class="sonata-ba-list-field-header-text  sonata-ba-list-field-header-order-asc ">Receiver Username</th>
+    <th class="sonata-ba-list-field-header-text  sonata-ba-list-field-header-order-asc ">Sent Status</th>
+    <th class="sonata-ba-list-field-header-text  sonata-ba-list-field-header-order-asc ">Read Status</th>
+    <th class="sonata-ba-list-field-header-text  sonata-ba-list-field-header-order-asc ">Created Date</th>
+    <th class="sonata-ba-list-field-header-text  sonata-ba-list-field-header-order-asc ">Tempalte Title</th>
+    <th class="sonata-ba-list-field-header-text  sonata-ba-list-field-header-order-asc " >Resend</th>
+    
+</tr>
+{% set sno = '' %}
+{% set sender_username = '' %}
+{% set receiver_username = '' %}
+{% set sentstatus = '' %}
+{% set openstatus = '' %}
+{% set createdat = '' %}
+{% set templatetit = '' %}
+{# table body #}
+{% for record in pagination %}
+    {% for res_record in result %}
+        {% if res_record.id == record.id %}
+            {% set sender_username = res_record.sender_id %}
+            {% set receiver_username = res_record.receiver_id %}
+            {% set sentstatus = res_record.sent_status %}
+            {% set openstatus = res_record.open_status %}
+            {% set createdat = res_record.created_at %}
+            {% set templatetit = res_record.template_title %}
+            {% set sno = res_record.serial_id %}
+        {% endif %}
+    {% endfor %}
+<tr {% if loop.index is odd %}class="color"{% endif %}>
+    <td class="sonata-ba-list-field sonata-ba-list-field-date">{{ sno }}</td>
+    <td class="sonata-ba-list-field sonata-ba-list-field-date">{{ sender_username }}</td>
+    <td class="sonata-ba-list-field sonata-ba-list-field-date">{{ receiver_username  }}</td>
+    <td class="sonata-ba-list-field sonata-ba-list-field-date">{{ sentstatus  }}</td>
+    <td class="sonata-ba-list-field sonata-ba-list-field-date">{{ openstatus }}</td>
+    <td class="sonata-ba-list-field sonata-ba-list-field-date">{{ createdat }}</td>
+    <td class="sonata-ba-list-field sonata-ba-list-field-date">{{ templatetit}}</td>
+     <td class="sonata-ba-list-field sonata-ba-list-field-date">
+        <a  href="{{ app.request.getBaseURL() }}/admin/newsletter/resend/{{record.id}}"><img src="{{ app.request.getBaseURL() }}/email.jpg"></a>
+     </td>
+
+</tr>
+{% endfor %}
+</table>
+{# display navigation #}
+
+    
+    <div class="navigation">
+            <span>
+            {{ knp_pagination_render(pagination) }}
+            </span>
+            <!--Here is my drop down html code-->
+        </div>
+        <br />
+    
+    <div style="margin-left:350px;">
+            <select name="maxItemPerPage" id="maxItemPerPage">
+                <option selected="true" style="display:none;">Number Per Page</option>
+                <option id="10">5</option>
+                <option id="20">10</option>
+                <option id="30">20</option>
+                <option id="30">50</option>
+                <option id="30">150</option>
+                <option id="30">200</option>
+            </select>
+        </div>
+    </div>
+    <script type="text/javascript">
+        //on select change, you navigate to indexAction and send the parameter maxItemPerPage
+        $('#maxItemPerPage').change(function(){
+            {% set currentPath = path(app.request.attributes.get('_route')) %}
+            var url = "{{path(app.request.attributes.get('_route'),{'maxItemPerPage': '_itemNum'})}}";
+            var item = $('#maxItemPerPage').find(":selected").text();
+            jQuery(location).attr('href', url.replace('_itemNum',item ));
+        });
+    </script>
+{% endblock %} 

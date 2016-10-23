@@ -1,0 +1,29 @@
+Notification\NotificationBundle\Document\PushNotification:
+    repositoryClass: Notification\NotificationBundle\Repository\PushNotificationMongoRepository
+    type: document
+    collection: pushnotifications
+    fields:
+        id:
+            id: true
+        push_type:
+            type: string
+        sender_userid:
+            type: int
+        receiver_userid:
+            type: int
+        readvalue:
+            type: int
+        deletevalue:
+            type: int
+        message_type:
+            type: string
+        message:
+            type: string
+        subject:
+            type: string
+        date:
+            type: date
+# php app/console doctrine:mongodb:generate:documents NManagerNotificationBundle
+# Create Document
+# php app/console doctrine:mongodb:generate:repositories NManagerNotificationBundle
+# Create repository

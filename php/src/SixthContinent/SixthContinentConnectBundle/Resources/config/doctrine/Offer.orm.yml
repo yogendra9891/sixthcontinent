@@ -1,0 +1,43 @@
+SixthContinent\SixthContinentConnectBundle\Entity\Offer:
+    type: entity
+    table: offer
+    repositoryClass: SixthContinent\SixthContinentConnectBundle\Repository\OfferRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        name:
+            type: string
+            length: 255
+        image:
+            type: string
+            length: 255
+        imageThumb:
+            type: string
+            length: 255
+            column: imagethumb
+        price:
+            type: bigint
+        description:
+            type: text
+        shop_id:
+            type: integer
+        category:
+            type: string
+            length: 255
+        type:
+            type: string
+            length: 255            
+        percentage:
+            type: decimal
+            precision: 10
+            scale: 2
+        isActive:
+            type: integer
+            column: is_active
+        isDeleted:
+            type: integer
+            column: is_deleted
+    lifecycleCallbacks: {  }

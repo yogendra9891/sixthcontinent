@@ -1,0 +1,27 @@
+#v1 routing
+listuseralbums:
+    type: rest
+    pattern: /listuseralbums
+    prefix: /v1
+    resource: "MediaMediaBundle:DemoV1"
+    name_prefix: api_1_
+    requirements:
+        _method:  POST
+#delete user album
+deleteuseralbums:
+    type: rest
+    pattern: /deleteuseralbums
+    prefix: /v1
+    resource: "MediaMediaBundle:DemoV1"
+    name_prefix: api_1_
+    requirements:
+        _method:  POST
+#edit user albums
+editalbums:
+    type: rest
+    pattern: /editalbums
+    prefix: /v1
+    resource: "MediaMediaBundle:AlbumV1"
+    name_prefix: api_1_
+    requirements:
+        _method:  POST

@@ -1,0 +1,78 @@
+Paypal\PaypalIntegrationBundle\Entity\ShopPaypalInformation:
+    type: entity
+    table: null
+    repositoryClass: Paypal\PaypalIntegrationBundle\Repository\ShopPaypalInformationRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        shopId:
+            type: integer
+            column: shop_id
+        accountIdToDisplay:
+            type: string
+            length: 255
+            column: account_id_to_display
+        emailId:
+            type: string
+            length: 255
+            column: email_id
+        status:
+            type: string
+            length: 255
+        correlationId:
+            type: string
+            length: 255
+            column: correlation_id
+        accountType:
+            type: string
+            length: 255
+            column: account_type
+            nullable: TRUE
+        accountId:
+            type: string
+            length: 255
+            column: account_id
+            nullable: TRUE
+        buildId:
+            type: string
+            length: 255
+            column: build_id
+        errorCode:
+            type: string
+            length: 255
+            column: error_code
+            nullable: TRUE
+        errorDiscription:
+            type: string
+            length: 255
+            column: error_discription
+            nullable: TRUE
+        isDeleted:
+            type: boolean
+            column: is_deleted
+        createdAt:
+            type: datetime
+            column: created_at
+        mobileNumber:
+            type: string
+            length: 255
+            column: mobile_number
+            nullable: TRUE
+        firstName:
+            type: string
+            length: 255
+            column: first_name
+        lastName:
+            type: string
+            length: 255
+            column: last_name
+            nullable: TRUE
+        isDefault:
+            type: string
+            length: 255
+            column: is_default
+            nullable: TRUE
+    lifecycleCallbacks: {  }

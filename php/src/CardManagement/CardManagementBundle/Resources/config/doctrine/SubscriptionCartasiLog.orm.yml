@@ -1,0 +1,63 @@
+CardManagement\CardManagementBundle\Entity\SubscriptionCartasiLog:
+    type: entity
+    table: null
+    repositoryClass: CardManagement\CardManagementBundle\Entity\SubscriptionCartasiLogRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        contractTxnId:
+            type: string
+            length: 255
+            column: contract_txn_id
+        paymentDate:
+            type: datetime
+            column: payment_date
+        tipoCarta:
+            type: string
+            length: 255
+            column: tipo_carta
+        paese:
+            type: string
+            length: 255
+        codTrans:
+            type: string
+            length: 255
+        tipoProdotto:
+            type: string
+            length: 255
+            column: tipo_prodotto
+        tipoTransazione:
+            type: string
+            length: 255
+            column: tipo_transazione
+        codiceAutorizzazione:
+            type: string
+            length: 255
+            column: codice_autorizzazione
+        dataOra:
+            type: string
+            length: 255
+            column: data_ora
+        codiceEstio:
+            type: integer
+            column: codice_estio
+        descrizioneEstio:
+            type: string
+            length: 255
+            column: descrizione_estio
+        mac:
+            type: string
+            length: 255
+        createdAt:
+            type: datetime
+            column: created_at
+        contractId:
+            type: integer
+            column: contract_id
+        subscriptionId:
+            type: bigint
+            column: subscription_id
+    lifecycleCallbacks: {  }

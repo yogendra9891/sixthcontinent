@@ -1,0 +1,28 @@
+Utility\MasterDataBundle\Entity\SelfRelationShipType:
+    type: entity
+    table: null
+    repositoryClass: Utility\MasterDataBundle\Repository\SelfRelationShipTypeRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        name:
+            type: string
+            length: 255
+        parent:
+            type: bigint
+        status:
+            type: boolean
+        image:
+            type: string
+            length: 255
+            nullable: true
+            nullable: TRUE
+        imageThumb:
+            type: string
+            length: 255
+            column: image_thumb
+            nullable: true
+    lifecycleCallbacks: {  }

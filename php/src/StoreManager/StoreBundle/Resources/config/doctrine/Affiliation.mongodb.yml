@@ -1,0 +1,18 @@
+StoreManager\StoreBundle\Document\Affiliation:
+    repositoryClass: StoreManager\StoreBundle\Repository\AffiliationMongoRepository
+    type: document
+    collection: affiliation
+    fields:
+        id:
+            id:  true
+        user_id:
+            type: int
+        store_id:
+            type: string
+        affiliation_date:
+            type: date
+
+# php app/console doctrine:mongodb:generate:documents TestFormBundle
+# Create Document
+# php app/console doctrine:mongodb:generate:repositories TestFormBundle
+# Create repository

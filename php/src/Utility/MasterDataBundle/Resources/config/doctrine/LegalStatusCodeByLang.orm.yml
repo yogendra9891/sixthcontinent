@@ -1,0 +1,23 @@
+Utility\MasterDataBundle\Entity\LegalStatusCodeByLang:
+    type: entity
+    table: null
+    repositoryClass: Utility\MasterDataBundle\Repository\LegalStatusCodeByLangRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        legalstatusCode:
+            type: string
+            length: 255
+            column: legalstatus_code
+        langCode:
+            type: string
+            length: 255
+            column: lang_code
+        legalstatusName:
+            type: string
+            length: 255
+            column: legalstatus_name
+    lifecycleCallbacks: {  }

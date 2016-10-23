@@ -1,0 +1,135 @@
+<?php
+/////////DATABASE SETTING 
+$container->setParameter('database_driver', "pdo_mysql");
+/* local 
+$container->setParameter('database_host', 'localhost');
+$container->setParameter('database_port', '3306');
+$container->setParameter('database_name', 'prod');
+$container->setParameter('database_user', 'root');
+$container->setParameter('database_password', '');
+
+
+$container->setParameter('mongodbhost_host', 'mongodb://127.0.0.1:27017');
+$container->setParameter('mongodb_database_name', 'prod');
+
+
+/**/
+
+/**
+ * OPENSHIFT*/
+
+
+
+$container->setParameter('database_host', getEnv("OPENSHIFT_MYSQL_DB_HOST"));
+$container->setParameter('database_port', getEnv("OPENSHIFT_MYSQL_DB_PORT"));
+$container->setParameter('database_name', 'prod');
+$container->setParameter('database_user', getEnv("OPENSHIFT_MYSQL_DB_USERNAME"));
+$container->setParameter('database_password', getEnv("OPENSHIFT_MYSQL_DB_PASSWORD"));
+
+$container->setParameter('mongodbhost_host', getEnv("OPENSHIFT_MONGODB_DB_URL"));
+$container->setParameter('mongodb_database_name', getEnv("OPENSHIFT_APP_NAME"));
+
+  /* */
+$container->setParameter('locale', 'it');
+$container->setParameter('secret', 'ThisTokenIsNotSoSecretChangeIt');
+
+
+
+/* Shoppingplus Prod */
+
+$container->setParameter('shopping_plus_get_client_url_prod', 'https://servizi.shoppingplus.it:8443/secure/USR/00932/hostweb.asp');
+$container->setParameter('social_bees_username_prod', 'S932A001');
+$container->setParameter('social_bees_password_prod', '49150');
+
+/* Shopping plus Dev  fast update*/
+$container->setParameter('shopping_plus_get_client_url_test', 'https://servizi.shoppingplus.it:8443/secure/USR/00093/hostweb.asp');
+$container->setParameter('social_bees_username_test', 'S93A001');
+$container->setParameter('social_bees_password_test', '48311');
+
+
+
+
+/*AWS AMAZON*/
+$container->setParameter('aws_key', 'AKIAJ6CFAD7Q4B3ZNTGQ');
+$container->setParameter('aws_secret_key', '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');
+$container->setParameter('aws_base_path', 'https://s3.amazonaws.com');
+$container->setParameter('aws_bucket', 'sixthcontinent');
+
+
+/*Facebook*/
+
+/*prod
+$container->setParameter('facebook_appId', '175245922613290');
+$container->setParameter('facebook_secret', '5d7490ba59062bf8668e4032f3347f19');
+
+/**/
+/*Dev*/
+$container->setParameter('facebook_appId', '707976702617293');
+$container->setParameter('facebook_secret', 'cce1b255698ce0e7251e270af9b43f5c');
+/**/
+
+/*Cartasì payment*/
+/*Prod
+$container->setParameter('prod_payment_mac_key', '4PVH375L6W3j47gIWS65u15q33P3e51V7K8h88t3');
+$container->setParameter('prod_alias', 'payment_31297124');
+/**/
+
+/*Dev*/
+$container->setParameter('prod_payment_mac_key', 'CsT830052L63QHNd1E351uh73272Q23h175650k9wU28T7EU1Hd6l156N5I2oBY6U7OW7kP34282C5965r8V0hpG72ojq5B58896G4Q6oXGc36a6z3Tn6J271B4N33p45C28369j7E025O2245GK7T5p1MNN5T25S05UJxCKH0TMc98fBQ66M2NxRDzrR66c7RG2K367D4xiV54X9kY592K5E3V1X1U01AO85P3n4z28eJIL13t8Ww3P28eg24y2');
+$container->setParameter('prod_alias', 'payment_3444168');
+/*
+
+ * Payment url back
+ *  
+ */
+
+/*Prod
+$container->setParameter('vat', '22');
+$container->setParameter('reg_fee', '9900');
+/**/
+/*Dev*/
+$container->setParameter('vat', '100');
+$container->setParameter('reg_fee', '0.5');
+
+
+$container->setParameter('angularpaymentcancelurl', 'http://angular-sixthcontinent.rhcloud.com/shope/payment/cancel');
+$container->setParameter('angularpaymenturl', 'http://angular-sixthcontinent.rhcloud.com/shope/payment/return');
+$container->setParameter('urlpost_payment', 'http://dev-sixthcontinent.rhcloud.com/web/webapi/createcontract');
+
+
+
+
+/*Discount Position and shots parameters and transaction parameters*/
+$container->setParameter('shop_registration_shots', '20');
+$container->setParameter('shop_affilation_amount', '50');
+$container->setParameter('shop_discount_position_amount', '50');
+$container->setParameter('shot_amount', '5');
+$container->setParameter('shoppingplus_hostname', 'servizi.shoppingplus.it');
+$container->setParameter('shoppingplus_ftp_username', 's00932f001');
+$container->setParameter('shoppingplus_ftp_password', 'PWe2*!R14j');
+$container->setParameter('shoppingplus_port', '13021');
+$container->setParameter('recurring_pay_url', 'https://ecommerce.keyclient.it/ecomm/ecomm/ServletS2S');
+$container->setParameter('ci_percentage', '6');
+$container->setParameter('login_app_url', 'http://209.227.255.174?s_param=');
+
+
+
+$container->setParameter('friend_profile_url', 'viewfriend');
+$container->setParameter('shop_profile_url', 'shop/view');
+$container->setParameter('club_profile_url', 'club/view');
+$container->setParameter('message_profile_url', 'message');
+
+/*General For Email*/
+$container->setParameter('mailer_transport', 'smtp');
+$container->setParameter('mailer_host', 'authsmtp.sixthcontinent.org');
+$container->setParameter('mailer_user', 'smtp@sixthcontinent.org');
+$container->setParameter('mailer_password', 'Milano2014_');
+$container->setParameter('sixthcontinent_admin_email', 'smtp@sixthcontinent.org');
+$container->setParameter('sixthcontinent_admin_email_from', 'SixthContinent');
+$container->setParameter('angular_app_hostname', 'https://www.sixthcontinent.com/#/');
+$container->setParameter('template_email', 'https://www.sixthcontinent.com/mail/16_11_2014/mail.html');
+$container->setParameter('template_email_invitation', 'https://www.sixthcontinent.com/mail/invitation/mail.html');
+$container->setParameter('template_email_thumb', 'https://www.sixthcontinent.com/app/assets/images/prof-pic.jpg');
+
+
+?>

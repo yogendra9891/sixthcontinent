@@ -1,0 +1,47 @@
+{# The default template which provides batch and action cells, with the valid colspan computation #}
+{% extends 'SonataAdminBundle:CRUD:list.html.twig' %}
+
+{% block table_body %}
+
+<tbody>
+        {% for object in admin.datagrid.results %}
+
+<style>
+    table tr.green-color td {background-color: #2BFF5D !important; }
+</style>
+<tr>
+    <td objectid="{{object.id}}" class="sonata-ba-list-field sonata-ba-list-field-batch">
+
+        <input type="checkbox" value="{{object.id}}" name="idx[]">
+
+    </td>
+    <td>
+                    {{object.id}}
+    </td>
+    
+    <td>
+                    {{object.parent}}
+    </td>
+    <td>
+                    {{object.name}}
+    </td>
+    <td>
+                    {{object.image}}
+    </td>
+    <td>
+                    {{object.imageThumb}}
+    </td>
+    <td>
+                    {{object.txnPercentage}}
+    </td>
+    <td>
+                    {{object.cardPercentage}}
+    </td>
+
+</tr>
+        {% endfor %}
+
+</ul>
+</tbody>
+
+{% endblock %}

@@ -1,0 +1,25 @@
+Utility\MasterDataBundle\Entity\VisibilityCode:
+    type: entity
+    table: null
+    repositoryClass: Utility\MasterDataBundle\Repository\VisibilityCodeRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        name:
+            type: string
+            length: 255
+        status:
+            type: boolean
+        image:
+            type: string
+            length: 255
+            nullable: TRUE
+        imageThumb:
+            type: string
+            length: 255
+            column: image_thumb
+            nullable: TRUE
+    lifecycleCallbacks: {  }

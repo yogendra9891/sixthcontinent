@@ -1,0 +1,23 @@
+Utility\MasterDataBundle\Entity\FamilyRelationShipTypeCodeByLang:
+    type: entity
+    table: null
+    repositoryClass: Utility\MasterDataBundle\Repository\FamilyRelationShipTypeCodeByLangRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        relationshipCode:
+            type: string
+            length: 255
+            column: relationship_code
+        langCode:
+            type: string
+            length: 255
+            column: lang_code
+        relationshipName:
+            type: string
+            length: 255
+            column: relationship_name
+    lifecycleCallbacks: {  }

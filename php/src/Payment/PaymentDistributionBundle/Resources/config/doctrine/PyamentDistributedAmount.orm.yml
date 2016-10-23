@@ -1,0 +1,36 @@
+Payment\PaymentDistributionBundle\Entity\PyamentDistributedAmount:
+    type: entity
+    table: PyamentDistributedAmount
+    repositoryClass: Payment\PaymentDistributionBundle\Repository\PyamentDistributedAmountRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        citizenAffiliateAmount:
+            type: bigint
+            column: citizen_affiliate_amount
+        shopAffiliateAmount:
+            type: bigint
+            column: shop_affiliate_amount
+        friendsFollowerAmount:
+            type: bigint
+            column: friends_follower_amount
+        purchaserUserAmount:
+            type: bigint
+            column: purchaser_user_amount
+        countryCitizenAmount:
+            type: bigint
+            column: country_citizen_amount
+        sixthcontinentAmount:
+            type: bigint
+            column: sixthcontinent_amount
+        transactionId:
+            type: string
+            length: 255
+            column: transaction_id
+        createdAt:
+            type: datetime
+            column: created_at
+    lifecycleCallbacks: {  }

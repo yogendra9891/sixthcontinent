@@ -1,0 +1,29 @@
+Utility\ApplaneIntegrationBundle\Document\SubscriptionPaymentNotificationLog:
+    repositoryClass: Utility\ApplaneIntegrationBundle\Repository\SubscriptionPaymentNotificationLogRepository
+    type: document
+    collection: subscriptiopaymentnotificationlog
+    fields:
+        id:
+            id: true
+        to_user_id:
+            type: int
+        to_shop_id:
+            type: int
+        is_active:
+            type: int
+        start_date:
+            type: date
+        end_date:
+            type: date
+        updated_date:
+            type: date
+        send_count:
+            type: int
+        notification_type:
+            type: string
+
+
+# php app/console doctrine:mongodb:generate:documents UtilityApplaneIntegrationBundle
+# Create Document
+# php app/console doctrine:mongodb:generate:repositories UtilityApplaneIntegrationBundle
+# Create repository

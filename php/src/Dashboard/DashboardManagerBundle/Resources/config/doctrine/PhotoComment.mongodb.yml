@@ -1,0 +1,33 @@
+Dashboard\DashboardManagerBundle\Document\PhotoComment:
+    repositoryClass: Dashboard\DashboardManagerBundle\Repository\PhotoCommentMongoRepository
+    type: document
+    collection: photocomment
+    fields:
+        id:
+            id: true
+        comment_text:
+            type: string
+        user_id:
+            type: int           
+        is_active:
+            type: int
+        created_at:
+            type: date
+        updated_at:
+            type: date
+        vote_count:
+            type: int
+        vote_sum:
+            type: int
+        avg_rating:
+            type: float
+        rate:
+           embedded: true
+           type: many
+           targetDocument: Dashboard\DashboardManagerBundle\Document\PhotoCommentRating
+           cascade: all
+        photomedia:
+           embedded: true
+           type: many
+           targetDocument: Dashboard\DashboardManagerBundle\Document\PhotoMedia
+           cascade: all	

@@ -1,0 +1,48 @@
+Transaction\WalletBundle\Entity\Card:
+    type: entity
+    table: null
+    repositoryClass: Transaction\WalletBundle\Repository\CardRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        cardId:
+            type: string
+            length: '45'
+            column: card_id
+        initAmount:
+            type: integer
+            column: init_amount
+        availableAmount:
+            type: integer
+            column: available_amount
+        timeCreatedH:
+            type: datetime
+            column: time_created_h
+        timeUpdatedH:
+            type: datetime
+            column: time_updated_h
+        timeCreated:
+            type: integer
+            column: time_created
+        timeUpdated:
+            type: integer
+            column: time_updated
+        currency:
+            type: string
+            length: '45'
+        maxUsageInitPrice:
+            type: integer
+            column: max_usage_init_price
+        walletCitizenId:
+            type: integer
+            column: wallet_citizen_id
+        sellerId:
+            type: integer
+            column: seller_id
+        walletCitizenId:
+            type: integer
+            column: wallet_citizen_id
+    lifecycleCallbacks: {  }

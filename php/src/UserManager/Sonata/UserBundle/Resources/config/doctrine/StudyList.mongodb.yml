@@ -1,0 +1,14 @@
+UserManager\Sonata\UserBundle\Document\StudyList:
+    repositoryClass: UserManager\Sonata\UserBundle\Repository\StudyListMongoRepository
+    type: document
+    collection: StudyList
+    fields:
+        id:
+            id: true   
+        name:
+            type: string
+        type:
+            type: string
+
+# php app/console doctrine:mongodb:generate:documents TestFormBundle
+# Create Document

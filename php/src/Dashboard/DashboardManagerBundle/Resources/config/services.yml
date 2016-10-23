@@ -1,0 +1,7 @@
+parameters:
+    dashboard_feed.class: Dashboard\DashboardManagerBundle\Services\DashboardFeedsService
+    
+services:
+    dashboard_feed.service:
+        class: %dashboard_feed.class%
+        arguments: [@doctrine.orm.entity_manager, @doctrine.odm.mongodb.document_manager, @service_container]

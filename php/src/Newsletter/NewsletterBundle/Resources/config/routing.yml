@@ -1,0 +1,15 @@
+newsletter_newsletter_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: NewsletterNewsletterBundle:Default:index }
+newsletter_newsletter_send:
+    path:     /admin/newsletter/send
+    defaults: { _controller: NewsletterNewsletterBundle:Template:sendnewsletter }
+newsletter_newsletter_resend:
+    path:     /admin/newsletter/resend/{trackid}
+    defaults: { _controller: NewsletterNewsletterBundle:Template:resendnewsletter }
+newsletter_newsletter_status:
+    path:     /admin/newsletter/statuslist
+    defaults: { _controller: NewsletterNewsletterBundle:Template:statuslist }
+newsletter_newsletter_track:
+    path:     /admin/newsletter/trackemail/{trackid}
+    defaults: { _controller: NewsletterNewsletterBundle:Template:trackemail }

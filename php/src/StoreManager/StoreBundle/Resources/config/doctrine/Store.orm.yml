@@ -1,0 +1,301 @@
+StoreManager\StoreBundle\Entity\Store:
+    type: entity
+    table: null
+    repositoryClass: StoreManager\StoreBundle\Entity\StoreRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        parentStoreId:
+            type: integer
+            column: parent_store_id
+        email:
+            type: string
+            length: 255
+        description:
+            type: text
+        phone:
+            type: string
+            length: 255
+        businessName:
+            type: string
+            length: 255
+            column: business_name
+        legalStatus:
+            type: string
+            length: 255
+            column: legal_status
+        businessType:
+            type: string
+            length: 255
+            column: business_type
+        paymentStatus:
+            type: integer
+            column: payment_status
+        creditCardStatus:
+            type: integer
+            column: credit_card_status
+        businessCountry:
+            type: string
+            length: 255
+            column: business_country
+        businessRegion:
+            type: string
+            length: 255
+            column: business_region
+        businessCity:
+            type: string
+            length: 255
+            column: business_city
+        businessAddress:
+            type: string
+            length: 255
+            column: business_address
+        zip:
+            type: string
+            length: 255
+        province:
+            type: string
+            length: 255
+        vatNumber:
+            type: string
+            length: 255
+            column: vat_number
+        fiscalCode:
+            type: string
+            length: 255
+            column: fiscal_code
+            nullable: TRUE
+        iban:
+            type: string
+            length: 255
+        mapPlace:
+            type: string
+            length: 255
+            column: map_place
+        latitude:
+            type: string
+            length: 255
+        longitude:
+            type: string
+            length: 255
+        name:
+            type: string
+            length: 255
+        storeImage:
+            type: string
+            length: 255
+            column: store_image
+        createdAt:
+            type: datetime
+            column: created_at
+        updatedAt:
+            type: datetime
+            column: updated_at
+        isActive:
+            type: boolean
+            column: is_active
+        isAllowed:
+            type: boolean
+            column: is_allowed
+        shopStatus:
+            type: boolean
+            column: shop_status
+        totalDp:
+            type: integer
+            column: total_dp
+            options: 
+                default: 0
+        balanceDp:
+            type: integer
+            column: balance_dp
+            options: 
+                default: 0
+        saleCountry:
+            type: string
+            length: 255
+            column: sale_country
+            nullable: TRUE
+        saleRegion:
+            type: string
+            length: 255
+            column: sale_region
+            nullable: TRUE
+        saleCity:
+            type: string
+            length: 255
+            column: sale_city
+            nullable: TRUE
+        saleProvince:
+            type: string
+            length: 255
+            column: sale_province
+            nullable: TRUE
+        saleZip:
+            type: string
+            length: 255
+            column: sale_zip
+            nullable: TRUE
+        saleAddress:
+            type: string
+            length: 255
+            column: sale_address
+            nullable: TRUE
+        saleEmail:
+            type: string
+            length: 255
+            column: sale_email
+            nullable: TRUE
+        salePhoneNumber:
+            type: string
+            length: 255
+            column: sale_phone_number
+            nullable: TRUE
+        saleCatid:
+            type: integer
+            column: sale_catid
+            nullable: TRUE
+        saleSubcatid:
+            type: integer
+            column: sale_subcatid
+            nullable: TRUE
+        saleDescription:
+            type: text
+            column: sale_description
+            nullable: TRUE
+        saleMap:
+            type: string
+            length: 255
+            column: sale_map
+            nullable: TRUE
+        represFiscalCode:
+            type: string
+            length: 255
+            column: repres_fiscal_code
+            nullable: TRUE
+        represFirstName:
+            type: string
+            length: 255
+            column: repres_first_name
+            nullable: TRUE
+        represLastName:
+            type: string
+            length: 255
+            column: repres_last_name
+            nullable: TRUE
+        represPlaceOfBirth:
+            type: string
+            length: 255
+            column: repres_place_of_birth
+            nullable: TRUE
+        represDob:
+            type: datetime
+            column: repres_dob
+            nullable: TRUE
+        represEmail:
+            type: string
+            length: 255
+            column: repres_email
+            nullable: TRUE
+        represPhoneNumber:
+            type: string
+            length: 255
+            column: repres_phone_number
+            nullable: TRUE
+        represAddress:
+            type: string
+            length: 255
+            column: repres_address
+            nullable: TRUE
+        represProvince:
+            type: string
+            length: 255
+            column: repres_province
+            nullable: TRUE
+        represCity:
+            type: string
+            length: 255
+            column: repres_city
+            nullable: TRUE
+        represZip:
+            type: string
+            length: 255
+            column: repres_zip
+            nullable: TRUE
+        shopKeyword:
+            type: text
+            column: shop_keyword
+            nullable: TRUE 
+        avgRating:
+            type: float
+            column: avg_rate
+            options: 
+                default: 0
+        voteCount:
+            type: integer
+            column: vote_count
+            options: 
+                default: 0
+        newContractStatus:
+            type:   integer
+            column: new_contract_status
+            options:
+                default: 0
+        isSubscribed:
+            type: integer
+            column: is_subscribed
+            options: 
+                default: 0
+        isPaypalAdded:
+            type: integer
+            column: is_paypal_added
+            options: 
+                default: 0
+        txnPercentage:
+            type: float
+            column: txn_percentage
+            options: 
+                default: 0
+        cardPercentage:
+            type: float
+            column: card_percentage
+            options: 
+                default: 0
+        affiliationStatus:
+            type: integer
+            column: affiliation_status
+            options: 
+                default: 0
+        citizenAffCharge:
+            type: float
+            column: citizen_aff_charge
+            options: 
+                default: 0.01            
+        shopAffCharge:
+            type: float
+            column: shop_aff_charge
+            options: 
+                default: 0.01            
+        friendsFollowerCharge:
+            type: float
+            column: friends_follower_charge
+            options: 
+                default: 0.01
+        buyerCharge:
+            type: float
+            column: buyer_charge
+            options: 
+                default: 0.01
+        sixcCharge:
+            type: float
+            column: sixc_charge
+            options: 
+                default: 0.01
+        allCountryCharge:
+            type: float
+            column: all_country_charge
+            options: 
+                default: 0.01
+    lifecycleCallbacks: {  }

@@ -1,0 +1,102 @@
+SixthContinent\SixthContinentConnectBundle\Entity\Sixthcontinentconnecttransaction:
+    type: entity
+    table: sixthcontinentconnecttransaction
+    repositoryClass: SixthContinent\SixthContinentConnectBundle\Repository\SixthcontinentconnecttransactionRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        userId:
+            type: bigint
+            column: user_id
+        businessAccountUserId:
+            type: bigint
+            column: business_account_user_id    
+        shopId:
+            type: bigint
+            column: shop_id
+        transactionId:
+            type: string
+            length: 255
+            column: transaction_id
+        applicationId:
+            type: string
+            length: 255
+            column: application_id
+        cardPreference:
+            type: string
+            length: 255
+            column: card_preference
+        date:
+            type: datetime
+        transactionType:
+            type: string
+            length: 255
+            column: transaction_type
+        currency:
+            type: string
+            length: 255
+        languageId:
+            type: string
+            length: 255
+            column: language_id
+        status:
+            type: string
+            length: 255
+        transactionValue:
+            type: bigint
+            column: transaction_value
+        discount:
+            type: bigint
+        paybleValue:
+            type: bigint
+            column: payble_value
+        vat:
+            type: bigint
+        checkoutValue:
+            type: bigint
+            column: checkout_value
+        description:
+            type: text
+        url:
+            type: text
+        urlPost:
+            type: text
+            column: url_post
+        urlBack:
+            type: text
+            column: url_back
+        typeService:
+            type: string
+            length: 255
+            column: type_service
+        mac:
+            type: text
+        paypalTransactionId:
+            type: text
+            column: paypal_transaction_id
+        paypalTransactionReference:
+            type: string
+            length: 255
+            column: paypal_transaction_reference  
+        ciTransactionSystemId:
+            type: string
+            length: 255
+            column: ci_transaction_system_id
+        totalAvailableCi:
+            type: bigint
+            column: total_available_ci
+        usedCi:
+            type: bigint
+            column: used_ci
+        sessionId:
+            type: string
+            length: 255
+            column: session_id
+        timeStamp:
+            type: string
+            length: 255
+            column: time_stamp     
+    lifecycleCallbacks: {  }

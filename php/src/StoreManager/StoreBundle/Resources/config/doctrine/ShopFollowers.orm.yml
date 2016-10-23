@@ -1,0 +1,23 @@
+StoreManager\StoreBundle\Entity\ShopFollowers:
+    type: entity
+    table: null
+    repositoryClass: StoreManager\StoreBundle\Repository\ShopFollowersRepository
+    indexes:
+        index_shopid_userid:
+            columns: [shop_id,user_id]
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        userId:
+            type: integer
+            column: user_id
+        shopId:
+            type: integer
+            column: shop_id
+        createdAt:
+            type: datetime
+            column: created_at
+    lifecycleCallbacks: {  }

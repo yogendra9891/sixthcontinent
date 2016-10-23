@@ -1,0 +1,56 @@
+# This file is auto-generated during the composer install
+parameters:
+    database_driver: pdo_mysql
+    database_host: 54.163.252.7
+    database_port: null
+    database_name: momosy_social
+    database_user: joomteam
+    database_password: joom@team
+    mailer_transport: smtp
+    mailer_host: 127.0.0.1
+    mailer_user: null
+    mailer_password: null
+    locale: en
+    secret: ThisTokenIsNotSoSecretChangeIt
+    mongodb_database_name: momosy_import
+    social_bees_test_url: https://servizi.shoppingplus.it:8443/secure/USR/00093/hostweb.asp
+    social_bees_live_url: https://servizi.shoppingplus.it:8443/secure/USR/00932/hostweb.asp
+    social_bees_username: S932A001
+    social_bees_password: 49150
+    facebook_appId: 707976702617293
+    facebook_secret: cce1b255698ce0e7251e270af9b43f5c
+    #prod_payment_mac_key : 4PVH375L6W3j47gIWS65u15q33P3e51V7K8h88t3
+    #prod_alias : payment_31297124
+    prod_payment_mac_key : CsT830052L63QHNd1E351uh73272Q23h175650k9wU28T7EU1Hd6l156N5I2oBY6U7OW7kP34282C5965r8V0hpG72ojq5B58896G4Q6oXGc36a6z3Tn6J271B4N33p45C28369j7E025O2245GK7T5p1MNN5T25S05UJxCKH0TMc98fBQ66M2NxRDzrR66c7RG2K367D4xiV54X9kY592K5E3V1X1U01AO85P3n4z28eJIL13t8Ww3P28eg24y2
+    prod_alias : payment_3444168
+    vat   : 100
+    angularpaymenturl : http://54.83.205.169/sixthcontinent_dev/sixthcontinent_angular/shope/payment/return
+    angularpaymentcancelurl : http://54.83.205.169/sixthcontinent_dev/sixthcontinent_angular/shope/payment/cancel
+    reg_fee   : 0.5
+    sixthcontinent_admin_email: prem.baboo@daffodilsw.com
+    angular_app_hostname: http://54.83.205.169/sixthcontinent_dev/sixthcontinent_angular/#/
+    shopping_plus_get_client_url_test: https://servizi.shoppingplus.it:8443/secure/USR/00093/hostweb.asp
+    social_bees_username_test: S93A001
+    social_bees_password_test: 48311
+    shop_registration_shots: 20
+    shop_affilation_amount: 50
+    shop_discount_position_amount: 50
+    shot_amount: 5
+    aws_key: AKIAJ6CFAD7Q4B3ZNTGQ
+    aws_secret_key: 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
+    aws_base_path: https://s3.amazonaws.com
+    aws_bucket: sixthcontinent
+    mongodbhost_host: mongodb://54.163.252.7:27017
+    shoppingplus_hostname: servizi.shoppingplus.it
+    shoppingplus_ftp_username: s00932f001
+    shoppingplus_ftp_password: PWe2*!R14j
+    shoppingplus_port: 13021
+    recurring_pay_url: https://ecommerce.keyclient.it/ecomm/ecomm/ServletS2S
+    ci_percentage: 6
+    urlpost_payment: http://54.83.205.169/sixthcontinent_symfony_dev/php/web/webapi/createcontract
+    template_email_invitation: https://www.sixthcontinent.com/mail/invitation/mail.html
+    template_email_thumb: https://www.sixthcontinent.com/app/assets/images/prof-pic.jpg
+    friend_profile_url: viewfriend
+    shop_profile_url: shop/view
+    club_profile_url: club/view
+    message_profile_url: message

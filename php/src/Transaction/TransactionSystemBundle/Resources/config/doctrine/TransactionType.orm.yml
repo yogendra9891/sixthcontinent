@@ -1,0 +1,17 @@
+Transaction\TransactionSystemBundle\Entity\TransactionType:
+    type: entity
+    table: null
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        transactionLabel:
+            type: string
+            length: '45'
+            column: transaction_label
+        description:
+            type: text
+            nullable: TRUE
+    lifecycleCallbacks: {  }

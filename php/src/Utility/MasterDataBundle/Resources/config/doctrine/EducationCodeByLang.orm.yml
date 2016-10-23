@@ -1,0 +1,23 @@
+Utility\MasterDataBundle\Entity\EducationCodeByLang:
+    type: entity
+    table: null
+    repositoryClass: Utility\MasterDataBundle\Repository\EducationCodeByLangRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        educationCode:
+            type: string
+            length: 255
+            column: education_code
+        langCode:
+            type: string
+            length: 255
+            column: lang_code
+        educationName:
+            type: string
+            length: 255
+            column: education_name
+    lifecycleCallbacks: {  }

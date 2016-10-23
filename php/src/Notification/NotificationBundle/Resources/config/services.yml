@@ -1,0 +1,18 @@
+parameters:
+    emailtemplate.object.class: Notification\NotificationBundle\Services\EmailTemplateService
+    pushnotification.object.class: Notification\NotificationBundle\Services\PushNotificationService
+    postdetail.object.class: Notification\NotificationBundle\Services\PostService
+
+services:
+    email_template.service:
+        class: %emailtemplate.object.class%
+        arguments: [@doctrine.orm.entity_manager, @doctrine.odm.mongodb.document_manager, @service_container]
+    push_notification.service:
+        class: %pushnotification.object.class%
+        arguments: [@doctrine.orm.entity_manager, @doctrine.odm.mongodb.document_manager, @service_container]
+    post_detail.service:
+        class: %postdetail.object.class%
+        arguments: [@doctrine.orm.entity_manager, @doctrine.odm.mongodb.document_manager, @service_container]
+#    n_manager_notification.example:
+#        class: %n_manager_notification.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

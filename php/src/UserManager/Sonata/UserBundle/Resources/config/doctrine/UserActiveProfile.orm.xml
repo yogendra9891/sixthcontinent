@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity repository-class="UserManager\Sonata\UserBundle\Entity\UserActiveProfileRepository" name="UserManager\Sonata\UserBundle\Entity\UserActiveProfile">
+    <id name="id" type="integer" column="id">
+      <generator strategy="AUTO"/>
+    </id>
+    <field name="userId" type="bigint" column="user_id"/>
+    <field name="profileType" type="string" column="profile_type" length="255"/>
+    <field name="type" type="string" column="type" length="255"/>
+  </entity>
+</doctrine-mapping>

@@ -1,0 +1,118 @@
+#app/routing_rest.yml
+#v1 for affiliations
+V1_Affiliation_Route : 
+  type : rest
+  resource: "@AffiliationAffiliationManagerBundle/Resources/config/routing_v1_rest.yml"
+  
+sendaffiliationlinks:
+    type: rest
+    pattern: /sendaffiliationlinks
+    resource: "AffiliationAffiliationManagerBundle:Affiliation"
+    name_prefix: api_
+    requirements:
+        _methods: POST
+
+citizenaffiliations:
+    type: rest
+    pattern: /citizenaffiliations
+    resource: "AffiliationAffiliationManagerBundle:Affiliation"
+    name_prefix: api_
+    requirements:
+        _methods: POST
+
+citizenaffiliationcounts:
+    type: rest
+    pattern: /citizenaffiliationcounts
+    resource: "AffiliationAffiliationManagerBundle:Affiliation"
+    name_prefix: api_
+    requirements:
+        _methods: POST
+        
+brokeraffiliations:
+    type: rest
+    pattern: /brokeraffiliations
+    resource: "AffiliationAffiliationManagerBundle:Affiliation"
+    name_prefix: api_
+    requirements:
+        _methods: POST
+
+brokeraffiliationcounts:
+    type: rest
+    pattern: /brokeraffiliationcounts
+    resource: "AffiliationAffiliationManagerBundle:Affiliation"
+    name_prefix: api_
+    requirements:
+        _methods: POST
+
+shopaffiliations:
+    type: rest
+    pattern: /shopaffiliations
+    resource: "AffiliationAffiliationManagerBundle:Affiliation"
+    name_prefix: api_
+    requirements:
+        _methods: POST
+
+shopaffiliationscounts:
+    type: rest
+    pattern: /shopaffiliationscounts
+    resource: "AffiliationAffiliationManagerBundle:Affiliation"
+    name_prefix: api_
+    requirements:
+        _methods: POST
+tempfosusers:
+    type: rest
+    pattern: /tempfosusers
+    resource: "AffiliationAffiliationManagerBundle:Affiliation"
+    name_prefix: api_
+    requirements:
+        _methods: POST
+changfosuserusers:
+    type: rest
+    pattern: /changfosuserusers
+    resource: "AffiliationAffiliationManagerBundle:Affiliation"
+    name_prefix: api_
+    requirements:
+        _methods: POST
+sendmailusers:
+    type: rest
+    pattern: /sendmailusers
+    resource: "AffiliationAffiliationManagerBundle:Affiliation"
+    name_prefix: api_
+    requirements:
+        _methods: POST
+resetpasscitizenusers:
+    type: rest
+    pattern: /resetpasscitizenusers
+    resource: "AffiliationAffiliationManagerBundle:Affiliation"
+    name_prefix: api_
+    requirements:
+        _methods: POST
+resetpassshopsusers:
+    type: rest
+    pattern: /resetpassshopsusers
+    resource: "AffiliationAffiliationManagerBundle:Affiliation"
+    name_prefix: api_
+    requirements:
+        _methods: POST
+fillshoptemptables:
+    type: rest
+    pattern: /fillshoptemptables
+    resource: "AffiliationAffiliationManagerBundle:Affiliation"
+    name_prefix: api_
+    requirements:
+        _methods: POST
+makeshopentries:
+    type: rest
+    pattern: /makeshopentries
+    resource: "AffiliationAffiliationManagerBundle:Affiliation"
+    name_prefix: api_
+    requirements:
+        _methods: POST
+        
+userinvitationlists:
+    type: rest
+    pattern: /userinvitationlists
+    resource: "AffiliationAffiliationManagerBundle:Affiliation"
+    name_prefix: api_
+    requirements:
+        _methods: POST

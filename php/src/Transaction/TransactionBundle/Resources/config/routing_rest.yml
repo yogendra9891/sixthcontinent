@@ -1,0 +1,16 @@
+#app/routing_rest.yml
+onclickrecurringpayments:
+    type: rest
+    pattern: /onclickrecurringpayments
+    resource: "TransactionTransactionBundle:CitizenIncome"
+    name_prefix: api_
+    requirements:
+        _methods: POST
+        
+getcifromcardsoldos:
+    type: rest
+    pattern: /getcifromcardsoldos
+    resource: "TransactionTransactionBundle:CitizenIncome"
+    name_prefix: api_
+    requirements:
+        _methods: POST

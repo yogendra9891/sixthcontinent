@@ -1,0 +1,7 @@
+parameters:
+   transaction_manager.class: Transaction\TransactionSystemBundle\Services\TransactionManager
+
+services:
+   transaction_manager: 
+    class: "%transaction_manager.class%"
+    arguments: [@doctrine.orm.entity_manager, @doctrine.odm.mongodb.document_manager, @service_container]

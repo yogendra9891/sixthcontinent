@@ -1,0 +1,50 @@
+{# The default template which provides batch and action cells, with the valid colspan computation #}
+
+{% extends 'SonataAdminBundle:CRUD:list.html.twig' %}
+
+{% block table_body %}
+   {% set citizenactive = "" %}
+   {% set citizenwriteractive = "" %}
+   {% set brokeractive = "" %}
+   {% set ambassadoractive = "" %}
+    {% if app.request.query.get('filter') %}
+    {% if app.request.query.get('filter').profileType is defined%}
+    {% if app.request.query.get('filter').profileType is defined%}
+    {% if app.request.query.get('filter').profileType.value ==22%}
+    {% set citizenactive = "active" %}
+    {%endif %}
+    {%else %}
+        {% set citizenactive = "active" %} 
+    {%endif %}
+    {% if app.request.query.get('filter').profileType.value ==23%}
+    {% set citizenwriteractive = "active" %}
+    {%endif %}
+    {% if app.request.query.get('filter').profileType.value ==24%}
+    {% set brokeractive = "active" %}
+    {%endif %}
+     {% if app.request.query.get('filter').profileType.value ==25%}
+    {% set ambassadoractive = "active" %}
+    {%endif %}
+        {%endif %}
+        {%else %}
+            {% set citizenactive = "active" %}
+    {%endif %}
+    
+    {# need to change the url with route#}
+    <a class="{{citizenactive}}" href="{{app.request.schemeAndHttpHost}}/momosy/php/web/admin/sonata/user/usermultiprofile/list?filter[profileType][type]=&filter[profileType][value]=22&filter[email][type]=&filter[email][value]=&filter[isActive][type]=&filter[isActive][value]=&filter[_page]=1&filter[_sort_by]=id&filter[_sort_order]=ASC&filter[_per_page]=25">Citizen</a>&nbsp;&nbsp;
+     <a class="{{citizenwriteractive}}" href="{{app.request.schemeAndHttpHost}}/momosy/php/web/admin/sonata/user/usermultiprofile/list?filter[profileType][type]=&filter[profileType][value]=23&filter[email][type]=&filter[email][value]=&filter[isActive][type]=&filter[isActive][value]=&filter[_page]=1&filter[_sort_by]=id&filter[_sort_order]=ASC&filter[_per_page]=25">Citizen Writer</a>&nbsp;&nbsp;
+     <a class="{{brokeractive}}" href="{{app.request.schemeAndHttpHost}}/momosy/php/web/admin/sonata/user/usermultiprofile/list?filter[profileType][type]=&filter[profileType][value]=24&filter[email][type]=&filter[email][value]=&filter[isActive][type]=&filter[isActive][value]=&filter[_page]=1&filter[_sort_by]=id&filter[_sort_order]=ASC&filter[_per_page]=25">Broker</a>&nbsp;&nbsp;    
+    <a class="{{ambassadoractive}}" href="{{app.request.schemeAndHttpHost}}/momosy/php/web/admin/sonata/user/usermultiprofile/list?filter[profileType][type]=&filter[profileType][value]=25&filter[email][type]=&filter[email][value]=&filter[isActive][type]=&filter[isActive][value]=&filter[_page]=1&filter[_sort_by]=id&filter[_sort_order]=ASC&filter[_per_page]=25">Ambassador</a>&nbsp;&nbsp; 
+     <tbody>
+        {% for object in admin.datagrid.results %}
+            <style>
+                table tr.green-color td {background-color: #2BFF5D !important; }
+            </style>
+             <tr>
+                {% include admin.getTemplate('inner_list_row') %}
+            </tr>
+        {% endfor %}
+        
+    </tbody>
+   
+{% endblock %}

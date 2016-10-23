@@ -1,0 +1,33 @@
+StoreManager\StoreBundle\Entity\Storealbum:
+    type: entity
+    table: null
+    repositoryClass: StoreManager\StoreBundle\Entity\StorealbumRepository
+    indexes:
+        index_shopid_Storealbum:
+            columns: [store_id]
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        storeId:
+            type: integer
+            column: store_id
+        storeAlbumName:
+            type: string
+            length: 255
+            column: store_album_name
+        storeAlbumDesc:
+            type: text
+            column: store_album_desc
+        privacySetting:
+            type: integer
+            column: privacy_setting    
+        storeAlbumCreted:
+            type: datetime
+            column: store_album_creted
+        storeAlbumUpdated:
+            type: datetime
+            column: store_album_updated
+    lifecycleCallbacks: {  }

@@ -1,0 +1,33 @@
+Transaction\TransactionBundle\Entity\UserGiftCardPurchased:
+    type: entity
+    table: null
+    repositoryClass: Transaction\TransactionBundle\Entity\UserGiftCardPurchasedRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        giftCardId:
+            type: string
+            length: 255
+            column: gift_card_id
+            unique: true
+        userId:
+            type: integer
+            column: user_id
+        shopId:
+            type: integer
+            column: shop_id
+        giftCardAmount:
+            type: bigint
+            column: gift_card_amount
+        remainingGiftCard:
+            type: bigint
+            column: remaining_gift_card
+        date:
+            type: bigint
+        dataJob:
+            type: bigint
+            column: data_job
+    lifecycleCallbacks: {  }

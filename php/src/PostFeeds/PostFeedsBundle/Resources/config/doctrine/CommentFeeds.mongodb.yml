@@ -1,0 +1,53 @@
+PostFeeds\PostFeedsBundle\Document\CommentFeeds:
+    repositoryClass: PostFeeds\PostFeedsBundle\Repository\CommentFeedsMongoRepository
+    type: embeddedDocument
+    collection: commentfeeds
+    fields:
+        id:
+            id:  true
+        user_id:
+            type: int
+        user_info:
+            type: hash
+        text:
+            type: string
+        is_active:
+            type: int
+        created_at:
+            type: date
+        updated_at:
+            type: date
+        rate:
+           embedded: true
+           type: many
+           targetDocument: PostFeeds\PostFeedsBundle\Document\RatingFeeds
+           cascade: all
+        tag_user:
+           type: collection
+        tag_shop:
+           type: collection
+        tag_club:
+           type: collection
+        is_comment: 
+            type: int
+        is_rate: 
+            type: int
+        is_tag: 
+            type: int
+        is_media: 
+            type: int
+        vote_count:
+            type: int
+        vote_sum:
+            type: int
+        avg_rating:
+            type: float
+    referenceMany:
+        media:
+            targetDocument: PostFeeds\PostFeedsBundle\Document\MediaFeeds
+            cascade: persist
+           
+# php app/console doctrine:mongodb:generate:documents PostFeedsBundle
+# Create Document
+# php app/console doctrine:mongodb:generate:repositories PostFeedsBundle
+# Create repositoryd 

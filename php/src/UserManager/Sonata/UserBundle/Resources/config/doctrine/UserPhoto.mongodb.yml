@@ -1,0 +1,20 @@
+UserManager\Sonata\UserBundle\Document\UserPhoto:
+    repositoryClass: UserManager\Sonata\UserBundle\Repository\UserPhotoMongoRepository
+    type: document
+    collection: userphoto
+    fields:
+        id:
+            id:  true
+        user_id:
+            type: int
+        profile_type:
+            type: int
+        photo_id:
+            type: string
+        created_at:
+            type: date
+
+# php app/console doctrine:mongodb:generate:documents TestFormBundle
+# Create Document
+# php app/console doctrine:mongodb:generate:repositories TestFormBundle
+# Create repository

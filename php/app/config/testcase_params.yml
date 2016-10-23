@@ -1,0 +1,20 @@
+parameters:
+    user_name: "testtest@ssss.com"
+    password : "123456"
+    client_id: "37_1vdnlmp3bps0w0c8sg8woggwws8g8w88kskssosg08wkk88cs0"
+    client_secret: "2qnzoev472m8k084co4gwkos8kc8swok0sg40kco8ss4kws0c8"
+    store_vat: "025121322523047"
+    shop_collection : "sixc_shops"
+    share_invalid_object_type: clubdddddd
+    share_invalid_object_id: 1495111111
+    #SHOP,CLUB,OFFER,SOCIAL_PROJECT
+    share_valid_object_id: 1495 
+    share_valid_object_type: SHOP 
+    share_shop_id: 1495
+    share_club_id: "54aa2a5a1087428810000031"
+    share_offer_id: "558ab373e44b036c4d179c63"
+    share_social_project_id: "558cfd091087420c1000002e"
+    #INTERNAL_SHARE,EXTERNAL_SHARE
+    valid_share_type: "INTERNAL_SHARE"
+    invalid_share_type: "invalid_share_type"
+    

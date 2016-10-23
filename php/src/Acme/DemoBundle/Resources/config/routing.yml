@@ -1,0 +1,22 @@
+_welcome:
+    path:     /
+    defaults: { _controller: AcmeDemoBundle:Welcome:index }
+
+_demo_secured:
+    resource: "@AcmeDemoBundle/Controller/SecuredController.php"
+    type:     annotation
+
+_demo:
+    resource: "@AcmeDemoBundle/Controller/DemoController.php"
+    type:     annotation
+    prefix:   /demo 
+        
+_demo_upload:
+    pattern:  /test
+    defaults: { _controller: AcmeDemoBundle:Demo:upload }
+    requirements:
+        _method:  GET|POST
+        
+acme_hello_homepage1:
+    pattern:  /createmongouser
+    defaults: { _controller: AcmeDemoBundle:Demo:createuser }

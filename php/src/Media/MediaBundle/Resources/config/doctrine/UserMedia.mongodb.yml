@@ -1,0 +1,64 @@
+Media\MediaBundle\Document\UserMedia:
+    repositoryClass: Media\MediaBundle\Repository\UserMediaMongoRepository
+    type: document
+    collection: usermedia
+    fields:
+        id:
+            id:  true
+        name:
+            type: string
+        userid:
+            type: int
+        albumid:
+            type: string
+        description:
+            type: string
+        contenttype:
+            type: string
+        enabled:
+            type: int
+        width:
+            type: int
+        height:
+            type: int
+        content_size:
+            type: int
+        updated_at:
+            type: date
+        created_at:
+            type: date
+        access_label:
+            type: int
+        file:
+            type: file
+        path:
+            type: string
+        is_featured:
+            type: int  
+        image_type:
+            type: int          
+        tagged_friends:
+            type: collection
+        vote_count:
+            type: int
+        vote_sum:
+            type: int
+        avg_rating:
+            type: float
+        x:
+            type: string
+        y:
+            type: string
+        rate:
+           embedded: true
+           type: many
+           targetDocument: Media\MediaBundle\Document\UserMediaRating
+        comment:
+           embedded: true
+           type: many
+           targetDocument: Media\MediaBundle\Document\AlbumMediaComment
+
+# php app/console doctrine:mongodb:generate:documents TestFormBundle
+# Create Document
+# php app/console doctrine:mongodb:generate:repositories TestFormBundle
+# Create repository

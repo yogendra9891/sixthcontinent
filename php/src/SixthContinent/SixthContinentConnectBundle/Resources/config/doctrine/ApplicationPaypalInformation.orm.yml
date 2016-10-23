@@ -1,0 +1,70 @@
+SixthContinent\SixthContinentConnectBundle\Entity\ApplicationPaypalInformation:
+    type: entity
+    table: null
+    repositoryClass: SixthContinent\SixthContinentConnectBundle\Repository\ApplicationPaypalInformationRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        appId:
+            type: string
+            length: 255
+            column: app_id
+        accountIdToDisplay:
+            type: string
+            length: 255
+            column: account_id_to_display
+        email:
+            type: string
+            length: 255
+        status:
+            type: string
+            length: 255
+        correlationId:
+            type: string
+            length: 255
+            column: correlation_id
+        accountType:
+            type: string
+            length: 255
+            column: account_type
+        accountId:
+            type: string
+            length: 255
+            column: account_id
+        buildId:
+            type: string
+            length: 255
+            column: build_id
+        errorCode:
+            type: string
+            length: 255
+            column: error_code
+        errorDescription:
+            type: string
+            length: 255
+            column: error_description
+        isDeleted:
+            type: integer
+            column: is_deleted
+        createdAt:
+            type: datetime
+            column: created_at
+        mobileNumber:
+            type: string
+            length: 255
+            column: mobile_number
+        firstName:
+            type: string
+            length: 255
+            column: first_name
+        lastName:
+            type: string
+            length: 255
+            column: last_name
+        isDefault:
+            type: integer
+            column: is_default
+    lifecycleCallbacks: {  }

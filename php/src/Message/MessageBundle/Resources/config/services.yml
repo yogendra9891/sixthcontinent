@@ -1,0 +1,7 @@
+parameters:
+#    message_message.example.class: Message\MessageBundle\Example
+
+services:
+#    message_message.example:
+#        class: %message_message.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

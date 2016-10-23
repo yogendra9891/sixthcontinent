@@ -1,0 +1,28 @@
+StoreManager\PostBundle\Document\ItemRating:
+    repositoryClass: StoreManager\PostBundle\Repository\ItemRatingMongoRepository
+    type: document
+    collection: itemrating
+    fields:
+        id:
+            id: true
+        item_id:
+            type: string
+        item_type:
+            type: string
+        vote_count:
+            type: int
+        vote_sum:
+            type: int
+        avg_rating:
+            type: float
+        rate:
+           embedded: true
+           type: many
+           targetDocument: StoreManager\PostBundle\Document\ItemRatingRate
+           cascade: all
+        tagged_friends:
+            type: collection
+# php app/console doctrine:mongodb:generate:documents DashboardManagerBundle
+# Create Document
+# php app/console doctrine:mongodb:generate:repositories DashboardManagerBundle
+# Create repository

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity repository-class="UserManager\Sonata\UserBundle\Entity\CitizenUserRepository" name="UserManager\Sonata\UserBundle\Entity\CitizenUser">
+    <indexes>
+            <index name="userid_CitizenUser" columns="user_id"/>
+    </indexes>
+    <id name="id" type="integer" column="id">
+      <generator strategy="AUTO"/>
+    </id>
+    <field name="userId" type="bigint" column="user_id"/>
+    <field name="roleId" type="integer" column="role_id"/>
+    <field name="region" type="text" column="region"/>
+    <field name="city" type="string" column="city" length="255"/>
+    <field name="address" type="text" column="address"/>
+    <field name="zip" type="string" column="zip" length="255"/>
+    <field name="mapPlace" type="string" column="map_place" length="255"/>
+    <field name="latitude" type="string" column="latitude" length="255"/>
+    <field name="longitude" type="string" column="longitude" length="255"/>
+    <field name="createdAt" type="datetime" column="created_at"/>
+    <field name="updatedAt" type="datetime" column="updated_at"/>
+    <field name="profileImg" type="string" column="profile_img" length='255'/>
+    <field name="ssn" type="string" column="ssn" length='255' nullable='true' />
+
+  </entity>
+</doctrine-mapping>

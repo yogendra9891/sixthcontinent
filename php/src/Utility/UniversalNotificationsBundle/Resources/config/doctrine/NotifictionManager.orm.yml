@@ -1,0 +1,29 @@
+Utility\UniversalNotificationsBundle\Entity\NotifictionManager:
+    type: entity
+    table: null
+    repositoryClass: Utility\UniversalNotificationsBundle\Repository\NotifictionManagerRepository
+    uniqueConstraints:
+        index_userid_notification_type_NotificationManager:
+            columns: [user_id,notification_type,user_type]
+            type: unique
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        userId:
+            type: integer
+            column: user_id
+        userType:
+            type: string
+            length: 255
+            column: user_type
+        notificationType:
+            type: string
+            length: 255
+            column: notification_type
+        notificationSetting:
+            type: integer
+            column: notification_setting
+    lifecycleCallbacks: {  }

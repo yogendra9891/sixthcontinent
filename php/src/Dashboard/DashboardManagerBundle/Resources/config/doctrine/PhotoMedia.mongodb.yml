@@ -1,0 +1,31 @@
+Dashboard\DashboardManagerBundle\Document\PhotoMedia:
+    repositoryClass: Dashboard\DashboardManagerBundle\Repository\PhotoMediaMongoRepository
+    type: document
+    collection: photomedia
+    fields:
+        id:
+            id: true
+        comment_id:
+            type: string
+        media_name:
+            type: string
+        type:
+            type: string
+        is_active:
+            type: string
+        is_featured:
+            type: int
+        created_at:
+            type: date       
+        updated_at:
+            type: date       
+        file:
+            type: string       
+        path:
+            type: string       
+        image_type:
+            type: int
+# php app/console doctrine:mongodb:generate:documents DashboardManagerBundle
+# Create Document
+# php app/console doctrine:mongodb:generate:repositories DashboardManagerBundle
+# Create repository

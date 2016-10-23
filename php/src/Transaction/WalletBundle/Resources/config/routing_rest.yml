@@ -1,0 +1,12 @@
+ # citizenwalletincome:
+ #    type: rest
+ #    pattern: /citizenwalletincome
+ #    resource: "TransactionWalletBundle:WalletCitizen"
+ #    name_prefix: api_
+ #    requirements:
+ #       _method:  POST
+# citizenwalletincome:
+#     type: rest
+#     pattern: /postcitizenwalletincome
+#     defaults: { _controller:TransactionWalletBundle:WalletCitizen}
+#     methods:  [POST]

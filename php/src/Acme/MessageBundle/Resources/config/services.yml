@@ -1,0 +1,7 @@
+parameters:
+#    acme_message.example.class: Acme\MessageBundle\Example
+
+services:
+#    acme_message.example:
+#        class: %acme_message.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

@@ -1,0 +1,18 @@
+ExportManagement\ExportManagementBundle\Document\GiftcardExportLogs:
+    repositoryClass: ExportManagement\ExportManagementBundle\Repository\GiftcardExportLogsMongoRepository
+    type: document
+    collection: giftcardexportlogs
+    fields:
+        id:
+            id: true
+        user_id:
+            type: string
+        shop_id:
+            type: string
+        type:
+            type: string
+    
+# php app/console doctrine:mongodb:generate:documents DashboardManagerBundle
+# Create Document
+# php app/console doctrine:mongodb:generate:repositories DashboardManagerBundle
+# Create repository

@@ -1,0 +1,13 @@
+Message\MessageBundle\Document\MessageMetadata:
+    repositoryClass: Message\MessageBundle\Repository\MessageMetadataMongoRepository
+    type: document
+    collection: messagemetadata
+    fields:
+        id:
+            id: true
+        message_id:
+            type: string
+        participant_id:
+            type: int
+        is_read:
+            type: int

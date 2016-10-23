@@ -1,0 +1,41 @@
+ExportManagement\ExportManagementBundle\Entity\Purchase:
+    type: entity
+    table: null
+    repositoryClass: ExportManagement\ExportManagementBundle\Repository\PurchaseRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        date:
+            type: date
+        numeroQuietanza:
+            type: bigint
+            column: numero_quietanza
+        tipoQuietanza:
+            type: string
+            length: 255
+            column: tipo_quietanza
+        causale:
+            type: string
+            length: 255
+        code:
+            type: string
+            length: 255
+        description:
+            type: string
+            length: 255
+        amount:
+            type: float
+        shopId:
+            type: string
+            length: 255
+            column: shop_id
+        citizenId:
+            type: bigint
+            column: citizen_id
+        createdAt:
+            type: date
+            column: created_at
+    lifecycleCallbacks: {  }

@@ -1,0 +1,27 @@
+Post\PostBundle\Document\CommentMedia:
+    repositoryClass: Post\PostBundle\Repository\CommentMediaMongoRepository
+    type: document
+    collection: commentmedia
+    fields:
+        id:
+            id: true
+        comment_id:
+            type: string
+        media_name:
+            type: string
+        type:
+            type: string
+        is_active:
+            type: string
+        is_featured:
+            type: int
+        created_at:
+            type: date       
+        updated_at:
+            type: date       
+        file:
+            type: string       
+        path:
+            type: string
+        image_type:
+            type: int

@@ -1,0 +1,67 @@
+PostFeeds\PostFeedsBundle\Document\MediaFeeds:
+    repositoryClass: PostFeeds\PostFeedsBundle\Repository\MediaFeedsMongoRepository
+    type: document
+    collection: mediafeeds
+    fields:
+        id:
+            id:  true
+        user_id:
+            type: int
+            index: true
+        item_id:
+            type: string
+        media_name:
+            type: string
+        media_type:
+            type: string
+        type:
+            type: string
+            index: true
+        status:
+            type: int
+        is_featured:
+            type: int
+        tag_user:
+           type: collection
+        tag_shop:
+           type: collection
+        tag_club:
+           type: collection
+        is_comment: 
+            type: int
+        is_rate: 
+            type: int
+        is_tag: 
+            type: int
+        is_media: 
+            type: int
+        vote_count:
+            type: int
+        vote_sum:
+            type: int
+        avg_rating:
+            type: float
+        rate:
+           embedded: true
+           type: many
+           targetDocument: PostFeeds\PostFeedsBundle\Document\RatingFeeds
+           cascade: all	
+        comment:
+           embedded: true
+           type: many
+           targetDocument: PostFeeds\PostFeedsBundle\Document\CommentFeeds
+           cascade: all	
+        created_at:
+            type: date
+        updated_at:
+            type: date
+    referenceMany:
+        post:
+            targetDocument: PostFeeds\PostFeedsBundle\Document\PostFeeds
+            cascade: [detach]
+        
+           
+# php app/console doctrine:mongodb:generate:documents PostFeedsBundle
+# Create Document
+# php app/console doctrine:mongodb:generate:repositories TestFormBundle
+# Create repositoryd 

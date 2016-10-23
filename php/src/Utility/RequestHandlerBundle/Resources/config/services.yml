@@ -1,0 +1,11 @@
+parameters:
+#    utility_request_handler.example.class: Utility\RequestHandlerBundle\Example
+
+services:
+#    utility_request_handler.example:
+#        class: %utility_request_handler.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
+    #service to write logs in mongo
+    monolog_record_service:
+        class:   Utility\RequestHandlerBundle\Services\MonologRecordService
+        arguments: [@doctrine.orm.entity_manager, @doctrine.odm.mongodb.document_manager, @service_container]   

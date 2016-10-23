@@ -1,0 +1,84 @@
+store_manager_store_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: StoreManagerStoreBundle:Default:index }
+top_shop:
+    pattern:  /webapi/topshopsperrevenue
+    defaults: { _controller: StoreManagerStoreBundle:RestChildStore:topshopsperrevenue }
+top_citzen:
+    pattern:  /webapi/topcitizenperincome
+    defaults: { _controller: StoreManagerStoreBundle:RestChildStore:topcitizenperincome }
+economs:
+    pattern:  /webapi/economs
+    defaults: { _controller: StoreManagerStoreBundle:Shoppingplus:economs }
+cardsolds:
+    pattern:  /webapi/cardsolds
+    defaults: { _controller: StoreManagerStoreBundle:Shoppingplus:cardsolds }
+listpublicuserstores:
+    pattern:  /webapi/listpublicuserstores
+    defaults: { _controller: StoreManagerStoreBundle:RestStoreExternalProfile:listpublicuserstores }
+listpublicstorealbums:
+    pattern:  /webapi/listpublicstorealbums
+    defaults: { _controller: StoreManagerStoreBundle:RestStoreExternalProfile:listpublicstorealbums }
+viewpublicstorealbums:
+    pattern:  /webapi/viewpublicstorealbums
+    defaults: { _controller: StoreManagerStoreBundle:RestStoreExternalProfile:viewpublicstorealbums }
+viewpublicstoredetails:
+    pattern:  /webapi/viewpublicstoredetails
+    defaults: { _controller: StoreManagerStoreBundle:RestStoreExternalProfile:viewpublicstoredetails }
+searchexternalstores:
+    pattern:  /webapi/searchexternalstores
+    defaults: { _controller: StoreManagerStoreBundle:RestStoreExternalProfile:searchexternalstores }
+sendremindernotifications:
+    pattern:  /webapi/sendremindernotifications
+    defaults: { _controller: StoreManagerStoreBundle:BillingCircle:sendremindernotifications }
+sendintervalbillingnotifications:
+    pattern:  /webapi/sendintervalbillingnotifications
+    defaults: { _controller: StoreManagerStoreBundle:BillingCircle:sendintervalbillingnotifications }
+getmapstores:
+    pattern:  /webapi/getmapstores
+    defaults: { _controller: StoreManagerStoreBundle:RestStoreExternalProfile:getmapstores }    
+savetotaleconomyshifted:
+    pattern:  /webapi/savetotaleconomyshifted
+    defaults: { _controller: StoreManagerStoreBundle:Shoppingplus:saveTotalEconomyShifted }
+gettotaleconomyshifted:
+    pattern:  /webapi/gettotaleconomyshifted
+    defaults: { _controller: StoreManagerStoreBundle:Shoppingplus:getTotalEconomyShifted }
+# store owner mail notification
+storeownernotifications:
+    pattern:  /webapi/storeownernotifications
+    defaults: { _controller: StoreManagerStoreBundle:StoreOwnerNotification:storeownernotifications }
+
+getallshops:
+    pattern:  /webapi/getallshops
+    defaults: { _controller: StoreManagerStoreBundle:Stores:getallshops }
+teststores:
+    pattern:  /webapi/teststores/{limit}
+    defaults: { _controller: StoreManagerStoreBundle:AllStores:teststores}
+testcouponandcards:
+    pattern:  /webapi/testcouponandcards/{type}
+    defaults: { _controller: StoreManagerStoreBundle:AllStores:testcouponandcards}
+allstoresdetails:
+    pattern:  /api/allstoresdetails
+    defaults: { _controller: StoreManagerStoreBundle:AllStores:allstoresdetails}
+citylist:
+    pattern:  /api/citylist
+    defaults: { _controller: StoreManagerStoreBundle:AllStores:citylist}
+getallshoppingcards:
+    pattern:  /api/getallshoppingcards
+    defaults: { _controller: StoreManagerStoreBundle:AllStores:getallshoppingcards}
+getAllShopList:
+    pattern:  /api/getAllShopList
+    defaults: { _controller: StoreManagerStoreBundle:AllStores:getAllShopList}
+get_map_shop_around_kilometers:
+    pattern:  /webapi/getstoremarkers
+    defaults: { _controller: StoreManagerStoreBundle:Map:getStoreMarkers}
+
+get_all_store_public:
+    pattern:  /webapi/allstoresdetails
+    defaults: { _controller: StoreManagerStoreBundle:AllStores:allstoresdetails}
+get_all_shopping_card_pubblic:
+    pattern:  /webapi/getallshoppingcards
+    defaults: { _controller: StoreManagerStoreBundle:AllStores:getallshoppingcards}
+getAllShopList_pubblic:
+    pattern:  /webapi/getAllShopList
+    defaults: { _controller: StoreManagerStoreBundle:AllStores:getAllShopList}

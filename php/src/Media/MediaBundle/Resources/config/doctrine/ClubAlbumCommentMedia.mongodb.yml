@@ -1,0 +1,32 @@
+## YAML Template.
+---
+Media\MediaBundle\Document\ClubAlbumCommentMedia:
+    repositoryClass: Media\MediaBundle\Repository\ClubAlbumCommentMediaMongoRepository
+    type: document
+    collection: clubalbumcommentmedia
+    fields:
+        id:
+            id: true
+        comment_id:
+            type: string
+        media_name:
+            type: string
+        media_type:
+            type: string
+        is_active:
+            type: string
+        is_featured:
+            type: int
+        created_at:
+            type: date       
+        updated_at:
+            type: date    
+        path:
+            type: string       
+        image_type:
+            type: int
+
+# php app/console doctrine:mongodb:generate:documents TestFormBundle
+# Create Document
+# php app/console doctrine:mongodb:generate:repositories TestFormBundle
+# Create repository

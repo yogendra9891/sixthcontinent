@@ -1,0 +1,12 @@
+master_data_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: MasterDataBundle:Default:index }
+#get master data
+get_master_date:
+    pattern:    /webapi/getmasterdata
+    defaults:   { _controller: MasterDataBundle:MasterData:getMasterData } 
+    
+#get master data
+check_country_code:
+    pattern:    /webapi/checkcountrycode
+    defaults:   { _controller: MasterDataBundle:MasterData:checkcountrycode } 

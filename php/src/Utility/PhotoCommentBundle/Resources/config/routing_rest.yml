@@ -1,0 +1,8 @@
+#app/routing_rest.yml
+addmediacomments:
+    type: rest
+    pattern: /addmediacomments
+    resource: "PhotoCommentBundle:PhotoComment"
+    name_prefix: api_
+    requirements:
+        _methods: POST

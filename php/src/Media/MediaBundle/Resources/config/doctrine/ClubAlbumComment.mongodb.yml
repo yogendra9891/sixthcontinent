@@ -1,0 +1,36 @@
+## YAML Template.
+---
+Media\MediaBundle\Document\ClubAlbumComment:
+    repositoryClass: Media\MediaBundle\Repository\ClubAlbumCommentMongoRepository
+    type: document
+    collection: clubalbumcomment
+    fields:
+        id:
+            id: true
+        album_id:
+            type: string
+        comment_text:
+            type: string
+        comment_author:
+            type: int
+        comment_created_at:
+            type: date
+        comment_updated_at:
+            type: date
+        status:
+            type: int
+        album_type:
+            type: string
+        vote_count:
+            type: int
+        vote_sum:
+            type: int
+        avg_rating:
+            type: float
+        rate:
+           embedded: true
+           type: many
+           targetDocument: Media\MediaBundle\Document\ClubAlbumCommentRating
+           cascade: all
+        tagging:
+            type: hash

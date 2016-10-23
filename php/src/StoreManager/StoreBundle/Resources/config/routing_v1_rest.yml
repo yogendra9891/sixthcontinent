@@ -1,0 +1,14 @@
+#create store
+createstores:
+   type: rest
+   pattern: /createstores
+   prefix: /v1
+   resource: "StoreManagerStoreBundle:RestStoreV1"
+   name_prefix: api_1_
+ #edit store
+editstores:
+   type: rest
+   pattern: /editstores
+   prefix: /v1
+   resource: "StoreManagerStoreBundle:RestStoreV1"
+   name_prefix: api_1_

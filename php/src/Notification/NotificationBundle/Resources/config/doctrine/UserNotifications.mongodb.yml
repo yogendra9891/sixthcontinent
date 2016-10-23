@@ -1,0 +1,39 @@
+Notification\NotificationBundle\Document\UserNotifications:
+    repositoryClass: Notification\NotificationBundle\Repository\UserNotificationsMongoRepository
+    type: document
+    collection: usernotifications
+    fields:
+        id:
+            id: true
+        from:
+            type: string
+        to:
+            type: string
+            index: true
+        item_id:
+            type: string
+        message_type:
+            type: string
+        message:
+            type: string
+        date:
+            type: date
+            order: desc
+        is_read:
+            type: string
+            index: true
+        message_status:
+            type: string
+        is_view:
+            type: int
+        notification_role:
+            type: int
+            index: true
+        tagging:
+            type: hash
+        info:
+            type: hash
+# php app/console doctrine:mongodb:generate:documents NManagerNotificationBundle
+# Create Document
+# php app/console doctrine:mongodb:generate:repositories NManagerNotificationBundle
+# Create repository

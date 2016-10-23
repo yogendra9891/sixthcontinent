@@ -1,0 +1,29 @@
+Transaction\TransactionBundle\Entity\UserInfoFromCardSoldo:
+    type: entity
+    table: null
+    repositoryClass: Transaction\TransactionBundle\Entity\UserInfoFromCardSoldoRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        userId:
+            type: integer
+            column: user_id
+        descrizione:
+            type: string
+            length: 255
+        saldoc:
+            type: bigint
+        saldorc:
+            type: bigint
+        saldorm:
+            type: bigint
+        createdAt:
+            type: date
+            column: created_at
+        updatedAt:
+            type: date
+            column: updated_at
+    lifecycleCallbacks: {  }

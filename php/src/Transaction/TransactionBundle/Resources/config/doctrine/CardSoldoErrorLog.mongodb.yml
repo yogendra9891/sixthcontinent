@@ -1,0 +1,11 @@
+Transaction\TransactionBundle\Document\CardSoldoErrorLog:
+    repositoryClass: Transaction\TransactionBundle\Repository\CardSoldoErrorLogMongoRepository
+    type: document
+    collection: cardsoldoerrorlog
+    fields:
+        id:
+            id: true
+        user_id:
+            type: int
+        created_at:
+            type: date

@@ -1,0 +1,31 @@
+utility_applane_integration_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: UtilityApplaneIntegrationBundle:Default:index }
+utility_applane_integration_test:
+    pattern:  /webapi/applanetest
+    defaults: { _controller: UtilityApplaneIntegrationBundle:ApplaneIntegration:applanetest }
+recurring_pending_payment:
+    pattern:  /webapi/recurringtransaction
+    defaults: { _controller: UtilityApplaneIntegrationBundle:RecurringPayment:recurringtransaction }
+transaction_notification:
+    pattern:  /webapi/sendtransactionnotification
+    defaults: { _controller: UtilityApplaneIntegrationBundle:TransactionNotification:sendtransactionnotification }
+pay_recurring_pending_payment:
+    pattern:  /webapi/payrecurringtransaction
+    defaults: { _controller: UtilityApplaneIntegrationBundle:RecurringPayment:payrecurringtransaction }
+#import transaction from applane
+import_shop_transaction:
+    pattern:  /webapi/importshoptransaction
+    defaults: { _controller: UtilityApplaneIntegrationBundle:RecurringPayment:importshoptransaction }
+call_payment_log:
+    pattern:  /webapi/callpaymentlog
+    defaults: { _controller: UtilityApplaneIntegrationBundle:RecurringPayment:callpaymentlog }
+import_shops_transaction:
+    pattern:  /webapi/importshopstransaction
+    defaults: { _controller: UtilityApplaneIntegrationBundle:RecurringShopPayment:importshopstransaction }
+pay_recurring_payment:
+    pattern:  /webapi/payrecurringpayment
+    defaults: { _controller: UtilityApplaneIntegrationBundle:RecurringShopPayment:payrecurringpayment }
+call_payment_notification_log:
+    pattern:  /webapi/callpaymentnotificationlog
+    defaults: { _controller: UtilityApplaneIntegrationBundle:TransactionNotification:callpaymentnotificationlog }    

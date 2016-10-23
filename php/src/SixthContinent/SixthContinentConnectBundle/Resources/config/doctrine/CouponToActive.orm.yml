@@ -1,0 +1,53 @@
+SixthContinent\SixthContinentConnectBundle\Entity\CouponToActive:
+    type: entity
+    table: coupon_to_active
+    repositoryClass: SixthContinent\SixthContinentConnectBundle\Repository\CouponToActiveRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        offerId:
+            type: integer
+            column: offer_id
+        userId:
+            type: integer
+            column: user_id
+        importedAt:
+            type: datetime
+            column: imported_at
+        importedTimestamp:
+            type: string
+            length: 255
+            column: imported_timestamp
+        expiredDate:
+            type: datetime
+            column: expired_date
+        expiredDateTimestamp:
+            type: string
+            length: 255
+            column: expired_date_timestamp
+        orderNumber:
+            type: bigint 
+            column: order_number
+        isActivatedAt:
+            type: datetime
+            column: is_activated_at
+        isActivatedTimestamp:
+            type: string
+            length: 255
+            column: is_activated_timestamp
+        orderNumberFromImport:
+            type: string
+            length: 255
+            column: order_number_from_import    
+        is_active:
+            type: integer
+        isDeleted:
+            type: integer
+            column: is_deleted
+    uniqueConstraints:
+      order_number_idx:
+         columns: [ order_number ]        
+    lifecycleCallbacks: {  }

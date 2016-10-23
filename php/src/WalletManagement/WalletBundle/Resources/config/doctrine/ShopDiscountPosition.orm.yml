@@ -1,0 +1,25 @@
+WalletManagement\WalletBundle\Entity\ShopDiscountPosition:
+    type: entity
+    table: null
+    repositoryClass: WalletManagement\WalletBundle\Entity\ShopDiscountPositionRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        shopId:
+            type: bigint
+            column: shop_id
+        totalDp:
+            type: string
+            length: 255
+            column: total_dp
+        balanceDp:
+            type: string
+            length: 255
+            column: balance_dp
+        createdAt:
+            type: datetime
+            column: created_at
+    lifecycleCallbacks: {  }

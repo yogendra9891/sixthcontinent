@@ -1,0 +1,18 @@
+Transaction\TransactionBundle\Document\TransictionImportLogs:
+    repositoryClass: Transaction\TransactionBundle\Repository\TransictionImportLogsMongoRepository
+    type: document
+    collection: transictionimportlogs
+    fields:
+        id:
+            id: true
+        type:
+            type: string
+        count:
+            type: int
+        date:
+            type: date
+    
+# php app/console doctrine:mongodb:generate:documents DashboardManagerBundle
+# Create Document
+# php app/console doctrine:mongodb:generate:repositories DashboardManagerBundle
+# Create repository

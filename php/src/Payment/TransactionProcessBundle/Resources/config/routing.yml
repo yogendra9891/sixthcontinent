@@ -1,0 +1,7 @@
+payment_transaction_process_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: PaymentTransactionProcessBundle:Default:index }
+    
+payment_approval_distribution:
+    pattern:  /webapi/paymentapprovaldistribution
+    defaults: { _controller: PaymentTransactionProcessBundle:TransactionProcess:paymentapprovaldistribution }

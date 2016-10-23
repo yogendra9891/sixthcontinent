@@ -1,0 +1,17 @@
+affiliation_affiliation_manager_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: AffiliationAffiliationManagerBundle:Default:index }
+link_citizen:
+    pattern:  /webapi/linkedcitizen
+    defaults: { _controller: AffiliationAffiliationManagerBundle:Affiliation:linkedcitizen }
+checkreferralid:
+    pattern:  /webapi/checkreferralid
+    defaults: { _controller: AffiliationAffiliationManagerBundle:Affiliation:checkreferralid } 
+    
+setusermediafield:
+    pattern:  /webapi/setusermediafield
+    defaults: { _controller: AffiliationAffiliationManagerBundle:Affiliation:setusermediafield }
+    
+onetimeaffiliationsave:
+    pattern:  /webapi/onetimeaffiliationsave
+    defaults: { _controller: AffiliationAffiliationManagerBundle:Affiliation:onetimeaffiliationsave } 

@@ -1,0 +1,59 @@
+UserManager\Sonata\UserBundle\Document\GroupMedia:
+    repositoryClass: UserManager\Sonata\UserBundle\Repository\GroupMediaMongoRepository
+    type: document
+    collection: groupmedia
+    fields:
+        id:
+            id:  true
+        group_id:
+            type: string
+        media_name:
+            type: string
+        media_type:
+            type: string
+        media_created:
+            type: date
+        media_updated:
+            type: date
+        media_status:
+            type: int
+        created_at:
+            type: date
+        file:
+            type: file
+        path:
+            type: string
+        albumid:
+            type: string
+        is_featured:
+            type: int
+        profile_image:
+            type: int
+        image_type:
+            type: int
+        tagged_friends:
+            type: collection
+        vote_count:
+            type: int
+        vote_sum:
+            type: int
+        avg_rating:
+            type: float
+        x:
+            type: string
+        y:
+            type: string
+        rate:
+           embedded: true
+           type: many
+           targetDocument: UserManager\Sonata\UserBundle\Document\GroupMediaRating
+           cascade: all	
+        comment:
+           embedded: true
+           type: many
+           targetDocument: Media\MediaBundle\Document\AlbumMediaComment
+           
+# php app/console doctrine:mongodb:generate:documents TestFormBundle
+# Create Document
+# php app/console doctrine:mongodb:generate:repositories TestFormBundle
+# Create repository

@@ -1,0 +1,27 @@
+parameters:
+#    post_feeds.example.class: PostFeeds\PostFeedsBundle\Example
+     post_feeds.postFeeds.class: PostFeeds\PostFeedsBundle\Services\PostFeedsService
+     post_feeds.MediaFeeds.class: PostFeeds\PostFeedsBundle\Services\MediaFeedsService
+     post_feeds_rating.PostFeedsRating.class: PostFeeds\PostFeedsBundle\Services\PostFeedsRatingService
+     post_feeds_notification.notificationFeeds.class: PostFeeds\PostFeedsBundle\Services\NotificationFeedsService
+     post_feeds.socialProjects.class: PostFeeds\PostFeedsBundle\Services\SocialProjectService
+     
+services:
+#    post_feeds.example:
+#        class: %post_feeds.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
+    post_feeds.postFeeds:
+        class: %post_feeds.postFeeds.class%
+        arguments: [@doctrine.orm.entity_manager, @doctrine.odm.mongodb.document_manager, @service_container]  
+    post_feeds.MediaFeeds:
+        class: %post_feeds.MediaFeeds.class%
+        arguments: [@doctrine.orm.entity_manager, @doctrine.odm.mongodb.document_manager, @service_container] 
+    post_feeds.PostFeedsRating:
+        class: %post_feeds_rating.PostFeedsRating.class%
+        arguments: [@doctrine.orm.entity_manager, @doctrine.odm.mongodb.document_manager, @service_container]
+    post_feeds.notificationFeeds:
+        class: %post_feeds_notification.notificationFeeds.class%
+        arguments: [@doctrine.orm.entity_manager, @doctrine.odm.mongodb.document_manager, @service_container]
+    post_feeds.socialProjects:
+        class: %post_feeds.socialProjects.class%
+        arguments: [@doctrine.orm.entity_manager, @doctrine.odm.mongodb.document_manager, @service_container]

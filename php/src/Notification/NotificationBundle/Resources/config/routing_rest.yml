@@ -1,0 +1,148 @@
+#src/Notification/NotificationBundle/Resources/config/routing_rest.yml
+manager : 
+  type: rest
+  resource:     "NManagerNotificationBundle:Manager"
+  name_prefix:  api_
+
+notifications : 
+  type: rest
+  pattern:  /notifications
+  resource: "NManagerNotificationBundle:Manager"
+  name_prefix: api_
+  requirements:
+        _method:  POST
+
+getnotifications : 
+  type: rest
+  pattern:  /getnotifications
+  resource: "NManagerNotificationBundle:Manager"
+  name_prefix:  api_
+  requirements:
+        _method:  POST
+          
+deletenotifications : 
+  type: rest
+  pattern:  /deletenotifications
+  resource: "NManagerNotificationBundle:Manager"
+  name_prefix:  api_
+  requirements:
+        _method:  POST
+        
+readunreadnotifications : 
+  type: rest
+  pattern:  /readunreadnotifications
+  resource: "NManagerNotificationBundle:Manager"
+  name_prefix:  api_
+  requirements:
+        _method:  POST
+        
+searchnotifications : 
+  type: rest
+  pattern:  /searchnotifications
+  resource: "NManagerNotificationBundle:Manager"
+  name_prefix:  api_
+  requirements:
+        _method:  POST
+detailnotifications : 
+  type: rest
+  pattern:  /detailnotifications
+  resource: "NManagerNotificationBundle:Manager"
+  name_prefix:  api_
+  requirements:
+        _method:  POST
+getapprovedfriendrequests:
+   type: rest
+   pattern: /getapprovedfriendrequests
+   resource: "NManagerNotificationBundle:Notification"
+   name_prefix: api_
+getgroupresponsenotifications:
+   type: rest
+   pattern: /getgroupresponsenotifications
+   resource: "NManagerNotificationBundle:Notification"
+   name_prefix: api_
+markreadnotifications:
+   type: rest
+   pattern: /markreadnotifications
+   resource: "NManagerNotificationBundle:Notification"
+   name_prefix: api_
+getbrokerresponsenotifications:
+   type: rest
+   pattern: /getbrokerresponsenotifications
+   resource: "NManagerNotificationBundle:Notification"
+   name_prefix: api_
+getshopresponsenotifications:
+   type: rest
+   pattern: /getshopresponsenotifications
+   resource: "NManagerNotificationBundle:Notification"
+   name_prefix: api_
+getshopapprovalnotifications:
+   type: rest
+   pattern: /getshopapprovalnotifications
+   resource: "NManagerNotificationBundle:Notification"
+   name_prefix: api_
+getallnotifications:
+   type: rest
+   pattern: /getallnotifications
+   resource: "NManagerNotificationBundle:Notification"
+   name_prefix: api_  
+   
+getnotificationscounts:
+    type: rest
+    pattern: /getnotificationscounts
+    resource: "NManagerNotificationBundle:Notification"
+    name_prefix: api_
+    requirements:
+        _method:  POST
+markdeletenotifications:
+   type: rest
+   pattern: /markdeletenotifications
+   resource: "NManagerNotificationBundle:Notification"
+   name_prefix: api_
+
+getallgroupnotifications:
+   type: rest
+   pattern: /getallgroupnotifications
+   resource: "NManagerNotificationBundle:Notification"
+   name_prefix: api_  
+   requirements:
+        _method:  POST
+
+getallnotificationscounts:
+    type: rest
+    pattern: /getallnotificationscounts
+    resource: "NManagerNotificationBundle:Notification"
+    name_prefix: api_
+    requirements:
+        _method:  POST
+#register mobile devices        
+registerdevices:
+    type: rest
+    pattern: /registerdevices
+    resource: "NManagerNotificationBundle:Mobiledevice"
+    name_prefix: api_
+    requirements:
+        _method:  POST
+#unregister mobile devices
+unregisterdevices:
+    type: rest
+    pattern: /unregisterdevices
+    resource: "NManagerNotificationBundle:Mobiledevice"
+    name_prefix: api_
+    requirements:
+        _method:  POST
+
+testpushs:
+    type: rest
+    pattern: /testpushs
+    resource: "NManagerNotificationBundle:PushNotification"
+    name_prefix: api_
+    requirements:
+        _method:  POST
+
+getpushnotifications:
+   type: rest
+   pattern: /getpushnotifications
+   resource: "NManagerNotificationBundle:Notification"
+   name_prefix: api_  
+   requirements:
+        _method:  POST

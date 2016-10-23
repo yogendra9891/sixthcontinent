@@ -1,0 +1,216 @@
+citizen_income:
+    resource: "@CitizenIncomeBundle/Resources/config/routing.yml"
+    prefix:   /
+
+commercial_promotion:
+    resource: "@CommercialPromotionBundle/Resources/config/routing.yml"
+    prefix:   /
+
+wallet:
+    resource: "@WalletBundle/Resources/config/routing.yml"
+    prefix:   /
+
+transaction_system:
+    resource: "@TransactionSystemBundle/Resources/config/routing.yml"
+    prefix:   /
+
+utility_barcode:
+    resource: "@UtilityBarcodeBundle/Resources/config/routing.yml"
+    prefix:   /
+
+master_data:
+    resource: "@MasterDataBundle/Resources/config/routing.yml"
+    prefix:   /
+
+votes_votes:
+    resource: "@VotesVotesBundle/Resources/config/routing.yml"
+    prefix:   /
+
+post_feeds:
+    resource: "@PostFeedsBundle/Resources/config/routing.yml"
+    prefix:   /
+sixth_continent_sixth_continent_connect:
+    resource: "@SixthContinentConnectBundle/Resources/config/routing.yml"
+    prefix:   /
+
+utility_utility:
+    resource: "@UtilityUtilityBundle/Resources/config/routing.yml"
+    prefix:   /
+paypal_integration:
+    resource: "@PaypalIntegrationBundle/Resources/config/routing.yml"
+    prefix:   /
+
+utility_universal_notification:
+    resource: "@UtilityUniversalNotificationsBundle/Resources/config/routing.yml"
+    prefix:   /
+
+utility_applane_integration:
+    resource: "@UtilityApplaneIntegrationBundle/Resources/config/routing.yml"
+    prefix:   /
+
+utility_facebook:
+    resource: "@UtilityFacebookBundle/Resources/config/routing.yml"
+    prefix:   /
+
+applane_demo_applane:
+    resource: "@ApplaneWrapperApplaneBundle/Resources/config/routing.yml"
+    prefix:   /
+
+payment_transaction_process:
+    resource: "@PaymentTransactionProcessBundle/Resources/config/routing.yml"
+    prefix:   /
+
+utility_request_handler:
+    resource: "@UtilityRequestHandlerBundle/Resources/config/routing.yml"
+utility_curl:
+    resource: "@UtilityCurlBundle/Resources/config/routing.yml"
+    prefix:   /
+
+photo_comment:
+    resource: "@PhotoCommentBundle/Resources/config/routing.yml"
+    prefix:   /
+
+utility_rating:
+    resource: "@UtilityRatingBundle/Resources/config/routing.yml"
+    prefix:   /
+
+payment_payment_distribution:
+    resource: "@PaymentPaymentDistributionBundle/Resources/config/routing.yml"
+    prefix:   /
+
+payment_payment_process:
+    resource: "@PaymentPaymentProcessBundle/Resources/config/routing.yml"
+    prefix:   /
+
+wallet_management_wallet:
+    resource: "@WalletManagementWalletBundle/Resources/config/routing.yml"
+    prefix:   /
+
+transaction_transaction:
+    resource: "@TransactionTransactionBundle/Resources/config/routing.yml"
+
+export_management:
+    resource: "@ExportManagementBundle/Resources/config/routing.yml"
+    prefix:   /
+
+card_management:
+    resource: "@CardManagementBundle/Resources/config/routing.yml"
+    prefix:   /
+
+affiliation_affiliation_manager:
+    resource: "@AffiliationAffiliationManagerBundle/Resources/config/routing.yml"
+    prefix:   /
+
+admin_user_manager_admin_user_manager:
+    resource: "@AdminUserManagerAdminUserManagerBundle/Resources/config/routing.yml"
+    prefix:   /
+
+dashboard_manager:
+    resource: "@DashboardManagerBundle/Resources/config/routing.yml"
+    prefix:   /
+
+store_manager_post:
+    resource: "@StoreManagerPostBundle/Resources/config/routing.yml"
+    prefix:   /
+
+store_manager_store:
+    resource: "@StoreManagerStoreBundle/Resources/config/routing.yml"
+    prefix:   /
+
+acme_gift:
+    resource: "@AcmeGiftBundle/Resources/config/routing.yml"
+    prefix:   /
+
+post_post:
+    resource: "@PostPostBundle/Resources/config/routing.yml"
+    prefix:   /
+
+
+message_message:
+    resource: "@MessageMessageBundle/Resources/config/routing.yml"
+    prefix:   /
+
+n_manager_notification:
+    resource: "@NManagerNotificationBundle/Resources/config/routing.yml"
+    prefix:   /
+    
+fos_user_security:
+    resource: "@FOSUserBundle/Resources/config/routing/security.xml"
+  
+# by those lines :
+sonata_user_profile:
+    resource: "@SonataUserBundle/Resources/config/routing/sonata_profile_1.xml"
+    prefix: /profile
+    
+sonata_user_change_password:
+    resource: "@SonataUserBundle/Resources/config/routing/sonata_change_password_1.xml"
+    prefix: /profile
+  
+fos_user_register:
+    resource: "@FOSUserBundle/Resources/config/routing/registration.xml"
+    prefix: /register
+  
+fos_user_resetting:
+    resource: "@FOSUserBundle/Resources/config/routing/resetting.xml"
+    prefix: /resetting
+  
+fos_user_change_password:
+    resource: "@FOSUserBundle/Resources/config/routing/change_password.xml"
+    prefix: /profile
+
+soanata_user:
+    resource: '@SonataUserBundle/Resources/config/routing/admin_security.xml'
+    prefix: /admin
+  
+admin:
+    resource: '@SonataAdminBundle/Resources/config/routing/sonata_admin.xml'
+    prefix: /admin
+  
+_sonata_admin:
+    resource: .
+    type: sonata_admin
+    prefix: /admin
+
+fos_message:
+    resource: "@FOSMessageBundle/Resources/config/routing.xml"
+    prefix: /optional_routing_prefix
+
+fos_oauth_server_token:
+        resource: "@FOSOAuthServerBundle/Resources/config/routing/token.xml"
+
+fos_oauth_server_authorize:
+        resource: "@FOSOAuthServerBundle/Resources/config/routing/authorize.xml"
+
+rest_user_registration:
+        pattern:  /webapi/register
+        defaults: { _controller: SonataUserBundle:RestRegistration:register }
+        requirements:
+            _method:  POST
+        
+rest_forget_password:
+        pattern:  /webapi/forgetpassword
+        defaults: { _controller: SonataUserBundle:RestResetting:forgetPassword }
+        
+rest_reset_password:
+        pattern:  /webapi/reset
+        defaults: { _controller: SonataUserBundle:RestResetting:reset }
+        
+acme_oauth_server_auth_login:
+        pattern:  /oauth/v2/auth_login
+        defaults: { _controller: SonataUserBundle:Security:login }
+
+acme_oauth_server_auth_login_check:
+        pattern:  /oauth/v2/auth_login_check
+        defaults: { _controller: SonataUserBundle:Security:loginCheck }
+        
+fos_user1:
+    resource: "@UserManagerSonataUserBundle/Resources/config/routing.yml"
+    prefix:   /
+news_letter:
+    resource: "@NewsletterNewsletterBundle/Resources/config/routing.yml"
+    prefix:   /
+#REST 
+rest : 
+  type : rest 
+  resource : routing_rest.yml
+  prefix : /api

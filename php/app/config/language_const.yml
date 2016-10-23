@@ -1,0 +1,2326 @@
+# This file is auto-generated during the composer install
+parameters:
+    en:
+      #Friend Request
+      SENT_FRIEND_REQUEST_SUBJECT: New friend request
+      FRIEND_REQUEST_SENT_BODY: %s has sent you a friend request.
+      FRIEND_REQUEST_MAIL_TEXT: %s has sent you a friend request ,
+      FRIEND_REQUEST_ACCEPTED_SUBJECT: Friend request for approval
+      FRIEND_REQUEST_ACCEPTED_BODY: %s has accepted your friend request.
+      FRIEND_REQUEST_ACCEPTED_MAIL_TEXT: %s has accepted your friend request ,
+
+      #Club
+      CLUB_PUBLIC_JOIN_REQUEST_SUBJECT: Membership request to your Club
+      CLUB_PUBLIC_JOIN_REQUEST_BODY: %s asks to join to your Club "%s".
+      CLUB_PUBLIC_JOIN_REQUEST_TEXT: %s has sent you a request to join your Club "%s",
+      #public club
+      CLUB_PUBLIC_JOIN_ACCEPT_SUBJECT: Join Club Approval
+      CLUB_PUBLIC_JOIN_ACCEPT_BODY: %s has accepted the requested club "%s"
+      CLUB_PUBLIC_JOIN_ACCEPT_TEXT: %s has accepted the requested club "%s",
+      
+      CLUB_PUBLIC_JOIN_REJECT_SUBJECT: Join Club Rejection
+      CLUB_PUBLIC_JOIN_REJECT_BODY: %s has rejected the requested club "%s"
+      CLUB_PUBLIC_JOIN_REJECT_TEXT: %s has rejected the requested club "%s",
+      #private club  
+      CLUB_PRIVATE_JOIN_REQUEST_SUBJECT: Membership request to your Club
+      CLUB_PRIVATE_JOIN_REQUEST_BODY: %s asks to join to your Club "%s".
+      CLUB_PRIVATE_JOIN_REQUEST_TEXT: %s has sent you a request to join your Club "%s",
+      
+      CLUB_PRIVATE_JOIN_ACCEPT_SUBJECT: Join Club Approval
+      CLUB_PRIVATE_JOIN_ACCEPT_BODY: %s has accepted the requested club "%s"
+      CLUB_PRIVATE_JOIN_ACCEPT_TEXT: %s has accepted the requested club "%s",
+      
+      CLUB_PRIVATE_JOIN_REJECT_SUBJECT: Join Club Rejection
+      CLUB_PRIVATE_JOIN_REJECT_BODY: %s has rejected the requested club "%s"
+      CLUB_PRIVATE_JOIN_REJECT_TEXT: %s has rejected the requested club "%s",
+      
+      #store
+      STORE_JOIN_REQUEST_SUBJECT: Shop Invitation
+      STORE_JOIN_REQUEST_BODY: %s has invited you to join the shop %s
+      STORE_REJECT_REQUEST_SUBJECT: Shop Join Approval
+      STORE_REJECT_REQUEST_BODY: %s rejected the request of the shop %s
+      STORE_ACCEPT_REQUEST_SUBJECT: Shop Join Approval
+      STORE_ACCEPT_REQUEST_BODY: %s has accepted the request of shop %s
+      STORE_JOIN_REQUEST_TEXT: %s has sent you invite to follow the store %s
+      STORE_REJECT_REQUEST_TEXT: %s has declined the invitation to follow the store %s ,
+      
+      #Registration Welcome Mail  
+      REGISTRATION_WELCOME_MAIL_SUBJECT: SixthContinent Registration
+      
+      #Forget Password
+      FORGET_PASSWORD_MAIL_SUBJECT: SixthContinent ForgetPassword
+      #FORGET_PASSWORD_MAIL_BODY: Hello %s <br /> Here's the code to be able to change your password %s Click the link Click here Or copy the following link %s will be redirected on the page to change your password <br /> <br /> Hello from Sixthcontinent
+      FORGET_PASSWORD_MAIL_FOOTER_BODY: <b> SixthContinent Services, Change Password . </b> <br /> <br /> %s to change the password , <br /> <br /> Or copy the following url in your browser and follow the procedure %s
+      FORGET_PASSWORD_SUPPORT_MSG: Support SixthContinent - Italy
+      FORGET_PASSWORD_MAIL_HEADER_BODY: We have received a request to change password for your profile SixthContinent .
+ 
+      #Billing circle Email subject
+      BILLING_CIRCLE_REGISTRATION_SUBJECT: Shop Notification
+   
+      #Send notification if shop is registerd before 8 Feb and not added the credit card.
+      BILLING_CIRCLE_REGISTRATION_BEFORE_8_FEB_MAIL_BODY: You need to add the credit card for your shop. Please add the credit card, else your shop will be deactivated.
+      
+      #Send notification if shop is registerd between 8 Feb and 12 Nov and not added the credit card.
+      BILLING_CIRCLE_REGISTRATION_BETWEEN_8FEB_12NOV_NO_CC_MAIL_BODY: You need to add the credit card for your shop. Please add the credit card to get uninterrupted service, else your shop will be deactivated.
+      
+      #Send notification if shop is registerd between 8 Feb and 12 Nov and revenue is less than 200 euro and not paid the registration fee.
+      BILLING_CIRCLE_REGISTRATION_BETWEEN_8FEB_12NOV_BELOW200_NO_REG_MAIL_BODY: You need to pay registration fee for your shop. Please pay the registration fee, else your shop will be deactivated.
+      
+      #Send notification if shop is registerd between 8 Feb and 12 Nov and revenue is more than 200 euro and not paid the registration fee.
+      BILLING_CIRCLE_REGISTRATION_BETWEEN_8FEB_12NOV_ABOVE200_NO_REG_MAIL_BODY: Congratulation, Your shop has crossed 200 Euro. Please pay registration fee for your shop, else your shop will be deactivated.
+      
+      #Send notification if shop is registerd between 8 Feb and 12 Nov and revenue is more than 300 euro and not paid the registration fee.
+      BILLING_CIRCLE_REGISTRATION_BETWEEN_8FEB_12NOV_ABOVE300_NO_REG_MAIL_BODY: Congratulation, Your shop has crossed 300 Euro. It is mandatory to pay registration fee for your shop, else your shop will be deactivated.
+      
+      #Send notification if shop is registerd after 12 Nov and revenue is less than 100 euro and not paid the registration fee.
+      BILLING_CIRCLE_REGISTRATION_AFTER_12NOV_BELOW_100_NO_REG_MAIL_BODY: You need to pay registration fee for your shop. Please pay the registration fee, else your shop will be deactivated.
+      
+      #Send notification if shop is registerd after 12 Nov and revenue is more than 100 euro and not paid the registration fee.
+      BILLING_CIRCLE_REGISTRATION_AFTER_12NOV_ABOVE_100_NO_REG_MAIL_BODY: Congratulation, Your shop has crossed 100 Euro. Please pay registration fee for your shop, else your shop will be deactivated.
+      
+      #Send notification if shop is registerd after 12 Nov and revenue is more than 200 euro and not paid the registration fee.
+      BILLING_CIRCLE_REGISTRATION_AFTER_12NOV_ABOVE_200_NO_REG_MAIL_BODY: Congratulation, Your shop has crossed 200 Euro. It is mandatory to pay registration fee for your shop, else your shop will be deactivated.
+      
+      #Send notification if shop has not added the credit card.
+      BILLING_CIRCLE_NO_CC_MAIL_BODY: Please enter his credit card in order to maintain active profile of his shop on SixthContinent.
+      
+      #Send notification if shop has pending payment.
+      BILLING_CIRCLE_PENDING_PAYMENT_MAIL_BODY: Please enter his credit card in order to maintain active profile of his shop on SixthContinent .
+      
+      CLICK_HERE: Click here
+      
+      MESSAGE_DETAIL: to see the details
+      
+      VIEW_SHOP: view details
+      
+      #mail text to go to the login page
+      LOGIN_TEXT: for the login
+      
+      #mail text for forget password
+      FORGET_PASSWORD: To Forget password
+      
+      #ankit 
+      PUSH_LINK_LABEL: view details
+      SHOP_DP_SUBJECT: Discount Position
+      SHOP_DP_BODY: Congratulation, A Discount position of %s€ has been open on your shop
+      SHOP_MAIL_TEXT :
+      SHOP_DP_PUSH_SUBJECT: Discount Position
+      SHOP_DP_PUSH_BODY: Congratulation, A Discount position of %s€ has been open on your shop
+      
+      USER_DP_SUBJECT: Discount Position
+      USER_DP_BODY: Congratulations!<br> The shop %s has accepted your invitation to join in SixthContinent.
+      USER_SHOP_PERCENT : 1%
+      USER_MAIL_TEXT : The shop %s has accepted your invitation to join in SixthContinent.<br><br><b> Congratulations! </b><br><br> - You have received a prize of €%s to spend at the stores with "Press" active, look for those around you via your mobile app.<br><br>- From today, you will receive %s of all sales of the store %s users SixthContinent.
+      USER_DP_PUSH_SUBJECT: Discount Position
+      USER_DP_PUSH_BODY: Congratulation, %s has given you a discount position of %s€
+      
+      USER_SHOT_SUBJECT: Shot assignment
+      USER_SHOT_BODY: Congratulations! <br> You have received a gift from the store %s
+      SHOT_MAIL_TEXT : You have received a voucher for € %s to spend at the shop %s. 
+      USER_SHOT_PUSH_SUBJECT: Shot assignment
+      USER_SHOT_PUSH_BODY: Congratulation, A shot of %s€ has been given to you by %s
+      
+      #sunil
+      PAYMENT_SUCCESS_SUBJECT: Payment success
+      PAYMENT_SUCCESS_BODY: Payment has been sucessfully done for shop '%s'
+      PUSH_PAYMENT_SUCCESS_TITLE: Payment success
+      PUSH_PAYMENT_SUCCESS_BODY: Payment has been sucessfully done for '%s'
+      
+      SHOP_ACTIVE_SUBJECT: Activation Profile Shop
+      SHOP_ACTIVE_BODY: The shop '%s' has been successfully activated.
+      PUSH_SHOP_ACTIVE_TITLE: Activation Profile Shop
+      PUSH_SHOP_ACTIVE_BODY: The shop '%s' has been successfully activated.
+      
+      SHOP_INACTIVE_SUBJECT: "Warning: disabled services"
+      SHOP_INACTIVE_BODY: We regret to inform you that the services to the store %s were suspended for an administrative problem.
+      SHOP_INACTIVE_LINK:  Services to the store %s were suspended for an administrative problem,
+      SHOP_INACTIVE_CLICK_HERE: %s to see the details and reactivate the services.
+      
+      PUSH_SHOP_INACTIVE_TITLE: "Warning: disabled services"
+      PUSH_SHOP_INACTIVE_BODY: We regret to inform you that the services to the store %s were suspended for an administrative problem.
+      
+      PAYMENT_FAILURE_SUBJECT: There is a problem with your payment
+      PAYMENT_FAILURE_BODY: There is a problem with your payment
+      PAYMENT_FAILURE_LINK:  There is a problem with your payment<br><br><b>Because the payment was declined ?</b><br>Payments can be canceled for a number of reasons. Here are the most common:<br>1. Do not have enough credit on the card or account. Check the availability of sufficient credit and try again.<br>2. The data entered is incorrect. Verify that the data is correct and try again.<br>3. This payment method is currently not available.
+      PAYMENT_FAILURE_CLICK_HERE: %s to see the details and make the payment.
+      
+      PUSH_PAYMENT_FAILURE_TITLE: There is a problem with your payment
+      PUSH_PAYMENT_FAILURE_BODY: There is a problem with your payment
+      
+      PAYMENT_NOTIFICATION_SUBJECT: Pending payment
+      PAYMENT_NOTIFICATION_BODY: Congratulations! You <br> sales of over € 200 to Citizens SixthContinent.
+      PAYMENT_NOTIFICATION_LINK: Your store %s <br> made sales of over € 200 to Citizens SixthContinent. <br> To continue selling through SixthContinent <br> make payment of € 99 (+ VAT), once and for always, Buy, so you can continue to use the services SixthContinent to increase your profits.
+      PUSH_PAYMENT_NOTIFICATION_TITLE: Pending payment
+      PUSH_PAYMENT_NOTIFICATION_BODY: We regret to inform you that you need to pay your pending payment for '%s' shop
+      
+      MESSAGE_SUBJECT: You have received a new private message 
+      MESSAGE_BODY:  %s, has sent you a private message
+      MESSAGE_LINK:  %s has sent you a private message,
+      MESSAGE_CLICK_HERE: %s to read it.
+      
+      GROUP_MESSAGE_SUBJECT: You have received a group conversation. 
+      GROUP_MESSAGE_BODY:  %s added you in a group conversation!
+      GROUP_MESSAGE_LINK:  %s added you in a group conversation!
+      GROUP_MESSAGE_CLICK_HERE: %s  to read the conversation.
+      
+      AFFILIATION_INVITATION_SUBJECT: %s invited you on SixthContinent
+      AFFILIATION_INVITATION_BODY:  %s invited you on SixthContinent
+      AFFILIATION_INVITATION_LINK:  Stay Connected with Friends, Colleagues, Shops and Businesses and Get Citizen Income every day spendable for your purchases.
+      
+      AFFILIATION_INVITATION_SUBJECT_SHOP: %s invited your shop on SixthContinent
+      AFFILIATION_INVITATION_BODY_SHOP:  You Cash 100%, your Clients pay 50%
+      AFFILIATION_INVITATION_TEXT_SHOP_1A:  Double
+      AFFILIATION_INVITATION_TEXT_SHOP_1B:  your Sales
+      AFFILIATION_INVITATION_TEXT_SHOP_2A:  SixthContinent pays up to 50%
+      AFFILIATION_INVITATION_TEXT_SHOP_2B:  of all Purchases of your Customers
+      AFFILIATION_INVITATION_TEXT_SHOP_3A:  For Shops in Italy
+      AFFILIATION_INVITATION_TEXT_SHOP_3B:  the Registration is Free until July 31
+      AFFILIATION_INVITATION_LINK_MORE_SHOP: Click to read more
+
+      
+      STORE_CONTRACT_BODY: shop contract description in english goes here.
+      STORE_CONTRACT_SUBJECT: shop contract subject in english goes here.
+      
+
+      SHOP_AFFILIATION_ACTIVE_SUBJECT: Activation Profile Shop
+      SHOP_AFFILIATION_ACTIVE_BODY: CONGRATULATIONS, your Shop "%s" has been activated successfully.
+      SHOP_AFFILIATION_ACTIVE_TEXT: Welcome, your Shop "%s" has been activated successfully. Attached you can find yor contract. Download and Save it.<br><br><ul><li>Log into your shop, complete the profile, add photos, information, and active the commercial promotions to start selling. %s <br><br></li><li>Download the free App "SixthContinent Business" and start now to sell. %s version, %s version. <br> <br> </li><li>Watch the Tutorial for the best use of the tools that help your business. %s</li></ul>
+      SHOP_AFFILIATION_ACTIVE_LINK_TEXT: to view your Shop.
+
+      REGISTRATION_WELCOME_MAIL_BODY_CENTER: Your registration SixthContinent was successful , Please activate your account by clicking on the below link.<br /> <br /> %s to start .
+      REGISTRATION_WELCOME_MAIL_BODY: %s , Welcome SixthContinent . <br /> Your registration has been successful.
+
+      #lokesh tagging
+      YOU_GOT_TAGGED_IN_POST: %s tagged you in a post
+      FRIEND_TAGGING_IN_POST_MAIL_TEXT: %s tagged you in a post,
+      FRIEND_TAGGING_IN_POST_BODY: %s tagged you in a post
+      
+      YOU_GOT_TAGGED_IN_PHOTO: %s tagged you in a photo
+      FRIEND_TAGGING_IN_PHOTO_MAIL_TEXT: %s tagged you in a photo
+      FRIEND_TAGGING_IN_PHOTO_BODY: %s tagged you in a photo
+      
+      POST_COMMENT_SUBJECT: %s has commented on your post
+      POST_COMMENT_BODY:  %s has commented on your post
+      POST_COMMENT_LINK:  %s has commented on your post,
+      POST_COMMENT_CLICK_HERE: %s to read it.
+      
+      STORE_COMMENT_SUBJECT: Also %s commented on a post you have commented on
+      STORE_COMMENT_BODY:  Also %s commented on a post you have commented on
+      STORE_COMMENT_LINK:  Also %s commented on a post you have commented on,
+      STORE_COMMENT_CLICK_HERE: %s to read it.
+      
+      CLUB_COMMENT_SUBJECT: Also %s commented on a post you have commented on
+      CLUB_COMMENT_BODY:  Also %s commented on a post you have commented on
+      CLUB_COMMENT_LINK:  Also %s commented on a post you have commented on,
+      CLUB_COMMENT_CLICK_HERE: %s to read it.
+            
+      DASHBOARD_WALL_POST_COMMENT_SUBJECT: %s commented on a post on your wall
+      DASHBOARD_WALL_POST_COMMENT_BODY:  %s commented on a post on your wall
+      DASHBOARD_WALL_POST_COMMENT_LINK:  %s commented on a post on your wall,
+      DASHBOARD_WALL_POST_COMMENT_CLICK_HERE: %s to read it.
+      
+      DASHBOARD_COMMENT_SUBJECT: Also %s commented on a post you have commented on
+      DASHBOARD_COMMENT_BODY:  Also %s commented on a post you have commented on
+      DASHBOARD_COMMENT_LINK:  Also %s commented on a post you have commented on,
+      DASHBOARD_COMMENT_CLICK_HERE: %s to read it.
+      
+      DASHBOARD_TAGGED_FRIENDS_COMMENT_SUBJECT: %s commented on a post that you're tagged in
+      DASHBOARD_TAGGED_FRIENDS_COMMENT_BODY:  %s commented on a post that you're tagged in
+      DASHBOARD_TAGGED_FRIENDS_COMMENT_LINK:  %s commented on a post that you're tagged in,
+      DASHBOARD_TAGGED_FRIENDS_COMMENT_CLICK_HERE: %s to read it.
+      #dashboard post rate
+      DASHBOARD_POST_RATE_SUBJECT: %s voted your post!
+      DASHBOARD_POST_RATE_BODY: %s voted your post!
+      DASHBOARD_POST_RATE_TEXT: %s has assigned to your post a rating of %s out of 5 stars.
+      
+      #store album photo rate
+      STORE_ALBUM_PHOTO_RATE_SUBJECT:   %s has voted your store photo!
+      STORE_ALBUM_PHOTO_RATE_BODY:  %s voted your store photo!
+      STORE_ALBUM_PHOTO_RATE_TEXT:    %s has assigned to your store photo a rating of %s out of 5 stars.
+      
+      #store album  rate
+      STORE_ALBUM_RATE_SUBJECT:   %s has voted your store album!
+      STORE_ALBUM_RATE_BODY:  %s voted your store album!
+      STORE_ALBUM_RATE_TEXT:    %s has assigned to your store album a rating of %s out of 5 stars.
+      
+      #store comment  rate
+      STORE_COMMENT_RATE_SUBJECT:   %s has voted your store comment!
+      STORE_COMMENT_RATE_BODY:  %s voted your store comment!
+      STORE_COMMENT_RATE_TEXT:    %s has assigned to your store comment a rating of %s out of 5 stars.
+      
+      #store post  rate
+      STORE_POST_RATE_SUBJECT:   %s has voted your store post!
+      STORE_POST_RATE_BODY:  %s voted your store post!
+      STORE_POST_RATE_TEXT:    %s has assigned to your store post a rating of %s out of 5 stars.
+
+      #dashboard post notification
+      DASHBOARD_POST_SUBJECT: %s has posted on your wall
+      DASHBOARD_POST_BODY:  %s has posted on your wall
+      DASHBOARD_POST_LINK:  %s has posted on your wall,
+      DASHBOARD_POST_CLICK_HERE: %s to read it.
+      
+      #club post notification
+      CLUB_POST_SUBJECT: %s has posted on your Club
+      CLUB_POST_BODY:  %s has posted on your Club
+      CLUB_POST_LINK:  %s has posted on your Club,
+      CLUB_POST_CLICK_HERE: %s to read it.
+      
+      #store post notification
+      STORE_POST_SUBJECT: %s has posted on your Shop Page
+      STORE_POST_BODY:  %s has posted on your Shop Page
+      STORE_POST_LINK:  %s has posted on your Shop Page,
+      STORE_POST_CLICK_HERE: %s to read it.
+      
+      #dashboard post comment rate
+      DASHBOARD_POST_COMMENT_RATE_SUBJECT: %s voted a comment!
+      DASHBOARD_POST_COMMENT_RATE_BODY: %s voted a comment!.
+      DASHBOARD_POST_COMMENT_RATE_TEXT: %s has assigned to a comment of the rating %s stars out of %s,
+      
+      #user album rate
+      USER_ALBUM_RATE_SUBJECT: %s has rated your album
+      USER_ALBUM_RATE_BODY: %s has rated your album.
+      USER_ALBUM_RATE_TEXT: %s has assigned to your album a rating of %s stars out of 5.
+       
+      #user album photo rate
+      USER_ALBUM_PHOTO_RATE_SUBJECT: %s has rated your photo.
+      USER_ALBUM_PHOTO_RATE_BODY: %s has rated your photo.
+      USER_ALBUM_PHOTO_RATE_TEXT: %s has assigned to your photo of the rating %s stars out of 5,
+      
+      #club post rate
+      CLUB_POST_RATE_SUBJECT: %s has voted your post
+      CLUB_POST_RATE_BODY: %s has voted your post!
+      CLUB_POST_RATE_TEXT: %s has assigned to your post of the rating %s stars out of 5.
+      
+      #club post comment rate
+      CLUB_POST_COMMENT_RATE_SUBJECT: %s has voted a comment!
+      CLUB_POST_COMMENT_RATE_BODY: %s has voted a comment.
+      CLUB_POST_COMMENT_RATE_TEXT: %s has assigned to a comment of the rating %s stars out of 5,
+      
+      #club album rate
+      CLUB_ALBUM_RATE_SUBJECT: %s has voted your album
+      CLUB_ALBUM_RATE_BODY: %s has voted your album.
+      CLUB_ALBUM_RATE_TEXT: %s has assigned to your album a rating of %s stars out of 5.
+       
+      #club album photo rate
+      CLUB_ALBUM_PHOTO_RATE_SUBJECT: %s has rated your photo
+      CLUB_ALBUM_PHOTO_RATE_BODY: %s has rated your photo.
+      CLUB_ALBUM_PHOTO_RATE_TEXT: %s has assigned to your photo of the rating %s stars out of 5,
+      
+      #club rate
+      CLUB_RATE_SUBJECT: %s has voted your club!
+      CLUB_RATE_BODY: %s has voted your club "%s"
+      CLUB_RATE_TEXT: %s has assigned to your club "%s" a rating of %s stars out of 5.
+      
+      CLUB_INVITE_REQUEST_SUBJECT: Invite to become a Club Member
+      CLUB_INVITE_REQUEST_BODY: %s has invited you to become a Member of the Club "%s".
+      CLUB_INVITE_REQUEST_TEXT: %s has invited you to become a Member of the Club "%s",
+      
+      #transaction email text start
+      TRANSACTION_INITIATE: transaction request
+      TRANSACTION_INITIATE_MAIL_TEXT: %s has initiate trasaction on "%s" shop 
+      TRANSACTION_INITIATE_BODY: %s has initiate trasaction on  %s shop 
+      
+      TRANSACTION_SUCCESS_STATUS: transaction status
+      TRANSACTION_SUCCESS_STATUS_MAIL_TEXT: Transaction request has been success for "%s" shop 
+      TRANSACTION_SUCCESS_STATUS_BODY: Transaction request has been success for %s shop 
+      
+      TRANSACTION_CANCEL_STATUS: transaction status
+      TRANSACTION_CANCEL_STATUS_MAIL_TEXT: Transaction request has been cancel for "%s" shop 
+      TRANSACTION_CANCEL_STATUS_BODY: Transaction request has been cancel for %s shop 
+      
+      TRANSACTION_CUSTOMER_FEEDBACK: transaction feedback
+      TRANSACTION_CUSTOMER_FEEDBACK_MAIL_TEXT: %s has given %s out of 5 vote for the transaction on "%s" shop 
+      TRANSACTION_CUSTOMER_FEEDBACK_BODY: %s has given %s out of 5 vote for the transaction on "%s" shop 
+      TRANSACTION_CUSTOMER_FEEDBACK_PUSH_BODY: Transaction Concluded and Rate Assigned by %s
+      
+      DISTRIBUTION_FAILED_SUBJECT: Distribution cron failed
+      DISTRIBUTION_FAILED_SUBJECT_MAIL_TEXT: Citizen income distribution cron job is failed for transaction id "%s" on shop "%s"
+      DISTRIBUTION_FAILED_SUBJECT_BODY: Citizen income distribution cron job is failed 
+      #transaction email text end
+      
+      CLICK_ACCEPT_INVITATION_LINK: click here to accept invitation
+      CLICK_REJECT_INVITATION_LINK: click here to reject invitation
+      
+      # tagging in comment email text
+      USER_TAGGED_IN_COMMENT_SUBJECT: %s tagged you in a comment
+      USER_TAGGED_IN_COMMENT_TEXT: %s tagged you in a comment,
+      USER_TAGGED_IN_COMMENT_BODY: %s tagged you in a comment!
+      
+      CLUB_TAGGED_IN_COMMENT_SUBJECT: %s tagged your club in a comment
+      CLUB_TAGGED_IN_COMMENT_TEXT: %s tagged your club %s in a comment,
+      CLUB_TAGGED_IN_COMMENT_BODY: %s tagged your club in a comment!
+      
+      SHOP_TAGGED_IN_COMMENT_SUBJECT: %s tagged your shop in a comment
+      SHOP_TAGGED_IN_COMMENT_TEXT: %s tagged your shop %s in a comment,
+      SHOP_TAGGED_IN_COMMENT_BODY: %s tagged your shop in a comment!
+      
+      TAGGED_IN_SHOP_POST_SUBJECT: %s tagged you in a SHOP Post
+      TAGGED_IN_SHOP_POST_TEXT: %s tagged you in a SHOP Post of "%s",
+      TAGGED_IN_SHOP_POST_BODY: %s tagged you in a SHOP Post
+      
+      TAGGED_IN_SHOP_CUSTOMER_POST_SUBJECT: %s tagged you in a Customer Post
+      TAGGED_IN_SHOP_CUSTOMER_POST_TEXT: %s tagged you in a Customer Post on SHOP Page of "%s",
+      TAGGED_IN_SHOP_CUSTOMER_POST_BODY: %s tagged you in a Customer Post
+      
+      NEW_FEATURE_OPPORTUNITES_SUBJECT: SixthContinent Informs New Features and Opportunities for Dealers SixthContinent
+      
+      PUSH_TAGGED_IN_SHOP_CUSTOMER_POST: %s tagged you in a Customer Post
+      PUSH_TAGGED_IN_SHOP_POST: %s tagged you in a SHOP Post
+      PUSH_DASHBOARD_POST: %s has posted on your wall
+      PUSH_CLUB_POST: %s has posted on your Club
+      PUSH_STORE_POST: %s has posted on your Shop Page
+      PUSH_DASHBOARD_POST_COMMENT: %s commented on your post
+      PUSH_CLUB_POST_COMMENT: %s commented on your post
+      PUSH_STORE_POST_COMMENT: %s commented on your post
+      PUSH_DASHBOARD_COMMENT_ON_COMMENTED: Also %s commented on a post you have commented on
+      PUSH_CLUB_COMMENT_ON_COMMENTED: Also %s commented on a post you have commented on
+      PUSH_STORE_COMMENT_ON_COMMENTED: Also %s commented on a post you have commented on
+      PUSH_COMMENT_DASHBOARD_WALL: %s commented on a post on your wall
+      PUSH_DASHBOARD_COMMENT_ON_TAGGED_POST: %s commented on a post that you're tagged in
+      PUSH_STORE_COMMENT_ON_TAGGED_POST: %s commented on a post that you're tagged in
+      PUSH_USER_TAGGED_IN_DASHBOARD_COMMENT: %s tagged you in a comment
+      PUSH_USER_TAGGED_IN_CLUB_COMMENT: %s tagged you in a comment
+      PUSH_USER_TAGGED_IN_SHOP_COMMENT: %s tagged you in a comment
+      PUSH_CLUB_TAGGED_IN_DASHBOARD_COMMENT: %s tagged your club in a comment
+      PUSH_CLUB_TAGGED_IN_CLUB_COMMENT: %s tagged your club in a comment
+      PUSH_CLUB_TAGGED_IN_SHOP_COMMENT: %s tagged your club in a comment
+      PUSH_SHOP_TAGGED_IN_DASHBOARD_COMMENT: %s tagged your shop in a comment
+      PUSH_SHOP_TAGGED_IN_CLUB_COMMENT: %s tagged your shop in a comment
+      PUSH_SHOP_TAGGED_IN_SHOP_COMMENT: %s tagged your shop in a comment
+      PUSH_TAGGED_IN_DASHBOARD_POST: %s tagged you in a post
+      PUSH_DASHBOARD_POST_RATE: %s voted your post
+      PUSH_DASHBOARD_COMMENT_RATE: %s voted your comment 
+      PUSH_USER_ALBUM_RATE: %s has rated your album
+      PUSH_USER_PHOTO_RATE: %s has rated your photo
+      PUSH_STORE_POST_RATE: %s has voted a post on your Shop Page
+      PUSH_STORE_POST_COMMENT_RATE: %s has voted a your comment on your Shop Page
+      PUSH_STORE_ALBUM_RATE: %s has voted an album of your Shop
+      PUSH_STORE_MEDIA_RATE: %s has voted a photo of your Shop
+      PUSH_CLUB_RATE: %s has voted your club "%s"
+      PUSH_CLUB_POST_RATE: %s has voted your post
+      PUSH_CLUB_POST_COMMENT_RATE: %s has voted a your comment
+      PUSH_CLUB_ALBUM_RATE: %s has voted your album
+      PUSH_CLUB_ALBUM_PHOTO_RATE: %s has rated your photo
+      PUSH_TAGGED_IN_PHOTO: %s tagged you in a photo
+      PUSH_ACCEPTED_FRIEND_REQUEST: %s has accepted your friend request
+      PUSH_STORE_REJECT_REQUEST: %s rejected the request of the shop "%s"
+      PUSH_STORE_ACCEPT_REQUEST: %s has accepted the request of shop "%s"
+      PUSH_TXN_CUST_PENDING-TXN: New transaction by customer "%s"
+      PUSH_TXN_SHOP_CANCEL-TXN: Transaction cancelled by SHOP "%s"
+      PUSH_TXN_CITIZEN_CANCEL-TXN: Transaction cancelled by citizen %s of the SHOP "%s"
+      PUSH_TXN_SHOP_APPROVE-TXN: Transaction approved by SHOP "%s"
+      PUSH_TXN_CUST_RATING-TXN: Transaction Feedback by customer "%s"
+      PUSH_TXN_CUST_SHARE-TXN: commented and rated your Shop
+      PUSH_USER_TAGGED_IN_STORE_ALBUM_MEDIA_COMMENT: %s tagged you in a photo comment
+      PUSH_CLUB_TAGGED_IN_STORE_ALBUM_MEDIA_COMMENT: %s tagged your club in a photo comment
+      PUSH_SHOP_TAGGED_IN_STORE_ALBUM_MEDIA_COMMENT: %s tagged your shop in a comment
+      PUSH_USER_TAGGED_IN_USER_ALBUM_MEDIA_COMMENT: %s tagged you in a photo comment
+      PUSH_CLUB_TAGGED_IN_USER_ALBUM_MEDIA_COMMENT: %s tagged your club in a photo comment
+      PUSH_SHOP_TAGGED_IN_USER_ALBUM_MEDIA_COMMENT: %s tagged your shop in a comment
+      PUSH_USER_TAGGED_IN_CLUB_ALBUM_MEDIA_COMMENT: %s tagged you in a photo comment
+      PUSH_CLUB_TAGGED_IN_CLUB_ALBUM_MEDIA_COMMENT: %s tagged your club in a photo comment
+      PUSH_SHOP_TAGGED_IN_CLUB_ALBUM_MEDIA_COMMENT: %s tagged your shop in a comment
+      PUSH_USER_TAGGED_IN_CLUB_ALBUM_COMMENT: %s tagged you in a Comment on an Album of your Club %s
+      PUSH_CLUB_TAGGED_IN_CLUB_ALBUM_COMMENT: %s tagged your club in a Comment on an Album of your Club %s
+      PUSH_SHOP_TAGGED_IN_CLUB_ALBUM_COMMENT: %s tagged your shop in a Comment on an Album of your Club %s
+      PUSH_USER_TAGGED_IN_USER_ALBUM_COMMENT: %s tagged you in a Comment on your Album %s
+      PUSH_CLUB_TAGGED_IN_USER_ALBUM_COMMENT: %s tagged your club in a Comment on your Album %s
+      PUSH_SHOP_TAGGED_IN_USER_ALBUM_COMMENT: %s tagged your shop in a Comment on your Album %s
+      PUSH_USER_TAGGED_IN_STORE_ALBUM_COMMENT: %s tagged you in a Comment on an Album of your Shop %s
+      PUSH_CLUB_TAGGED_IN_STORE_ALBUM_COMMENT: %s tagged your club in a Comment on an Album of your Shop %s
+      PUSH_SHOP_TAGGED_IN_STORE_ALBUM_COMMENT: %s tagged your shop in a Comment on an Album of your Shop %s
+      
+      #Transaction rating 
+      TXN_RATING_MAIL_SUB: Transaction Concluded and Rate Assigned
+      TXN_RATING_MAIL_TEXT: Transaction Concluded and Rate Assigned by %s
+      TXN_RATING_MAIL_BODY: The transaction with customer %s was completed and has assigned a rating to his experience.
+      TXN_RATING_LINK_TEXT: to see the details of the transaction.
+      
+      #Transaction share 
+      TXN_SHARE_MAIL_SUB: Comment and rate on your shop
+      TXN_SHARE_MAIL_TEXT: Comment and rate on your shop
+      TXN_SHARE_MAIL_BODY: %s,Your Customer %s has shared a Comment on you Page and has rated his experience in your Shop. 
+      TXN_SHARE_LINK_TEXT: to see his comment on your Page
+      RESEND_MAIL_BODY: Activate your account sixthcontinent.
+      RESEND_MAIL_SUBJECT: account activation
+      RESEND_MAIL_BODY_CENTER: Please activate your account by clicking on the link below. <br /> <br /> %s to start
+      
+      #daily citizen income gain
+      TXN_CUST_CI_GAIN_PUSH_BODY: You Received %s€ of Citizenship Income
+      TXN_CI_GAIN_MAIL_SUB: You received Citizenship Income SixthContinent
+      TXN_CI_GAIN_LINK_TEXT: to view details.
+      TXN_CI_GAIN_MAIL_BODY: You received %s€ of Citizenship Income SixthContinent.
+      TXN_CI_GAIN_MAIL_TEXT: You received Citizenship Income SixthContinent
+      
+      PUSH_FRIEND_REQUEST: New Friend Request
+      REG_FEE_NOT_PAID_SUBJECT: Attention, payment is not been successful. 
+      REG_FEE_NOT_PAID_MAIL_BODY_HEADER: Attention, payment is not been successful for shop %s. Notice of Temporary stop service SixthContinent
+      REG_FEE_NOT_PAID_MAIL_BODY: <b>Dear User</b>,<br />Unfortunately the payment to SixthContinent not been successful and you can not proceed with the payment method that you provided.<br /><br />We invite you to do the following<br />a) Charge your credit card, or <br />b) Access to your Account in the Wallet section and add or replace a method of payment.<br />c) Make the "pending payments" highlighted. <br /><br />If you will not be made the "pending payments" the services SixthContinent for your shop %s will be locked in %s days.<br /><br />Click here to access your Shop %s.<br/>Thank you for choosing SixthContinent.
+      PENDING_PAYMENT_NOT_PAID_SUBJECT: Attention, payment is not been successful.
+      PENDING_PAYMENT_NOT_PAID_MAIL_BODY_HEADER: Attention, payment is not been successful for shop %s. Notice of Temporary stop service SixthContinent
+      PENDING_PAYMENT_PAID_MAIL_BODY: Dear User,<br />Unfortunately the payment to SixthContinent not been successful and you can not proceed with the payment method that you provided.<br /><br />We invite you to do the following<br />a) Charge your credit card, or <br />b) Access to your Account in the Wallet section and add or replace a method of payment.<br />c) Make the "pending payments" highlighted. <br /><br />If you will not be made the "pending payments" the services SixthContinent for your shop %s will be locked in %s days.<br /><br />Click here to access your Shop %s.<br/>Thank you for choosing SixthContinent.
+      BLOCK_SHOP_SUBJECT: Payment failed - Suspension of Service. 
+      BLOCK_SHOP_MAIL_BODY_HEADER: Payment failed - Suspension of Service.
+      BLOCK_SHOP_MAIL_BODY: Dear SHOP %s<br />Unfortunately payment to SixthContinent not been successful during the previous seven days and you can not proceed with the payment method that you provided.<br /><br />Services SixthContinent for your SHOP %s are temporarily suspended and will not be able to transfer funds to the proper data update, furthermore your store will not be visible to Citizens SixthContinent. To go on, please do the following<br />• Charge your credit card or<br />• Access to your Account section Portfolio.<br />• Add or replace a method of payment.<br />Maintains "pending payments" highlighted.<br /><br />Click here to access your Shop %s.<br /><br />Thank you for choosing SixthContinent.
+      
+      STORE_TAGGED_FRIENDS_COMMENT_SUBJECT: %s commented on a post that you're tagged in
+      STORE_TAGGED_FRIENDS_COMMENT_BODY:  %s commented on a post that you're tagged in
+      STORE_TAGGED_FRIENDS_COMMENT_LINK:  %s commented on a post that you're tagged in,
+      STORE_TAGGED_FRIENDS_COMMENT_CLICK_HERE: %s to read it.
+      
+      PUSH_CREATED_SHOPPING_CARD_UPTO_100: Commercial Campaign Shopping Card UpTo100% activated successfully
+      CREATED_SHOPPING_CARD_UPTO_100_SUBJECT: Commercial Campaign Shopping Card UpTo100% successfully activated
+      CREATED_SHOPPING_CARD_UPTO_100_BODY: Commercial Campaign Shopping Card UpTo100% successfully activated
+      CREATED_SHOPPING_CARD_UPTO_100_TEXT: Congratulations, your Commercial Campaign Shopping Card UpTo100% was successfully activated.<br> Your promotion will reach the Clients more interested in your Products and Services and you can follow the progress of your sales in real time.
+      
+      SHOPOWNER_SUBSCRIPTION_CARD_UPTO_100_SUBJECT: Payment successfully, starts to sell your Shopping Card
+      SHOPOWNER_SUBSCRIPTION_CARD_UPTO_100_BODY: Payment successfully, starts to sell your Shopping Card.
+      SHOPOWNER_SUBSCRIPTION_CARD_UPTO_100_TEXT: The payment to access the Section Commercial Campaigns Shopping Card UpTo 100% is been successful.
+      SHOPOWNER_SUBSCRIPTION_CARD_UPTO_100_LINK: %s to create your campaign and start selling Shopping Card.
+      PUSH_SUBSCRIPTION_39EURO_SHOPPING_CARD: Payment been successful.
+      
+      PUSH_BUYS_SHOPPING_CARD: Shopping Card UpTo100%s of Shop %s worth %s successfully purchased.
+      PUSH_SELLS_SHOPPING_CARD: You sold a Shopping Card UpTo 100%s of your Shop %s worth %s.
+      
+      BUYS_SHOPPING_CARD_UPTO_100_SUBJECT: Shopping Card UpTo100% purchased with success.
+      BUYS_SHOPPING_CARD_UPTO_100_BODY: Shopping Card UpTo100% purchased with success.
+      BUYS_SHOPPING_CARD_UPTO_100_TEXT: Congratulations, you have successfully purchased the Shopping Card UpTo100%s of Shop %s, worth %s. 
+      BUYS_SHOPPING_CARD_UPTO_100_LINK_SHOP: %s to access the Page of the Shop %s.
+      BUYS_SHOPPING_CARD_UPTO_100_LINK_WALLET: %s to access to your Wallet and see your Shopping Cards.
+      SELLS_SHOPPING_CARD_UPTO_100_SUBJECT: Congratulations, you've sold a Shopping Card
+      SELLS_SHOPPING_CARD_UPTO_100_BODY: Congratulations, you've sold a Shopping Card.
+      SELLS_SHOPPING_CARD_UPTO_100_TEXT: Congratulations, you've sold a Shopping Card UpTo100%s of your Shop %s worth %s.
+      SELLS_SHOPPING_CARD_UPTO_100_LINK_REPORT: %s to see your sales in real time.
+      SELLS_SHOPPING_CARD_UPTO_100_LINK_ACCEPT: %s to accept payment by SixthContinent.
+      
+      #album comment
+      USER_ALBUM_ON_COMMENTED_SUBJECT: Also %s commented on a album you have commented on
+      USER_ALBUM_ON_COMMENTED_BODY:  Also %s commented on a album you have commented on
+      USER_ALBUM_ON_COMMENTED_LINK:  Also %s commented on a album you have commented on,
+      USER_ALBUM_ON_COMMENTED_CLICK_HERE: %s to read it.
+      USER_ALBUM_COMMENT_SUBJECT: %s commented on your Album %s
+      USER_ALBUM_COMMENT_BODY:  %s commented on your Album %s
+      USER_ALBUM_COMMENT_LINK:  %s commented on your Album %s,
+      USER_ALBUM_COMMENT_CLICK_HERE: %s to read it and rate it.
+
+      #store album comment
+      STORE_ALBUM_ON_COMMENTED_SUBJECT: Also %s commented on a album you have commented on
+      STORE_ALBUM_ON_COMMENTED_BODY:  Also %s commented on a album you have commented on
+      STORE_ALBUM_ON_COMMENTED_LINK:  Also %s commented on a album you have commented on,
+      STORE_ALBUM_ON_COMMENTED_CLICK_HERE: %s to read it.
+      STORE_ALBUM_COMMENT_SUBJECT: %s commented on an Album of your Shop %s
+      STORE_ALBUM_COMMENT_BODY:  %s commented on an Album of your Shop %s
+      STORE_ALBUM_COMMENT_LINK:  %s commented on an Album of your Shop %s,
+      STORE_ALBUM_COMMENT_CLICK_HERE: %s to read it and rate it.
+      
+      #club album comment
+      CLUB_ALBUM_ON_COMMENTED_SUBJECT: Also %s commented on a album you have commented on
+      CLUB_ALBUM_ON_COMMENTED_BODY:  Also %s commented on a album you have commented on
+      CLUB_ALBUM_ON_COMMENTED_LINK:  Also %s commented on a album you have commented on,
+      CLUB_ALBUM_ON_COMMENTED_CLICK_HERE: %s to read it.
+      CLUB_ALBUM_COMMENT_SUBJECT: %s commented on an Album of your Club %s
+      CLUB_ALBUM_COMMENT_BODY:  %s commented on an Album of your Club %s
+      CLUB_ALBUM_COMMENT_LINK:  %s commented on an Album of your Club %s,
+      CLUB_ALBUM_COMMENT_CLICK_HERE: %s to read it and rate it.
+      
+      #user album comment rate
+      USER_ALBUM_COMMENT_RATE_SUBJECT: %s voted your Comment on your Album %s
+      USER_ALBUM_COMMENT_RATE_BODY: %s voted your Comment on your Album %s
+      USER_ALBUM_COMMENT_RATE_TEXT: %s has assigned to your Comment on your Album %s a rating of %s out of 5 stars.
+
+      #store album comment rate
+      STORE_ALBUM_COMMENT_RATE_SUBJECT: %s voted your Comment on an Album of your Shop %s
+      STORE_ALBUM_COMMENT_RATE_BODY: %s voted your Comment on an Album of your Shop %s
+      STORE_ALBUM_COMMENT_RATE_TEXT: %s has assigned to your Comment on an Album of your Shop %s a rating of %s out of 5 stars.
+      STORE_ALBUM_MEDIA_COMMENT_RATE_SUBJECT: %s has rated your comment
+      STORE_ALBUM_MEDIA_COMMENT_RATE_BODY: %s has rated your comment
+      STORE_ALBUM_MEDIA_COMMENT_RATE_TEXT: %s has rated your comment %s out of 5 stars.
+      #club album comment rate
+      CLUB_ALBUM_COMMENT_RATE_SUBJECT: %s voted your Comment on an Album of your Club %s
+      CLUB_ALBUM_COMMENT_RATE_BODY: %s voted your Comment on an Album of your Club %s.
+      CLUB_ALBUM_COMMENT_RATE_TEXT: %s has assigned to your Comment commented on an Album of your Club %s a rating of %s out of 5 stars.
+      #user album media comment
+      USER_ALBUM_MEDIA_COMMENTED_SUBJECT: %s commented on an element of your Album %s
+      USER_ALBUM_MEDIA_COMMENTED_BODY:  %s commented on an element of your Album %s
+      USER_ALBUM_MEDIA_COMMENTED_LINK:  %s commented on an element of your Album %s,
+      USER_ALBUM_MEDIA_COMMENTED_CLICK_HERE: %s to read it and rate it.
+      #user album comment rate
+      USER_ALBUM_MEDIA_COMMENT_RATE_SUBJECT:  %s voted your Comment into the Album 
+      USER_ALBUM_MEDIA_COMMENT_RATE_BODY: %s voted your Comment into the Album %s.
+      USER_ALBUM_MEDIA_COMMENT_RATE_TEXT: %s has assigned to to your Comment into the Album %s a rating of 4 out of 5 stars,
+      
+      REFERRAL_AMOUNT_SHOP_AFFILIATION_SUBJECT: Affiliation Shop
+      REFERRAL_AMOUNT_SHOP_AFFILIATION_BODY: Affiliation Shop
+      REFERRAL_AMOUNT_SHOP_AFFILIATION_TEXT: The Shop you've invited %s is affiliated with SixthContinent. You received 50€ of Premium Credit.
+      REFERRAL_AMOUNT_SHOP_AFFILIATION_LINK: %s to see his page.
+      PUSH_REFERRAL_AMOUNT_SHOP_AFFILIATION: Congratulations, %s has affiliate! You have received 50€ of Credit Premium
+      #club album media comment
+      CLUB_ALBUM_MEDIA_COMMENTED_SUBJECT: %s commented on an element of the Album of your Club
+      CLUB_ALBUM_MEDIA_COMMENTED_BODY:  %s commented on an element of the Album of your Club
+      CLUB_ALBUM_MEDIA_COMMENTED_LINK:  %s commented on an element of the Album of your Club,
+      CLUB_ALBUM_MEDIA_COMMENTED_CLICK_HERE: %s to read it and rate it.
+      #club album media comment rate
+      CLUB_ALBUM_MEDIA_COMMENT_RATE_SUBJECT: Club Album Media Comment Rate
+      CLUB_ALBUM_MEDIA_COMMENT_RATE_BODY: %s has rated your album media comment %s.
+      CLUB_ALBUM_MEDIA_COMMENT_RATE_TEXT: %s has rated your album media comment %s out of 5 stars.
+      
+      PUSH_USER_ALBUM_MEDIA_COMMENT:  %s has commented on your album photo
+      PUSH_USER_ALBUM_MEDIA_COMMENT_ON_COMMENTED:  Also %s commented on a photo you have commented on
+      PUSH_CLUB_ALBUM_MEDIA_COMMENT: %s has commented on your album photo
+      PUSH_CLUB_ALBUM_MEDIA_COMMENT_ON_COMMENTED:  Also %s commented on a photo you have commented on
+      
+      USER_ALBUM_MEDIA_ON_COMMENTED_SUBJECT: Also %s commented on a photo you have commented on
+      USER_ALBUM_MEDIA_ON_COMMENTED_BODY:  Also %s commented on a photo you have commented on
+      USER_ALBUM_MEDIA_ON_COMMENTED_LINK:  Also %s commented on a photo you have commented on,
+      USER_ALBUM_MEDIA_ON_COMMENTED_CLICK_HERE: %s to read it.
+      CLUB_ALBUM_MEDIA_ON_COMMENTED_SUBJECT: Also %s commented on a photo you have commented on
+      CLUB_ALBUM_MEDIA_ON_COMMENTED_BODY:  Also %s commented on a photo you have commented on
+      CLUB_ALBUM_MEDIA_ON_COMMENTED_LINK:  Also %s commented on a photo you have commented on,
+      CLUB_ALBUM_MEDIA_ON_COMMENTED_CLICK_HERE: %s to read it.
+      
+      PUSH_RECURRING_NOTIFICATION_PUSHREG_FEE_NOT_PAID: Payment not been successful - Notice of Temporary stop service within %s days
+      PUSH_RECURRING_NOTIFICATION_PUSHSHOP_BLOCKED: Payment failed - Suspension of Service.
+      PUSH_RECURRING_NOTIFICATION_PUSHPENDING_FEE_NOT_PAID: Payment not been successful - Notice of Temporary stop service within %s days
+      
+      STORE_ALBUM_MEDIA_COMMENTED_SUBJECT: %s commented on an element of the Album of your Shop
+      STORE_ALBUM_MEDIA_COMMENTED_BODY:  %s commented on an element of the Album of your Shop
+      STORE_ALBUM_MEDIA_COMMENTED_LINK:  %s commented on an element of the Album of your Shop,
+      STORE_ALBUM_MEDIA_COMMENTED_CLICK_HERE: %s to read it and rate it.
+      
+      STORE_ALBUM_MEDIA_ON_COMMENTED_SUBJECT: Also %s commented on a photo you have commented on
+      STORE_ALBUM_MEDIA_ON_COMMENTED_BODY:  Also %s commented on a photo you have commented on
+      STORE_ALBUM_MEDIA_ON_COMMENTED_LINK:  Also %s commented on a photo you have commented on
+      STORE_ALBUM_MEDIA_ON_COMMENTED_CLICK_HERE: %s to read it.
+      
+      PUSH_STORE_ALBUM_MEDIA_COMMENT: %s has commented on your album photo
+      PUSH_STORE_ALBUM_MEDIA_COMMENT_ON_COMMENTED:  Also %s commented on a photo you have commented on
+      PUSH_STORE_ALBUM_COMMENT: %s commented on an Album of your Shop %s
+      PUSH_STORE_ALBUM_COMMENT_ON_COMMENTED:  Also %s commented on a album you have commented on
+      PUSH_CLUB_ALBUM_COMMENT: %s commented on an Album of your Club %s
+      PUSH_CLUB_ALBUM_COMMENT_ON_COMMENTED:  Also %s commented on a album you have commented on
+      PUSH_USER_ALBUM_COMMENT: %s commented on your Album %s
+      PUSH_USER_ALBUM_COMMENT_ON_COMMENTED:  Also %s commented on a album you have commented on
+      PUSH_STORE_ALBUM_MEDIA_COMMENT_RATE: %s has rated your comment
+      #dashboard Post Media Comment 
+      DASHBOARD_POST_MEDIA_COMMENTED_SUBJECT: %s has commented on your dashboard post photo
+      DASHBOARD_POST_MEDIA_COMMENTED_BODY:  %s has commented on your dashboard post photo
+      DASHBOARD_POST_MEDIA_COMMENTED_LINK:  %s has commented on your dashboard post photo,
+      DASHBOARD_POST_MEDIA_COMMENTED_CLICK_HERE: %s to read it.
+      DASHBOARD_POST_MEDIA_ON_COMMENTED_SUBJECT: Also %s commented on a photo you have commented on
+      DASHBOARD_POST_MEDIA_ON_COMMENTED_BODY:  Also %s commented on a photo you have commented on
+      DASHBOARD_POST_MEDIA_ON_COMMENTED_LINK:  Also %s commented on a photo you have commented on
+      DASHBOARD_POST_MEDIA_ON_COMMENTED_CLICK_HERE: %s to read it.
+      #dashboard Post Media Comment rate
+      DASHBOARD_POST_MEDIA_COMMENT_RATE_SUBJECT: %s voted a comment
+      DASHBOARD_POST_MEDIA_COMMENT_RATE_BODY: %s has rated your dashboard post media comment %s.
+      DASHBOARD_POST_MEDIA_COMMENT_RATE_TEXT: %s has rated your dashboard post media comment %s out of 5 stars.
+      
+      BLOCK_SHOP_SUBSCRIPTION_SUBJECT: Attention, payment not successful
+      BLOCK_SHOP_SUBSCRIPTION_MAIL_BODY_HEADER: Attention, payment not successful for Shop %s
+      BLOCK_SHOP_SUBSCRIPTION_MAIL_BODY: Dear User,<br />unfortunatly the payment to SixthContinent for the Shopping Card UpTo 100%s was not successful and it’s not possible to proceed with the method of payment inserted.<br />We suggest you to proceed as follows:<br />• Recharge your credit card, or<br />• Log into your account in the Wallet section and add or replace the method of payment<br />• Pay the highlitghted “pending payments”<br />If the “pending payments” won’t be done it won’t be possible to issue Shopping Cards Up To 100%s.<br /><br />%s to log into your Shop and view details.<br />Thank you for choosing SixthContinent
+
+      SUBSCRIPTION_PENDING_PAYMENT_NOT_PAID_SUBJECT: Attention, payment is not been successful.
+      SUBSCRIPTION_PENDING_PAYMENT_NOT_PAID_MAIL_BODY_HEADER: Attention, payment is not been successful for shop %s. Notice of Temporary stop service SixthContinent
+      SUBSCRIPTION_PENDING_PAYMENT_PAID_MAIL_BODY: Dear User,<br />Unfortunately the payment to SixthContinent not been successful and you can not proceed with the payment method that you provided.<br /><br />We invite you to do the following<br />a) Charge your credit card, or <br />b) Access to your Account in the Wallet section and add or replace a method of payment.<br />c) Make the "pending payments" highlighted. <br /><br />If you will not be made the "pending payments" the services SixthContinent for your shop %s will be locked in %s days.<br /><br />%s to access your Shop %s.<br />Thank you for choosing SixthContinent.
+
+      SUBSCRIPTION_NOTIFICATION_PUSHSHOP_SUBSCRIPTION_BLOCKED: Shopping Card UpTo 100%s subscription payment not successful for the Shop %s
+      SUBSCRIPTION_NOTIFICATION_PUSHSUBSCRIPTION_FEE_NOT_PAID: Payment not been successful - Notice of Temporary stop service within %s days
+      
+      STORE_POST_MEDIA_COMMENTED_SUBJECT: %s has commented on a photo of your post
+      STORE_POST_MEDIA_COMMENTED_BODY:  %s has commented on a photo of your post
+      STORE_POST_MEDIA_COMMENTED_LINK:  %s has commented on a photo of your post,
+      STORE_POST_MEDIA_COMMENTED_CLICK_HERE: %s to read it.
+      STORE_POST_MEDIA_ON_COMMENTED_SUBJECT: Also %s commented on a photo you have commented on
+      STORE_POST_MEDIA_ON_COMMENTED_BODY:  Also %s commented on a photo you have commented on
+      STORE_POST_MEDIA_ON_COMMENTED_LINK:  Also %s commented on a photo you have commented on
+      STORE_POST_MEDIA_ON_COMMENTED_CLICK_HERE: %s to read it.
+      PUSH_STORE_POST_MEDIA_COMMENT: %s has commented on a photo of your post
+      PUSH_STORE_POST_MEDIA_COMMENT_ON_COMMENTED:  Also %s commented on a photo you have commented on
+      PUSH_USER_TAGGED_IN_STORE_POST_MEDIA_COMMENT: %s tagged you in a photo comment of the post
+      PUSH_CLUB_TAGGED_IN_STORE_POST_MEDIA_COMMENT: %s tagged your club in a photo comment of the post
+      PUSH_SHOP_TAGGED_IN_STORE_POST_MEDIA_COMMENT: %s tagged your shop in a photo comment of the post
+      
+      PUSH_DASHBOARD_POST_MEDIA_COMMENT: %s has commented on a photo of your post
+      PUSH_DASHBOARD_POST_MEDIA_COMMENT_ON_COMMENTED:  Also %s commented on a photo you have commented on
+      PUSH_USER_TAGGED_IN_DASHBOARD_POST_MEDIA_COMMENT: %s tagged you in a photo comment of the post
+      PUSH_CLUB_TAGGED_IN_DASHBOARD_POST_MEDIA_COMMENT: %s tagged your club in a photo comment of the post
+      PUSH_SHOP_TAGGED_IN_DASHBOARD_POST_MEDIA_COMMENT: %s tagged your shop in a photo comment of the post
+      
+      
+          
+      #Clubwall Post Media Comment 
+      CLUB_POST_MEDIA_COMMENTED_SUBJECT: %s has commented on your clubwall post photo
+      CLUB_POST_MEDIA_COMMENTED_BODY:  %s has commented on your clubwall post photo
+      CLUB_POST_MEDIA_COMMENTED_LINK:  %s has commented on your clubwall post photo,
+      CLUB_POST_MEDIA_COMMENTED_CLICK_HERE: %s to read it.
+      CLUB_POST_MEDIA_ON_COMMENTED_SUBJECT: Also %s commented on a photo you have commented on
+      CLUB_POST_MEDIA_ON_COMMENTED_BODY:  Also %s commented on a photo you have commented on
+      CLUB_POST_MEDIA_ON_COMMENTED_LINK:  Also %s commented on a photo you have commented on
+      CLUB_POST_MEDIA_ON_COMMENTED_CLICK_HERE: %s to read it.
+      #dashboard Post Media Comment rate
+      CLUB_POST_MEDIA_COMMENT_RATE_SUBJECT: %s voted a comment
+      CLUB_POST_MEDIA_COMMENT_RATE_BODY: %s voted a comment.
+      CLUB_POST_MEDIA_COMMENT_RATE_TEXT: %s has assigned to a comment of the rating %s stars out of 5.    
+      
+      STORE_POST_MEDIA_COMMENT_RATE_SUBJECT: %s voted a comment!
+      STORE_POST_MEDIA_COMMENT_RATE_BODY: %s voted a comment!.
+      STORE_POST_MEDIA_COMMENT_RATE_TEXT: %s has assigned to a comment of the rating %s stars out of 5,
+      PUSH_STORE_POST_MEDIA_COMMENT_RATE: %s voted a comment
+      PUSH_DASHBOARD_POST_MEDIA_COMMENT_RATE: %s voted a comment
+      STORE_POST_MEDIA_RATE_SUBJECT: %s voted a photo!
+      STORE_POST_MEDIA_RATE_BODY: %s voted a photo!.
+      STORE_POST_MEDIA_RATE_TEXT: %s has assigned to a photo of the rating %s stars out of 5,
+      PUSH_STORE_POST_MEDIA_RATE: %s voted a photo
+      
+      PUSH_CLUB_POST_MEDIA_COMMENT: %s has commented on a photo of your post
+      PUSH_CLUB_POST_MEDIA_COMMENT_ON_COMMENTED:  Also %s commented on a photo you have commented on
+      PUSH_USER_TAGGED_IN_CLUB_POST_MEDIA_COMMENT: %s tagged you in a photo comment of the post
+      PUSH_CLUB_TAGGED_IN_CLUB_POST_MEDIA_COMMENT: %s tagged your club in a photo comment of the post
+      PUSH_SHOP_TAGGED_IN_CLUB_POST_MEDIA_COMMENT: %s tagged your shop in a photo comment of the post
+      PUSH_CLUB_POST_MEDIA_COMMENT_RATE: %s voted a comment
+      PUSH_USER_ALBUM_COMMENT_RATE: %s voted your Comment on your Album %s
+      
+      USER_TAGGED_IN_USER_ALBUM_COMMENT_SUBJECT: %s tagged you in a Comment  on your Album %s
+      USER_TAGGED_IN_USER_ALBUM_COMMENT_TEXT:  %s tagged you in a Comment  on your Album %s,
+      USER_TAGGED_IN_USER_ALBUM_COMMENT_BODY: %s tagged you in a Comment commented on your Album %s
+      CLUB_TAGGED_IN_USER_ALBUM_COMMENT_SUBJECT: %s tagged your club in a Comment  on your Album %s
+      CLUB_TAGGED_IN_USER_ALBUM_COMMENT_TEXT: %s tagged your club %s in a Comment  on your Album %s,
+      CLUB_TAGGED_IN_USER_ALBUM_COMMENT_BODY: %s tagged your club in a Comment  on your Album %s!
+      SHOP_TAGGED_IN_USER_ALBUM_COMMENT_SUBJECT: %s tagged your shop in a Comment  on your Album %s
+      SHOP_TAGGED_IN_USER_ALBUM_COMMENT_TEXT: %s tagged your shop %s in a Comment  on your Album %s,
+      SHOP_TAGGED_IN_USER_ALBUM_COMMENT_BODY: %s tagged your shop in a Comment  on your Album %s!
+      
+      USER_TAGGED_IN_CLUB_ALBUM_COMMENT_SUBJECT: %s tagged you in a Comment on an Album of your Club %s
+      USER_TAGGED_IN_CLUB_ALBUM_COMMENT_TEXT: %s tagged you in a Comment on an Album of your Club %s,
+      USER_TAGGED_IN_CLUB_ALBUM_COMMENT_BODY: %s tagged you in a Comment commented on an Album of your Club %s!
+      CLUB_TAGGED_IN_CLUB_ALBUM_COMMENT_SUBJECT: %s tagged your club in a Comment on an Album of your Club %s
+      CLUB_TAGGED_IN_CLUB_ALBUM_COMMENT_TEXT: %s tagged your club in a Comment on an Album of your Club %s,
+      CLUB_TAGGED_IN_CLUB_ALBUM_COMMENT_BODY: %s tagged your club in a Comment on an Album of your Club %s!
+      SHOP_TAGGED_IN_CLUB_ALBUM_COMMENT_SUBJECT: %s tagged your shop in a Comment on an Album of your Club %s
+      SHOP_TAGGED_IN_CLUB_ALBUM_COMMENT_TEXT: %s tagged your shop in a Comment on an Album of your Club %s,
+      SHOP_TAGGED_IN_CLUB_ALBUM_COMMENT_BODY: %s tagged your shop in a Comment on an Album of your Club %s!
+      
+      USER_TAGGED_IN_STORE_ALBUM_COMMENT_SUBJECT: %s tagged you in a Comment on an Album of your Shop %s
+      USER_TAGGED_IN_STORE_ALBUM_COMMENT_TEXT: %s tagged you in a Comment on an Album of your Shop %s,
+      USER_TAGGED_IN_STORE_ALBUM_COMMENT_BODY: %s tagged you in a Comment commented on an Album of your Shop %s!
+      CLUB_TAGGED_IN_STORE_ALBUM_COMMENT_SUBJECT: %s tagged your club in a Comment on an Album of your Shop %s
+      CLUB_TAGGED_IN_STORE_ALBUM_COMMENT_TEXT: %s tagged your club in a Comment on an Album of your Shop %s,
+      CLUB_TAGGED_IN_STORE_ALBUM_COMMENT_BODY: %s tagged your club in a Comment on an Album of your Shop %s!
+      SHOP_TAGGED_IN_STORE_ALBUM_COMMENT_SUBJECT: %s tagged your shop in a Comment on an Album of your Shop %s
+      SHOP_TAGGED_IN_STORE_ALBUM_COMMENT_TEXT: %s tagged your shop in a Comment on an Album of your Shop %s,
+      SHOP_TAGGED_IN_STORE_ALBUM_COMMENT_BODY: %s tagged your shop in a Comment on an Album of your Shop %s!
+      #tagges in club photo
+      PUSH_TAGGED_IN_CLUB_PHOTO: %s tagged you in a club photo   
+      YOU_GOT_TAGGED_IN_CLUB_PHOTO: %s tagged you in a club photo
+      FRIEND_TAGGING_IN_CLUB_PHOTO_MAIL_TEXT: %s tagged you in a club photo
+      FRIEND_TAGGING_IN_CLUB_PHOTO_BODY: %s tagged you in a club photo
+
+      
+      TAGGED_IN_CLUB_POST_SUBJECT: %s tagged you in a post on club %s
+      TAGGED_IN_CLUB_POST_TEXT: %s tagged you in a post on club %s,
+      TAGGED_IN_CLUB_POST_BODY: %s tagged you in a post on club %s
+      PUSH_TAGGED_IN_CLUB_POST: %s tagged you in a post on club %s
+      
+      TAGGED_IN_STORE_PHOTO_SUBJECT: %s tagged you in a photo on shop album
+      TAGGED_IN_STORE_PHOTO_TEXT: %s tagged you in a photo on shop album,
+      TAGGED_IN_STORE_PHOTO_BODY: %s tagged you in a photo on shop album
+      PUSH_TAGGED_IN_STORE_PHOTO: %s tagged you in a photo on shop album
+      PUSH_CLUB_ALBUM_COMMENT_RATE: %s voted your Comment on an Album of your Club %s
+      PUSH_STORE_ALBUM_COMMENT_RATE: %s voted your Comment on an Album of your Shop %s
+      
+      PUSH_USER_ALBUM_MEDIA_COMMENT_RATE : %s voted your Comment
+      PUSH_CLUB_ALBUM_MEDIA_COMMENT_RATE : %s voted your Comment
+      #SELLER
+      SELLER_REGISTRATION_WELCOME_MAIL_BODY: The Shop %s created a new Seller Profile 
+      SELLER_REGISTRATION_WELCOME_MAIL_SUBJECT: Activation of New Seller
+      SELLER_REGISTRATION_WELCOME_MAIL_BODY_CENTER: The Shop %s added you as a Seller User qualified to do transactions.<br/>Password - %s<br /><br />%s to activate your Seller Profile.
+      SELLER_MAP_REGISTRATION_WELCOME_MAIL_SUBJECT: Added as Seller
+      SELLER_MAP_REGISTRATION_WELCOME_MAIL_BODY: The Shop %s created a new Seller Profile 
+      SELLER_MAP_REGISTRATION_WELCOME_MAIL_BODY_CENTER: The Shop %s added you as a Seller User qualified to do transactions.
+
+      #Forget seller Password
+      FORGET_SELLER_PASSWORD_MAIL_SUBJECT: SixthContinent ForgetPassword
+      #FORGET_PASSWORD_MAIL_BODY: Hello %s <br /> Here's the code to be able to change your password %s Click the link Click here Or copy the following link %s will be redirected on the page to change your password <br /> <br /> Hello from Sixthcontinent
+      FORGET_SELLER_PASSWORD_MAIL_FOOTER_BODY: <b> SixthContinent Services, Change Password . </b> <br /> <br /> %s to change the password , <br /> <br /> Or copy the following url in your browser and follow the procedure %s
+      FORGET_SELLER_PASSWORD_SUPPORT_MSG: Support SixthContinent - Italy
+      FORGET_SELLER_PASSWORD_MAIL_HEADER_BODY: We have received a request to change password for your profile SixthContinent .
+      
+      OFFERS_SUBJECT: The Best Offers For You
+      OFFERS_TITLE_1: The Best Offers 
+      OFFERS_TITLE_2: For You
+      OFFERS_BODY_TEXT_1: Buy the Shopping Card
+      OFFERS_BODY_TEXT_2: with the contribution <br>of the Citizen Income and
+      OFFERS_BODY_TEXT_3: add "Coupon"
+      OFFERS_BODY_TEXT_4: to your wallet to purchase at the shops.
+      OFFERS_VIEW_COUPON: View Coupon
+      OFFERS_VIEW_CARD: View Card
+      OFFERS_VIEW_ALL: View All Offers
+      OFFERS_UPDATE_CITIZEN: <strong>Remember to upgrade your Citizen Profile,</strong><br> select your favorite Categories and keywords<br>to receive the most interesting offers to you.
+      OFFERS_EDIT_PROFILE: EDIT PROFILE
+      OFFERS_LEARN_MORE_ON_TUTORIAL: LEARN MORE ON TUTORIAL VIDEO
+      OFFERS_GO_TO_SIXTHCONTINENT: Go to SixthContinent
+      OFFERS_VOTES: Votes
+      OFFERS_LATEST: Latest Offers
+      
+      VOTED_ON_SOCIAL_PROJECT_SUBJECT: The Project %s has received 1 "We Want" by %s and other %s Citizens!
+      VOTED_ON_SOCIAL_PROJECT_BODY: The Project %s has received 1 "We Want" by %s and other %s Citizens!
+      VOTED_ON_SOCIAL_PROJECT_TEXT: The "%s"  has received 1 "We Want" by %s! <br><br>The Project has received %s "We Want".
+      VOTED_ON_SOCIAL_PROJECT_LINK: %s to view the Project
+      PUSH_SOCIAL_PROJECT_VOTE: The Project %s has received 1 "We Want" by %s and other %s Citizens!
+      
+      USER_TAGGED_IN_SP_MEDIA_COMMENT_SUBJECT: :user tagged you on a Comment on a Photo on the Page of the Project :project
+      USER_TAGGED_IN_SP_MEDIA_COMMENT_TEXT: :user tagged you on a Comment on a Photo on the Page of the Project :project,
+      USER_TAGGED_IN_SP_MEDIA_COMMENT_BODY: :user tagged you on a Comment on a Photo on the Page of the Project :project
+      USER_TAGGED_IN_SP_MEDIA_COMMENT_CLICK_HERE: :link to view the photo.
+
+      CLUB_TAGGED_IN_SP_MEDIA_COMMENT_SUBJECT: :user tagged the Club :club on a Comment on a Photo on the Page of the Project :project
+      CLUB_TAGGED_IN_SP_MEDIA_COMMENT_TEXT: :user tagged the Club :club on a Comment on a Photo on the Page of the Project :project
+      CLUB_TAGGED_IN_SP_MEDIA_COMMENT_BODY: :user tagged the Club :club on a Comment on a Photo on the Page of the Project :project
+      CLUB_TAGGED_IN_SP_MEDIA_COMMENT_CLICK_HERE: :link to view the photo.
+      
+      SHOP_TAGGED_IN_SP_MEDIA_COMMENT_SUBJECT: :user tagged the Shop :shop on a Comment on a Photo on the Page of the Project :project
+      SHOP_TAGGED_IN_SP_MEDIA_COMMENT_TEXT: :user tagged the Shop :shop on a Comment on a Photo on the Page of the Project :project
+      SHOP_TAGGED_IN_SP_MEDIA_COMMENT_BODY: :user tagged the Shop :shop on a Comment on a Photo on the Page of the Project :project
+      SHOP_TAGGED_IN_SP_MEDIA_COMMENT_CLICK_HERE: :link to view the photo.
+      
+      SP_MEDIA_RATE_SUBJECT: :user assigned a vote of :rate out of 5 stars to a Photo on the Page of the Project :project
+      SP_MEDIA_RATE_BODY: :user assigned a vote of :rate out of 5 stars to a Photo on the Page of the Project :project
+      SP_MEDIA_RATE_TEXT: :user assigned a vote of :rate out of 5 stars to a Photo on the Page of the Project :project,
+      SP_MEDIA_RATE_LINK: :link to view the photo
+      
+      SP_MEDIA_COMMENT_RATE_SUBJECT: :user assigned a vote of :rate out of 5 stars to your Comment on a Photo on the Page of the Project :project
+      SP_MEDIA_COMMENT_RATE_BODY: :user assigned a vote of :rate out of 5 stars to your Comment on a Photo on the Page of the Project :project
+      SP_MEDIA_COMMENT_RATE_TEXT: :user assigned a vote of :rate out of 5 stars to your Comment on a Photo on the Page of the Project :project,
+      SP_MEDIA_COMMENT_RATE_LINK: :link to view the photo
+      
+      SP_MEDIA_COMMENT_SUBJECT: :user commented a Photo on the Page of the Project :project
+      SP_MEDIA_COMMENT_BODY: :user commented a Photo on the Page of the Project :project
+      SP_MEDIA_COMMENT_TEXT: :user commented a Photo on the Page of the Project :project,
+      SP_MEDIA_COMMENT_LINK: :link to view the photo
+      
+      PUSH_SP_MEDIA_RATE: :user assigned a vote of :rate out of 5 stars to a Photo on the Page of the Project :project
+      PUSH_SP_MEDIA_COMMENT_RATE: :user assigned a vote of :rate out of 5 stars to your Comment on a Photo on the Page of the Project :project
+      PUSH_SP_MEDIA_COMMENT: :user commented a Photo on the Page of the Project :project
+      
+      PUSH_USER_TAGGED_IN_SP_MEDIA_COMMENT : :user tagged you on a Comment on a Photo on the Page of the Project :project
+      PUSH_CLUB_TAGGED_IN_SP_MEDIA_COMMENT : :user  tagged the Club on a Comment on a Photo on the Page of the Project :project
+      PUSH_SHOP_TAGGED_IN_SP_MEDIA_COMMENT : :user tagged the Shop on a Comment on a Photo on the Page of the Project :project
+      
+      CARD_SOLD_TO_APPROVED_SUBJECT: Congratulation ! You have sold %s shopping cards today on %s.
+      CARD_SOLD_TO_APPROVED_BODY: Congratulation ! You have sold %s shopping cards today on %s.
+      CARD_SOLD_TO_APPROVED_TEXT: Congratulation ! You have sold %s shopping cards today on %s. Please click on the below link to confirm this transaction.
+      CARD_SOLD_TO_APPROVED_LINK: Confirm transaction
+      CARD_SOLD_TO_APPROVED_MAIL_TEXT: Congratulation ! You have sold %s shopping cards today on %s.
+
+      PUSH_SP_SOCIAL_PROJECT_POST: %s has posted on the Page of the Project %s
+      SP_SOCIAL_PROJECT_POST_SUBJECT: :user has posted on the Page of the Project :project
+      SP_SOCIAL_PROJECT_POST_BODY: :user has posted on the Page of the Project :project
+      SP_SOCIAL_PROJECT_POST_TEXT: :user has posted on the Page of the Project :project.
+      SP_SOCIAL_PROJECT_POST_LINK: :link to view the post
+      
+      SP_MEDIA_COMMENTED_SUBJECT: Also :user commented on a photo you have commented on the Project :project
+      SP_MEDIA_COMMENTED_BODY: Also :user commented on a photo you have commented on the Project :project
+      SP_MEDIA_COMMENTED_TEXT: Also :user commented on a photo you have commented on the Project :project.
+      SP_MEDIA_COMMENTED_LINK: :link to view the photo
+      PUSH_SP_MEDIA_COMMENTED: Also :user commented on a photo you have commented on the Project :project
+      
+      SP_POST_COMMENTED_SUBJECT: Also :user commented on a post you have commented on the Project :project
+      SP_POST_COMMENTED_BODY: Also :user commented on a post you have commented on the Project :project
+      SP_POST_COMMENTED_TEXT: Also :user commented on a post you have commented on the Project :project.
+      SP_POST_COMMENTED_LINK: :link to view the post
+      PUSH_SP_POST_COMMENTED: Also :user commented on a post you have commented on
+      
+      SP_POST_COMMENT_SUBJECT: :user commented your Post on the Page of the Project :project
+      SP_POST_COMMENT_BODY: :user commented your Post on the Page of the Project :project
+      SP_POST_COMMENT_TEXT: :user commented your Post on the Page of the Project :project,
+      SP_POST_COMMENT_LINK: :link to view the post
+      PUSH_SP_POST_COMMENT: :user commented your Post on the Page of the Project :project
+      
+      USER_TAGGED_IN_SP_POST_COMMENT_SUBJECT: :user tagged you on a Comment on the Page of the Project :project
+      USER_TAGGED_IN_SP_POST_COMMENT_TEXT: :user tagged you on a Comment on the Page of the Project :project,
+      USER_TAGGED_IN_SP_POST_COMMENT_BODY: :user tagged you on a Comment on the Page of the Project :project
+      USER_TAGGED_IN_SP_POST_COMMENT_CLICK_HERE: :link to view the post.
+
+      CLUB_TAGGED_IN_SP_POST_COMMENT_SUBJECT: :user tagged the Club :club on a Comment on the Page of the Project :project
+      CLUB_TAGGED_IN_SP_POST_COMMENT_TEXT: :user tagged the Club :club on a Comment on the Page of the Project :project,
+      CLUB_TAGGED_IN_SP_POST_COMMENT_BODY: :user tagged the Club :club on a Comment on the Page of the Project :project
+      CLUB_TAGGED_IN_SP_POST_COMMENT_CLICK_HERE: :link to view the post.
+      
+      SHOP_TAGGED_IN_SP_POST_COMMENT_SUBJECT: :user  tagged the Shop :shop on a Comment on the Page of the Project :project
+      SHOP_TAGGED_IN_SP_POST_COMMENT_TEXT: :user  tagged the Shop :shop on a Comment on the Page of the Project :project,
+      SHOP_TAGGED_IN_SP_POST_COMMENT_BODY: :user  tagged the Shop :shop on a Comment on the Page of the Project :project :project
+      SHOP_TAGGED_IN_SP_POST_COMMENT_CLICK_HERE: :link to view the post.
+      
+      PUSH_USER_TAGGED_IN_SP_POST_COMMENT : :user tagged you on a Comment on the Page of the Project :project
+      PUSH_CLUB_TAGGED_IN_SP_POST_COMMENT : :user tagged the Club on a Comment on the Page of the Project  :project
+      PUSH_SHOP_TAGGED_IN_SP_POST_COMMENT : :user tagged the Shop on a Comment on the Page of the Project :project
+
+      PUSH_SP_POST_RATE: :user assigned a vote of :rate out of 5 stars to your post on the Page of the Project :project
+      SP_POST_RATE_SUBJECT: :user assigned a vote of :rate out of 5 stars to your post on the Page of the Project :project
+      SP_POST_RATE_BODY: :user assigned a vote of :rate out of 5 stars to your post on the Page of the Project :project
+      SP_POST_RATE_TEXT: :user assigned a vote of :rate out of 5 stars to your post on the Page of the Project :project,
+      SP_POST_RATE_LINK: :link to view the post
+      
+      PUSH_SP_POST_COMMENT_RATE: :user assigned to your Comment a vote of :rate out of 5 stars to your post on the Page of the Project :project
+      SP_POST_COMMENT_RATE_SUBJECT: :user assigned to your Comment a vote of :rate out of 5 stars to your post on the Page of the Project :project
+      SP_POST_COMMENT_RATE_BODY: :user assigned to your Comment a vote of :rate out of 5 stars to your post on the Page of the Project :project
+      SP_POST_COMMENT_RATE_TEXT: :user assigned to your Comment a vote of :rate out of 5 stars to your post on the Page of the Project :project,
+      SP_POST_COMMENT_RATE_LINK: :link to view the post
+      
+      USER_TAGGED_IN_SP_POST_SUBJECT: :user tagged you on a Post on the Page of the Project :project
+      USER_TAGGED_IN_SP_POST_TEXT: :user tagged you on a Post on the Page of the Project :project,
+      USER_TAGGED_IN_SP_POST_BODY: :user tagged you on a Post on the Page of the Project :project
+      USER_TAGGED_IN_SP_POST_CLICK_HERE: :link to view the post.
+
+      CLUB_TAGGED_IN_SP_POST_SUBJECT: :user tagged the Club :club on a Post on the Page of the Project :project
+      CLUB_TAGGED_IN_SP_POST_TEXT: :user tagged the Club :club on a Post on the Page of the Project :project,
+      CLUB_TAGGED_IN_SP_POST_BODY: :user tagged the Club :club on a Post on the Page of the Project :project
+      CLUB_TAGGED_IN_SP_POST_CLICK_HERE: :link to view the post.
+      
+      SHOP_TAGGED_IN_SP_POST_SUBJECT: :user  tagged the Shop :shop on a Post on the Page of the Project :project
+      SHOP_TAGGED_IN_SP_POST_TEXT: :user  tagged the Shop :shop on a Post on the Page of the Project :project,
+      SHOP_TAGGED_IN_SP_POST_BODY: :user  tagged the Shop :shop on a Post on the Page of the Project :project
+      SHOP_TAGGED_IN_SP_POST_CLICK_HERE: :link to view the post.
+      
+      PUSH_USER_TAGGED_IN_SP_POST : :user tagged you on a Post on the Page of the Project :project
+      PUSH_CLUB_TAGGED_IN_SP_POST : :user tagged the Club on a Post on the Page of the Project  :project
+      PUSH_SHOP_TAGGED_IN_SP_POST : :user tagged the Shop on a Post on the Page of the Project :project
+      
+      USER_TAGGED_IN_SP_MEDIA_SUBJECT: :user tagged you on a Photo on the Page of the Project :project
+      USER_TAGGED_IN_SP_MEDIA_TEXT: :user tagged you on a Photo on the Page of the Project :project,
+      USER_TAGGED_IN_SP_MEDIA_BODY: :user tagged you on a Photo on the Page of the Project :project
+      USER_TAGGED_IN_SP_MEDIA_CLICK_HERE: :link to view the photo.
+
+      CLUB_TAGGED_IN_SP_MEDIA_SUBJECT: :user tagged the Club :club on a Photo on the Page of the Project :project
+      CLUB_TAGGED_IN_SP_MEDIA_TEXT: :user tagged the Club :club on a Photo on the Page of the Project :project,
+      CLUB_TAGGED_IN_SP_MEDIA_BODY: :user tagged the Club :club on a Photo on the Page of the Project :project
+      CLUB_TAGGED_IN_SP_MEDIA_CLICK_HERE: :link to view the photo.
+      
+      SHOP_TAGGED_IN_SP_MEDIA_SUBJECT: :user  tagged the Shop :shop on a Photo on the Page of the Project :project
+      SHOP_TAGGED_IN_SP_MEDIA_TEXT: :user  tagged the Shop :shop on a Photo on the Page of the Project :project,
+      SHOP_TAGGED_IN_SP_MEDIA_BODY: :user  tagged the Shop :shop on a Photo on the Page of the Project :project
+      SHOP_TAGGED_IN_SP_MEDIA_CLICK_HERE: :link to view the photo.
+      
+      PUSH_USER_TAGGED_IN_SP_MEDIA : :user tagged you on a Photo on the Page of the Project :project
+      PUSH_CLUB_TAGGED_IN_SP_MEDIA : :user tagged the Club on a Photo on the Page of the Project  :project
+      PUSH_SHOP_TAGGED_IN_SP_MEDIA : :user tagged the Shop on a Photo on the Page of the Project :project
+      
+      #citizen income redistribution
+      TXN_CUST_CI_REDISTRIBUTION_PUSH_BODY: Warning! You have "%s" days left to make a transaction!
+      TXN_CI_REDISTRIBUTION_MAIL_SUB: Warning! You have "%s" days left to make a transaction!
+      TXN_CI_REDISTRIBUTION_LINK_TEXT: to view Shops.
+      TXN_CI_REDISTRIBUTION_MAIL_BODY: You have "%s" days left to make a transaction  and don't let your Credit get distributed to the Citizens who have made at least one transactions.
+      TXN_CI_REDISTRIBUTION_MAIL_TEXT: Warning! You have "%s" days left to make a transaction!
+      
+      #card sold in a day notification params
+      CS_TITLE_1: Check your Shopping Cards Up to 100% sold at 
+      CS_USER_NAME: Dear %s
+      CS_TODAY_SHOPPING_CARD_TEXT: today you have sold the following SHOPPING CARD UP TO 100%
+      
+      CS_SHOPPING_CARD_HEAD: SHOPPING CARD UP TO 100%
+      CS_SHOPPING_CARD_VALUE: Value of the Shopping Card UP TO 100%
+      CS_SHOPPING_CARD_SHOP_NAME: Shop that sold the Shopping Card UP TO 100%
+      CS_PURCHASE_CARD_HEAD: PURCHASE CARDS
+      CS_PURCHASE_CARD_VALUE: Value of PURCHASE CARDS
+      CS_PURCHASE_CARD_SHOP_NAME: Shop that sold the Shopping Card UP TO 100%
+      CS_TODAY_YOU_CASHED_TEXT: Today you have cashed
+      CS_TODAY_YOU_CASHED_CONGRATULATION: CONGRATULATIONS
+      CS_PAYMENT_ACCEPT_FOR_CARD_TEXT: check and accept the payment by SixthContinent of the following PURCHASE CARDS used by your customers to complete the Purchase
+      CS_CARD_APPROVE_LINK_TEXT: CONFIRM AND ACCEPT
+      CS_VIEW_DETAILS_TEXT: To view the details of your SixthContinent wallet
+      CS_VIEW_DETAILS_LINK_TEXT: click here.
+      CS_MAIL_SUBJECT: SixthContinent - Panoramica Sixthcontinent
+      CS_MAIL_BOTTOM_TEXT: Thank you for choosing SixthContinent!
+      
+      DEAR_USER: Dear Citizen
+      SHARE_OFFER_SUBJECT: Save up to :discount, buy a Shopping Card!
+      SHARE_OFFER_BODY: :user invites you to find out the Offer a Shopping Card to save up to :discount!
+      SHARE_OFFER_TEXT: Buy a Shopping Card of the Shop :shop with the Citizen Income and pay your purchases saving up to :discount.
+      SHARE_OFFER_LINK_TEXT: Click here to view the Offer
+      PHONE_TEXT: Phone
+      
+      TIME_ZONE_LOCALE: en_IN
+      
+      MEDIA_COMMENT_SP_MEDIA_TAGGED_USER_SUBJECT: :user commented on a photo that you're tagged on the Page of the Project :project
+      MEDIA_COMMENT_SP_MEDIA_TAGGED_USER_BODY:  :user commented on a photo that you're tagged on the Page of the Project :project
+      MEDIA_COMMENT_SP_MEDIA_TAGGED_USER_TEXT:  :user commented on a photo that you're tagged on the Page of the Project :project,
+      MEDIA_COMMENT_SP_MEDIA_TAGGED_USER_LINK: :link to view the photo.
+      
+      MEDIA_COMMENT_SP_MEDIA_TAGGED_CLUB_SUBJECT: :user commented on a photo that club :club tagged on the Page of the Project :project
+      MEDIA_COMMENT_SP_MEDIA_TAGGED_CLUB_BODY:  :user commented on a photo that club :club tagged on the Page of the Project :project
+      MEDIA_COMMENT_SP_MEDIA_TAGGED_CLUB_TEXT:  :user commented on a photo that club :club tagged on the Page of the Project :project,
+      MEDIA_COMMENT_SP_MEDIA_TAGGED_CLUB_LINK: :link to view the photo.
+      
+      MEDIA_COMMENT_SP_MEDIA_TAGGED_SHOP_SUBJECT: :user commented on a photo that Shop :shop tagged on the Page of the Project :project
+      MEDIA_COMMENT_SP_MEDIA_TAGGED_SHOP_BODY:  :user commented on a photo that Shop :shop tagged on the Page of the Project :project
+      MEDIA_COMMENT_SP_MEDIA_TAGGED_SHOP_TEXT:  :user commented on a photo that Shop :shop tagged on the Page of the Project :project,
+      MEDIA_COMMENT_SP_MEDIA_TAGGED_SHOP_LINK: :link to view the photo.
+      
+      POST_COMMENT_SP_POST_TAGGED_USER_SUBJECT: :user commented on a post that you're tagged on the Page of the Project :project
+      POST_COMMENT_SP_POST_TAGGED_USER_BODY:  :user commented on a post that you're tagged on the Page of the Project :project
+      POST_COMMENT_SP_POST_TAGGED_USER_TEXT:  :user commented on a post that you're tagged on the Page of the Project :project,
+      POST_COMMENT_SP_POST_TAGGED_USER_LINK: :link to view the post.
+      
+      POST_COMMENT_SP_POST_TAGGED_CLUB_SUBJECT: :user commented on a post that Club :club tagged on the Page of the Project :project
+      POST_COMMENT_SP_POST_TAGGED_CLUB_BODY:  :user commented on a post that Club :club tagged on the Page of the Project :project
+      POST_COMMENT_SP_POST_TAGGED_CLUB_TEXT:  :user commented on a post that Club :club tagged on the Page of the Project :project,
+      POST_COMMENT_SP_POST_TAGGED_CLUB_LINK: :link to view the post.
+      
+      POST_COMMENT_SP_POST_TAGGED_SHOP_SUBJECT: :user commented on a post that Shop :shop tagged on the Page of the Project :project
+      POST_COMMENT_SP_POST_TAGGED_SHOP_BODY:  :user commented on a post that Shop :shop tagged on the Page of the Project :project
+      POST_COMMENT_SP_POST_TAGGED_SHOP_TEXT:  :user commented on a post that Shop :shop tagged on the Page of the Project :project,
+      POST_COMMENT_SP_POST_TAGGED_SHOP_LINK: :link to view the post.
+      
+      PUSH_SP_MEDIA_COMMENT_ON_USER_TAGGED : :user commented on a photo that you're tagged on the Page of the Project :project
+      PUSH_SP_MEDIA_COMMENT_ON_CLUB_TAGGED : :user commented on a photo that your Club tagged on the Page of the Project :project
+      PUSH_SP_MEDIA_COMMENT_ON_SHOP_TAGGED : :user commented on a photo that your Shop tagged on the Page of the Project :project
+      
+      PUSH_SP_POST_COMMENT_ON_USER_TAGGED : :user commented on a post that you're tagged on the Page of the Project :project
+      PUSH_SP_POST_COMMENT_ON_CLUB_TAGGED : :user commented on a post that your Club tagged on the Page of the Project :project
+      PUSH_SP_POST_COMMENT_ON_SHOP_TAGGED : :user commented on a post that your Shop tagged on the Page of the Project :project
+      
+      SHARE_SOCIAL_PROJECT_SUBJECT: :user invites you to support the Project :project with your vote
+      SHARE_SOCIAL_PROJECT_BODY: invites you to support the Project
+      SHARE_SOCIAL_PROJECT_TEXT: :desc_project
+      SHARE_SOCIAL_PROJECT_LINK_TEXT: Click here to view the Social Project
+      SHARE_PROJECT_HEADING: Social Project Share
+      PROMOTER_TEXT: Project Promoter
+      CREATION_DATE: Creation Date
+      DESCRIPTION_TEXT: Description
+      
+      SHARE_USER_POST_SUBJECT: :user shared a Post on SixthContinent
+      SHARE_USER_POST_BODY: shared a Post on SixthContinent
+      SHARE_USER_POST_TEXT: :post_text
+      SHARE_USER_POST_LINK_TEXT: Click here to comment and vote the Post
+      
+      SHARE_CLUB_POST_SUBJECT: :user shared a Post on SixthContinent
+      SHARE_CLUB_POST_BODY: shared a Post on SixthContinent
+      SHARE_CLUB_POST_TEXT: :post_text
+      SHARE_CLUB_POST_LINK_TEXT: Click here to comment and vote the Post
+      
+      SHARE_SHOP_POST_SUBJECT: :user shared a Post on SixthContinent
+      SHARE_SHOP_POST_BODY: shared a Post on SixthContinent
+      SHARE_SHOP_POST_TEXT: :post_text
+      SHARE_SHOP_POST_LINK_TEXT: Click here to comment and vote the Post
+      
+      SHARE_SOCIAL_PROJECT_POST_SUBJECT: :user shared a Post on SixthContinent
+      SHARE_SOCIAL_PROJECT_POST_BODY: shared a Post on SixthContinent
+      SHARE_SOCIAL_PROJECT_POST_TEXT: :post_text
+      SHARE_SOCIAL_PROJECT_POST_LINK_TEXT: Click here to comment and vote the Post
+      SHARE_POST_HEADING: Post Notification
+      
+      #shopping card upto 100% purchase
+      SC_TITLE_1: Shopping Card UpTo 100% 
+      SC_USER_NAME_TEXT: Dear %s
+      SC_SHOPPING_CARD_TEXT: you have purchased a SHOPPING CARD UP TO 100%
+      SC_AMOUNT_TEXT: worth
+      
+      SC_AMOUNT_SHOPNAME_TEXT: at
+      SC_SIXTHCONTINENT_THANKS: Thank you for choosing SixthContinent!
+      SC_CARD_PURCHASE_DETAILS: Description of purchase
+      SC_SHOPPING_CARD_VALUE_TEXT: Value of the Shopping Card Up to 100% 
+      SC_SC_CONTRIBUTION_TEXT: SixthContinent Contribution
+      SC_SHOP_CONTRIBUTION_TEXT: Shop Contribution
+      SC_PAYBAL_TEXT: Price
+      SC_SHOP_DETAILS_TEXT: Shop Data
+      SC_FOOTER_TEXT: To view the details of your wallet
+      SC_FOOTER_LINK_TEXT: click here.
+      SC_SUBJECT: SixthContinent - RECEIPT - SHOPPING CARD
+      
+      USER_TAGGED_IN_SP_POST_MEDIA_SUBJECT: :user tagged you on a Photo on the Page of the Project :project
+      USER_TAGGED_IN_SP_POST_MEDIA_TEXT: :user tagged you on a Photo on the Page of the Project :project,
+      USER_TAGGED_IN_SP_POST_MEDIA_BODY: :user tagged you on a Photo on the Page of the Project :project
+      USER_TAGGED_IN_SP_POST_MEDIA_CLICK_HERE: :link to view the photo.
+
+      CLUB_TAGGED_IN_SP_POST_MEDIA_SUBJECT: :user tagged the Club :club on a Photo on the Page of the Project :project
+      CLUB_TAGGED_IN_SP_POST_MEDIA_TEXT: :user tagged the Club :club on a Photo on the Page of the Project :project,
+      CLUB_TAGGED_IN_SP_POST_MEDIA_BODY: :user tagged the Club :club on a Photo on the Page of the Project :project
+      CLUB_TAGGED_IN_SP_POST_MEDIA_CLICK_HERE: :link to view the photo.
+      
+      SHOP_TAGGED_IN_SP_POST_MEDIA_SUBJECT: :user  tagged the Shop :shop on a Photo on the Page of the Project :project
+      SHOP_TAGGED_IN_SP_POST_MEDIA_TEXT: :user  tagged the Shop :shop on a Photo on the Page of the Project :project,
+      SHOP_TAGGED_IN_SP_POST_MEDIA_BODY: :user  tagged the Shop :shop on a Photo on the Page of the Project :project
+      SHOP_TAGGED_IN_SP_POST_MEDIA_CLICK_HERE: :link to view the photo.
+      
+      PUSH_USER_TAGGED_IN_SP_POST_MEDIA : :user tagged you on a Photo on the Page of the Project :project
+      PUSH_CLUB_TAGGED_IN_SP_POST_MEDIA : :user tagged the Club on a Photo on the Page of the Project  :project
+      PUSH_SHOP_TAGGED_IN_SP_POST_MEDIA : :user tagged the Shop on a Photo on the Page of the Project :project
+      
+      SHARE_COUPON_SUBJECT: Add a Coupon to your Citizen Income saving up to :discount
+      SHARE_COUPON_BODY: Add a Coupon to your Citizen Income saving up to :discount
+      SHARE_COUPON_TEXT_1: Add a Coupon of the Shop
+      SHARE_COUPON_TEXT_2: to your Citizen Income saving up to :discount .
+      SHARE_COUPON_LINK_TEXT: Click here to view the Shop
+      
+      SHARE_SHOP_SUBJECT: Find out the offers of the Shop :shop that you can buy with your Citizen Income
+      SHARE_SHOP_BODY: :user suggests you the Shop :shop on SixthContinent
+      SHARE_SHOP_TEXT: :desc_shop
+      SHARE_SHOP_TEXT_1: suggests you to find out the offers of the Shop
+      SHARE_SHOP_TEXT_2: that you can buy with your Citizen Income
+      SHARE_SHOP_LINK_TEXT: Click here to view the Shop Profile
+      ADDRESS_TEXT: Address
+      CITY_TEXT: City
+      
+      SP_POST_MEDIA_COMMENT_SUBJECT: :user commented a Photo on the Page of the Project :project
+      SP_POST_MEDIA_COMMENT_BODY: :user commented a Photo on the Page of the Project :project
+      SP_POST_MEDIA_COMMENT_TEXT: :user commented a Photo on the Page of the Project :project,
+      SP_POST_MEDIA_COMMENT_LINK: :link to view the photo
+      PUSH_SP_POST_MEDIA_COMMENT: :user commented a Photo on the Page of the Project :project
+      
+      SP_POST_MEDIA_COMMENTED_SUBJECT: Also :user commented on a photo you have commented on the Project :project
+      SP_POST_MEDIA_COMMENTED_BODY: Also :user commented on a photo you have commented on the Project :project
+      SP_POST_MEDIA_COMMENTED_TEXT: Also :user commented on a photo you have commented on the Project :project.
+      SP_POST_MEDIA_COMMENTED_LINK: :link to view the photo
+      PUSH_SP_POST_MEDIA_COMMENTED: Also :user commented on a photo you have commented on the Project :project
+      
+      USER_TAGGED_IN_SP_POST_MEDIA_COMMENT_SUBJECT: :user tagged you on a Comment on a Photo on the Page of the Project :project
+      USER_TAGGED_IN_SP_POST_MEDIA_COMMENT_TEXT: :user tagged you on a Comment on a Photo on the Page of the Project :project,
+      USER_TAGGED_IN_SP_POST_MEDIA_COMMENT_BODY: :user tagged you on a Comment on a Photo on the Page of the Project :project
+      USER_TAGGED_IN_SP_POST_MEDIA_COMMENT_CLICK_HERE: :link to view the photo.
+
+      CLUB_TAGGED_IN_SP_POST_MEDIA_COMMENT_SUBJECT: :user tagged the Club :club on a Comment on a Photo on the Page of the Project :project
+      CLUB_TAGGED_IN_SP_POST_MEDIA_COMMENT_TEXT: :user tagged the Club :club on a Comment on a Photo on the Page of the Project :project
+      CLUB_TAGGED_IN_SP_POST_MEDIA_COMMENT_BODY: :user tagged the Club :club on a Comment on a Photo on the Page of the Project :project
+      CLUB_TAGGED_IN_SP_POST_MEDIA_COMMENT_CLICK_HERE: :link to view the photo.
+      
+      SHOP_TAGGED_IN_SP_POST_MEDIA_COMMENT_SUBJECT: :user tagged the Shop :shop on a Comment on a Photo on the Page of the Project :project
+      SHOP_TAGGED_IN_SP_POST_MEDIA_COMMENT_TEXT: :user tagged the Shop :shop on a Comment on a Photo on the Page of the Project :project
+      SHOP_TAGGED_IN_SP_POST_MEDIA_COMMENT_BODY: :user tagged the Shop :shop on a Comment on a Photo on the Page of the Project :project
+      SHOP_TAGGED_IN_SP_POST_MEDIA_COMMENT_CLICK_HERE: :link to view the photo.
+      
+      PUSH_USER_TAGGED_IN_SP_POST_MEDIA_COMMENT : :user tagged you on a Comment on a Photo on the Page of the Project :project
+      PUSH_CLUB_TAGGED_IN_SP_POST_MEDIA_COMMENT : :user  tagged the Club on a Comment on a Photo on the Page of the Project :project
+      PUSH_SHOP_TAGGED_IN_SP_POST_MEDIA_COMMENT : :user tagged the Shop on a Comment on a Photo on the Page of the Project :project
+      
+      MEDIA_COMMENT_SP_POST_MEDIA_TAGGED_USER_SUBJECT: :user commented on a photo that you're tagged on the Page of the Project :project
+      MEDIA_COMMENT_SP_POST_MEDIA_TAGGED_USER_BODY:  :user commented on a photo that you're tagged on the Page of the Project :project
+      MEDIA_COMMENT_SP_POST_MEDIA_TAGGED_USER_TEXT:  :user commented on a photo that you're tagged on the Page of the Project :project,
+      MEDIA_COMMENT_SP_POST_MEDIA_TAGGED_USER_LINK: :link to view the photo.
+      
+      MEDIA_COMMENT_SP_POST_MEDIA_TAGGED_CLUB_SUBJECT: :user commented on a photo that club :club tagged on the Page of the Project :project
+      MEDIA_COMMENT_SP_POST_MEDIA_TAGGED_CLUB_BODY:  :user commented on a photo that club :club tagged on the Page of the Project :project
+      MEDIA_COMMENT_SP_POST_MEDIA_TAGGED_CLUB_TEXT:  :user commented on a photo that club :club tagged on the Page of the Project :project,
+      MEDIA_COMMENT_SP_POST_MEDIA_TAGGED_CLUB_LINK: :link to view the photo.
+      
+      MEDIA_COMMENT_SP_POST_MEDIA_TAGGED_SHOP_SUBJECT: :user commented on a photo that Shop :shop tagged on the Page of the Project :project
+      MEDIA_COMMENT_SP_POST_MEDIA_TAGGED_SHOP_BODY:  :user commented on a photo that Shop :shop tagged on the Page of the Project :project
+      MEDIA_COMMENT_SP_POST_MEDIA_TAGGED_SHOP_TEXT:  :user commented on a photo that Shop :shop tagged on the Page of the Project :project,
+      MEDIA_COMMENT_SP_POST_MEDIA_TAGGED_SHOP_LINK: :link to view the photo.
+      
+      PUSH_SP_POST_MEDIA_COMMENT_ON_USER_TAGGED : :user commented on a photo that you're tagged on the Page of the Project :project
+      PUSH_SP_POST_MEDIA_COMMENT_ON_CLUB_TAGGED : :user commented on a photo that your Club tagged on the Page of the Project :project
+      PUSH_SP_POST_MEDIA_COMMENT_ON_SHOP_TAGGED : :user commented on a photo that your Shop tagged on the Page of the Project :project
+      
+      SP_POST_MEDIA_COMMENT_RATE_SUBJECT: :user assigned a vote of :rate out of 5 stars to your Comment on a Photo on the Page of the Project :project
+      SP_POST_MEDIA_COMMENT_RATE_BODY: :user assigned a vote of :rate out of 5 stars to your Comment on a Photo on the Page of the Project :project
+      SP_POST_MEDIA_COMMENT_RATE_TEXT: :user assigned a vote of :rate out of 5 stars to your Comment on a Photo on the Page of the Project :project,
+      SP_POST_MEDIA_COMMENT_RATE_LINK: :link to view the photo
+      PUSH_SP_POST_MEDIA_COMMENT_RATE: :user assigned a vote of :rate out of 5 stars to your Comment on a Photo on the Page of the Project :project
+      
+      SP_POST_MEDIA_RATE_SUBJECT: :user assigned a vote of :rate out of 5 stars to a Photo on the Page of the Project :project
+      SP_POST_MEDIA_RATE_BODY: :user assigned a vote of :rate out of 5 stars to a Photo on the Page of the Project :project
+      SP_POST_MEDIA_RATE_TEXT: :user assigned a vote of :rate out of 5 stars to a Photo on the Page of the Project :project,
+      SP_POST_MEDIA_RATE_LINK: :link to view the photo
+      PUSH_SP_POST_MEDIA_RATE: :user assigned a vote of :rate out of 5 stars to a Photo on the Page of the Project :project
+
+      #Eccomerce Mail Notification
+      ECOMMERCE_PRODUCT_PURCHASE_SUBJECT: Congratulations! You have bought %s.
+      ECOMMERCE_PRODUCT_PURCHASE_BODY: Congratulations! You have bought %s.
+      ECOMMERCE_PRODUCT_PURCHASE_TEXT:  you have bought %s at Shop %s with success!
+      ECOMMERCE_PRODUCT_PURCHASE_LINK: Click here to view details
+      PUSH_ECOMMERCE_PRODUCT_PURCHASE_TEXT: Congratulations! You have bought %s.
+      WEB_ECOMMERCE_PRODUCT_PURCHASE_TEXT: Congratulations! You have bought %s.
+      
+      TAMOIL_OFFER_SUBJECT: TAMOIL Fuel Electronic Voucher
+      TAMOIL_OFFER_BODY: TAMOIL Fuel Electronic Voucher N.:order_number
+      TAMOIL_OFFER_TEXT_1: Attached your TAMOIL Fuel Electronic Voucher
+      TAMOIL_OFFER_TEXT_2: worth :price
+      TAMOIL_OFFER_TEXT_3: It will be activated from <b>:activatedDate<b> <br>Thank you for buying with SixthContinent
+      TAMOIL_OFFER_DESC: Purchase Details
+      TAMOIL_OFFER_DESC_TITLE: TAMOIL Fuel Electronic Voucher worth
+      TAMOIL_OFFER_DESC_CI_TITLE: SixthContinent Credits
+      TAMOIL_OFFER_DESC_SHOP_TITLE: Final Price
+      TAMOIL_OFFER_LINK_TEXT: :link to read the info and conditions
+      
+      #Ecommerce Notification
+      PUSH_PRODUCT_LOW_STOCK-BUY_ECOMMERCE_PRODUCT: Low Quantity available for %s
+      PRODUCT_LOW_STOCK-BUY_ECOMMERCE_PRODUCT_SUBJECT: Low Quantity available for %s
+      PRODUCT_LOW_STOCK-BUY_ECOMMERCE_PRODUCT_BODY: Low Quantity available for %s
+      PRODUCT_LOW_STOCK-BUY_ECOMMERCE_PRODUCT_TEXT:  the Quantity available for %s is lower than %s!
+      
+      PUSH_CONFIRM_SHIPPING-BUY_ECOMMERCE_PRODUCT: New Order Received for %s
+      CONFIRM_SHIPPING-BUY_ECOMMERCE_PRODUCT_SUBJECT: New Order Received for %s
+      CONFIRM_SHIPPING-BUY_ECOMMERCE_PRODUCT_BODY: New Order Received for %s
+      CONFIRM_SHIPPING-BUY_ECOMMERCE_PRODUCT_TEXT:  %s has ordered %s!
+      
+      PUSH_CANCEL_ORDER-BUY_ECOMMERCE_PRODUCT: Order canceled for %s by Shop %s
+      CANCEL_ORDER-BUY_ECOMMERCE_PRODUCT_SUBJECT: Order canceled for %s by Shop %s
+      CANCEL_ORDER-BUY_ECOMMERCE_PRODUCT_BODY: Order canceled for %s by Shop %s
+      CANCEL_ORDER-BUY_ECOMMERCE_PRODUCT_TEXT:  your Order for %s has been cancelled by Shop %s.
+      
+      ORDER_MESSAGE_DETAIL: to view the Order
+      PUSH_PRODUCT_SHIPPED-BUY_ECOMMERCE_PRODUCT: %s has been Shipped!
+      PRODUCT_SHIPPED-BUY_ECOMMERCE_PRODUCT_SUBJECT:  %s has been Shipped!
+      PRODUCT_SHIPPED-BUY_ECOMMERCE_PRODUCT_BODY:  %s has been Shipped!
+      PRODUCT_SHIPPED-BUY_ECOMMERCE_PRODUCT_TEXT:  %s has been Shipped by Shop %s!
+      
+      SHARE_TAMOIL_OFFER_SUBJECT: Save up to 50% at TAMOIL
+      SHARE_TAMOIL_OFFER_BODY: FUEL ELECTRONIC VOUCHER TAMOIL
+      SHARE_TAMOIL_OFFER_TEXT: invites you to find out the Offer <br><br>SAVE UP TO 50%. Buy online FUEL ELECTRONIC VOUCHER TAMOIL and pay with SixthContinent Citizen Income. The Fuel Electronic Vouchers are spendable at more than 1,100 Tamoil Gas Station in Italy.
+      SHARE_TAMOIL_OFFER_TEXT_2: This is an initiative of SixthContinent Italia
+      SHARE_TAMOIL_OFFER_LINK_TEXT: Click here to view the Offer
+      
+    it:
+      CLICK_HERE: Clicca qui
+      MESSAGE_DETAIL: per vedere i dettagli
+      #Friend Request
+      SENT_FRIEND_REQUEST_SUBJECT: Nuova Richiesta di Amicizia
+      FRIEND_REQUEST_SENT_BODY: %s ti ha inviato una richiesta di amicizia
+      FRIEND_REQUEST_MAIL_TEXT: %s ti ha inviato una richiesta di amicizia,
+      FRIEND_REQUEST_ACCEPTED_SUBJECT: Richiesta di amicizia accettata
+      FRIEND_REQUEST_ACCEPTED_BODY: %s ha accettato la tua richiesta di amicizia
+      FRIEND_REQUEST_ACCEPTED_MAIL_TEXT: %s ha accettato la tua richiesta di amicizia,
+      #Club
+      #public club
+      CLUB_PUBLIC_JOIN_REQUEST_SUBJECT: Richiesta di adesione al tuo Club
+      CLUB_PUBLIC_JOIN_REQUEST_BODY: %s chiede di aderire al tuo Club "%s".
+      CLUB_PUBLIC_JOIN_REQUEST_TEXT: %s ti ha inviato una richiesta di adesione al tuo Club "%s",
+      
+      CLUB_PUBLIC_JOIN_ACCEPT_SUBJECT:  Approvazione Invito a Club
+      CLUB_PUBLIC_JOIN_ACCEPT_BODY: %s ha accettato l’invito al Club "%s"
+      CLUB_PUBLIC_JOIN_ACCEPT_TEXT: %s ha accettato l’invito al Club "%s",
+      
+      CLUB_PUBLIC_JOIN_REJECT_SUBJECT: Invito al Club rifiutato
+      CLUB_PUBLIC_JOIN_REJECT_BODY: %s ha rifiutato l’invito al Club "%s"
+      CLUB_PUBLIC_JOIN_REJECT_TEXT: %s ha rifiutato l’invito al Club "%s",
+      #private club
+      CLUB_PRIVATE_JOIN_REQUEST_SUBJECT: Richiesta di adesione al tuo Club
+      CLUB_PRIVATE_JOIN_REQUEST_BODY: %s chiede di aderire al tuo Club "%s"
+      CLUB_PRIVATE_JOIN_REQUEST_TEXT: %s ti ha inviato una richiesta di adesione al tuo Club "%s",
+      
+      CLUB_PRIVATE_JOIN_ACCEPT_SUBJECT: Approvazione Invito a Club
+      CLUB_PRIVATE_JOIN_ACCEPT_BODY: %s ha accettato l’invito al Club "%s"
+      CLUB_PRIVATE_JOIN_ACCEPT_TEXT: %s ha accettato l’invito al Club "%s",
+      
+      CLUB_PRIVATE_JOIN_REJECT_SUBJECT: Invito al Club rifiutato
+      CLUB_PRIVATE_JOIN_REJECT_BODY: %s ha rifiutato l’invito al Club "%s"
+      CLUB_PRIVATE_JOIN_REJECT_TEXT: %s ha rifiutato l’invito al Club "%s",
+      
+      #store
+      STORE_JOIN_REQUEST_SUBJECT: Invito a seguire un Negozio
+      STORE_JOIN_REQUEST_BODY: %s ti ha inviato a seguire il negozio %s
+      STORE_JOIN_REQUEST_TEXT: %s ti ha inviato a seguire il negozio %s
+      STORE_REJECT_REQUEST_SUBJECT: Invito a seguire un negozio rifiutato
+      STORE_REJECT_REQUEST_BODY: %s ha rifiutato l’invito a seguire il negozio %s
+      STORE_REJECT_REQUEST_TEXT: %s ha rifiutato l’invito a seguire il negozio %s,
+      STORE_ACCEPT_REQUEST_SUBJECT: Approvazione a seguire un Negozio
+      STORE_ACCEPT_REQUEST_BODY: %s ha accettato di seguire il negozio %s
+      STORE_ACCEPT_REQUEST_TEXT: %s ha accettato la tua richiesta di seguire il negozio %s,
+    
+      #ankit 
+      PUSH_LINK_LABEL: vedere i dettagli
+      SHOP_DP_SUBJECT: Posizione Sconto
+      SHOP_DP_BODY: Complimenti! <br> Nel suo negozio è adesso attiva una Posizione Sconto di €%s!
+      SHOP_MAIL_TEXT : 
+      SHOP_DP_PUSH_SUBJECT: Posizione Sconto
+      SHOP_DP_PUSH_BODY: Complimenti! Nel suo negozio è adesso attiva una Posizione Sconto di €%s!
+      
+      USER_DP_SUBJECT: Posizione Sconto
+      USER_DP_BODY: Congratulazioni !<br>Il negozio %s ha accettato il tuo invito ad affiliarsi a SixthContinent.
+      USER_MAIL_TEXT : Il negozio %s ha accettato il tuo invito ad affiliarsi a SixthContinent.<br><br><b> Complimenti!</b><br><br> - Hai ricevuto un Premio di € %s da spendere presso i negozi con "Premi" attivi, cerca quelli intorno a te tramite la tua app mobile.<br><br>- Da oggi, riceverai l’ %s di tutte le vendite del negozio %s agli utenti SixthContinent.
+      USER_SHOP_PERCENT : 1%
+      USER_DP_PUSH_SUBJECT: Posizione Sconto
+      USER_DP_PUSH_BODY: Congratulazioni! Il negozio %s si è attivato e hai ottenuto l’apertura di una Posizione Sconto di €%s!
+      
+      USER_SHOT_SUBJECT: Shot!
+      USER_SHOT_BODY: Congratulazioni !<br>Hai ricevuto un regalo dal negozio %s
+      SHOT_MAIL_TEXT : Hai ricevuto un Coupon di €%s da spendere presso il negozio %s. 
+      USER_SHOT_PUSH_SUBJECT: Shot!
+      USER_SHOT_PUSH_BODY: Congratulazioni! Hai ricevuto uno Shot di €%s dal negozio %s!
+
+      #Registration Welcome Mail  
+      REGISTRATION_WELCOME_MAIL_SUBJECT: Benvenuto su SixthContinent
+      REGISTRATION_WELCOME_MAIL_BODY: %s, Benvenuto su SixthContinent.<br />La tua registrazione è avvenuta con successo.
+      REGISTRATION_WELCOME_MAIL_BODY_CENTER: La tua registrazione a SixthContinent è avvenuta con successo, Si prega di attivare il tuo account cliccando sul link in basso .<br /><br />%s per iniziare.
+      
+      #Forget Password
+      FORGET_PASSWORD_MAIL_SUBJECT: Recupero Password SixthContinent
+      FORGET_PASSWORD_MAIL_FOOTER_BODY: <b>SixthContinent, Servizio Cambia Password.</b><br /><br />%s per cambiare la password, <br /><br />Oppure copia il seguente url nel tuo browser e segui la procedura %s
+      FORGET_PASSWORD_SUPPORT_MSG: Assistenza SixthContinent - Italia
+      FORGET_PASSWORD_MAIL_HEADER_BODY: Abbiamo ricevuto la richiesta di cambio password per il tuo profilo SixthContinent.
+      #Billing circle Email subject
+      BILLING_CIRCLE_REGISTRATION_SUBJECT: Notifica al Negozio
+   
+      #Send notification if shop is registerd before 8 Feb and not added the credit card.
+      BILLING_CIRCLE_REGISTRATION_BEFORE_8_FEB_MAIL_BODY: E’ necessario inserire la carta di credito per il suo negozio al fine di poter mantenere attivo il profilo della sua attività.
+      
+      #Send notification if shop is registerd between 8 Feb and 12 Nov and not added the credit card.
+      BILLING_CIRCLE_REGISTRATION_BETWEEN_8FEB_12NOV_NO_CC_MAIL_BODY: La invitiamo a inserire la sua carta di credito per poter mantenere attivo il profilo del suo negozio su SixthContinent.
+      
+      #Send notification if shop is registerd between 8 Feb and 12 Nov and revenue is less than 200 euro and not paid the registration fee.
+      BILLING_CIRCLE_REGISTRATION_BETWEEN_8FEB_12NOV_BELOW200_NO_REG_MAIL_BODY: E’ necessario inserire la carta di credito per il suo negozio al fine di poter mantenere attivo il profilo della sua attività.
+      
+      #Send notification if shop is registerd between 8 Feb and 12 Nov and revenue is more than 200 euro and not paid the registration fee.
+      BILLING_CIRCLE_REGISTRATION_BETWEEN_8FEB_12NOV_ABOVE200_NO_REG_MAIL_BODY: Congratulazioni!<br />La sua attività ha superato i €200 di fatturato tramite SixthContinent. Le ricordiamo di inserire la sua carta di credito e di pagare la quota di registrazione per mantenere attivo il profilo della sua attività.
+      
+      #Send notification if shop is registerd between 8 Feb and 12 Nov and revenue is more than 300 euro and not paid the registration fee.
+      BILLING_CIRCLE_REGISTRATION_BETWEEN_8FEB_12NOV_ABOVE300_NO_REG_MAIL_BODY: Congratulazioni!<br />La sua attività ha raggiunto i €300 di fatturato tramite SixthContinent. Per mantenere attivo il profilo della sua attività è necessario inserire la carta di credito al fine di poter pagare la quota di registrazione e poter continuare la sua attività su SixthContinent.
+      
+      #Send notification if shop is registerd after 12 Nov and revenue is less than 100 euro and not paid the registration fee.
+      BILLING_CIRCLE_REGISTRATION_AFTER_12NOV_BELOW_100_NO_REG_MAIL_BODY: E’ necessario inserire la carta di credito per il suo negozio al fine di poter mantenere attivo il profilo della sua attività.
+      
+      #Send notification if shop is registerd after 12 Nov and revenue is more than 100 euro and not paid the registration fee.
+      BILLING_CIRCLE_REGISTRATION_AFTER_12NOV_ABOVE_100_NO_REG_MAIL_BODY: Congratulazioni!<br />La sua attività ha superato i €100 di fatturato tramite SixthContinent. La invitiamo a inserire la sua carta di credito e a pagare la quota di registrazione al fine di mantenere attivo il profilo della sua attività.
+      
+      #Send notification if shop is registerd after 12 Nov and revenue is more than 200 euro and not paid the registration fee.
+      BILLING_CIRCLE_REGISTRATION_AFTER_12NOV_ABOVE_200_NO_REG_MAIL_BODY: Congratulazioni!<br />La sua attività ha superato i €200 di fatturato tramite SixthContinent. Le ricordiamo di inserire la sua carta di credito e di pagare la quota di registrazione per mantenere attivo il profilo della sua attività.
+      
+      #Send notification if shop has not added the credit card.
+      BILLING_CIRCLE_NO_CC_MAIL_BODY: La invitiamo a inserire la sua carta di credito per poter mantenere attivo il profilo del suo negozio su SixthContinent.
+      
+      VIEW_SHOP: vedere i dettagli
+      
+      #mail text to go to the login page
+    
+      LOGIN_TEXT: per iniziare
+      
+      #mail text for forget password
+      FORGET_PASSWORD: Per cambiare la password
+      #sunil
+      PAYMENT_SUCCESS_SUBJECT: Pagamento avvenuto con successo
+      PAYMENT_SUCCESS_BODY: Il pagamento per il negozio '%s' è avvenuto con successo
+      PUSH_PAYMENT_SUCCESS_TITLE: Il pagamento è avvenuto con successo
+      PUSH_PAYMENT_SUCCESS_BODY: Il Pagamento per il negozio '%s' è avvenuto con successo
+      
+      SHOP_ACTIVE_SUBJECT: Attivazione Profilo Negozio
+      SHOP_ACTIVE_BODY: Il negozio '%s' è stato attivato correttamente.
+      PUSH_SHOP_ACTIVE_TITLE: Attivazione Profilo Negozio
+      PUSH_SHOP_ACTIVE_BODY: Il negozio '%s' è stato attivato correttamente.
+      
+      SHOP_INACTIVE_SUBJECT: "Attenzione: servizi disattivati."
+      SHOP_INACTIVE_BODY: Siamo spiacenti di informarla che i servizi al negozio %s sono stati sospesi per un problema amministrativo.
+      SHOP_INACTIVE_LINK:  I servizi al negozio %s sono stati sospesi per un problema amministrativo,
+      SHOP_INACTIVE_CLICK_HERE: %s per vedere i dettagli e riattivare i servizi.
+      
+      PUSH_SHOP_INACTIVE_TITLE: "Attenzione: servizi disattivati."
+      PUSH_SHOP_INACTIVE_BODY: Siamo spiacenti di informarla che i servizi al negozio %s sono stati sospesi per un problema amministrativo.
+      
+      PAYMENT_FAILURE_SUBJECT: Si è verificato un problema con il tuo pagamento
+      PAYMENT_FAILURE_BODY: Si è verificato un problema con il tuo pagamento
+      PAYMENT_FAILURE_LINK:  Si è verificato un problema con il tuo pagamento<br><br><b>Perché il pagamento è stato rifiutato?</b><br>I pagamenti possono essere annullati per una serie di motivi. Ecco i più comuni:<br>1. Non disponi di credito sufficiente sulla carta o sull'account. Verifica la disponibilità di credito sufficiente e riprova.<br>2. I dati immessi non sono corretti. Verifica che i dati siano corretti e riprova.<br>3. Questo metodo di pagamento non è al momento disponibile.
+      PAYMENT_FAILURE_CLICK_HERE: %s per vedere i dettagli ed effettuare il pagamento.
+      
+      PUSH_PAYMENT_FAILURE_TITLE: Si è verificato un problema con il tuo pagamento
+      PUSH_PAYMENT_FAILURE_BODY: Si è verificato un problema con il tuo pagamento
+      
+      PAYMENT_NOTIFICATION_SUBJECT: Pagamento in sospeso
+      PAYMENT_NOTIFICATION_LINK: Il tuo negozio %s<br>ha effettuato vendite per oltre 200€ a Cittadini SixthContinent.<br><br>Per continuare a vendere tramite SixthContinent<br>effettua il pagamento di € 99 (+IVA) , una sola volta e per sempre,<br>così potrai continuare utilizzare i servizi SixthContinent per incrementare i tuoi profitti.
+      PAYMENT_NOTIFICATION_BODY: Complimenti!<br>Hai effettuato vendite per oltre 200€ a Cittadini SixthContinent.
+      PUSH_PAYMENT_NOTIFICATION_TITLE: Pagamento in sospeso
+      PUSH_PAYMENT_NOTIFICATION_BODY: La informiamo che è necessario procedere con il pagamento in sospeso per il negozio '%s'
+      
+      GROUP_MESSAGE_SUBJECT: Hai ricevuto un nuovo messaggio privato 
+      GROUP_MESSAGE_BODY:  %s ti ha inserito in una conversazione di gruppo!
+      GROUP_MESSAGE_LINK:  %s ti ha inserito in una conversazione di gruppo!
+      GROUP_MESSAGE_CLICK_HERE: %s per aprire la conversazione
+      
+      MESSAGE_SUBJECT: Hai ricevuto un nuovo messaggio privato 
+      MESSAGE_BODY:  %s, ti ha inviato un messaggio privato
+      MESSAGE_LINK:  %s ti ha inviato un messaggio privato,
+      MESSAGE_CLICK_HERE: %s per leggerlo.
+      
+      AFFILIATION_INVITATION_SUBJECT: %s ti ha invitato su SixthContinent
+      AFFILIATION_INVITATION_BODY:  %s ti ha invitato su SixthContinent
+      AFFILIATION_INVITATION_LINK:  Stai connesso con Amici, Colleghi, Negozi e Imprese e Ricevi Reddito di Cittadinanza tutti i giorni, da spendere per i tuoi Acquisti.
+      
+      AFFILIATION_INVITATION_SUBJECT_SHOP: %s ha invitato il tuo Negozio su SixthContinent
+      AFFILIATION_INVITATION_BODY_SHOP:  Incassi il 100%, i tuoi Clienti pagano il 50%
+      AFFILIATION_INVITATION_TEXT_SHOP_1A:  Raddoppia
+      AFFILIATION_INVITATION_TEXT_SHOP_1B:  le tue Vendite
+      AFFILIATION_INVITATION_TEXT_SHOP_2A:  SixthContinent paga sino al 50%
+      AFFILIATION_INVITATION_TEXT_SHOP_2B:  di tutti gli Acquisti dei tuoi Clienti
+      AFFILIATION_INVITATION_TEXT_SHOP_3A:  Per i Negozi in Italia
+      AFFILIATION_INVITATION_TEXT_SHOP_3B:  l’Iscrizione è Gratuita sino al 31 Luglio
+      AFFILIATION_INVITATION_LINK_MORE_SHOP: Clicca e leggi come
+      
+      STORE_CONTRACT_BODY: shop contract description in italy goes here.
+      STORE_CONTRACT_SUBJECT: shop contract subject in italy goes here.
+
+      SHOP_AFFILIATION_ACTIVE_SUBJECT: Attivazione Profilo Negozio
+      SHOP_AFFILIATION_ACTIVE_BODY: Complimenti, il tuo Negozio "%s" è stato attivato con successo.
+      SHOP_AFFILIATION_ACTIVE_TEXT: Benvenuto, il tuo Negozio "%s" è stato attivato con successo. In allegato trovi il tuo contratto. Scaricalo e Conservalo. <br><ul><li>Accedi al tuo Negozio, completa  il Profilo, aggiungi foto, informazioni, e attiva le promozioni commerciali per iniziare a vendere. %s <br><br></li><li>Scarica subito l'App mobile gratuita per smartphone e tablet "SixthContinent Business" e inizia le tue vendite. Versione %s, Versione %s. <br><br></li><li>Guarda il Tutorial per utilizzare al meglio gli strumenti che aiutano il tuo Business. %s</li></ul>
+      SHOP_AFFILIATION_ACTIVE_LINK_TEXT: per vedere il tuo Negozio
+
+      #lokesh tagging
+      YOU_GOT_TAGGED_IN_POST: %s ti ha taggato in un post
+      FRIEND_TAGGING_IN_POST_MAIL_TEXT: %s ti ha taggato in un post,
+      FRIEND_TAGGING_IN_POST_BODY: %s ti ha taggato in un post
+      
+      YOU_GOT_TAGGED_IN_PHOTO: %s ti ha taggato in una foto
+      FRIEND_TAGGING_IN_PHOTO_MAIL_TEXT: %s ti ha taggato in una foto
+      FRIEND_TAGGING_IN_PHOTO_BODY: %s ti ha taggato in una foto
+
+      POST_COMMENT_SUBJECT: %s ha commentato il tuo post
+      POST_COMMENT_BODY:  %s ha commentato il tuo post
+      POST_COMMENT_LINK:  %s ha commentato il tuo post,
+      POST_COMMENT_CLICK_HERE: %s per leggerlo e votalo.
+      
+      STORE_COMMENT_SUBJECT: Anche %s ha commentato un post che hai commentato
+      STORE_COMMENT_BODY:  Anche %s ha commentato un post che hai commentato
+      STORE_COMMENT_LINK:  Anche %s ha commentato un post che hai commentato,
+      STORE_COMMENT_CLICK_HERE: %s per leggerlo.
+      
+      CLUB_COMMENT_SUBJECT: Anche %s ha commentato un post che hai commentato
+      CLUB_COMMENT_BODY:  Anche %s ha commentato un post che hai commentato
+      CLUB_COMMENT_LINK:  Anche %s ha commentato un post che hai commentato,
+      CLUB_COMMENT_CLICK_HERE: %s per leggerlo e votalo.
+      
+      DASHBOARD_WALL_POST_COMMENT_SUBJECT: %s ha commentato un Post sulla tua Bacheca
+      DASHBOARD_WALL_POST_COMMENT_BODY:  %s ha commentato un Post sulla tua Bacheca
+      DASHBOARD_WALL_POST_COMMENT_LINK:  %s ha commentato un Post sulla tua Bacheca,
+      DASHBOARD_WALL_POST_COMMENT_CLICK_HERE: %s per leggerlo e votalo!
+      
+      DASHBOARD_COMMENT_SUBJECT: Anche %s ha commentato un post che hai commentato
+      DASHBOARD_COMMENT_BODY:  Anche %s ha commentato un post che hai commentato
+      DASHBOARD_COMMENT_LINK:  Anche %s ha commentato un post che hai commentato,
+      DASHBOARD_COMMENT_CLICK_HERE: %s per leggerlo e votalo.
+      
+      DASHBOARD_TAGGED_FRIENDS_COMMENT_SUBJECT: %s ha commentato un post in cui sei stato taggato
+      DASHBOARD_TAGGED_FRIENDS_COMMENT_BODY:  %s ha commentato un post in cui sei stato taggato
+      DASHBOARD_TAGGED_FRIENDS_COMMENT_LINK:  %s ha commentato un post in cui sei stato taggato,
+      DASHBOARD_TAGGED_FRIENDS_COMMENT_CLICK_HERE: %s per leggerlo.
+      DASHBOARD_POST_RATE_SUBJECT: %s ha votato il tuo post!
+      DASHBOARD_POST_RATE_BODY: %s ha votato il tuo post!
+      DASHBOARD_POST_RATE_TEXT: %s ha assegnato al tuo post il voto di %s stelle su 5.
+
+      #dashboard post comment rate
+      DASHBOARD_POST_COMMENT_RATE_SUBJECT: %s ha votato un tuo commento !
+      DASHBOARD_POST_COMMENT_RATE_BODY: %s ha votato un tuo commento !.
+      DASHBOARD_POST_COMMENT_RATE_TEXT: %s ha assegnato ad un tuo commento il voto di %s stelle su %s.
+      
+      #user album rate
+      USER_ALBUM_RATE_SUBJECT: %s ha votato il tuo album
+      USER_ALBUM_RATE_BODY: %s ha votato il tuo album.
+      USER_ALBUM_RATE_TEXT: %s ha assegnato al tuo album il voto di %s stelle su 5,
+       
+      #user album photo rate
+      USER_ALBUM_PHOTO_RATE_SUBJECT: %s ha votato il tuo foto
+      USER_ALBUM_PHOTO_RATE_BODY: %s ha votato il tuo foto.
+      USER_ALBUM_PHOTO_RATE_TEXT: %s ha assegnato al tuo foto il voto di %s stelle su 5,
+      #dashboard post notification
+      DASHBOARD_POST_SUBJECT: %s ha pubblicato un post sulla tua Bacheca
+      DASHBOARD_POST_BODY:  %s ha pubblicato un post sulla tua Bacheca
+      DASHBOARD_POST_LINK:  %s ha pubblicato un post sulla tua Bacheca,
+      DASHBOARD_POST_CLICK_HERE: %s per leggerlo e votarlo.
+      
+      #club post notification
+      CLUB_POST_SUBJECT: %s ha postato nel tuo Club
+      CLUB_POST_BODY:  %s ha postato nel tuo Club
+      CLUB_POST_LINK:  %s ha postato nel tuo Club,
+      CLUB_POST_CLICK_HERE: %s per leggerlo e votarlo.
+      
+      #STORE post notification
+      STORE_POST_SUBJECT: %s ha pubblicato un Post sulla Pagina del tuo Negozio
+      STORE_POST_BODY:  %s ha pubblicato un Post sulla Pagina del tuo Negozio
+      STORE_POST_LINK:  %s ha pubblicato un Post sulla Pagina del tuo Negozio,
+      STORE_POST_CLICK_HERE: %s per leggerlo e votarlo.
+
+      #club post rate
+      CLUB_POST_RATE_SUBJECT: %s ha votato il tuo post
+      CLUB_POST_RATE_BODY: %s ha votato il tuo post!
+      CLUB_POST_RATE_TEXT: %s ha assegnato al tuo post il voto di %s stelle su 5.
+      
+      #club post comment rate
+      CLUB_POST_COMMENT_RATE_SUBJECT: %s ha votato un tuo commento !
+      CLUB_POST_COMMENT_RATE_BODY: %s ha votato un tuo commento !
+      CLUB_POST_COMMENT_RATE_TEXT: %s ha assegnato ad un tuo commento il voto di %s stelle su 5.
+      
+      #club album rate
+      CLUB_ALBUM_RATE_SUBJECT: %s ha votato il tuo album
+      CLUB_ALBUM_RATE_BODY: %s ha votato il tuo album.
+      CLUB_ALBUM_RATE_TEXT: %s ha assegnato al tuo album il voto di %s stelle su 5.
+       
+      #club album photo rate
+      CLUB_ALBUM_PHOTO_RATE_SUBJECT: %s ha votato il tuo foto
+      CLUB_ALBUM_PHOTO_RATE_BODY: %s ha votato il tuo foto.
+      CLUB_ALBUM_PHOTO_RATE_TEXT: %s ha assegnato al tuo foto il voto di %s stelle su 5.
+      
+      #club rate
+      CLUB_RATE_SUBJECT: %s ha votato il tuo club
+      CLUB_RATE_BODY: %s ha votato il tuo club "%s"
+      CLUB_RATE_TEXT: %s ha assegnato al tuo club "%s" il voto di %s stelle su 5.
+      
+      #store album photo rate
+      STORE_ALBUM_PHOTO_RATE_SUBJECT:   %s ha votato il negozio fotografico!
+      STORE_ALBUM_PHOTO_RATE_BODY:  %s ha votato il negozio fotografico!
+      STORE_ALBUM_PHOTO_RATE_TEXT:    %s ha assegnato al negozio fotografico il rating di %s stelle su 5.
+      
+       #store album  rate
+      STORE_ALBUM_RATE_SUBJECT:   %s ha votato il tuo album negozio!
+      STORE_ALBUM_RATE_BODY:  %s votato tuo album negozio!
+      STORE_ALBUM_RATE_TEXT:    %s ha assegnato al tuo album negozio un punteggio di %s stelle su 5.
+      
+       #store comment  rate
+      STORE_COMMENT_RATE_SUBJECT    :   %s ha votato il tuo commento negozio!
+      STORE_COMMENT_RATE_BODY:  %s votato tuo commento negozio!
+      STORE_COMMENT_RATE_TEXT:    %s ha assegnato al tuo negozio commentare un punteggio di %s stelle su 5.
+      
+      #store post  rate
+      STORE_POST_RATE_SUBJECT:   %s ha votato un tuo POST CLIENTE!
+      STORE_POST_RATE_BODY:  %s ha votato un tuo POST CLIENTE!
+      STORE_POST_RATE_TEXT:    %s ha assegnato al tuo POST CLIENTE un punteggio di %s stelle su 5.
+      
+      CLUB_INVITE_REQUEST_SUBJECT: Invito a diventare Membro di un Club
+      CLUB_INVITE_REQUEST_BODY: %s ti ha invitato a diventare Membro del Club "%s".
+      CLUB_INVITE_REQUEST_TEXT: %s ti ha invitato a diventare Membro del Club "%s",
+      
+      #transaction email text start
+      TRANSACTION_INITIATE: transaction request
+      TRANSACTION_INITIATE_MAIL_TEXT: %s has initiate trasaction on "%s" shop 
+      TRANSACTION_INITIATE_BODY: %s has initiate trasaction on  %s shop 
+      
+      TRANSACTION_SUCCESS_STATUS: transaction status
+      TRANSACTION_SUCCESS_STATUS_MAIL_TEXT: Transaction request has been success for "%s" shop 
+      TRANSACTION_SUCCESS_STATUS_BODY: Transaction request has been success for %s shop 
+      
+      TRANSACTION_CANCEL_STATUS: transaction status
+      TRANSACTION_CANCEL_STATUS_MAIL_TEXT: Transaction request has been cancel for "%s" shop 
+      TRANSACTION_CANCEL_STATUS_BODY: Transaction request has been cancel for %s shop 
+      
+      TRANSACTION_CUSTOMER_FEEDBACK: transaction feedback
+      TRANSACTION_CUSTOMER_FEEDBACK_MAIL_TEXT: %s has given %s out of 5 vote for the transaction on "%s" shop 
+      TRANSACTION_CUSTOMER_FEEDBACK_BODY: %s has given %s out of 5 vote for the transaction on "%s" shop 
+      TRANSACTION_CUSTOMER_FEEDBACK_PUSH_BODY: Transazione Conclusa e Voto Assegnato da %s
+      
+      DISTRIBUTION_FAILED_SUBJECT: Distribution cron failed
+      DISTRIBUTION_FAILED_SUBJECT_MAIL_TEXT: Citizen income distribution cron job is failed for transaction id "%s" on shop "%s" 
+      DISTRIBUTION_FAILED_SUBJECT_BODY: Citizen income distribution cron job is failed 
+      #transaction email text end
+      
+      CLICK_ACCEPT_INVITATION_LINK: clicca qui per accettare l'invito
+      CLICK_REJECT_INVITATION_LINK: clicca qui per rifiutare l'invito
+      
+      # tagging in comment email text
+      USER_TAGGED_IN_COMMENT_SUBJECT: %s ti ha taggato in un commento
+      USER_TAGGED_IN_COMMENT_TEXT: %s ti ha taggato in un commento,
+      USER_TAGGED_IN_COMMENT_BODY: %s ti ha taggato in un commento!
+      
+      CLUB_TAGGED_IN_COMMENT_SUBJECT: %s ha taggato tuo club in un commento
+      CLUB_TAGGED_IN_COMMENT_TEXT: %s ha taggato tuo club %s in un commento,
+      CLUB_TAGGED_IN_COMMENT_BODY: %s ha taggato tuo club in un commento!
+      
+      SHOP_TAGGED_IN_COMMENT_SUBJECT: %s ha taggato tuo negozio in un commento
+      SHOP_TAGGED_IN_COMMENT_TEXT: %s ha taggato tuo negozio %s in un commento,
+      SHOP_TAGGED_IN_COMMENT_BODY: %s ha taggato tuo negozio in un commento!
+
+      
+      TAGGED_IN_SHOP_POST_SUBJECT: %s ti ha taggato in un Post di un Negozio
+      TAGGED_IN_SHOP_POST_TEXT: %s ti ha taggato in un Post del Negozio "%s",
+      TAGGED_IN_SHOP_POST_BODY: %s ti ha taggato in un Post di un Negozio
+      
+      TAGGED_IN_SHOP_CUSTOMER_POST_SUBJECT: %s ti ha taggato in un Post Cliente
+      TAGGED_IN_SHOP_CUSTOMER_POST_TEXT: %s ti ha taggato in un Post Cliente sulla Pagina SHOP di "%s",
+      TAGGED_IN_SHOP_CUSTOMER_POST_BODY: %s ti ha taggato in un Post Cliente
+      
+      NEW_FEATURE_OPPORTUNITES_SUBJECT: SixthContinent Informa Nuove Funzionalità ed Opportunità per i Negozianti SixthContinent
+
+
+      RESEND_MAIL_BODY: Attiva il tuo account sixthcontinent.
+      RESEND_MAIL_SUBJECT: attivazione account
+      RESEND_MAIL_BODY_CENTER: Si prega di attivare il tuo account cliccando sul link in basso.<br /><br />%s per iniziare.
+      
+      PUSH_TAGGED_IN_SHOP_CUSTOMER_POST: %s ti ha taggato in un Post Cliente
+      PUSH_TAGGED_IN_SHOP_POST: %s ti ha taggato in un Post di un Negozio
+      PUSH_DASHBOARD_POST: %s ha pubblicato un post sulla tua Bacheca
+      PUSH_CLUB_POST: %s ha pubblicato un Post nel tuo Club
+      PUSH_STORE_POST: %s ha pubblicato un Post sulla Pagina del tuo Negozio
+      PUSH_DASHBOARD_POST_COMMENT: %s ha commentato il tuo Post
+      PUSH_CLUB_POST_COMMENT: %s ha commentato il tuo Post
+      PUSH_STORE_POST_COMMENT: %s ha commentato il tuo Post
+      PUSH_DASHBOARD_COMMENT_ON_COMMENTED: Anche %s ha commentato un Post che hai commentato
+      PUSH_CLUB_COMMENT_ON_COMMENTED: Anche %s ha commentato un Post che hai commentato
+      PUSH_STORE_COMMENT_ON_COMMENTED: Anche %s ha commentato un Post che hai commentato
+      PUSH_COMMENT_DASHBOARD_WALL: %s ha commentato un Post sulla tua Bacheca
+      PUSH_DASHBOARD_COMMENT_ON_TAGGED_POST: %s ha commentato un Post in cui sei stato taggato
+      PUSH_STORE_COMMENT_ON_TAGGED_POST: %s ha commentato un Post in cui sei stato taggato
+      PUSH_USER_TAGGED_IN_DASHBOARD_COMMENT: %s ti ha taggato in un commento
+      PUSH_USER_TAGGED_IN_CLUB_COMMENT: %s ti ha taggato in un commento
+      PUSH_USER_TAGGED_IN_SHOP_COMMENT: %s ti ha taggato in un commento
+      PUSH_CLUB_TAGGED_IN_DASHBOARD_COMMENT: %s ha taggato tuo club in un commento
+      PUSH_CLUB_TAGGED_IN_CLUB_COMMENT: %s ha taggato tuo club in un commento
+      PUSH_CLUB_TAGGED_IN_SHOP_COMMENT: %s ha taggato tuo club in un commento
+      PUSH_SHOP_TAGGED_IN_DASHBOARD_COMMENT: %s ha taggato tuo negozio in un commento
+      PUSH_SHOP_TAGGED_IN_CLUB_COMMENT: %s ha taggato tuo negozio in un commento
+      PUSH_SHOP_TAGGED_IN_SHOP_COMMENT: %s ha taggato tuo negozio in un commento
+      PUSH_TAGGED_IN_DASHBOARD_POST: %s ti ha taggato in un Post
+      PUSH_DASHBOARD_POST_RATE: %s ha votato il tuo Post
+      PUSH_DASHBOARD_COMMENT_RATE: %s ha votato un tuo Commento
+      PUSH_USER_ALBUM_RATE: %s ha votato il tuo album
+      PUSH_USER_PHOTO_RATE: %s ha votato la tuo foto
+      PUSH_STORE_POST_RATE: %s ha votato un Post sulla tua Pagina Negozio
+      PUSH_STORE_POST_COMMENT_RATE: %s ha votato il tuo commento sulla tua Pagina Negozio
+      PUSH_STORE_ALBUM_RATE: %s ha votato un album del tuo Negozio
+      PUSH_STORE_MEDIA_RATE: %s ha votato una foto del tuo Negozio
+      PUSH_CLUB_RATE: %s ha votato il tuo club "%s"
+      PUSH_CLUB_POST_RATE: %s ha votato il tuo Post 
+      PUSH_CLUB_POST_COMMENT_RATE: %s ha votato un tuo commento
+      PUSH_CLUB_ALBUM_RATE: %s ha votato il tuo album
+      PUSH_CLUB_ALBUM_PHOTO_RATE: %s ha votato la tuo foto
+      PUSH_TAGGED_IN_PHOTO: %s ti ha taggato in una foto
+      PUSH_ACCEPTED_FRIEND_REQUEST: %s ha accettato la tua richiesta di amicizia
+      PUSH_STORE_REJECT_REQUEST: %s ha rifiutato l’invito a seguire il negozio "%s"
+      PUSH_STORE_ACCEPT_REQUEST: %s ha accettato di seguire il negozio "%s"
+      PUSH_TXN_CUST_PENDING-TXN: Nuova transazione da Cliente "%s"
+      PUSH_TXN_SHOP_CANCEL-TXN: Transazione annullata dal Negozio "%s"
+      PUSH_TXN_CITIZEN_CANCEL-TXN: Transazione annullato col cittadino %s in un negozio "%s"
+      PUSH_TXN_SHOP_APPROVE-TXN: Transazione approvata dal Negozio "%s"
+      PUSH_TXN_CUST_RATING-TXN: Transaction feedback da Cliente "%s"
+      PUSH_TXN_CUST_SHARE-TXN: ha commentato e valutato il tuo Shop
+      PUSH_USER_TAGGED_IN_STORE_ALBUM_MEDIA_COMMENT: %s ti ha taggato in una foto commento
+      PUSH_CLUB_TAGGED_IN_STORE_ALBUM_MEDIA_COMMENT: %s ha taggato tuo club in un commento
+      PUSH_SHOP_TAGGED_IN_STORE_ALBUM_MEDIA_COMMENT: %s ha taggato tuo negozio in un commento
+      PUSH_USER_TAGGED_IN_USER_ALBUM_MEDIA_COMMENT: %s ti ha taggato in una foto commento
+      PUSH_CLUB_TAGGED_IN_USER_ALBUM_MEDIA_COMMENT: %s ha taggato tuo club in un commento
+      PUSH_SHOP_TAGGED_IN_USER_ALBUM_MEDIA_COMMENT: %s ha taggato tuo negozio in un commento
+      PUSH_USER_TAGGED_IN_CLUB_ALBUM_MEDIA_COMMENT: %s ti ha taggato in una foto commento
+      PUSH_CLUB_TAGGED_IN_CLUB_ALBUM_MEDIA_COMMENT: %s ha taggato tuo club in un commento
+      PUSH_SHOP_TAGGED_IN_CLUB_ALBUM_MEDIA_COMMENT: %s ha taggato tuo negozio in un commento
+      PUSH_USER_TAGGED_IN_CLUB_ALBUM_COMMENT: %s ti ha taggato in un Commento nell'Album del tuo Club %s
+      PUSH_CLUB_TAGGED_IN_CLUB_ALBUM_COMMENT: %s ha taggato vostro club in un Commento nell'Album del tuo Club %s
+      PUSH_SHOP_TAGGED_IN_CLUB_ALBUM_COMMENT: %s ha taggato vostro negozio in un Commento nell'Album del tuo Club %s
+      PUSH_USER_TAGGED_IN_USER_ALBUM_COMMENT: %s ti ha taggato in un Commento nel tuo Album %s
+      PUSH_CLUB_TAGGED_IN_USER_ALBUM_COMMENT: %s ha taggato tuo club in una Commento nel tuo Album %s
+      PUSH_SHOP_TAGGED_IN_USER_ALBUM_COMMENT: %s ha taggato tuo negozio in una Commento nel tuo Album %s
+      PUSH_USER_TAGGED_IN_STORE_ALBUM_COMMENT: %s ti ha taggato in un Commento nell'Album del tuo Negozio %s
+      PUSH_CLUB_TAGGED_IN_STORE_ALBUM_COMMENT: %s ha taggato tuo club in una Commento nell'Album del tuo Negozio %s
+      PUSH_SHOP_TAGGED_IN_STORE_ALBUM_COMMENT: %s ha taggato tuo negozio in una Commento nell'Album del tuo Negozio %s
+      
+      #Transaction rating 
+      TXN_RATING_MAIL_SUB: Transazione Conclusa e Voto Assegnato
+      TXN_RATING_MAIL_TEXT: Transazione Conclusa e Voto Assegnato da %s
+      TXN_RATING_MAIL_BODY: La transazione col Cliente %s si è conclusa ed ha assegnato un voto alla sua esperienza.
+      TXN_RATING_LINK_TEXT: per vedere i dettagli della transazione.
+      
+      #Transaction share 
+      TXN_SHARE_MAIL_SUB: Commento e Valutazione sul tuo Negozio
+      TXN_SHARE_MAIL_TEXT: Commento e Valutazione sul tuo Negozio
+      TXN_SHARE_MAIL_BODY: %s,il tuo Cliente %s ha condiviso Commento sulla tua Pagina ed ha assegnato un voto alla sua epserienza presso il tuo Negozio.
+      TXN_SHARE_LINK_TEXT: per vedere il suo Commento sulla tua Pagina
+      REG_FEE_NOT_PAID_SUBJECT: Attenzione, pagamento non andato a buon fine. 
+      REG_FEE_NOT_PAID_MAIL_BODY_HEADER: Pagamento non andato a buon fine per il Negozio %s. Avviso di Blocco temporaneo del servizio SixthContinent
+      REG_FEE_NOT_PAID_MAIL_BODY: <b>Gentile Utente</b>,<br />Purtroppo il pagamento di competenza SixthContinent non è andato a buon fine e non è possibile procedere con il metodo di pagamento che hai inserito.<br /><br />Ti invitiamo a procedere nel seguente modo<br />• Ricarica la tua carta di credito, oppure<br />• Accedi al tuo Account nella sezione Portafoglio e aggiungi o sostituisci un metodo di pagamento.<br />• Effettua i "pagamenti pendenti" evidenziati. <br /><br />Se non verranno effettuati i "pagamenti pendenti" i servizi SixthContinent per il tuo Negozio %s verranno bloccati tra %s giorni.<br /><br />Clicca qui per accedere al tuo Negozio %s.<br/>Grazie per aver scelto SixthContinent.
+      PENDING_PAYMENT_NOT_PAID_SUBJECT: Attenzione, pagamento non andato a buon fine.
+      PENDING_PAYMENT_NOT_PAID_MAIL_BODY_HEADER: Pagamento non andato a buon fine per il Negozio %s. Avviso di Blocco temporaneo del servizio SixthContinent
+      PENDING_PAYMENT_PAID_MAIL_BODY: <b>Gentile Utente</b>,<br />Purtroppo il pagamento di competenza SixthContinent non è andato a buon fine e non è possibile procedere con il metodo di pagamento che hai inserito.<br /><br />Ti invitiamo a procedere nel seguente modo<br />• Ricarica la tua carta di credito, oppure<br />• Accedi al tuo Account nella sezione Portafoglio e aggiungi o sostituisci un metodo di pagamento.<br />• Effettua i "pagamenti pendenti" evidenziati. <br /><br />Se non verranno effettuati i "pagamenti pendenti" i servizi SixthContinent per il tuo Negozio %s verranno bloccati tra %s giorni.<br /><br />Clicca qui per accedere al tuo Negozio %s.<br/>Grazie per aver scelto SixthContinent.
+      BLOCK_SHOP_SUBJECT: Pagamento non eseguito - Sospensione del Servizio
+      BLOCK_SHOP_MAIL_BODY_HEADER: Pagamento non eseguito - Sospensione del Servizio
+      BLOCK_SHOP_MAIL_BODY: <b>Gentile Negozio %s</b><br />Purtroppo il pagamento di competenza SixthContinent non è andato a buon fine durante i precedenti 7 giorni e non è possibile procedere con il metodo di pagamento che hai inserito.<br /><br /> I servizi SixthContinent per il tuo negozio sono temporaneamente sospesi e non potrai effettuare transazioni fino al corretto aggiornamento dei dati, inolre il tuo Negozio %s non risulterà visibile ai Cittadini SixthContinent.<br />• Ricarica la tua carta di credito oppure<br/>• Accedi al tuo Account alla sezione Portafoglio.<br />• Aggiungi o sostituisci un metodo di pagamento.<br />•Effettua i "pagamenti pendenti" evidenziati.<br />Clicca qui per accedere al tuo Negozio %s.<br /><br />Grazie per aver scelto SixthContinent.
+      
+      #daily citizen income gain
+      TXN_CUST_CI_GAIN_PUSH_BODY: Hai ricevuto %s€ di Reddito di Cittadinanza
+      TXN_CI_GAIN_MAIL_SUB: Hai ricevuto Reddito di Cittadinanza SixthContinent
+      TXN_CI_GAIN_LINK_TEXT: per vedere i dettagli!
+      TXN_CI_GAIN_MAIL_BODY: Hai ricevuto %s€ di Reddito di Cittadinanza SixthContinent.
+      TXN_CI_GAIN_MAIL_TEXT: Hai ricevuto Reddito di Cittadinanza SixthContinent
+      
+      PUSH_FRIEND_REQUEST: Nuova Richiesta di Amicizia
+      
+      STORE_TAGGED_FRIENDS_COMMENT_SUBJECT: %s ha commentato un post in cui sei stato taggato
+      STORE_TAGGED_FRIENDS_COMMENT_BODY:  %s ha commentato un post in cui sei stato taggato
+      STORE_TAGGED_FRIENDS_COMMENT_LINK:  %s ha commentato un post in cui sei stato taggato,
+      STORE_TAGGED_FRIENDS_COMMENT_CLICK_HERE: %s per leggerlo.
+      
+      PUSH_CREATED_SHOPPING_CARD_UPTO_100: Campagna Commerciale Shopping Card UpTo100% attivata con successo
+      CREATED_SHOPPING_CARD_UPTO_100_SUBJECT: Campagna Commerciale Shopping Card UpTo100% attivata con successo
+      CREATED_SHOPPING_CARD_UPTO_100_BODY: Campagna Commerciale Shopping Card UpTo100% attivata con successo
+      CREATED_SHOPPING_CARD_UPTO_100_TEXT: Complimenti, la tua Campagna Commerciale Shopping Card UpTo100% è stata attivata con successo. <br>La tua promozione raggiungerà i Clienti più interessati ai tuoi Prodotti e Servizi e tu puoi seguire l'andamento delle tue vendite in tempo reale.
+      
+      SHOPOWNER_SUBSCRIPTION_CARD_UPTO_100_SUBJECT: Pagamento effettuato con successo, inizia a vendere le tue Shopping Card
+      SHOPOWNER_SUBSCRIPTION_CARD_UPTO_100_BODY: Pagamento effettuato con successo, inizia a vendere le tue Shopping Card.
+      SHOPOWNER_SUBSCRIPTION_CARD_UPTO_100_TEXT: Il pagamento per accedere alla Sezione Campagne Commerciali Shopping Card UpTo 100% è successo.
+      SHOPOWNER_SUBSCRIPTION_CARD_UPTO_100_LINK: %s per creare la tua Campagna e iniziare a vendere le Shopping Card.
+      PUSH_SUBSCRIPTION_39EURO_SHOPPING_CARD: Pagamento andato a buon fine.
+      
+      PUSH_BUYS_SHOPPING_CARD: Shopping Card UpTo100%s dello Shop %s del valore di %s acquistata con successo.
+      PUSH_SELLS_SHOPPING_CARD: Hai venduto una Shopping Card UpTo 100%s del tuo Negozio %s del valore di %s.
+      
+      BUYS_SHOPPING_CARD_UPTO_100_SUBJECT: Shopping Card UpTo100% acquistata con successo
+      BUYS_SHOPPING_CARD_UPTO_100_BODY: Shopping Card UpTo100% acquistata con successo.
+      BUYS_SHOPPING_CARD_UPTO_100_TEXT: complimenti, hai acquistato con successo la Shopping Card UpTo100%s del Negozio %s del valore di %s.
+      BUYS_SHOPPING_CARD_UPTO_100_LINK_SHOP: %s per accedere alla pagina del Negozio %s.
+      BUYS_SHOPPING_CARD_UPTO_100_LINK_WALLET: %s per accedere al tuo Portafoglio e vedere le tue Shopping Card.
+      SELLS_SHOPPING_CARD_UPTO_100_SUBJECT: Complimenti, hai venduto una Shopping Card
+      SELLS_SHOPPING_CARD_UPTO_100_BODY: Complimenti, hai venduto una Shopping Card.
+      SELLS_SHOPPING_CARD_UPTO_100_TEXT: Complimenti, hai venduto una Shopping Card UpTo100%s del tuo Negozio %s del valore di %s.
+      SELLS_SHOPPING_CARD_UPTO_100_LINK_REPORT: %s per vedere le tue vendite in tempo reale.
+      SELLS_SHOPPING_CARD_UPTO_100_LINK_ACCEPT: %s per accettare il pagamento da parte di SixthContinent.
+      
+      #album comment
+      USER_ALBUM_ON_COMMENTED_SUBJECT: Anche %s ha commentato un album che hai commentato
+      USER_ALBUM_ON_COMMENTED_BODY:  Anche %s ha commentato un album che hai commentato
+      USER_ALBUM_ON_COMMENTED_LINK: Anche %s ha commentato un album che hai commentato,
+      USER_ALBUM_ON_COMMENTED_CLICK_HERE: %s per leggerlo.
+      USER_ALBUM_COMMENT_SUBJECT: %s ha commentato il tuo Album %s
+      USER_ALBUM_COMMENT_BODY:  %s ha commentato il tuo Album %s
+      USER_ALBUM_COMMENT_LINK:  %s ha commentato il tuo Album %s,
+      USER_ALBUM_COMMENT_CLICK_HERE: %s per leggerlo e votarlo.
+
+      #store album comment
+      STORE_ALBUM_ON_COMMENTED_SUBJECT: Anche %s ha commentato un album che hai commentato
+      STORE_ALBUM_ON_COMMENTED_BODY:  Anche %s ha commentato un album che hai commentato
+      STORE_ALBUM_ON_COMMENTED_LINK:  Anche %s ha commentato un album che hai commentato,
+      STORE_ALBUM_ON_COMMENTED_CLICK_HERE: %s per leggerlo.
+      STORE_ALBUM_COMMENT_SUBJECT: %s ha commentato un Album del tuo Negozio %s
+      STORE_ALBUM_COMMENT_BODY:  %s ha commentato un Album del tuo Negozio %s
+      STORE_ALBUM_COMMENT_LINK:  %s ha commentato un Album del tuo Negozio %s,
+      STORE_ALBUM_COMMENT_CLICK_HERE: %s per leggerlo e votarlo.
+      
+      #club album comment
+      CLUB_ALBUM_ON_COMMENTED_SUBJECT: Anche %s ha commentato un album che hai commentato
+      CLUB_ALBUM_ON_COMMENTED_BODY: Anche %s ha commentato un album che hai commentato
+      CLUB_ALBUM_ON_COMMENTED_LINK:  Anche %s ha commentato un album che hai commentato,
+      CLUB_ALBUM_ON_COMMENTED_CLICK_HERE: %s per leggerlo.
+      CLUB_ALBUM_COMMENT_SUBJECT: %s ha commentato un Album del tuo Club %s
+      CLUB_ALBUM_COMMENT_BODY:  %s ha commentato un Album del tuo Club %s
+      CLUB_ALBUM_COMMENT_LINK:  %s ha commentato un Album del tuo Club %s,
+      CLUB_ALBUM_COMMENT_CLICK_HERE: %s per leggerlo e votarlo.
+      
+      #user album comment rate
+      USER_ALBUM_COMMENT_RATE_SUBJECT: %s ha votato il tuo Commento nel tuo Album %s
+      USER_ALBUM_COMMENT_RATE_BODY: %s ha votato il tuo Commento nel tuo Album %s
+      USER_ALBUM_COMMENT_RATE_TEXT: %s ha assegnato ad un tuo Commento nel tuo Album %s il voto di %s su 5 stelle.
+
+      #store album comment rate
+      STORE_ALBUM_COMMENT_RATE_SUBJECT: %s ha votato il tuo Commento nell'Album del tuo Negozio %s
+      STORE_ALBUM_COMMENT_RATE_BODY: %s ha votato il tuo Commento nell'Album del tuo Negozio %s
+      STORE_ALBUM_COMMENT_RATE_TEXT: %s ha assegnato al tuo Commento nell'Album del tuo  Negozio %s il voto di %s su 5 stelle.
+      STORE_ALBUM_MEDIA_COMMENT_RATE_SUBJECT: %s ha votato un tuo commento
+      STORE_ALBUM_MEDIA_COMMENT_RATE_BODY: %s ha votato un tuo commento
+      STORE_ALBUM_MEDIA_COMMENT_RATE_TEXT: %s ha assegnato ad un tuo commento il voto di %s stelle su 5.
+      #club album comment rate
+      CLUB_ALBUM_COMMENT_RATE_SUBJECT: %s ha votato il tuo Commento nell'Album del tuo Club %s
+      CLUB_ALBUM_COMMENT_RATE_BODY: %s ha votato il tuo Commento nell'Album del tuo Club %s.
+      CLUB_ALBUM_COMMENT_RATE_TEXT: %s ha assegnato al tuo Commento nell'Album del tuo Club %s il voto di %s su 5 stelle.
+      #user album media comment
+      USER_ALBUM_MEDIA_COMMENTED_SUBJECT: %s ha commentato un elemento nel tuo Album %s
+      USER_ALBUM_MEDIA_COMMENTED_BODY:  %s  ha commentato un elemento nel tuo Album %s
+      USER_ALBUM_MEDIA_COMMENTED_LINK:  %s ha commentato i un elemento nel tuo Album %s,
+      USER_ALBUM_MEDIA_COMMENTED_CLICK_HERE: %s per leggerlo e votarlo.
+      #user album comment rate
+      USER_ALBUM_MEDIA_COMMENT_RATE_SUBJECT:  %s ha votato il tuo Commento all'interno dell'Album
+      USER_ALBUM_MEDIA_COMMENT_RATE_BODY: %s ha votato il tuo Commento all'interno dell'Album %s.
+      USER_ALBUM_MEDIA_COMMENT_RATE_TEXT: %s ha assegnato al tuo Commento all'interno dell'Album %s il voto di 4 su 5 stelle.
+      
+      REFERRAL_AMOUNT_SHOP_AFFILIATION_SUBJECT: Affiliazione Negozio
+      REFERRAL_AMOUNT_SHOP_AFFILIATION_BODY: Complimenti!
+      REFERRAL_AMOUNT_SHOP_AFFILIATION_TEXT: Il Negozio che hai invitato %s si è affiliato a SixthContinent. Hai ricevuto 50€ di Credito Premium.
+      REFERRAL_AMOUNT_SHOP_AFFILIATION_LINK: %s per vedere la sua Pagina.
+      PUSH_REFERRAL_AMOUNT_SHOP_AFFILIATION: Complimenti, %s si è affiliato! Hai ricevuto 50€ di Credito Premium
+
+      #club album media comment
+      CLUB_ALBUM_MEDIA_COMMENTED_SUBJECT: %s ha commentato un elemento nell'Album del tuo Club
+      CLUB_ALBUM_MEDIA_COMMENTED_BODY:  %s ha commentato un elemento nell'Album del tuo Club
+      CLUB_ALBUM_MEDIA_COMMENTED_LINK:  %s ha commentato un elemento nell'Album del tuo Club
+      CLUB_ALBUM_MEDIA_COMMENTED_CLICK_HERE: %s per leggerlo e votarlo.
+      #club album comment rate
+      CLUB_ALBUM_MEDIA_COMMENT_RATE_SUBJECT: Utente Album Commento Vota
+      CLUB_ALBUM_MEDIA_COMMENT_RATE_BODY: %s ha valutato il tuo commento randello album %s.
+      CLUB_ALBUM_MEDIA_COMMENT_RATE_TEXT: %s ha valutato il tuo commento randello album %s stelle su 5.
+      
+      PUSH_USER_ALBUM_MEDIA_COMMENT:  %s ha commentato il tuo album fotografico
+      PUSH_USER_ALBUM_MEDIA_COMMENT_ON_COMMENTED:  Anche %s ha commentato un foto che hai commentato
+      PUSH_CLUB_ALBUM_MEDIA_COMMENT: %s ha commentato il tuo album fotografico
+      PUSH_CLUB_ALBUM_MEDIA_COMMENT_ON_COMMENTED:  Anche %s ha commentato un foto che hai commentato
+      
+      USER_ALBUM_MEDIA_ON_COMMENTED_SUBJECT: Anche %s ha commentato un foto che hai commentato
+      USER_ALBUM_MEDIA_ON_COMMENTED_BODY:  Anche %s ha commentato un foto che hai commentato
+      USER_ALBUM_MEDIA_ON_COMMENTED_LINK:  Anche %s ha commentato un foto che hai commentato
+      USER_ALBUM_MEDIA_ON_COMMENTED_CLICK_HERE: %s per leggerlo.
+      CLUB_ALBUM_MEDIA_ON_COMMENTED_SUBJECT: Anche %s ha commentato un foto che hai commentato
+      CLUB_ALBUM_MEDIA_ON_COMMENTED_BODY:  Anche %s ha commentato un foto che hai commentato
+      CLUB_ALBUM_MEDIA_ON_COMMENTED_LINK:  Anche %s ha commentato un foto che hai commentato
+      CLUB_ALBUM_MEDIA_ON_COMMENTED_CLICK_HERE: %s per leggerlo.
+      
+      PUSH_RECURRING_NOTIFICATION_PUSHREG_FEE_NOT_PAID: Pagamento non andato a buon fine - Avviso di Blocco temporaneo del servizio entro %s giorni
+      PUSH_RECURRING_NOTIFICATION_PUSHSHOP_BLOCKED: Pagamento non eseguito - Sospensione del Servizio
+      PUSH_RECURRING_NOTIFICATION_PUSHPENDING_FEE_NOT_PAID: Pagamento non andato a buon fine - Avviso di Blocco temporaneo del servizio entro %s giorni
+      
+      STORE_ALBUM_MEDIA_COMMENTED_SUBJECT: %s ha commentato un elemento nell'Album del tuo Negozio
+      STORE_ALBUM_MEDIA_COMMENTED_BODY:  %s ha commentato un elemento nell'Album del tuo Negozio
+      STORE_ALBUM_MEDIA_COMMENTED_LINK:  %s ha commentato un elemento nell'Album del tuo Negozio,
+      STORE_ALBUM_MEDIA_COMMENTED_CLICK_HERE: %s per leggerlo e votarlo.
+      
+      STORE_ALBUM_MEDIA_ON_COMMENTED_SUBJECT: Anche %s ha commentato un foto che hai commentato
+      STORE_ALBUM_MEDIA_ON_COMMENTED_BODY:  Anche %s ha commentato un foto che hai commentato
+      STORE_ALBUM_MEDIA_ON_COMMENTED_LINK:  Anche %s ha commentato un foto che hai commentato
+      STORE_ALBUM_MEDIA_ON_COMMENTED_CLICK_HERE: %s per leggerlo.
+      PUSH_STORE_ALBUM_MEDIA_COMMENT: %s ha commentato il tuo album fotografico
+      PUSH_STORE_ALBUM_MEDIA_COMMENT_ON_COMMENTED:  Anche %s ha commentato un foto che hai commentato
+      PUSH_STORE_ALBUM_COMMENT: %s ha commentato un Album del tuo Negozio %s
+      PUSH_STORE_ALBUM_COMMENT_ON_COMMENTED: Anche %s ha commentato un album che hai commentato
+      PUSH_CLUB_ALBUM_COMMENT: %s ha commentato un Album del tuo Club %s
+      PUSH_CLUB_ALBUM_COMMENT_ON_COMMENTED:  Anche %s ha commentato un album che hai commentato
+      PUSH_USER_ALBUM_COMMENT: %s ha commentato il tuo Album %s
+      PUSH_USER_ALBUM_COMMENT_ON_COMMENTED:  Anche %s ha commentato un album che hai commentato
+      PUSH_STORE_ALBUM_MEDIA_COMMENT_RATE: %s ha votato un tuo Commento
+      #user album media comment
+      DASHBOARD_POST_MEDIA_COMMENTED_SUBJECT: %s ha commentato la tua foto cruscotto pubblicare multimediale
+      DASHBOARD_POST_MEDIA_COMMENTED_BODY:  %s ha commentato la tua foto cruscotto pubblicare multimediale
+      DASHBOARD_POST_MEDIA_COMMENTED_LINK:  %s ha commentato la tua foto cruscotto pubblicare multimediale,
+      DASHBOARD_POST_MEDIA_COMMENTED_CLICK_HERE: %s per leggerlo.
+      DASHBOARD_POST_MEDIA_ON_COMMENTED_SUBJECT: Anche %s ha commentato un foto che hai commentato
+      DASHBOARD_POST_MEDIA_ON_COMMENTED_BODY:  Anche %s ha commentato un foto che hai commentato
+      DASHBOARD_POST_MEDIA_ON_COMMENTED_LINK:  Anche %s ha commentato un foto che hai commentato,
+      DASHBOARD_POST_MEDIA_ON_COMMENTED_CLICK_HERE: %s per leggerlo.
+      #user album comment rate
+      DASHBOARD_POST_MEDIA_COMMENT_RATE_SUBJECT: %s ha votato un tuo commento
+      DASHBOARD_POST_MEDIA_COMMENT_RATE_BODY: %s ha valutato il tuo commento randello album %s.
+      DASHBOARD_POST_MEDIA_COMMENT_RATE_TEXT: %s ha valutato il tuo commento randello album %s stelle su 5.
+
+      BLOCK_SHOP_SUBSCRIPTION_SUBJECT: Attenzione, pagamento non andato a buon fine
+      BLOCK_SHOP_SUBSCRIPTION_MAIL_BODY_HEADER: Pagamento non andato a buon fine per il negozio %s. Avviso di blocco della campagna Shopping Card UpTo 100%s attualmente in atto
+      BLOCK_SHOP_SUBSCRIPTION_MAIL_BODY: Gentile Utente,<br />purtroppo il pagamento di competenza SixthContinent per la campagna Shopping Card UpTo 100%s non è andato a buon fine e non è possibile procedere con il metodo di pagamento che hai inserito.<br />Ti invitiamo a procedere nel seguente modo:<br />• Ricarica la tua carta di credito, oppure<br />• Accedi al tuo account nella sezione Portafoglio e aggiungi o sostituisci un metodo di pagamento<br />• Effettua i “pagamenti pendenti” evidenziati.<br />Se non verranno effettuati i “pagamenti pendenti” non sarà più  possibile emettere Shopping Card UpTo 100%s.<br /><br />%s per accedere al tuo Negozio e vedere i dettagli.<br />Grazie per aver scelto SixthContinent
+      SUBSCRIPTION_PENDING_PAYMENT_NOT_PAID_SUBJECT: Attenzione, pagamento non andato a buon fine.
+      SUBSCRIPTION_PENDING_PAYMENT_NOT_PAID_MAIL_BODY_HEADER: Pagamento non andato a buon fine per il Negozio %s. Avviso di Blocco temporaneo del servizio SixthContinent
+      SUBSCRIPTION_PENDING_PAYMENT_PAID_MAIL_BODY: <b>Gentile Utente</b>,<br />Purtroppo il pagamento di competenza SixthContinent non è andato a buon fine e non è possibile procedere con il metodo di pagamento che hai inserito.<br /><br />Ti invitiamo a procedere nel seguente modo<br />• Ricarica la tua carta di credito, oppure<br />• Accedi al tuo Account nella sezione Portafoglio e aggiungi o sostituisci un metodo di pagamento.<br />• Effettua i "pagamenti pendenti" evidenziati. <br /><br />Se non verranno effettuati i "pagamenti pendenti" i servizi SixthContinent per il tuo Negozio %s verranno bloccati tra %s giorni.<br /><br />%s per accedere al tuo Negozio %s.<br/>Grazie per aver scelto SixthContinent.
+      SUBSCRIPTION_NOTIFICATION_PUSHSHOP_SUBSCRIPTION_BLOCKED: Abbonamento Shopping Card UpTo 100%s non pagato per il Negozio %s
+      SUBSCRIPTION_NOTIFICATION_PUSHSUBSCRIPTION_FEE_NOT_PAID: Pagamento non andato a buon fine - Avviso di Blocco temporaneo del servizio entro %s giorni
+      
+      STORE_POST_MEDIA_COMMENTED_SUBJECT: %s ha commentato un foto del tuo post
+      STORE_POST_MEDIA_COMMENTED_BODY:  %s ha commentato un foto del tuo post
+      STORE_POST_MEDIA_COMMENTED_LINK:  %s ha commentato un foto del tuo post,
+      STORE_POST_MEDIA_COMMENTED_CLICK_HERE: %s per leggerlo.
+      STORE_POST_MEDIA_ON_COMMENTED_SUBJECT: Anche %s ha commentato un foto che hai commentato
+      STORE_POST_MEDIA_ON_COMMENTED_BODY:  Anche %s ha commentato un foto che hai commentato
+      STORE_POST_MEDIA_ON_COMMENTED_LINK:  Anche %s ha commentato un foto che hai commentato,
+      STORE_POST_MEDIA_ON_COMMENTED_CLICK_HERE: %s per leggerlo.
+      PUSH_STORE_POST_MEDIA_COMMENT: %s ha commentato un foto del tuo post
+      PUSH_STORE_POST_MEDIA_COMMENT_ON_COMMENTED:  Anche %s ha commentato un foto che hai commentato
+      PUSH_USER_TAGGED_IN_STORE_POST_MEDIA_COMMENT: %s ti ha taggato in una foto commento su un post
+      PUSH_CLUB_TAGGED_IN_STORE_POST_MEDIA_COMMENT: %s ha taggato il vostro club in una foto su un post
+      PUSH_SHOP_TAGGED_IN_STORE_POST_MEDIA_COMMENT: %s ha taggato il vostro negozio in una foto su un post
+      
+      PUSH_DASHBOARD_POST_MEDIA_COMMENT: %s ha commentato un foto del tuo post
+      PUSH_DASHBOARD_POST_MEDIA_COMMENT_ON_COMMENTED:  Anche %s ha commentato un foto che hai commentato
+      PUSH_USER_TAGGED_IN_DASHBOARD_POST_MEDIA_COMMENT: %s ti ha taggato in una foto commento su un post
+      PUSH_CLUB_TAGGED_IN_DASHBOARD_POST_MEDIA_COMMENT: %s ha taggato il vostro club in una foto su un post
+      PUSH_SHOP_TAGGED_IN_DASHBOARD_POST_MEDIA_COMMENT: %s ha taggato il vostro negozio in una foto su un post
+
+      #Clubwall post media comment
+      CLUB_POST_MEDIA_COMMENTED_SUBJECT: %s ha commentato la tua foto cruscotto pubblicare multimediale
+      CLUB_POST_MEDIA_COMMENTED_BODY:  %s ha commentato la tua foto cruscotto pubblicare multimediale
+      CLUB_POST_MEDIA_COMMENTED_LINK:  %s ha commentato la tua foto cruscotto pubblicare multimediale,
+      CLUB_POST_MEDIA_COMMENTED_CLICK_HERE: %s per leggerlo.
+      CLUB_POST_MEDIA_ON_COMMENTED_SUBJECT: Anche %s ha commentato un foto che hai commentato
+      CLUB_POST_MEDIA_ON_COMMENTED_BODY:  Anche %s ha commentato un foto che hai commentato
+      CLUB_POST_MEDIA_ON_COMMENTED_LINK:  Anche %s ha commentato un foto che hai commentato,
+      CLUB_POST_MEDIA_ON_COMMENTED_CLICK_HERE: %s per leggerlo.
+      #Clubwall post comment rate
+      CLUB_POST_MEDIA_COMMENT_RATE_SUBJECT: %s ha votato un tuo commento
+      CLUB_POST_MEDIA_COMMENT_RATE_BODY: %s ha votato un tuo commento.
+      CLUB_POST_MEDIA_COMMENT_RATE_TEXT: %s ha assegnato ad un tuo commento il voto di %s stelle su 5.
+      
+      STORE_POST_MEDIA_COMMENT_RATE_SUBJECT: %s ha votato un tuo commento !
+      STORE_POST_MEDIA_COMMENT_RATE_BODY: %s ha votato un tuo commento !.
+      STORE_POST_MEDIA_COMMENT_RATE_TEXT: %s ha assegnato ad un tuo commento il voto di %s stelle su 5.
+      PUSH_STORE_POST_MEDIA_COMMENT_RATE: %s ha votato un tuo commento
+      PUSH_DASHBOARD_POST_MEDIA_COMMENT_RATE: %s ha votato un tuo commento
+      STORE_POST_MEDIA_RATE_SUBJECT: %s ha votato un tuo foto!
+      STORE_POST_MEDIA_RATE_BODY: %s ha votato un tuo foto!.
+      STORE_POST_MEDIA_RATE_TEXT: %s ha assegnato ad un tuo foto il voto di %s stelle su 5.
+      PUSH_STORE_POST_MEDIA_RATE: %s ha votato un tuo foto
+      PUSH_CLUB_POST_MEDIA_COMMENT_RATE: %s ha votato un tuo commento
+      PUSH_CLUB_POST_MEDIA_COMMENT: %s ha commentato un foto del tuo post
+      PUSH_CLUB_POST_MEDIA_COMMENT_ON_COMMENTED:  Anche %s ha commentato un foto che hai commentato
+      PUSH_USER_TAGGED_IN_CLUB_POST_MEDIA_COMMENT: %s ti ha taggato in una foto commento su un post
+      PUSH_CLUB_TAGGED_IN_CLUB_POST_MEDIA_COMMENT: %s ha taggato il vostro club in una foto su un post
+      PUSH_SHOP_TAGGED_IN_CLUB_POST_MEDIA_COMMENT: %s ha taggato il vostro negozio in una foto su un post
+      PUSH_USER_ALBUM_COMMENT_RATE: %s ha votato il tuo Commento nel tuo Album %s
+      
+      USER_TAGGED_IN_USER_ALBUM_COMMENT_SUBJECT: %s ti ha taggato in un Commento nel tuo Album %s
+      USER_TAGGED_IN_USER_ALBUM_COMMENT_TEXT: %s ti ha taggato in un Commento nel tuo Album %s,
+      USER_TAGGED_IN_USER_ALBUM_COMMENT_BODY: %s ti ha taggato in un Commento nel tuo Album %s!
+      CLUB_TAGGED_IN_USER_ALBUM_COMMENT_SUBJECT: %s ha taggato tuo club in un Commento nel tuo Album %s
+      CLUB_TAGGED_IN_USER_ALBUM_COMMENT_TEXT: %s ha taggato tuo club in un Commento nel tuo Album %s,
+      CLUB_TAGGED_IN_USER_ALBUM_COMMENT_BODY: %s ha taggato tuo club in un Commento nel tuo Album %s!
+      SHOP_TAGGED_IN_USER_ALBUM_COMMENT_SUBJECT: %s ha taggato tuo negozio in un Commento nel tuo Album %s
+      SHOP_TAGGED_IN_USER_ALBUM_COMMENT_TEXT: %s ha taggato tuo negozio in un Commento nel tuo Album %s,
+      SHOP_TAGGED_IN_USER_ALBUM_COMMENT_BODY: %s ha taggato tuo negozio in un Commento nel tuo Album %s!
+      
+      USER_TAGGED_IN_CLUB_ALBUM_COMMENT_SUBJECT: %s ti ha taggato in un Commento nell'Album del tuo Club %s
+      USER_TAGGED_IN_CLUB_ALBUM_COMMENT_TEXT: %s ti ha taggato in un Commento nell'Album del tuo Club %s,
+      USER_TAGGED_IN_CLUB_ALBUM_COMMENT_BODY: %s ti ha taggato in un Commento nell'Album del tuo Club %s!
+      CLUB_TAGGED_IN_CLUB_ALBUM_COMMENT_SUBJECT: %s ha taggato vostro club in un Commento nell'Album del tuo Club %s
+      CLUB_TAGGED_IN_CLUB_ALBUM_COMMENT_TEXT: %s ha taggato vostro club in un Commento nell'Album del tuo Club %s,
+      CLUB_TAGGED_IN_CLUB_ALBUM_COMMENT_BODY: %s ha taggato vostro club in un Commento nell'Album del tuo Club %s!
+      SHOP_TAGGED_IN_CLUB_ALBUM_COMMENT_SUBJECT: %s ha taggato vostro negozio in un Commento nell'Album del tuo Club %s
+      SHOP_TAGGED_IN_CLUB_ALBUM_COMMENT_TEXT: %s ha taggato vostro negozio in un Commento nell'Album del tuo Club %s,
+      SHOP_TAGGED_IN_CLUB_ALBUM_COMMENT_BODY: %s ha taggato vostro negozio in un Commento nell'Album del tuo Club %s!
+      
+      USER_TAGGED_IN_STORE_ALBUM_COMMENT_SUBJECT: %s ti ha taggato in un Commento nell'Album del tuo Negozio %s
+      USER_TAGGED_IN_STORE_ALBUM_COMMENT_TEXT: %s ti ha taggato in un Commento nell'Album del tuo Negozio %s,
+      USER_TAGGED_IN_STORE_ALBUM_COMMENT_BODY: %s ti ha taggato in un Commento nell'Album del tuo Negozio %s!
+      CLUB_TAGGED_IN_STORE_ALBUM_COMMENT_SUBJECT: %s ha taggato vostro club in un Commento nell'Album del tuo Negozio %s
+      CLUB_TAGGED_IN_STORE_ALBUM_COMMENT_TEXT: %s ha taggato vostro club in un Commento nell'Album del tuo Negozio %s,
+      CLUB_TAGGED_IN_STORE_ALBUM_COMMENT_BODY: %s ha taggato vostro club in un Commento nell'Album del tuo Negozio %s!
+      SHOP_TAGGED_IN_STORE_ALBUM_COMMENT_SUBJECT: %s ha taggato vostro negozio in un Commento nell'Album del tuo Negozio %s
+      SHOP_TAGGED_IN_STORE_ALBUM_COMMENT_TEXT: %s ha taggato vostro negozio in un Commento nell'Album del tuo Negozio %s,
+      SHOP_TAGGED_IN_STORE_ALBUM_COMMENT_BODY: %s ha taggato vostro negozio in un Commento nell'Album del tuo Negozio %s!
+      #club  photo tagging
+      PUSH_TAGGED_IN_CLUB_PHOTO: %s tagged you in a club photo   
+      YOU_GOT_TAGGED_IN_CLUB_PHOTO: %s ti ha taggato in una foto
+      FRIEND_TAGGING_IN_CLUB_PHOTO_MAIL_TEXT: %s ti ha taggato in una foto
+      FRIEND_TAGGING_IN_CLUB_PHOTO_BODY: %s ti ha taggato in una foto
+      
+      TAGGED_IN_CLUB_POST_SUBJECT: %s ti ha taggato in un post su club %s
+      TAGGED_IN_CLUB_POST_TEXT: %s ti ha taggato in un post su club %s,
+      TAGGED_IN_CLUB_POST_BODY: %s ti ha taggato in un post su club %s
+      PUSH_TAGGED_IN_CLUB_POST: %s ti ha taggato in un post su club %s
+      
+      TAGGED_IN_STORE_PHOTO_SUBJECT: %s ti ha taggato in un foto su negozio album
+      TAGGED_IN_STORE_PHOTO_TEXT: %s ti ha taggato in un foto su negozio album,
+      TAGGED_IN_STORE_PHOTO_BODY: %s ti ha taggato in un foto su negozio album
+      PUSH_TAGGED_IN_STORE_PHOTO: %s ti ha taggato in un foto su negozio album
+      PUSH_CLUB_ALBUM_COMMENT_RATE: %s ha votato il tuo Commento nell'Album del tuo Club %s
+      PUSH_STORE_ALBUM_COMMENT_RATE: %s ha votato il tuo Commento nell'Album del tuo Negozio %s
+      
+      PUSH_USER_ALBUM_MEDIA_COMMENT_RATE : %s ha votato il tuo Commento
+      PUSH_CLUB_ALBUM_MEDIA_COMMENT_RATE : %s ha votato il tuo Commento
+      #SELLER
+      SELLER_REGISTRATION_WELCOME_MAIL_BODY: Il negozio %s ha creato un nuovo Profilo Seller
+      SELLER_REGISTRATION_WELCOME_MAIL_SUBJECT: Attivazione Nuovo Seller
+      SELLER_REGISTRATION_WELCOME_MAIL_BODY_CENTER: Il negozio %s ti ha aggiunto come utente Seller abilitato a effettuare le transazioni.<br/>password - %s<br /><br />%s per attivare il tuo profilo Seller.
+      SELLER_MAP_REGISTRATION_WELCOME_MAIL_SUBJECT: Aggiunto come venditore
+      SELLER_MAP_REGISTRATION_WELCOME_MAIL_BODY: Il negozio %s ha creato un nuovo Profilo Seller.
+      SELLER_MAP_REGISTRATION_WELCOME_MAIL_BODY_CENTER: Il negozio %s ti ha aggiunto come utente Seller abilitato a effettuare le transazioni.
+      
+      #Forget seller Password
+      FORGET_SELLER_PASSWORD_MAIL_SUBJECT: Recupero Password SixthContinent
+      FORGET_SELLER_PASSWORD_MAIL_FOOTER_BODY: <b>SixthContinent, Servizio Cambia Password.</b><br /><br />%s per cambiare la password, <br /><br />Oppure copia il seguente url nel tuo browser e segui la procedura %s
+      FORGET_SELLER_PASSWORD_SUPPORT_MSG: Assistenza SixthContinent - Italia
+      FORGET_SELLER_PASSWORD_MAIL_HEADER_BODY: Abbiamo ricevuto la richiesta di cambio password per il tuo profilo SixthContinent.
+      
+      OFFERS_SUBJECT: Le Migliori Offerte per Te
+      OFFERS_TITLE_1: Le Migliori Offerte
+      OFFERS_TITLE_2: per Te
+      OFFERS_BODY_TEXT_1: Compra una Shopping Card
+      OFFERS_BODY_TEXT_2: con il contributo <br>del Reddito di Cittadinanza e 
+      OFFERS_BODY_TEXT_3: aggiungi i "Coupon"
+      OFFERS_BODY_TEXT_4: al tuo Portafoglio per fare acquisti presso i Negozi.
+      OFFERS_VIEW_COUPON: Visualizza Coupon
+      OFFERS_VIEW_CARD: Visualizza l'offerta
+      OFFERS_VIEW_ALL: Visualizza tutte le Offerte
+      OFFERS_UPDATE_CITIZEN: <strong>Ricordati di aggiornare il tuo Profilo Cittadino,</strong><br> seleziona le tue Categorie e Parole Chiave preferite<br>per ricevere le Offerte più interessanti per te.
+      OFFERS_EDIT_PROFILE: MODIFICA PROFILO
+      OFFERS_LEARN_MORE_ON_TUTORIAL: SCOPRI DI PIÙ GUARDANDO IL VIDEO TUTORIAL
+      OFFERS_GO_TO_SIXTHCONTINENT: Vai su SixthContinent
+      OFFERS_VOTES: Voti
+      OFFERS_LATEST: Ultime Offerte
+      
+      VOTED_ON_SOCIAL_PROJECT_SUBJECT: Il Progetto %s ha ricevuto 1 "We Want" da %s e da altri %s Cittadini!
+      VOTED_ON_SOCIAL_PROJECT_BODY: Il Progetto %s ha ricevuto 1 "We Want" da %s e da altri %s Cittadini!
+      VOTED_ON_SOCIAL_PROJECT_TEXT: il Progetto "%s" ha ricevuto 1 "We Want" da %s! <br><br>Il Progetto ha ricevuto %s "We Want".
+      VOTED_ON_SOCIAL_PROJECT_LINK: %s per visualizzare il Progetto
+      PUSH_SOCIAL_PROJECT_VOTE: Il Progetto %s ha ricevuto 1 "We Want" da %s e da altri %s Cittadini!
+
+      USER_TAGGED_IN_SP_MEDIA_COMMENT_SUBJECT: :user ti ha taggato in un Commento su una Foto del Progetto :project
+      USER_TAGGED_IN_SP_MEDIA_COMMENT_TEXT: :user ti ha taggato in un Commento di una Foto del Progetto :project,
+      USER_TAGGED_IN_SP_MEDIA_COMMENT_BODY: :user ti ha taggato in un Commento di una Foto del Progetto :project
+      USER_TAGGED_IN_SP_MEDIA_COMMENT_CLICK_HERE: :user per visualizzare il foto.
+      
+      CLUB_TAGGED_IN_SP_MEDIA_COMMENT_SUBJECT: :user ha taggato il Club :club in un Commento su una Foto del  Progetto :project
+      CLUB_TAGGED_IN_SP_MEDIA_COMMENT_TEXT: :user ha taggato il Club :club in un Commento su una Foto del  Progetto :project,
+      CLUB_TAGGED_IN_SP_MEDIA_COMMENT_BODY: :user ha taggato il Club :club in un Commento su una Foto del  Progetto :project
+      CLUB_TAGGED_IN_SP_MEDIA_COMMENT_CLICK_HERE: :per visualizzare il foto.
+      
+      SHOP_TAGGED_IN_SP_MEDIA_COMMENT_SUBJECT: :user ha taggato il Shop :shop in un Commento su una Foto del  Progetto :project
+      SHOP_TAGGED_IN_SP_MEDIA_COMMENT_TEXT: :user ha taggato il Shop :shop in un Commento su una Foto del  Progetto :project,
+      SHOP_TAGGED_IN_SP_MEDIA_COMMENT_BODY: :user ha taggato il Shop :shop in un Commento su una Foto del  Progetto :project
+      SHOP_TAGGED_IN_SP_MEDIA_COMMENT_CLICK_HERE: :per visualizzare il foto.
+      
+      SP_MEDIA_RATE_SUBJECT: :user ha assegnato ad una Foto del Progetto :project un voto di :rate su 5 stelle
+      SP_MEDIA_RATE_BODY: :user ha assegnato ad una Foto del Progetto :project un voto di :rate su 5 stelle
+      SP_MEDIA_RATE_TEXT: :user ha assegnato ad una Foto del Progetto :project un voto di :rate su 5 stelle,
+      SP_MEDIA_RATE_LINK: :link per visualizzare il foto
+      
+      SP_MEDIA_COMMENT_RATE_SUBJECT: :user ha votato il tuo Commento su una Foto del Progetto :project
+      SP_MEDIA_COMMENT_RATE_BODY: :user ha votato il tuo Commento su una Foto del Progetto :project
+      SP_MEDIA_COMMENT_RATE_TEXT: :user ha assegnato al tuo Commento su una Foto del Progetto :project il voto di :rate su 5 stelle!
+      SP_MEDIA_COMMENT_RATE_LINK: :link per visualizzare il foto
+      
+      SP_MEDIA_COMMENT_SUBJECT: :user ha commentato una Foto del Progetto :project
+      SP_MEDIA_COMMENT_BODY: :user ha commentato una Foto del Progetto :project
+      SP_MEDIA_COMMENT_TEXT: :user ha commentato una Foto del Progetto :project,
+      SP_MEDIA_COMMENT_LINK: :link per visualizzare il foto
+      
+      PUSH_SP_MEDIA_RATE: :user ha assegnato ad una Foto del Progetto :project un voto di :rate su 5 stelle
+      PUSH_SP_MEDIA_COMMENT_RATE: :user ha votato il tuo Commento su una Foto del Progetto :project
+      PUSH_SP_MEDIA_COMMENT: :user ha commentato una Foto del Progetto :project
+      
+      PUSH_USER_TAGGED_IN_SP_MEDIA_COMMENT : :user ti ha taggato in un Commento di una Foto del Progetto :project
+      PUSH_CLUB_TAGGED_IN_SP_MEDIA_COMMENT : :user ha taggato il Club in un Commento su una Foto del Progetto :project
+      PUSH_SHOP_TAGGED_IN_SP_MEDIA_COMMENT : :user ha taggato il Negozio in un Commento su una Foto del Progetto :project
+      
+      CARD_SOLD_TO_APPROVED_SUBJECT: Congratulation ! You have sold %s shopping cards today on %s.
+      CARD_SOLD_TO_APPROVED_BODY: Congratulation ! You have sold %s shopping cards today on %s.
+      CARD_SOLD_TO_APPROVED_TEXT: Congratulation ! You have sold %s shopping cards today on %s. Please click on the below link to confirm this transaction.
+      CARD_SOLD_TO_APPROVED_LINK: Confirm transaction
+      CARD_SOLD_TO_APPROVED_MAIL_TEXT: Congratulation ! You have sold %s shopping cards today on %s.
+
+      PUSH_SP_SOCIAL_PROJECT_POST: %s ha postato sulla Pagina del Progetto %s
+      SP_SOCIAL_PROJECT_POST_SUBJECT: :user ha postato sulla Pagina del Progetto :project
+      SP_SOCIAL_PROJECT_POST_BODY: :user ha postato sulla Pagina del Progetto :project
+      SP_SOCIAL_PROJECT_POST_TEXT: :user ha postato sulla Pagina del Progetto :project!
+      SP_SOCIAL_PROJECT_POST_LINK: :link per visualizzare il post
+
+      
+      SP_MEDIA_COMMENTED_SUBJECT: Anche :user ha commentato un foto che hai commentato del Progetto :project
+      SP_MEDIA_COMMENTED_BODY: Anche :user ha commentato un foto che hai commentato del Progetto :project
+      SP_MEDIA_COMMENTED_TEXT: Anche :user ha commentato un foto che hai commentato del Progetto :project,
+      SP_MEDIA_COMMENTED_LINK: :link per visualizzare il foto
+      PUSH_SP_MEDIA_COMMENTED: Anche :user ha commentato un foto che hai commentato del Progetto :project
+      
+      SP_POST_COMMENTED_SUBJECT: Anche :user ha commentato un post che hai commentato del Progetto :project
+      SP_POST_COMMENTED_BODY: Anche :user ha commentato un post che hai commentato del Progetto :project
+      SP_POST_COMMENTED_TEXT: Anche :user ha commentato un post che hai commentato del Progetto :project,
+      SP_POST_COMMENTED_LINK: :link per visualizzare il post
+      PUSH_SP_POST_COMMENTED: Anche :user ha commentato un post che hai commentato del Progetto :project
+      
+      SP_POST_COMMENT_SUBJECT: :user ha commentato un tuo Post sulla Pagina del Progetto :project
+      SP_POST_COMMENT_BODY: :user ha commentato un tuo Post sulla Pagina del Progetto :project
+      SP_POST_COMMENT_TEXT: :user ha commentato un tuo Post sulla Pagina del Progetto :project,
+      SP_POST_COMMENT_LINK: :link per visualizzare il post
+      PUSH_SP_POST_COMMENT: :user ha commentato un tuo Post sulla Pagina del Progetto :project
+      
+      USER_TAGGED_IN_SP_POST_COMMENT_SUBJECT: :user ti ha taggato in un Commento all'interno del Progetto :project
+      USER_TAGGED_IN_SP_POST_COMMENT_TEXT: :user ti ha taggato in un Commento all'interno del Progetto :project,
+      USER_TAGGED_IN_SP_POST_COMMENT_BODY: :user ti ha taggato in un Commento all'interno del Progetto :project
+      USER_TAGGED_IN_SP_POST_COMMENT_CLICK_HERE: :link per visualizzare il post.
+      
+      CLUB_TAGGED_IN_SP_POST_COMMENT_SUBJECT: :user ha taggato il Club :club in un Commento all'interno del Progetto :project
+      CLUB_TAGGED_IN_SP_POST_COMMENT_TEXT: :user ha taggato il Club :club in un Commento all'interno del Progetto :project,
+      CLUB_TAGGED_IN_SP_POST_COMMENT_BODY: :user ha taggato il Club :club in un Commento all'interno del Progetto :project
+      CLUB_TAGGED_IN_SP_POST_COMMENT_CLICK_HERE: :link per visualizzare il post.
+      
+      SHOP_TAGGED_IN_SP_POST_COMMENT_SUBJECT: :user ha taggato il Negozio :shop in un Commento all'interno del Progetto :project
+      SHOP_TAGGED_IN_SP_POST_COMMENT_TEXT: :user ha taggato il Negozio :shop in un Commento all'interno del Progetto :project,
+      SHOP_TAGGED_IN_SP_POST_COMMENT_BODY: :user ha taggato il Negozio :shop in un Commento all'interno del Progetto :project
+      SHOP_TAGGED_IN_SP_POST_COMMENT_CLICK_HERE: :link per visualizzare il post.
+      
+      PUSH_USER_TAGGED_IN_SP_POST_COMMENT : :user  ti ha taggato in un Commento all'interno del Progetto :project
+      PUSH_CLUB_TAGGED_IN_SP_POST_COMMENT : :user ha taggato il Club in un Commento all'interno del Progetto :project
+      PUSH_SHOP_TAGGED_IN_SP_POST_COMMENT : :user ha taggato il Negozio in un Commento all'interno del Progetto  :project
+      PUSH_SP_POST_RATE: :user ha assegnato ad un tuo Post sulla Pagina del Progetto :project un voto di :rate su 5 stelle
+      SP_POST_RATE_SUBJECT: :user ha assegnato ad un tuo Post sulla Pagina del Progetto :project un voto di :rate su 5 stelle
+      SP_POST_RATE_BODY: :user ha assegnato ad un tuo Post sulla Pagina del Progetto :project un voto di :rate su 5 stelle
+      SP_POST_RATE_TEXT: :user ha assegnato ad un tuo Post sulla Pagina del Progetto :project un voto di :rate su 5 stelle!
+      SP_POST_RATE_LINK: :link per visualizzare il post
+      
+      PUSH_SP_POST_COMMENT_RATE: :user ha assegnato ad un tuo Commento all'interno del Progetto :project un voto di :rate su 5 stelle
+      SP_POST_COMMENT_RATE_SUBJECT: :user ha assegnato ad un tuo Commento all'interno del Progetto :project un voto di :rate su 5 stelle
+      SP_POST_COMMENT_RATE_BODY: :user ha assegnato ad un tuo Commento all'interno del Progetto :project un voto di :rate su 5 stelle
+      SP_POST_COMMENT_RATE_TEXT: :user ha assegnato al tuo Commento all'interno del  Progetto :project un voto di :rate su 5 stelle!
+      SP_POST_COMMENT_RATE_LINK: :link per visualizzare il post
+      
+      USER_TAGGED_IN_SP_POST_SUBJECT: :user ti ha taggato in un Post sulla Pagina del Progetto :project
+      USER_TAGGED_IN_SP_POST_TEXT: :user ti ha taggato in un Post sulla Pagina del Progetto :project,
+      USER_TAGGED_IN_SP_POST_BODY: :user ti ha taggato in un Post sulla Pagina del Progetto :project
+      USER_TAGGED_IN_SP_POST_CLICK_HERE: :link per visualizzare il post.
+
+      CLUB_TAGGED_IN_SP_POST_SUBJECT : :user ha taggato il Club :club in un Post all'interno del Progetto :project
+      CLUB_TAGGED_IN_SP_POST_TEXT : :user ha taggato il Club :club in un Post all'interno del Progetto :project,
+      CLUB_TAGGED_IN_SP_POST_BODY: :user ha taggato il Club :club in un Post all'interno del Progetto :project
+      CLUB_TAGGED_IN_SP_POST_CLICK_HERE: :link per visualizzare il post.
+      
+      SHOP_TAGGED_IN_SP_POST_SUBJECT: :user ha taggato il Negozio :shop in un Post all'interno del Progetto :project
+      SHOP_TAGGED_IN_SP_POST_TEXT: :user ha taggato il Negozio :shop in un Post all'interno del Progetto :project,
+      SHOP_TAGGED_IN_SP_POST_BODY: :user ha taggato il Negozio :shop in un Post all'interno del Progetto :project
+      SHOP_TAGGED_IN_SP_POST_CLICK_HERE: :link per visualizzare il post.
+      
+      PUSH_USER_TAGGED_IN_SP_POST : :user ti ha taggato in un Post sulla Pagina del Progetto :project
+      PUSH_CLUB_TAGGED_IN_SP_POST : :user ha taggato il Club in un Post all'interno del Progetto :project
+      PUSH_SHOP_TAGGED_IN_SP_POST : :user ha taggato il Negozio in un Post all'interno del Progetto :project
+      
+      USER_TAGGED_IN_SP_MEDIA_SUBJECT: :user ti ha taggato in una Foto del Progetto :project
+      USER_TAGGED_IN_SP_MEDIA_TEXT: :user ti ha taggato in una Foto del Progetto :project,
+      USER_TAGGED_IN_SP_MEDIA_BODY: :user ti ha taggato in una Foto del Progetto :project
+      USER_TAGGED_IN_SP_MEDIA_CLICK_HERE: :link per visualizzare il foto.
+
+      CLUB_TAGGED_IN_SP_MEDIA_SUBJECT : :user ha taggato il Club :club in un Foto all'interno del Progetto :project
+      CLUB_TAGGED_IN_SP_MEDIA_TEXT : :user ha taggato il Club :club in un Foto all'interno del Progetto :project,
+      CLUB_TAGGED_IN_SP_MEDIA_BODY: :user ha taggato il Club :club in un Foto all'interno del Progetto :project
+      CLUB_TAGGED_IN_SP_MEDIA_CLICK_HERE: :link per visualizzare il foto.
+      
+      SHOP_TAGGED_IN_SP_MEDIA_SUBJECT: :user ha taggato il Negozio :shop in un Foto all'interno del Progetto :project
+      SHOP_TAGGED_IN_SP_MEDIA_TEXT: :user ha taggato il Negozio :shop in un Foto all'interno del Progetto :project,
+      SHOP_TAGGED_IN_SP_MEDIA_BODY: :user ha taggato il Negozio :shop in un Foto all'interno del Progetto :project
+      SHOP_TAGGED_IN_SP_MEDIA_CLICK_HERE: :link per visualizzare il foto.
+      
+      PUSH_USER_TAGGED_IN_SP_MEDIA : :user ti ha taggato in una Foto del Progetto :project
+      PUSH_CLUB_TAGGED_IN_SP_MEDIA : :user ha taggato il Club in un Foto all'interno del Progetto :project
+      PUSH_SHOP_TAGGED_IN_SP_MEDIA : :user ha taggato il Negozio in un Foto all'interno del Progetto :project
+      
+      #citizen income redistribution
+      TXN_CUST_CI_REDISTRIBUTION_PUSH_BODY: Attenzione! Hai a disposizione ancora "%s" giorni per poter effettuare una transazione!
+      TXN_CI_REDISTRIBUTION_MAIL_SUB: Attenzione! Hai a disposizione ancora "%s" giorni per poter effettuare una transazione!
+      TXN_CI_REDISTRIBUTION_LINK_TEXT: per per vedere i Negozi
+      TXN_CI_REDISTRIBUTION_MAIL_BODY: Hai a disposizione ancora "%s" giorni per poter effettuare una transazione ed evitare che il tuo Credito venga distribuito agli Utenti che hanno fatto almeno una transazione.
+      TXN_CI_REDISTRIBUTION_MAIL_TEXT: Attenzione! Hai a disposizione ancora "%s" giorni per poter effettuare una transazione!
+      
+      #card sold in a day notification params
+      CS_TITLE_1: Verifica Shopping Card Up to 100% vendute il giorno 
+      CS_USER_NAME: Gentile %s
+      CS_TODAY_SHOPPING_CARD_TEXT: Oggi hai venduto le seguenti SHOPPING CARD UP TO 100%
+      
+      CS_SHOPPING_CARD_HEAD: SHOPPING CARD UP TO 100%
+      CS_SHOPPING_CARD_VALUE: Valore della Shopping Card UP TO 100%
+      CS_SHOPPING_CARD_SHOP_NAME: Negozio che ha venduto la Shopping Card UP TO 100%
+      
+      CS_PURCHASE_CARD_HEAD: CARTE DI ACQUISTO
+      CS_PURCHASE_CARD_VALUE: VALORE CARTE DI ACQUISTO
+      CS_PURCHASE_CARD_SHOP_NAME: Negozio che ha venduto la Shopping Card UP TO 100%
+      CS_TODAY_YOU_CASHED_TEXT: Oggi hai incassato
+      CS_TODAY_YOU_CASHED_CONGRATULATION: COMPLIMENTI
+      CS_PAYMENT_ACCEPT_FOR_CARD_TEXT: Verifica e accetta il pagamento di parte di SixthContinent delle seguenti Carte di Acquisto Utilizzate dai tuoi clienti per completare l'acquisto
+      CS_CARD_APPROVE_LINK_TEXT: CONFERMO E ACCETTO
+      CS_VIEW_DETAILS_TEXT: Per visualizzare i dettagli delle tuo Portafoglio SixthContinent
+      CS_VIEW_DETAILS_LINK_TEXT: clicca qui.
+      CS_MAIL_SUBJECT: SixthContinent - Panoramica Sixthcontinent
+      CS_MAIL_BOTTOM_TEXT: Grazie per aver scelto SixthContinent 
+      
+      DEAR_USER: Caro Cittadino
+      SHARE_OFFER_SUBJECT: Risparmia sino all':discount, acquista una Shopping Card!
+      SHARE_OFFER_BODY: :user ti ha invitato a scoprire l'Offerta di una Shopping Card per risparmiare sino all':discount!
+      SHARE_OFFER_TEXT: Acquista una Shopping Card del Negozio :shop con il Reddito di Cittadinanza e paga i tuoi acquisti risparmiando fino all:discount.
+      SHARE_OFFER_LINK_TEXT: Clicca qui per visualizzare l'Offerta
+      PHONE_TEXT: Telefono
+      
+      TIME_ZONE_LOCALE: it_IT
+      
+      MEDIA_COMMENT_SP_MEDIA_TAGGED_USER_SUBJECT: :user ti ha taggato su una Foto del Progetto :project
+      MEDIA_COMMENT_SP_MEDIA_TAGGED_USER_BODY:  :user ti ha taggato in un photo su una Foto del Progetto :project
+      MEDIA_COMMENT_SP_MEDIA_TAGGED_USER_TEXT:  :user ti ha taggato in un photo su una Foto del Progetto :project ,
+      MEDIA_COMMENT_SP_MEDIA_TAGGED_USER_LINK: :link per visualizzare il foto.
+      
+      MEDIA_COMMENT_SP_MEDIA_TAGGED_CLUB_SUBJECT: :user ti ha taggato su una Foto del Progetto :project
+      MEDIA_COMMENT_SP_MEDIA_TAGGED_CLUB_BODY:  :user ti ha taggato in un photo su una Foto del Progetto :project
+      MEDIA_COMMENT_SP_MEDIA_TAGGED_CLUB_TEXT:  :user ti ha taggato in un photo su una Foto del Progetto :project ,
+      MEDIA_COMMENT_SP_MEDIA_TAGGED_CLUB_LINK: :link per visualizzare il foto.
+      
+      MEDIA_COMMENT_SP_MEDIA_TAGGED_SHOP_SUBJECT: :user ti ha taggato su una Foto del Progetto :project
+      MEDIA_COMMENT_SP_MEDIA_TAGGED_SHOP_BODY:  :user ti ha taggato in un photo su una Foto del Progetto :project
+      MEDIA_COMMENT_SP_MEDIA_TAGGED_SHOP_TEXT:  :user ti ha taggato in un photo su una Foto del Progetto :project ,
+      MEDIA_COMMENT_SP_MEDIA_TAGGED_SHOP_LINK: :link per visualizzare il foto.
+      
+      PUSH_SP_MEDIA_COMMENT_ON_USER_TAGGED : :user ti ha taggato su una Foto del Progetto :project
+      PUSH_SP_MEDIA_COMMENT_ON_CLUB_TAGGED : :user ha taggato il Club  in un Foto all'interno del Progetto :project
+      PUSH_SP_MEDIA_COMMENT_ON_SHOP_TAGGED : :user ha taggato il Negozio in un Foto all'interno del Progetto :project
+      
+      POST_COMMENT_SP_POST_TAGGED_USER_SUBJECT: :user ti ha taggato su una post del Progetto :project
+      POST_COMMENT_SP_POST_TAGGED_USER_BODY: :user ti ha taggato in un post su una Foto del Progetto :project
+      POST_COMMENT_SP_POST_TAGGED_USER_TEXT: :user ti ha taggato in un post su una Foto del Progetto :project,
+      POST_COMMENT_SP_POST_TAGGED_USER_LINK: :link per visualizzare il post.
+      
+      POST_COMMENT_SP_POST_TAGGED_CLUB_SUBJECT: :user ti ha taggato su una post del Progetto :project
+      POST_COMMENT_SP_POST_TAGGED_CLUB_BODY: :user ti ha taggato in un post su una Foto del Progetto :project
+      POST_COMMENT_SP_POST_TAGGED_CLUB_TEXT: :user ti ha taggato in un post su una Foto del Progetto :project,
+      POST_COMMENT_SP_POST_TAGGED_CLUB_LINK: :link per visualizzare il post.
+      
+      POST_COMMENT_SP_POST_TAGGED_SHOP_SUBJECT: :user ti ha taggato su una post del Progetto :project
+      POST_COMMENT_SP_POST_TAGGED_SHOP_BODY: :user ti ha taggato in un post su una Foto del Progetto :project
+      POST_COMMENT_SP_POST_TAGGED_SHOP_TEXT: :user ti ha taggato in un post su una Foto del Progetto :project,
+      POST_COMMENT_SP_POST_TAGGED_SHOP_LINK: :link per visualizzare il post.
+      
+      PUSH_SP_POST_COMMENT_ON_USER_TAGGED : :user ti ha taggato su una post del Progetto :project
+      PUSH_SP_POST_COMMENT_ON_CLUB_TAGGED : :user ha taggato il Club in un post all'interno del Progetto :project
+      PUSH_SP_POST_COMMENT_ON_SHOP_TAGGED : :user ha taggato il Negozio in un post all'interno del Progetto :project
+      
+      SHARE_SOCIAL_PROJECT_SUBJECT: :user ti invita a sostenere il Progetto :project con il tuo voto
+      SHARE_SOCIAL_PROJECT_BODY:  ti invita a sostenere il Progetto
+      SHARE_SOCIAL_PROJECT_TEXT: :desc_project
+      SHARE_SOCIAL_PROJECT_LINK_TEXT: Clicca qui per visualizzare il Progetto Sociale
+      SHARE_PROJECT_HEADING: Sociale Progetto Share
+      PROMOTER_TEXT: Promoter del Progetto
+      CREATION_DATE: Date Creazione
+      DESCRIPTION_TEXT: Descrizione
+      
+      SHARE_USER_POST_SUBJECT: :user ha condiviso un Post su SixthContinent
+      SHARE_USER_POST_BODY: ha condiviso un Post su SixthContinent
+      SHARE_USER_POST_TEXT: :post_text
+      SHARE_USER_POST_LINK_TEXT: Clicca qui per commentare e votare il Post
+      
+      SHARE_CLUB_POST_SUBJECT: :user ha condiviso un Post su SixthContinent
+      SHARE_CLUB_POST_BODY: ha condiviso un Post su SixthContinent
+      SHARE_CLUB_POST_TEXT: :post_text
+      SHARE_CLUB_POST_LINK_TEXT: Clicca qui per commentare e votare il Post
+      
+      SHARE_SHOP_POST_SUBJECT: :user ha condiviso un Post su SixthContinent
+      SHARE_SHOP_POST_BODY: ha condiviso un Post su SixthContinent
+      SHARE_SHOP_POST_TEXT: :post_text
+      SHARE_SHOP_POST_LINK_TEXT: Clicca qui per commentare e votare il Post
+      
+      SHARE_SOCIAL_PROJECT_POST_SUBJECT: :user ha condiviso un Post su SixthContinent
+      SHARE_SOCIAL_PROJECT_POST_BODY: ha condiviso un Post su SixthContinent
+      SHARE_SOCIAL_PROJECT_POST_TEXT: :post_text
+      SHARE_SOCIAL_PROJECT_POST_LINK_TEXT: Clicca qui per commentare e votare il Post
+      SHARE_POST_HEADING: Post di notifica
+      
+      #shopping card upto 100% purchase
+      SC_TITLE_1: Shopping Card UpTo 100%
+      SC_USER_NAME_TEXT: Gentile %s
+      SC_SHOPPING_CARD_TEXT: hai acquistato una SHOPPING CARD UP TO 100% 
+      SC_AMOUNT_TEXT: al prezzo di
+      
+      SC_AMOUNT_SHOPNAME_TEXT: da
+      SC_SIXTHCONTINENT_THANKS: Grazie per aver scelto SixthContinent!
+      SC_CARD_PURCHASE_DETAILS: Descrizione dell'acquisto
+      SC_SHOPPING_CARD_VALUE_TEXT: Valore Shopping Card Up to 100%
+      SC_SC_CONTRIBUTION_TEXT: Contributo SixthContinent
+      SC_SHOP_CONTRIBUTION_TEXT: Contributo Negoziante
+      SC_PAYBAL_TEXT: Prezzo
+      SC_SHOP_DETAILS_TEXT: Dati Negozio
+      SC_FOOTER_TEXT: Per visualizzare i dettagli del tuo Portafoglio SixthContinent
+      SC_FOOTER_LINK_TEXT: clikka qui.
+      SC_SUBJECT: SixthContinent - ACQUISTO SHOPPING CARD - RICEVUTA
+      
+      USER_TAGGED_IN_SP_POST_MEDIA_SUBJECT: :user ti ha taggato in una Foto del Progetto :project
+      USER_TAGGED_IN_SP_POST_MEDIA_TEXT: :user ti ha taggato in una Foto del Progetto :project,
+      USER_TAGGED_IN_SP_POST_MEDIA_BODY: :user ti ha taggato in una Foto del Progetto :project
+      USER_TAGGED_IN_SP_POST_MEDIA_CLICK_HERE: :link per visualizzare il foto.
+
+      CLUB_TAGGED_IN_SP_POST_MEDIA_SUBJECT : :user ha taggato il Club :club in un Foto all'interno del Progetto :project
+      CLUB_TAGGED_IN_SP_POST_MEDIA_TEXT : :user ha taggato il Club :club in un Foto all'interno del Progetto :project,
+      CLUB_TAGGED_IN_SP_POST_MEDIA_BODY: :user ha taggato il Club :club in un Foto all'interno del Progetto :project
+      CLUB_TAGGED_IN_SP_POST_MEDIA_CLICK_HERE: :link per visualizzare il foto.
+      
+      SHOP_TAGGED_IN_SP_POST_MEDIA_SUBJECT: :user ha taggato il Negozio :shop in un Foto all'interno del Progetto :project
+      SHOP_TAGGED_IN_SP_POST_MEDIA_TEXT: :user ha taggato il Negozio :shop in un Foto all'interno del Progetto :project,
+      SHOP_TAGGED_IN_SP_POST_MEDIA_BODY: :user ha taggato il Negozio :shop in un Foto all'interno del Progetto :project
+      SHOP_TAGGED_IN_SP_POST_MEDIA_CLICK_HERE: :link per visualizzare il foto.
+      
+      PUSH_USER_TAGGED_IN_SP_POST_MEDIA : :user ti ha taggato in una Foto del Progetto :project
+      PUSH_CLUB_TAGGED_IN_SP_POST_MEDIA : :user ha taggato il Club in un Foto all'interno del Progetto :project
+      PUSH_SHOP_TAGGED_IN_SP_POST_MEDIA : :user ha taggato il Negozio in un Foto all'interno del Progetto :project
+      
+      SHARE_COUPON_SUBJECT: Aggiungi il Coupon al tuo Reddito di Cittadinanza e acquista risparmiando sino all':discount
+      SHARE_COUPON_BODY: :user ti ha invitato a scoprire l'Offerta di un Coupon!
+      SHARE_COUPON_TEXT_1: Aggiungi un Coupon del Negozio
+      SHARE_COUPON_TEXT_2: al tuo Reddito di Cittadinanza e acquista risparmiando sino all':discount. 
+      SHARE_COUPON_LINK_TEXT: Clicca qui per visualizzare il Negozio
+      
+      SHARE_SHOP_SUBJECT: Scopri le offerte del Negozio :shop che puoi acquistare con il Reddito di Cittadinanza.
+      SHARE_SHOP_BODY: :user ti consiglia il Negozio :shop su SixthContinent
+      SHARE_SHOP_TEXT: :desc_shop
+      SHARE_SHOP_TEXT_1: ti invita a scoprire le offerte del Negozio
+      SHARE_SHOP_TEXT_2: che puoi acquistare con il Reddito di Cittadinanza.
+      SHARE_SHOP_LINK_TEXT: Clicca qui per visualizzare il Profilo del Negozio
+      ADDRESS_TEXT: Indirizzo
+      CITY_TEXT: Citta
+      
+      SP_POST_MEDIA_COMMENT_SUBJECT: :user ha commentato una Foto del Progetto :project
+      SP_POST_MEDIA_COMMENT_BODY: :user ha commentato una Foto del Progetto :project
+      SP_POST_MEDIA_COMMENT_TEXT: :user ha commentato una Foto del Progetto :project,
+      SP_POST_MEDIA_COMMENT_LINK: :link per visualizzare il foto
+      PUSH_SP_POST_MEDIA_COMMENT: :user ha commentato una Foto del Progetto :project
+      
+      SP_POST_MEDIA_COMMENTED_SUBJECT: Anche :user ha commentato un foto che hai commentato del Progetto :project
+      SP_POST_MEDIA_COMMENTED_BODY: Anche :user ha commentato un foto che hai commentato del Progetto :project
+      SP_POST_MEDIA_COMMENTED_TEXT: Anche :user ha commentato un foto che hai commentato del Progetto :project,
+      SP_POST_MEDIA_COMMENTED_LINK: :link per visualizzare il foto
+      PUSH_SP_POST_MEDIA_COMMENTED: Anche :user ha commentato un foto che hai commentato del Progetto :project
+      
+      USER_TAGGED_IN_SP_POST_MEDIA_COMMENT_SUBJECT: :user ti ha taggato in un Commento su una Foto del Progetto :project
+      USER_TAGGED_IN_SP_POST_MEDIA_COMMENT_TEXT: :user ti ha taggato in un Commento di una Foto del Progetto :project,
+      USER_TAGGED_IN_SP_POST_MEDIA_COMMENT_BODY: :user ti ha taggato in un Commento di una Foto del Progetto :project
+      USER_TAGGED_IN_SP_POST_MEDIA_COMMENT_CLICK_HERE: :user per visualizzare il foto.
+      
+      CLUB_TAGGED_IN_SP_POST_MEDIA_COMMENT_SUBJECT: :user ha taggato il Club :club in un Commento su una Foto del  Progetto :project
+      CLUB_TAGGED_IN_SP_POST_MEDIA_COMMENT_TEXT: :user ha taggato il Club :club in un Commento su una Foto del  Progetto :project,
+      CLUB_TAGGED_IN_SP_POST_MEDIA_COMMENT_BODY: :user ha taggato il Club :club in un Commento su una Foto del  Progetto :project
+      CLUB_TAGGED_IN_SP_POST_MEDIA_COMMENT_CLICK_HERE: :per visualizzare il foto.
+      
+      SHOP_TAGGED_IN_SP_POST_MEDIA_COMMENT_SUBJECT: :user ha taggato il Shop :shop in un Commento su una Foto del  Progetto :project
+      SHOP_TAGGED_IN_SP_POST_MEDIA_COMMENT_TEXT: :user ha taggato il Shop :shop in un Commento su una Foto del  Progetto :project,
+      SHOP_TAGGED_IN_SP_POST_MEDIA_COMMENT_BODY: :user ha taggato il Shop :shop in un Commento su una Foto del  Progetto :project
+      SHOP_TAGGED_IN_SP_POST_MEDIA_COMMENT_CLICK_HERE: :per visualizzare il foto.
+      
+      PUSH_USER_TAGGED_IN_SP_POST_MEDIA_COMMENT : :user ti ha taggato in un Commento di una Foto del Progetto :project
+      PUSH_CLUB_TAGGED_IN_SP_POST_MEDIA_COMMENT : :user ha taggato il Club in un Commento su una Foto del Progetto :project
+      PUSH_SHOP_TAGGED_IN_SP_POST_MEDIA_COMMENT : :user ha taggato il Negozio in un Commento su una Foto del Progetto :project
+      
+      MEDIA_COMMENT_SP_POST_MEDIA_TAGGED_USER_SUBJECT: :user ha commentato una Foto che sei stato taggato nella pagina del Progetto :project
+      MEDIA_COMMENT_SP_POST_MEDIA_TAGGED_USER_BODY:  :user ha commentato una Foto che sei stato taggato nella pagina del Progetto :project
+      MEDIA_COMMENT_SP_POST_MEDIA_TAGGED_USER_TEXT:  :user ha commentato una Foto che sei stato taggato nella pagina del Progetto :project ,
+      MEDIA_COMMENT_SP_POST_MEDIA_TAGGED_USER_LINK: :link per visualizzare il foto.
+      
+      MEDIA_COMMENT_SP_POST_MEDIA_TAGGED_CLUB_SUBJECT: :user ha commentato un Foto che il vostro Club stato taggato sulla pagina del Progetto :project
+      MEDIA_COMMENT_SP_POST_MEDIA_TAGGED_CLUB_BODY:  :user ha commentato un Foto che il vostro Club stato taggato sulla pagina del Progetto :project
+      MEDIA_COMMENT_SP_POST_MEDIA_TAGGED_CLUB_TEXT:  :user ha commentato un Foto che il vostro Club stato taggato sulla pagina del Progetto :project ,
+      MEDIA_COMMENT_SP_POST_MEDIA_TAGGED_CLUB_LINK: :link per visualizzare il foto.
+      
+      MEDIA_COMMENT_SP_POST_MEDIA_TAGGED_SHOP_SUBJECT: :user ha commentato un Foto che il vostro negozio stato taggato sulla pagina del Progetto :project
+      MEDIA_COMMENT_SP_POST_MEDIA_TAGGED_SHOP_BODY:  :user ha commentato un Foto che il vostro negozio stato taggato sulla pagina del Progetto :project
+      MEDIA_COMMENT_SP_POST_MEDIA_TAGGED_SHOP_TEXT:  :user ha commentato un Foto che il vostro negozio stato taggato sulla pagina del Progetto :project ,
+      MEDIA_COMMENT_SP_POST_MEDIA_TAGGED_SHOP_LINK: :link per visualizzare il foto.
+      
+      PUSH_SP_POST_MEDIA_COMMENT_ON_USER_TAGGED : :user ha commentato una Foto che sei stato taggato nella pagina del Progetto :project
+      PUSH_SP_POST_MEDIA_COMMENT_ON_CLUB_TAGGED : :user ha commentato un Foto che il vostro Club stato taggato sulla pagina del Progetto :project
+      PUSH_SP_POST_MEDIA_COMMENT_ON_SHOP_TAGGED : :user ha commentato un Foto che il vostro negozio stato taggato sulla pagina del Progetto :project
+      
+      SP_POST_MEDIA_COMMENT_RATE_SUBJECT: :user ha votato il tuo Commento su una Foto del Progetto :project
+      SP_POST_MEDIA_COMMENT_RATE_BODY: :user ha votato il tuo Commento su una Foto del Progetto :project
+      SP_POST_MEDIA_COMMENT_RATE_TEXT: :user ha assegnato al tuo Commento su una Foto del Progetto :project il voto di :rate su 5 stelle!
+      SP_POST_MEDIA_COMMENT_RATE_LINK: :link per visualizzare il foto
+      PUSH_SP_POST_MEDIA_COMMENT_RATE: :user ha votato il tuo Commento su una Foto del Progetto :project
+      
+      SP_POST_MEDIA_RATE_SUBJECT: :user ha assegnato ad una Foto del Progetto :project un voto di :rate su 5 stelle
+      SP_POST_MEDIA_RATE_BODY: :user ha assegnato ad una Foto del Progetto :project un voto di :rate su 5 stelle
+      SP_POST_MEDIA_RATE_TEXT: :user ha assegnato ad una Foto del Progetto :project un voto di :rate su 5 stelle,
+      SP_POST_MEDIA_RATE_LINK: :link per visualizzare il foto
+      PUSH_SP_POST_MEDIA_RATE: :user ha assegnato ad una Foto del Progetto :project un voto di :rate su 5 stelle
+
+      ECOMMERCE_PRODUCT_PURCHASE_SUBJECT: Congratulazioni! Hai acquistato %s.
+      ECOMMERCE_PRODUCT_PURCHASE_BODY: Congratulazioni! Hai acquistato %s.
+      ECOMMERCE_PRODUCT_PURCHASE_TEXT: hai acquistato con successo %s presso il Negozio %s!
+      ECOMMERCE_PRODUCT_PURCHASE_LINK: Clicca qui per vedere i dettagli
+      PUSH_ECOMMERCE_PRODUCT_PURCHASE_TEXT: Congratulazioni! Hai acquistato %s.
+      WEB_ECOMMERCE_PRODUCT_PURCHASE_TEXT: Congratulazioni! Hai acquistato %s.
+      
+      TAMOIL_OFFER_SUBJECT: Buono Carburante Elettronico TAMOIL 
+      TAMOIL_OFFER_BODY: Buono Carburante Elettronico Tamoil N.:order_number
+      TAMOIL_OFFER_TEXT_1: In allegato il tuo Buono Carburante Elettronico TAMOIL
+      TAMOIL_OFFER_TEXT_2: del Valore di :price
+      TAMOIL_OFFER_TEXT_3: Sarà attivo dal <b>:activatedDate<b> <br>Grazie per aver acquistato con SixthContinent
+      TAMOIL_OFFER_DESC: Descrizione dell'acquisto
+      TAMOIL_OFFER_DESC_TITLE: Valore Buono Carburante Tamoil
+      TAMOIL_OFFER_DESC_CI_TITLE: Crediti SixthContinent
+      TAMOIL_OFFER_DESC_SHOP_TITLE: Prezzo Finale
+      TAMOIL_OFFER_LINK_TEXT: :link per leggere le informazioni e condizioni di uso
+      
+      #ECOMMERCE PRODUCT
+      PUSH_PRODUCT_LOW_STOCK-BUY_ECOMMERCE_PRODUCT: Quantità disponibile in esaurimento per %s
+      PRODUCT_LOW_STOCK-BUY_ECOMMERCE_PRODUCT_SUBJECT: Quantità disponibile in esaurimento per %s
+      PRODUCT_LOW_STOCK-BUY_ECOMMERCE_PRODUCT_BODY: Quantità disponibile in esaurimento per %s
+      PRODUCT_LOW_STOCK-BUY_ECOMMERCE_PRODUCT_TEXT: la Quantità disponibile per %s è inferiore a %s!
+      
+      PUSH_CONFIRM_SHIPPING-BUY_ECOMMERCE_PRODUCT: Nuovo Ordine ricevuto per %s
+      CONFIRM_SHIPPING-BUY_ECOMMERCE_PRODUCT_SUBJECT: Nuovo Ordine ricevuto per %s
+      CONFIRM_SHIPPING-BUY_ECOMMERCE_PRODUCT_BODY: Nuovo Ordine ricevuto per %s
+      CONFIRM_SHIPPING-BUY_ECOMMERCE_PRODUCT_TEXT:  %s ha ordinato %s!
+      
+      PUSH_CANCEL_ORDER-BUY_ECOMMERCE_PRODUCT: Ordine cancellato per %s dal Negozio %s
+      CANCEL_ORDER-BUY_ECOMMERCE_PRODUCT_SUBJECT: Ordine cancellato per %s dal Negozio %s
+      CANCEL_ORDER-BUY_ECOMMERCE_PRODUCT_BODY: Ordine cancellato per %s dal Negozio %s
+      CANCEL_ORDER-BUY_ECOMMERCE_PRODUCT_TEXT:  il tuo Ordine per %s è stato cancellato dal Negozio %s.
+      ORDER_MESSAGE_DETAIL: per vedere l'Ordine
+      
+      PUSH_PRODUCT_SHIPPED-BUY_ECOMMERCE_PRODUCT: %s è stato Spedito
+      PRODUCT_SHIPPED-BUY_ECOMMERCE_PRODUCT_SUBJECT: %s è stato Spedito!
+      PRODUCT_SHIPPED-BUY_ECOMMERCE_PRODUCT_BODY: %s è stato Spedito!
+      PRODUCT_SHIPPED-BUY_ECOMMERCE_PRODUCT_TEXT: %s è stato Spedito dal Negozio %s.
+      
+      SHARE_TAMOIL_OFFER_SUBJECT: Risparmia sino al 50% da Tamoil
+      SHARE_TAMOIL_OFFER_BODY: BUONI CARBURANTE ELETTRONICI TAMOIL
+      SHARE_TAMOIL_OFFER_TEXT: ti invita a scoprire l'Offerta <br><br>RISPARMIA SINO AL 50%. Acquista online BUONI CARBURANTE ELETTRONICI TAMOIL e paga con il Reddito di Cittadinanza SixthContinent. I Buoni Carburante sono utilizzabili in oltre 1,100 Stazioni TAMOIL su tutto il territorio italiano.
+      SHARE_TAMOIL_OFFER_TEXT_2: Questa è un'iniziativa SixthContinent Italia
+      SHARE_TAMOIL_OFFER_LINK_TEXT: Clicca qui per visualizzare l'Offerta

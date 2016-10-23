@@ -1,0 +1,27 @@
+Affiliation\AffiliationManagerBundle\Entity\AffiliationShop:
+    type: entity
+    table: null
+    repositoryClass: Affiliation\AffiliationManagerBundle\Entity\AffiliationShopRepository
+    uniqueConstraints:
+        index_fromid_toid_shopid_AffiliationShop:
+            columns: [from_id,to_id,shop_id]
+            type: unique
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        fromId:
+            type: integer
+            column: from_id
+        toId:
+            type: integer
+            column: to_id
+        createdAt:
+            type: datetime
+            column: created_at
+        shopId:
+            type: integer
+            column: shop_id
+    lifecycleCallbacks: {  }

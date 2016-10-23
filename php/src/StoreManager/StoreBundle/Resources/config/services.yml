@@ -1,0 +1,27 @@
+parameters:
+    store_manager_store.acl.class: StoreManager\StoreBundle\Services\StoreAclService
+    store_manager_store.curl.class: StoreManager\StoreBundle\Services\CurlService
+    store_manager_store.shoppingplus.class: StoreManager\StoreBundle\Services\ShoppingPlusService
+    store_manager_store.shoppingplusStatus.class: StoreManager\StoreBundle\Services\ShoppingplusStatusService
+    store_manager_store.storeUpdate.class: StoreManager\StoreBundle\Services\StoreUpdateService
+    store_manager_store.storeUtility.class: StoreManager\StoreBundle\Utils\UtilityService
+
+services:
+    store_manager_store.acl:
+        class: %store_manager_store.acl.class%
+    store_manager_store.curl:
+        class: %store_manager_store.curl.class%
+        arguments: [@doctrine.orm.entity_manager, @doctrine.odm.mongodb.document_manager, @service_container]
+    store_manager_store.shoppingplus:
+        class: %store_manager_store.shoppingplus.class%
+        arguments: [@doctrine.orm.entity_manager, @doctrine.odm.mongodb.document_manager, @service_container]
+    store_manager_store.shoppingplusStatus:
+        class: %store_manager_store.shoppingplusStatus.class%
+        arguments: [@doctrine.orm.entity_manager, @doctrine.odm.mongodb.document_manager, @service_container]
+    store_manager_store.storeUpdate:
+        class: %store_manager_store.storeUpdate.class%
+        arguments: [@doctrine.orm.entity_manager, @doctrine.odm.mongodb.document_manager, @service_container]
+#utility classes for store bundle
+    store_manager_store.storeUtility:
+        class: %store_manager_store.storeUtility.class%
+        arguments: [@doctrine.orm.entity_manager, @doctrine.odm.mongodb.document_manager, @service_container]    

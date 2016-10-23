@@ -1,0 +1,26 @@
+Utility\MasterDataBundle\Entity\MonthsList:
+    type: entity
+    table: null
+    repositoryClass: Utility\MasterDataBundle\Repository\MonthsListRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        name:
+            type: string
+            length: 255
+        status:
+            type: string
+            length: 255
+        image:
+            type: string
+            length: 255
+            nullable: TRUE
+        imageThumb:
+            type: string
+            length: 255
+            column: image_thumb
+            nullable: TRUE
+    lifecycleCallbacks: {  }

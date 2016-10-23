@@ -1,0 +1,84 @@
+Transaction\WalletBundle\Entity\AmilonCard:
+    type: entity
+    table: null
+    repositoryClass: Transaction\WalletBundle\Repository\AmilonCardRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        amilonCardId:
+            type: string
+            length: '60'
+            column: amilon_card_id
+        initAmount:
+            type: integer
+            column: init_amount
+        productCode:
+            type: string
+            length: '60'
+            column: product_code
+        availableAmount:
+            type: integer
+            column: available_amount
+        timeCreatedH:
+            type: datetime
+            column: time_created_h
+        timeUpdatedH:
+            type: datetime
+            column: time_updated_h
+        timeCreated:
+            type: integer
+            column: time_created
+        timeUpdated:
+            type: integer
+            column: time_updated
+        validityEndDateH:
+            type: datetime
+            column: validity_end_date_h
+            nullable: true
+        validityStartDateH:
+            type: datetime
+            column: validity_start_date_h
+            nullable: true
+        validityStartDate:
+            type: integer
+            column: validity_start_date
+            nullable: true
+        validityEndDate:
+            type: integer
+            column: validity_end_date
+            nullable: true
+        currency:
+            type: string
+            length: '3'
+        maxUsageInitPrice:
+            type: integer
+            column: max_usage_init_price
+        sellerId:
+            type: integer
+            column: seller_id
+        walletCitizenId:
+            type: integer
+            column: wallet_citizen_id
+        commercialPromotionId:
+            type: integer
+            column: commercial_promotion_id
+        sixcTransactionId:
+            type: string
+            length: '60'
+            column: sixc_transaction_id
+        connectTrsId:
+            type: integer
+            column: connect_trs_id
+        dedication:
+            type: string
+            length: '60'
+            column: dedication
+        link:
+            type: string
+            length: '255'
+            column: link
+            nullable: true
+    lifecycleCallbacks: {  }

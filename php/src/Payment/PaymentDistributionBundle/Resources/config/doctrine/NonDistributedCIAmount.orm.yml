@@ -1,0 +1,23 @@
+Payment\PaymentDistributionBundle\Entity\NonDistributedCIAmount:
+    type: entity
+    table: NonDistributedCIAmount
+    repositoryClass: Payment\PaymentDistributionBundle\Repository\NonDistributedCIAmountRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        purchaserId:
+            type: integer
+            column: purchaser_id
+        shopId:
+            type: integer
+            column: shop_id
+        amount:
+            type: bigint
+        transactionId:
+            type: string
+            length: 255
+            column: transaction_id
+    lifecycleCallbacks: {  }

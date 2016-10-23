@@ -1,0 +1,50 @@
+SixthContinent\SixthContinentConnectBundle\Entity\OfferPointofSale:
+    type: entity
+    table: offer_point_of_sale
+    repositoryClass: SixthContinent\SixthContinentConnectBundle\Repository\OfferPointofSaleRepository
+    indexes:
+        offer_id_index:
+            columns: [ offer_id ]
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        offerId:
+            type: integer 
+            column: offer_id        
+        pvExternalId:
+            type: integer
+            column: pv_external_id
+        country:
+            type: string
+            length: 255
+        region:
+            type: string
+            length: 255
+        place:
+            type: string
+            length: 255
+        province:
+            type: string
+            length: 255
+        zip:
+            type: string
+            length: 255
+        address:
+            type: string
+            length: 255
+        latitude:
+            type: string
+            length: 255
+        longitude:
+            type: string
+            length: 255
+        isActive:
+            type: integer
+            column: is_active
+        isDeleted:
+            type: integer
+            column: is_deleted       
+    lifecycleCallbacks: {  }

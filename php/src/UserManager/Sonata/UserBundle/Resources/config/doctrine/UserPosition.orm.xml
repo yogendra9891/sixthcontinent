@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity repository-class="UserManager\Sonata\UserBundle\Entity\UserPositionRepository" name="UserManager\Sonata\UserBundle\Entity\UserPosition">
+    <id name="id" type="integer" column="id">
+      <generator strategy="AUTO"/>
+    </id>
+    <field name="userId" type="bigint" column="user_id"/>
+    <field name="count" type="bigint" column="count"/>
+    <field name="district" type="integer" column="district"/>
+    <field name="circle" type="integer" column="circle"/>
+    <field name="position" type="integer" column="position"/>
+  </entity>
+</doctrine-mapping>

@@ -1,0 +1,19 @@
+ExportManagement\ExportManagementBundle\Entity\PaymentExport:
+    type: entity
+    table: null
+    repositoryClass: ExportManagement\ExportManagementBundle\Entity\PaymentExportRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        date:
+            type: datetime
+        type:
+            type: string
+            length: 255
+        filename:
+            type: string
+            length: 255
+    lifecycleCallbacks: {  }

@@ -1,0 +1,32 @@
+Notification\NotificationBundle\Entity\PushNotification:
+    type: entity
+    table: null
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        pushType:
+            type: string
+            length: 255
+            column: push_type
+        senderUserid:
+            type: integer
+            column: sender_userid
+        receiverUserid:
+            type: integer
+            column: receiver_userid
+        messageType:
+            type: string
+            length: 255
+            column: message_type
+        message:
+            type: string
+            length: 255
+        subject:
+            type: string
+            length: 255
+        date:
+            type: date
+    lifecycleCallbacks: {  }
